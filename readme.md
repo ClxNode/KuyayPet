@@ -4,8 +4,6 @@
 
 <br />
 
-<img src="./assets/branding/logo-kuyaypet.png" alt="Logo oficial de KuyayPet: perro y gato" width="270" />
-
 ### 🐾 Conecta · Comparte · Socializa
 
 **Una plataforma web pensada para conectar mascotas que buscan hogar con personas dispuestas a adoptar.**
