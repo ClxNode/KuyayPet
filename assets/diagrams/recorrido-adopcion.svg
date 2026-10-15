@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="310" viewBox="0 0 1400 310" role="img" aria-label="Recorrido propuesto: Explorar, expresar interés, match, conversar, coordinar adopción">
+ <defs>
+  <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF9F1"/><stop offset="1" stop-color="#FFF0E2"/></linearGradient>
+  <filter id="ds"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#624632" flood-opacity=".09"/></filter>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#A99E83" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+ </defs>
+ <rect width="1400" height="310" fill="url(#fbg)" rx="24"/>
+ <text x="45" y="48" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="800" fill="#3B362F">EL CAMINO HACIA UNA ADOPCIÓN</text>
+ <text x="45" y="73" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" fill="#897767">Flujo funcional contemplado en las historias de usuario · no representa un sistema ya desplegado</text>
+ <g font-family="DejaVu Sans, Arial, sans-serif" text-anchor="middle">
+  <g filter="url(#ds)"><rect x="42" y="115" width="236" height="120" rx="20" fill="#FFFFFF"/><rect x="42" y="115" width="236" height="7" rx="4" fill="#597543"/>
+  <circle cx="160" cy="157" r="20" fill="#ECF4E4"/><text x="160" y="164" font-size="20">1</text><text x="160" y="198" font-size="19" font-weight="800" fill="#3C352F">Descubre</text><text x="160" y="217" font-size="13" fill="#81756A">Busca y filtra mascotas</text></g>
+  <g filter="url(#ds)"><rect x="312" y="115" width="236" height="120" rx="20" fill="#FFFFFF"/><rect x="312" y="115" width="236" height="7" rx="4" fill="#D45A34"/>
+  <circle cx="430" cy="157" r="20" fill="#FFE9DF"/><text x="430" y="164" font-size="20">2</text><text x="430" y="198" font-size="19" font-weight="800" fill="#3C352F">Muestra interés</text><text x="430" y="217" font-size="13" fill="#81756A">Indica que te gusta</text></g>
+  <g filter="url(#ds)"><rect x="582" y="115" width="236" height="120" rx="20" fill="#FFFFFF"/><rect x="582" y="115" width="236" height="7" rx="4" fill="#CB442D"/>
+  <circle cx="700" cy="157" r="20" fill="#FFE4DD"/><text x="700" y="164" font-size="20">3</text><text x="700" y="198" font-size="19" font-weight="800" fill="#3C352F">Haz Match</text><text x="700" y="217" font-size="13" fill="#81756A">Si hay interés compatible</text></g>
+  <g filter="url(#ds)"><rect x="852" y="115" width="236" height="120" rx="20" fill="#FFFFFF"/><rect x="852" y="115" width="236" height="7" rx="4" fill="#A66D3B"/>
+  <circle cx="970" cy="157" r="20" fill="#F9EBDC"/><text x="970" y="164" font-size="20">4</text><text x="970" y="198" font-size="19" font-weight="800" fill="#3C352F">Conversa</text><text x="970" y="217" font-size="13" fill="#81756A">Chat con el responsable</text></g>
+  <g filter="url(#ds)"><rect x="1122" y="115" width="236" height="120" rx="20" fill="#38572F"/><rect x="1122" y="115" width="236" height="7" rx="4" fill="#CFB87B"/>
+  <circle cx="1240" cy="157" r="20" fill="#F4E0AC"/><text x="1240" y="164" font-size="20">5</text><text x="1240" y="198" font-size="19" font-weight="800" fill="#FFFFFF">Coordina</text><text x="1240" y="217" font-size="13" fill="#E2F0DE">Posible adopción</text></g>
+ </g>
+ <g stroke="#A99E83" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"><line x1="284" y1="176" x2="302" y2="176"/><line x1="554" y1="176" x2="572" y2="176"/><line x1="824" y1="176" x2="842" y2="176"/><line x1="1094" y1="176" x2="1112" y2="176"/></g>
+ <text x="700" y="270" font-family="DejaVu Sans, Arial, sans-serif" text-anchor="middle" font-size="14" fill="#7A6B5E">Cada etapa busca hacer más claro el contacto entre adoptantes y responsables.</text>
+</svg>

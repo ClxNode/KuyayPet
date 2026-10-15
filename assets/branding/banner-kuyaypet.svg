@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="400" viewBox="0 0 1400 400" role="img" aria-label="KuyayPet, conecta, comparte y socializa">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFF9EE"/>
+      <stop offset=".52" stop-color="#FFF4E6"/>
+      <stop offset="1" stop-color="#FBE7D8"/>
+    </linearGradient>
+    <linearGradient id="hot" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ED652E"/><stop offset="1" stop-color="#BC361C"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#FFE9D8"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-40%" width="160%" height="190%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#53311F" flood-opacity=".13"/>
+    </filter>
+    <pattern id="dots" width="29" height="29" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1.5" fill="#DDBE9E" opacity=".38"/>
+    </pattern>
+    <symbol id="paw" viewBox="0 0 70 70">
+      <ellipse cx="35" cy="44" rx="18" ry="15"/>
+      <ellipse cx="12" cy="27" rx="7" ry="10" transform="rotate(-23 12 27)"/>
+      <ellipse cx="27" cy="14" rx="7" ry="10" transform="rotate(-9 27 14)"/>
+      <ellipse cx="44" cy="14" rx="7" ry="10" transform="rotate(9 44 14)"/>
+      <ellipse cx="58" cy="28" rx="7" ry="10" transform="rotate(23 58 28)"/>
+    </symbol>
+  </defs>
+  <rect width="1400" height="400" rx="28" fill="url(#bg)"/>
+  <rect width="1400" height="400" rx="28" fill="url(#dots)"/>
+  <path d="M0 307 C244 243 352 470 585 359 S1053 256 1400 372 L1400 400 L0 400Z" fill="#EACFAD" opacity=".24"/>
+  <circle cx="1215" cy="-85" r="290" fill="#F1CEAC" opacity=".45"/>
+  <circle cx="1330" cy="369" r="168" fill="#F0D8AA" opacity=".55"/>
+  <circle cx="1104" cy="189" r="174" fill="#7C8A55" opacity=".13"/>
+  <rect x="72" y="50" width="354" height="38" rx="19" fill="#38572F"/>
+  <circle cx="93" cy="69" r="5" fill="#FFD69F"/>
+  <text x="110" y="75" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" letter-spacing="1.8" font-weight="700" fill="#FFFFFF">INGENIERÍA DE SOFTWARE</text>
+  <text x="67" y="193" font-family="DejaVu Sans, Arial, sans-serif" font-size="92" font-weight="900" letter-spacing="-5" fill="#28241F">KUYAY</text>
+  <text x="434" y="193" font-family="DejaVu Sans, Arial, sans-serif" font-size="92" font-weight="900" letter-spacing="-5" fill="url(#hot)">PET</text>
+  <path d="M78 216 H650" stroke="#DABEA0" stroke-width="3" stroke-linecap="round"/>
+  <text x="73" y="258" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#493B30">Conecta · Comparte · Socializa</text>
+  <text x="73" y="297" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#6B6257">Un espacio para encontrar un nuevo hogar,</text>
+  <text x="73" y="324" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#6B6257">una historia y una conexión especial.</text>
+  <g transform="translate(835 57)" filter="url(#shadow)">
+    <rect x="0" y="0" width="475" height="282" rx="31" fill="url(#card)" stroke="#EBC8A5" stroke-width="2"/>
+    <rect x="32" y="30" width="411" height="66" rx="20" fill="#FFFDF9"/>
+    <circle cx="64" cy="63" r="20" fill="#E8F0DF"/>
+    <use href="#paw" x="50" y="49" width="28" height="28" fill="#50723B"/>
+    <text x="100" y="59" font-family="DejaVu Sans, Arial, sans-serif" font-weight="800" font-size="20" fill="#403A31">Explora</text>
+    <text x="100" y="81" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#81766A">Conoce mascotas disponibles</text>
+    <path d="M236 97 V124" stroke="#D8AC88" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 7"/>
+    <rect x="32" y="124" width="411" height="66" rx="20" fill="#FFFDF9"/>
+    <circle cx="64" cy="157" r="20" fill="#FFF0E9"/>
+    <path d="M64 169 C48 157 50 145 59 146 C62 146 64 149 64 149 C64 149 67 145 71 146 C81 148 78 158 64 169Z" fill="#D5482B"/>
+    <text x="100" y="153" font-family="DejaVu Sans, Arial, sans-serif" font-weight="800" font-size="20" fill="#403A31">Conecta</text>
+    <text x="100" y="175" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#81766A">Haz match y conversa</text>
+    <path d="M236 191 V214" stroke="#D8AC88" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 7"/>
+    <rect x="32" y="218" width="411" height="48" rx="17" fill="#38572F"/>
+    <text x="65" y="249" font-family="DejaVu Sans, Arial, sans-serif" font-weight="800" font-size="19" fill="#FFFFFF">Adopta con responsabilidad</text>
+    <path d="M394 237 L401 244 L413 230" fill="none" stroke="#FFD2A4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <use href="#paw" x="750" y="27" width="43" height="43" fill="#D65B35" opacity=".38" transform="rotate(-16 771 49)"/>
+  <use href="#paw" x="735" y="318" width="53" height="53" fill="#58733B" opacity=".28" transform="rotate(18 762 343)"/>
+  <circle cx="671" cy="144" r="8" fill="#D85630" opacity=".7"/>
+  <path d="M690 121 l15 -9" stroke="#D85630" stroke-width="5" stroke-linecap="round"/>
+  <rect x="0.5" y="0.5" width="1399" height="399" rx="27.5" stroke="#E7C9A7" stroke-width="1" fill="none"/>
+</svg>
