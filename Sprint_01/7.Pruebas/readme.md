@@ -192,7 +192,7 @@ Con la cuenta demo de adoptante se abrió `/buscar`, se seleccionó la tarjeta d
 | `p02` Max | Solo historia |
 | `p03` Toby | Ninguno |
 
-La verificación se automatizó con Playwright (`verify-hu03.spec.ts`) en un viewport de 390×844. Para cada mascota se registraron los textos de la tarjeta y del perfil, los errores de consola y las capturas.
+La verificación se automatizó con Playwright (`verify-hu03.spec.ts`, conservado por IchiSieben en su repositorio de herramientas `kuyaypet-scrum-tools` junto con los pasos para repetirla) en un viewport de 390×844. Para cada mascota se registraron los textos de la tarjeta y del perfil, los errores de consola y las capturas.
 
 ### Criterios de aceptación verificados
 
