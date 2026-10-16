@@ -114,40 +114,6 @@ Como parte del trabajo de Ingeniería de Software, el proyecto considera los sig
 
 Los modelos y sus archivos se incorporarán al repositorio conforme se revisen y organicen para su entrega.
 
-## 📂 Estructura del repositorio
-
-```text
-KuyayPet/
-│
-├── README.md                         # Presentación principal
-├── assets/
-│   ├── branding/
-│   │   ├── banner-kuyaypet.svg      # Banner vectorial del proyecto
-│   │   └── logo-kuyaypet.png        # Logo oficial
-│   └── diagrams/
-│       └── recorrido-adopcion.svg   # Flujo de la experiencia
-│
-├── docs/
-│   ├── historias-de-usuario.md      # Catálogo de HU-01 a HU-26
-│   └── GUIA_DE_SUBIDA.md            # Instrucciones para GitHub
-│
-└── historias-de-usuario/
-    ├── README.md                     # Índice de futuras entregas de código
-    └── PLANTILLA_HU.md              # Plantilla para documentar cada HU
-```
-
-**Próxima etapa:** agregar cada implementación en su propia carpeta, por ejemplo `historias-de-usuario/HU-01/`, junto con su explicación y sus pruebas. **La tecnología de implementación todavía no se especifica aquí** para no atribuir al proyecto herramientas que no se hayan definido.
-
-## 🚀 Avance del proyecto
-
-- [x] Definición de la idea y alcance de KuyayPet.
-- [x] Identificación de los principales tipos de usuario.
-- [x] Elaboración de las 26 historias de usuario.
-- [x] Redacción de criterios de aceptación y elaboración de prototipos de referencia.
-- [ ] Organización y publicación de los modelos UML definitivos.
-- [ ] Implementación del código asociado a las HU.
-- [ ] Pruebas funcionales y validación de los criterios de aceptación.
-- [ ] Integración y presentación de la aplicación.
 
 ## 🎓 Contexto académico
 
