@@ -1,6 +1,47 @@
-# HU-02 — Pruebas funcionales: Visualización de mascotas disponibles
+# 7. Pruebas — Sprint 1
 
-## 1. Información general
+Cada responsable registra aquí la prueba de su historia de usuario contra los criterios de aceptación. Los estados se cambian a `Aprobado` o `Fallido` solo después de ejecutar la prueba y observar el resultado; no se registran resultados anticipados.
+
+El código a probar es el prototipo v0.3 en [`Codigo_Repositorio/kuyaypet-web/`](../../Codigo_Repositorio/kuyaypet-web/), desplegado en https://firebrick-cod-910257.hostingersite.com/#/. Las pruebas automáticas del prototipo no reemplazan esta validación manual.
+
+## Índice
+
+| HU | Responsables | Estado |
+|---|---|---|
+| [HU-01 — Registro de usuario](#hu-01--registro-de-usuario) | Dylan Quispe · Joseph-L-Q | Pendiente |
+| [HU-02 — Visualización de mascotas disponibles](#hu-02--pruebas-funcionales-visualización-de-mascotas-disponibles) | Gael Milla (datos de prueba) · DevBrad · kevinesty | Pendiente |
+| [HU-03 — Ver perfil de una mascota](#hu-03--ver-perfil-de-una-mascota) | IchiSieben · kevinesty | Criterios 1-2 aprobados · criterio 3 pendiente (#33) |
+
+## HU-01 — Registro de usuario
+
+- **Responsables:** Dylan Quispe (requisitos y criterios) · Joseph-L-Q (ejecución de pruebas)
+- **Fecha planificada:** 16 de octubre de 2026
+- **Estado:** Pendiente de ejecución
+
+### Criterios de aceptación a verificar
+
+> Propuesta, pendiente de validar con el equipo (ver issue de la HU).
+
+| ID | Criterio | Resultado observado | Estado |
+|---|---|---|---|
+| P-HU-01-01 | Campos obligatorios vacíos: el sistema indica qué falta y no crea la cuenta | Por completar | Pendiente |
+| P-HU-01-02 | Correo con formato inválido o contraseña que no cumple requisitos: se muestra el error y no se crea la cuenta | Por completar | Pendiente |
+| P-HU-01-03 | Correo ya registrado: se informa y no se crea una cuenta duplicada | Por completar | Pendiente |
+| P-HU-01-04 | Datos válidos: se crea la cuenta y se confirma el registro | Por completar | Pendiente |
+
+### Evidencias
+
+**Enlaces a evidencias:** Por completar.
+
+### Incidencias encontradas
+
+| ID | Descripción de la incidencia | Acción correctiva | Estado |
+|---|---|---|---|
+| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
+
+## HU-02 — Pruebas funcionales: Visualización de mascotas disponibles
+
+### 1. Información general
 
 - **Proyecto:** KuyayPet
 - **Sprint:** Sprint 1 — Semana 9
@@ -9,17 +50,17 @@
 - **Fecha planificada:** 16 de octubre de 2026
 - **Estado:** Pendiente de ejecución
 
-## 2. Objetivo
+### 2. Objetivo
 
 Verificar que la funcionalidad de visualización de mascotas de KuyayPet permita consultar las mascotas disponibles para adopción, mostrando correctamente sus datos principales y su disponibilidad.
 
 También se comprobará que el sistema presente un mensaje informativo cuando no existan mascotas disponibles.
 
-## 3. Historia de usuario
+### 3. Historia de usuario
 
 **Como** adoptante, quiero visualizar las mascotas disponibles para adopción, para conocer las opciones y seleccionar las de mi interés.
 
-## 4. Criterios de aceptación
+### 4. Criterios de aceptación
 
 La funcionalidad deberá cumplir los siguientes criterios:
 
@@ -31,9 +72,9 @@ La funcionalidad deberá cumplir los siguientes criterios:
 6. Mostrar un mensaje informativo cuando no existan mascotas disponibles.
 7. Adaptar correctamente la visualización a computadoras y dispositivos móviles.
 
-## 5. Casos de prueba
+### 5. Casos de prueba
 
-### P-06: Lista de mascotas disponibles
+#### P-06: Lista de mascotas disponibles
 
 **Objetivo:** Comprobar que el sistema muestre únicamente las mascotas disponibles para adopción.
 
@@ -45,7 +86,7 @@ La funcionalidad deberá cumplir los siguientes criterios:
 - **Resultado observado:** Por completar después de ejecutar la prueba.
 - **Estado:** Pendiente.
 
-### P-07: Verificación de campos visibles
+#### P-07: Verificación de campos visibles
 
 **Objetivo:** Comprobar que cada mascota muestre sus datos principales.
 
@@ -57,7 +98,7 @@ La funcionalidad deberá cumplir los siguientes criterios:
 - **Resultado observado:** Por completar después de ejecutar la prueba.
 - **Estado:** Pendiente.
 
-### P-08: Lista sin mascotas disponibles
+#### P-08: Lista sin mascotas disponibles
 
 **Objetivo:** Verificar el comportamiento del sistema cuando no existan mascotas disponibles para adopción.
 
@@ -69,7 +110,7 @@ La funcionalidad deberá cumplir los siguientes criterios:
 - **Resultado observado:** Por completar después de ejecutar la prueba.
 - **Estado:** Pendiente.
 
-### P-09: Adaptación a computadora y dispositivos móviles
+#### P-09: Adaptación a computadora y dispositivos móviles
 
 **Objetivo:** Comprobar que la lista de mascotas se visualice correctamente en diferentes tamaños de pantalla.
 
@@ -82,7 +123,7 @@ La funcionalidad deberá cumplir los siguientes criterios:
 - **Resultado observado:** Por completar después de ejecutar la prueba.
 - **Estado:** Pendiente.
 
-## 6. Registro de resultados
+### 6. Registro de resultados
 
 | ID | Caso de prueba | Resultado esperado | Resultado observado | Estado |
 |---|---|---|---|---|
@@ -93,7 +134,7 @@ La funcionalidad deberá cumplir los siguientes criterios:
 
 **Nota:** Los estados deberán actualizarse a `Aprobado` o `Fallido` únicamente después de ejecutar cada prueba y comprobar su resultado.
 
-## 7. Datos de prueba
+### 7. Datos de prueba
 
 Para ejecutar las pruebas se podrán utilizar registros de mascotas identificados como datos de prueba.
 
@@ -106,7 +147,7 @@ Se recomienda considerar los siguientes escenarios:
 
 Los datos de prueba deben identificarse claramente y no deben presentarse como evidencia de que otras historias de usuario ya fueron implementadas.
 
-## 8. Evidencias
+### 8. Evidencias
 
 Después de ejecutar las pruebas, se deberán incorporar evidencias que permitan verificar los resultados.
 
@@ -117,7 +158,7 @@ Después de ejecutar las pruebas, se deberán incorporar evidencias que permitan
 
 **Enlaces a evidencias:** Por completar.
 
-## 9. Incidencias encontradas
+### 9. Incidencias encontradas
 
 Registrar los errores o comportamientos inesperados detectados durante la ejecución.
 
@@ -125,10 +166,62 @@ Registrar los errores o comportamientos inesperados detectados durante la ejecuc
 |---|---|---|---|
 | — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
 
-## 10. Conclusión
+### 10. Conclusión
 
 La ejecución de estos casos de prueba permitirá verificar si la funcionalidad HU-02 cumple con los criterios de aceptación establecidos para el Sprint 1 de KuyayPet.
 
 La historia de usuario se considerará validada cuando las pruebas correspondientes hayan sido ejecutadas, los resultados sean satisfactorios y existan evidencias verificables.
 
 **Estado final:** Pendiente de ejecución y validación.
+
+## HU-03 — Ver perfil de una mascota
+
+- **Responsables:** IchiSieben (perfil y consistencia, tarea #32) · kevinesty (adaptación a computadora y móvil, tarea #33)
+- **Fecha de ejecución:** 16 de octubre de 2026
+- **Ejecutada por:** IchiSieben
+- **Versión probada:** prototipo v0.3 (`Codigo_Repositorio/kuyaypet-web`, rama `feature/prototipo-v0.3`), servido localmente con `vite preview`
+- **Estado:** Criterios 1 y 2 aprobados · criterio 3 pendiente (tarea #33)
+
+### Qué se probó
+
+Con la cuenta demo de adoptante se abrió `/buscar`, se seleccionó la tarjeta de cada mascota y se comparó lo mostrado en la tarjeta con su perfil. Se eligieron tres mascotas de los datos semilla (`src/data/seed/pets.json`) que cubren los casos de datos opcionales (`story` = "Mi historia", `specialCare` = "Cuidados especiales"):
+
+| Mascota | Datos opcionales en la semilla |
+|---|---|
+| `p01` Porotopo | Historia y cuidados especiales |
+| `p02` Max | Solo historia |
+| `p03` Toby | Ninguno |
+
+La verificación se automatizó con Playwright (`verify-hu03.spec.ts`, conservado por IchiSieben en su repositorio de herramientas `kuyaypet-scrum-tools` junto con los pasos para repetirla) en un viewport de 390×844. Para cada mascota se registraron los textos de la tarjeta y del perfil, los errores de consola y las capturas.
+
+### Criterios de aceptación verificados
+
+> Propuesta, pendiente de validar con el equipo (ver issue #3).
+
+| ID | Criterio | Resultado observado | Estado |
+|---|---|---|---|
+| P-HU-03-01 | Al seleccionar una mascota se muestra el perfil que le corresponde | Las tres tarjetas abren `#/mascota/p01`, `#/mascota/p02` y `#/mascota/p03`, con el nombre correcto. Nombre, especie · raza y edad del perfil coinciden con la tarjeta; el distrito del perfil agrega ", Lima · a N km" | Aprobado |
+| P-HU-03-02 | Sin datos opcionales, el perfil se muestra sin errores ni campos inconsistentes | "Mi historia" aparece solo en p01 y p02; "Cuidados especiales" solo en p01. En p03 no aparecen encabezados vacíos. No hay textos `undefined`, `null` ni `NaN`, y no hay errores de consola en ninguna de las tres | Aprobado |
+| P-HU-03-03 | El perfil se ve legible en computadora y en móvil | No se ejecutó en esta tarea: se probó solo en móvil (390×844). La revisión en computadora corresponde a la tarea #33 (kevinesty) | Pendiente |
+
+### Datos observados
+
+| Mascota | Tarjeta (nombre · especie y raza · edad · distrito) | Perfil (nombre · especie y raza · edad · distrito) |
+|---|---|---|
+| p01 | Porotopo · Perro · Schnauzer · 5 años · San Miguel | Porotopo · Perro · Schnauzer · 5 años · San Miguel, Lima · a 8.3 km |
+| p02 | Max · Perro · Schnauzer · 3 meses · Cercado de Lima | Max · Perro · Schnauzer · 3 meses · Cercado de Lima, Lima · a 9.0 km |
+| p03 | Toby · Perro · Cocker Spaniel · 6 meses · San Miguel | Toby · Perro · Cocker Spaniel · 6 meses · San Miguel, Lima · a 7.8 km |
+
+### Evidencias
+
+| Mascota | Tarjeta | Perfil | Secciones opcionales |
+|---|---|---|---|
+| p01 | [tarjeta](evidencias/HU-03-p01-tarjeta.png) | [perfil](evidencias/HU-03-p01-perfil.png) | [detalle](evidencias/HU-03-p01-perfil-detalle.png) |
+| p02 | [tarjeta](evidencias/HU-03-p02-tarjeta.png) | [perfil](evidencias/HU-03-p02-perfil.png) | [detalle](evidencias/HU-03-p02-perfil-detalle.png) |
+| p03 | [tarjeta](evidencias/HU-03-p03-tarjeta.png) | [perfil](evidencias/HU-03-p03-perfil.png) | [detalle](evidencias/HU-03-p03-perfil-detalle.png) |
+
+### Incidencias encontradas
+
+| ID | Descripción de la incidencia | Acción correctiva | Estado |
+|---|---|---|---|
+| — | Ninguna en los criterios 1 y 2 | — | — |

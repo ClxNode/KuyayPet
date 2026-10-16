@@ -5,6 +5,12 @@ El código fuente de **KuyayPet** se gestiona mediante Git y GitHub, lo que perm
 
 **Repositorio principal:** [ClxNode/KuyayPet](https://github.com/ClxNode/KuyayPet)
 
+## Código del prototipo
+
+- **Carpeta del código:** [`Codigo_Repositorio/kuyaypet-web/`](../../Codigo_Repositorio/kuyaypet-web/) — instrucciones en [`Codigo_Repositorio/readme.md`](../../Codigo_Repositorio/readme.md).
+- **Pull request:** [#35 — Prototipo v0.3 — implementación de referencia de las 26 HU](https://github.com/ClxNode/KuyayPet/pull/35) (pendiente de revisión; no cierra las HU).
+- **Estado:** HU-01, HU-02 y HU-03 están implementadas en el prototipo y pendientes de validación por sus responsables en [`7.Pruebas`](../7.Pruebas/readme.md).
+
 ## Historias de usuario del Sprint 1
 
 | Código | Historia de usuario | Prioridad |

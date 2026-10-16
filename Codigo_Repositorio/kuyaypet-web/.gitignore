@@ -1,0 +1,21 @@
+node_modules
+dist
+dev-dist
+*.local
+.env
+.env.*.local
+coverage
+test-results
+playwright-report
+dist.zip
+.vite
+backups
+
+# Local session artefacts
+.claude/
+docs/handoffs/
+
+# Group repo: never commit env files; Playwright writes screenshots here
+.env*
+!.env.example
+docs/screenshots/
