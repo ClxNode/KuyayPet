@@ -10,7 +10,7 @@ El código a probar es el prototipo v0.3 en [`Codigo_Repositorio/kuyaypet-web/`]
 |---|---|---|
 | [HU-01 — Registro de usuario](#hu-01--registro-de-usuario) | Dylan Quispe · Joseph-L-Q | Pendiente |
 | [HU-02 — Visualización de mascotas disponibles](#hu-02--pruebas-funcionales-visualización-de-mascotas-disponibles) | Gael Milla (datos de prueba) · DevBrad · kevinesty | Pendiente |
-| [HU-03 — Ver perfil de una mascota](#hu-03--ver-perfil-de-una-mascota) | IchiSieben · kevinesty | Pendiente |
+| [HU-03 — Ver perfil de una mascota](#hu-03--ver-perfil-de-una-mascota) | IchiSieben · kevinesty | Criterios 1-2 aprobados · criterio 3 pendiente (#33) |
 
 ## HU-01 — Registro de usuario
 
@@ -176,26 +176,52 @@ La historia de usuario se considerará validada cuando las pruebas correspondien
 
 ## HU-03 — Ver perfil de una mascota
 
-- **Responsables:** IchiSieben (perfil y consistencia) · kevinesty (adaptación a computadora y móvil)
-- **Fecha planificada:** 16 de octubre de 2026
-- **Estado:** Pendiente de ejecución
+- **Responsables:** IchiSieben (perfil y consistencia, tarea #32) · kevinesty (adaptación a computadora y móvil, tarea #33)
+- **Fecha de ejecución:** 16 de octubre de 2026
+- **Ejecutada por:** IchiSieben
+- **Versión probada:** prototipo v0.3 (`Codigo_Repositorio/kuyaypet-web`, rama `feature/prototipo-v0.3`), servido localmente con `vite preview`
+- **Estado:** Criterios 1 y 2 aprobados · criterio 3 pendiente (tarea #33)
 
-### Criterios de aceptación a verificar
+### Qué se probó
 
-> Propuesta, pendiente de validar con el equipo (ver issue de la HU).
+Con la cuenta demo de adoptante se abrió `/buscar`, se seleccionó la tarjeta de cada mascota y se comparó lo mostrado en la tarjeta con su perfil. Se eligieron tres mascotas de los datos semilla (`src/data/seed/pets.json`) que cubren los casos de datos opcionales (`story` = "Mi historia", `specialCare` = "Cuidados especiales"):
+
+| Mascota | Datos opcionales en la semilla |
+|---|---|
+| `p01` Porotopo | Historia y cuidados especiales |
+| `p02` Max | Solo historia |
+| `p03` Toby | Ninguno |
+
+La verificación se automatizó con Playwright (`verify-hu03.spec.ts`) en un viewport de 390×844. Para cada mascota se registraron los textos de la tarjeta y del perfil, los errores de consola y las capturas.
+
+### Criterios de aceptación verificados
+
+> Propuesta, pendiente de validar con el equipo (ver issue #3).
 
 | ID | Criterio | Resultado observado | Estado |
 |---|---|---|---|
-| P-HU-03-01 | Al seleccionar una mascota se muestra el perfil que le corresponde | Por completar | Pendiente |
-| P-HU-03-02 | Sin datos opcionales, el perfil se muestra sin errores ni campos inconsistentes | Por completar | Pendiente |
-| P-HU-03-03 | El perfil se ve legible en computadora y en móvil | Por completar | Pendiente |
+| P-HU-03-01 | Al seleccionar una mascota se muestra el perfil que le corresponde | Las tres tarjetas abren `#/mascota/p01`, `#/mascota/p02` y `#/mascota/p03`, con el nombre correcto. Nombre, especie · raza y edad del perfil coinciden con la tarjeta; el distrito del perfil agrega ", Lima · a N km" | Aprobado |
+| P-HU-03-02 | Sin datos opcionales, el perfil se muestra sin errores ni campos inconsistentes | "Mi historia" aparece solo en p01 y p02; "Cuidados especiales" solo en p01. En p03 no aparecen encabezados vacíos. No hay textos `undefined`, `null` ni `NaN`, y no hay errores de consola en ninguna de las tres | Aprobado |
+| P-HU-03-03 | El perfil se ve legible en computadora y en móvil | No se ejecutó en esta tarea: se probó solo en móvil (390×844). La revisión en computadora corresponde a la tarea #33 (kevinesty) | Pendiente |
+
+### Datos observados
+
+| Mascota | Tarjeta (nombre · especie y raza · edad · distrito) | Perfil (nombre · especie y raza · edad · distrito) |
+|---|---|---|
+| p01 | Porotopo · Perro · Schnauzer · 5 años · San Miguel | Porotopo · Perro · Schnauzer · 5 años · San Miguel, Lima · a 8.3 km |
+| p02 | Max · Perro · Schnauzer · 3 meses · Cercado de Lima | Max · Perro · Schnauzer · 3 meses · Cercado de Lima, Lima · a 9.0 km |
+| p03 | Toby · Perro · Cocker Spaniel · 6 meses · San Miguel | Toby · Perro · Cocker Spaniel · 6 meses · San Miguel, Lima · a 7.8 km |
 
 ### Evidencias
 
-**Enlaces a evidencias:** Por completar.
+| Mascota | Tarjeta | Perfil | Secciones opcionales |
+|---|---|---|---|
+| p01 | [tarjeta](evidencias/HU-03-p01-tarjeta.png) | [perfil](evidencias/HU-03-p01-perfil.png) | [detalle](evidencias/HU-03-p01-perfil-detalle.png) |
+| p02 | [tarjeta](evidencias/HU-03-p02-tarjeta.png) | [perfil](evidencias/HU-03-p02-perfil.png) | [detalle](evidencias/HU-03-p02-perfil-detalle.png) |
+| p03 | [tarjeta](evidencias/HU-03-p03-tarjeta.png) | [perfil](evidencias/HU-03-p03-perfil.png) | [detalle](evidencias/HU-03-p03-perfil-detalle.png) |
 
 ### Incidencias encontradas
 
 | ID | Descripción de la incidencia | Acción correctiva | Estado |
 |---|---|---|---|
-| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
+| — | Ninguna en los criterios 1 y 2 | — | — |
