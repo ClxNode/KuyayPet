@@ -230,9 +230,9 @@ La verificación se automatizó con Playwright (`verify-hu03.spec.ts`, conservad
 
 > Esta sección **no reemplaza** los planes de prueba de arriba ni cambia sus estados: cada responsable sigue validando su HU y marcando `Aprobado` o `Fallido`. Aquí solo se registra lo que observó una ejecución automática con Playwright, para que sirva de evidencia de apoyo.
 
-- **Fecha de ejecución:** 28 de octubre de 2026, 10:38 (hora de Lima)
-- **Ejecutada por:** IchiSieben (con Claude Code), en la rama `sprint-2/preparacion`
-- **Versión probada:** prototipo v0.3 (`Codigo_Repositorio/kuyaypet-web`), `npm run build` + `vite preview` local en el puerto 4199
+- **Fecha de ejecución:** 28 de octubre de 2026 (segunda corrida, con las correcciones de I-01 e I-02 integradas)
+- **Ejecutada por:** IchiSieben (con Claude Code), en la rama `sprint-2/evidencias-automatizadas` (base `sprint-2/integracion`)
+- **Versión probada:** prototipo v0.3 (`Codigo_Repositorio/kuyaypet-web`), `npm run build` + `vite preview` local en el puerto 4201
 - **Viewport:** móvil 390×844 (iPhone 13, Chromium); P-09 agrega una ventana de computadora de 1280×800
 - **Specs:** [`tests/evidencias/HU-01.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-01.spec.ts), [`HU-02.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-02.spec.ts), [`HU-03.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-03.spec.ts)
 
@@ -240,13 +240,13 @@ La verificación se automatizó con Playwright (`verify-hu03.spec.ts`, conservad
 
 ```bash
 npm run build
-npx vite preview --port 4199 --strictPort          # terminal 1
+npx vite preview --port 4201 --strictPort          # terminal 1
 EVIDENCIAS_DIR=../../Sprint_01/7.Pruebas/evidencias \
 VIDEOS_DIR=<carpeta fuera del repo> \
-BASE_URL=http://localhost:4199/ node scripts/record-hu.mjs 01 02 03   # terminal 2
+BASE_URL=http://localhost:4201/ node scripts/record-hu.mjs 01 02 03   # terminal 2
 ```
 
-**Resultado:** 3 de 3 specs pasaron (HU-01 8,3 s · HU-02 9,5 s · HU-03 13,2 s). La suite habitual (`npm run test:e2e`) sigue en 21/21 y `npm test` en 22/22: el proyecto `evidencias` solo existe cuando se corre `record-hu.mjs`.
+**Resultado:** 3 de 3 specs pasaron (videos: HU-01 8 s · HU-02 10 s · HU-03 18 s). La suite habitual (`npx playwright test --workers=1`) sigue en verde (54/54): el proyecto `evidencias` solo existe cuando se corre `record-hu.mjs`.
 
 ### HU-01 — capturas por caso
 
@@ -264,18 +264,34 @@ BASE_URL=http://localhost:4199/ node scripts/record-hu.mjs 01 02 03   # terminal
 |---|---|---|---|
 | P-06 | Comparar las tarjetas de `/buscar` con los datos guardados | 34 tarjetas = las 34 mascotas con estado "disponible" y publicación aprobada; las 6 restantes no aparecen (2 adoptadas, 1 retirada, 2 en revisión y 1 rechazada) | [P-06](evidencias/HU-02/P-06-lista-disponibles.png) |
 | P-07 | Revisar la primera tarjeta contra sus datos | Muestra foto, nombre, especie · raza, edad y distrito, y coinciden con lo registrado | [P-07](evidencias/HU-02/P-07-campos-visibles.png) |
-| P-08 | Escenario preparado: todas las mascotas marcadas como adoptadas | No aparece ninguna tarjeta y se muestra un mensaje informativo (ver incidencia I-01) | [P-08](evidencias/HU-02/P-08-sin-mascotas-disponibles.png) |
-| P-09 | Lista en 390×844 y en 1280×800 | En móvil, grilla de 2 columnas legible. En computadora la app se muestra dentro de un marco de teléfono, con el panel de presentador al lado (ver incidencia I-02) | [móvil](evidencias/HU-02/P-09-movil-390x844.png) · [computadora](evidencias/HU-02/P-09-computadora-1280x800.png) |
+| P-08 | Escenario preparado: todas las mascotas marcadas como adoptadas | No aparece ninguna tarjeta y el título dice «No hay mascotas disponibles por ahora» (I-01 resuelta) | [P-08](evidencias/HU-02/P-08-sin-mascotas-disponibles.png) |
+| P-09 | Lista en 390×844 y en 1280×800 | En móvil, grilla de 2 columnas legible. En computadora la lista usa el ancho completo en 4 columnas, con la barra de navegación inferior (I-02 resuelta) | [móvil](evidencias/HU-02/P-09-movil-390x844.png) · [computadora](evidencias/HU-02/P-09-computadora-1280x800.png) |
+
+### HU-03 — Ver perfil de una mascota (capturas por criterio)
+
+Spec: [`tests/evidencias/HU-03.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-03.spec.ts) · Comando: `node scripts/record-hu.mjs 03` (comando completo arriba) · Fecha: 2026-10-28 · Duración del video: 18 s
+
+| Criterio | Captura | Resultado automatizado | Resultado manual |
+|---|---|---|---|
+| 1. Ver perfil | [captura](evidencias/HU-03/P-HU-03-01-perfil-detallado.png) | Al tocar la tarjeta de p01 se abre su perfil con el nombre correcto | ✋ kevinesty |
+| 2. Foto, nombre, especie, raza, edad y ubicación | [captura](evidencias/HU-03/P-HU-03-02-foto-y-datos-basicos.png) | Foto, `Perro · Schnauzer`, `5 años` y `San Miguel, Lima` visibles y iguales al dato guardado | ✋ kevinesty |
+| 3. Información adicional | [captura](evidencias/HU-03/P-HU-03-03-informacion-adicional.png) | Sección «Información adicional» con descripción, historia y cuidados especiales de p01 | ✋ kevinesty |
+| 4. Datos iguales a los del responsable | [captura](evidencias/HU-03/P-HU-03-04-datos-coinciden-p02.png) | p01, p02 y p03: especie, raza, edad, distrito, sexo, tamaño, descripción e historia coinciden con el store (captura de p02) | ✋ kevinesty |
+| 5. Sin información adicional | [captura](evidencias/HU-03/P-HU-03-05-sin-informacion-adicional.png) | p03 no muestra «Mi historia» ni «Cuidados especiales», ni `undefined`/`NaN`/`null` | ✋ kevinesty |
+
+Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_01/HU-03.mp4)
 
 ### Incidencias observadas en la ejecución automatizada
 
 | ID | Descripción | Acción correctiva propuesta | Estado |
 |---|---|---|---|
-| I-01 (HU-02, P-08) | Sin mascotas disponibles y **sin filtros aplicados**, el título dice "No hay mascotas que cumplan estos criterios. Prueba con otros filtros." El subtítulo sí es pertinente ("Vuelve pronto: los albergues publican nuevas mascotas cada semana."). El criterio pide "un mensaje informativo": hay mensaje, pero el texto principal habla de filtros | Mostrar "No hay mascotas disponibles por ahora" cuando no hay filtros activos | ✋ Pendiente: DevBrad decide si es Aprobado con observación o Fallido |
-| I-02 (HU-02, P-09) | En computadora no hay un diseño de escritorio: la app se ve dentro de un marco de teléfono (decisión de diseño del prototipo para presentar en clase) | Ninguna, si el equipo acepta el marco como "adaptación a computadora" | ✋ Pendiente: kevinesty lo valida en la tarea #33 |
+| I-01 (HU-02, P-08) | Sin mascotas disponibles y **sin filtros aplicados**, el título dice "No hay mascotas que cumplan estos criterios. Prueba con otros filtros." El subtítulo sí es pertinente ("Vuelve pronto: los albergues publican nuevas mascotas cada semana."). El criterio pide "un mensaje informativo": hay mensaje, pero el texto principal habla de filtros | Mostrar "No hay mascotas disponibles por ahora" cuando no hay filtros activos | Resuelta por el PR "#52 (I-01)": sin filtros y sin mascotas el título es «No hay mascotas disponibles por ahora». ✋ DevBrad confirma |
+| I-02 (HU-02, P-09) | En computadora no hay un diseño de escritorio: la app se ve dentro de un marco de teléfono (decisión de diseño del prototipo para presentar en clase) | Diseño de escritorio sin marco de teléfono | Resuelta por el PR "#53 (I-02)": diseño de escritorio de ancho completo. ✋ kevinesty lo valida en la tarea #33 |
 
 ### Videos por HU
 
-Un video por HU grabado por la misma ejecución (móvil, 390×844): `HU-01.mp4` (8 s), `HU-02.mp4` (10 s), `HU-03.mp4` (14 s, recorrido de p01, p02 y p03 de la tarea #32). No se suben a git por su peso.
+Un video por HU grabado por la misma ejecución (móvil, 390×844): `HU-01.mp4` (8 s), `HU-02.mp4` (10 s), `HU-03.mp4` (18 s, ahora con una captura por criterio). No se suben a git por su peso.
 
-> ✋ Pendiente: subir videos a Drive y pegar enlace.
+- Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_01/HU-01.mp4)
+- Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_01/HU-02.mp4)
+- Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_01/HU-03.mp4)
