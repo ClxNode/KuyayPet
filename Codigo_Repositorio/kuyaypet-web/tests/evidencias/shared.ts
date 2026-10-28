@@ -25,3 +25,27 @@ export async function freshStart(page: Page) {
 export async function readDb(page: Page): Promise<any> {
   return page.evaluate(() => JSON.parse(localStorage.getItem('kuyaypet-db') || '{}').state);
 }
+
+/** Switches the persisted session without going through the login form (demo shortcut used by the criterion tests). */
+export async function switchSession(page: Page, userId: string) {
+  await page.evaluate((id) => {
+    const raw = JSON.parse(localStorage.getItem('kuyaypet-db')!);
+    raw.state.sessionUserId = id;
+    localStorage.setItem('kuyaypet-db', JSON.stringify(raw));
+  }, userId);
+  await page.goto('./');
+  await page.reload();
+}
+
+export async function login(page: Page, email: string) {
+  await page.getByLabel('Correo electrónico').fill(email);
+  await page.locator('#password').fill('kuyay2026');
+  await page.getByRole('button', { name: 'Entrar' }).click();
+}
+
+export async function logout(page: Page) {
+  await page.goto('./#/perfil');
+  await page.getByRole('button', { name: 'Cerrar sesión' }).click();
+  await page.getByRole('alertdialog').getByRole('button', { name: 'Cerrar sesión' }).click();
+  await page.waitForURL(/#\/login/);
+}
