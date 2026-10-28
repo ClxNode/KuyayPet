@@ -67,6 +67,22 @@ test('HU-04 y HU-05: filtros y cercanía en /buscar', async ({ page }) => {
   }
 });
 
+test('HU-02: mensaje cuando no hay mascotas disponibles', async ({ page }) => {
+  await loginAsAdopter(page);
+  await page.goto('./#/buscar');
+  await expect(page.locator('[data-hu="HU-02"]')).toBeVisible();
+  await page.evaluate(() => {
+    const raw = JSON.parse(localStorage.getItem('kuyaypet-db')!);
+    raw.state.pets = raw.state.pets.map((p: { status: string }) => ({ ...p, status: 'adoptada' }));
+    localStorage.setItem('kuyaypet-db', JSON.stringify(raw));
+  });
+  await page.reload();
+  await expect(page.locator('[data-hu="HU-02"] a[href^="#/mascota/"]')).toHaveCount(0);
+  await expect(page.getByText('No hay mascotas disponibles por ahora')).toBeVisible();
+  await expect(page.getByText(/Vuelve pronto/)).toBeVisible();
+  await shot(page, 'HU-02-sin-disponibles');
+});
+
 test('HU-09: unirme al chat grupal de una mascota', async ({ page }) => {
   await loginAsAdopter(page);
   await page.goto('./#/buscar');
