@@ -2,6 +2,8 @@
 
 ## Ejecución automatizada (complementa las pruebas manuales)
 
+Videos de todas las HU en Drive: [carpeta videos-hu](https://drive.google.com/open?id=1e3GcYnJlez_F5GLwqA6CveFjX5wRCiQV) (`Gdrive:02-Proyectos/produccion/kuyaypet/videos-hu/`).
+
 > Esta sección **no reemplaza** las pruebas manuales: cada responsable sigue validando su HU. Aquí solo se registra lo que observó una ejecución automática con Playwright.
 
 - **Fecha de ejecución:** 2026-10-28
@@ -35,7 +37,7 @@ Comando: `... node scripts/record-hu.mjs 06` · Fecha: 2026-10-28 · Duración d
 | 4. Confirmación visual | [P-HU-06-04](evidencias/HU-06/P-HU-06-04-confirmacion-visual.png) | Aviso con el nombre de la mascota tras elegir | ✋ por asignar |
 | 5. Continuar con otra mascota | [P-HU-06-05](evidencias/HU-06/P-HU-06-05-siguiente-mascota.png) | Cambia la tarjeta superior y los botones siguen disponibles | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_03/HU-06.mp4)
+Video: [HU-06.mp4 en Drive](https://drive.google.com/open?id=1WqRmsS3Emf5mn9CCLKnQX2xfXYw7Qy4A)
 
 ### HU-07 — Recibir un Match por compatibilidad
 
@@ -52,7 +54,7 @@ Comando: `... node scripts/record-hu.mjs 07` · Fecha: 2026-10-28 · Duración d
 | 7. Match registrado en la cuenta | [P-HU-07-07](evidencias/HU-07/P-HU-07-07-match-registrado-en-la-cuenta.png) | Sigue visible tras recargar y tras cerrar e iniciar sesión de nuevo | ✋ por asignar |
 | 8. Sin interés compatible no hay Match | [P-HU-07-08](evidencias/HU-07/P-HU-07-08-rechazo-sin-match.png) | Tras rechazar el interés en Lucas no existe Match de esa mascota; el total de Matches no cambia | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_03/HU-07.mp4)
+Video: [HU-07.mp4 en Drive](https://drive.google.com/open?id=1712oyfej3erbcjYo1k3kwqtDNjybcoaE)
 
 ### HU-08 — Comunicarse con el responsable
 
@@ -70,7 +72,7 @@ Comando: `... node scripts/record-hu.mjs 08` · Fecha: 2026-10-28 · Duración d
 | 8. Consultar el historial después | [P-HU-08-08](evidencias/HU-08/P-HU-08-08-historial-reabierto.png) | Tras recargar y reabrir desde la lista, todos los mensajes siguen | ✋ por asignar |
 | 9. Finalizar conserva el historial | [P-HU-08-09](evidencias/HU-08/P-HU-08-09-conversacion-finalizada-con-historial.png) | Conversación finalizada con el chat deshabilitado; los mensajes se conservan tras recargar | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_03/HU-08.mp4)
+Video: [HU-08.mp4 en Drive](https://drive.google.com/open?id=1hS08zMhhe20a46qaFN9gbSyFpWvc2xp0)
 
 ### HU-09 — Chat entre usuarios interesados
 
@@ -86,7 +88,7 @@ Comando: `... node scripts/record-hu.mjs 09` · Fecha: 2026-10-28 · Duración d
 | 6. Sin sesión pide iniciar sesión | [P-HU-09-06](evidencias/HU-09/P-HU-09-06-sin-sesion-pide-login.png) | Redirige al inicio de sesión sin mostrar mensajes | ✋ por asignar |
 | 7. Mensaje vacío o con espacios | [P-HU-09-07](evidencias/HU-09/P-HU-09-07-enviar-deshabilitado-mensaje-vacio.png) | "Enviar" deshabilitado con campo vacío y con solo espacios; no se agrega ningún mensaje | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_03/HU-09.mp4)
+Video: [HU-09.mp4 en Drive](https://drive.google.com/open?id=1oYzgblc9_SLRhct4rT490oGIsz32NF3u)
 
 ### HU-10 — Coordinar posible adopción
 
@@ -102,7 +104,7 @@ Comando: `... node scripts/record-hu.mjs 10` · Fecha: 2026-10-28 · Duración d
 | 6. Ver si fue aceptada o rechazada | [P-HU-10-06a](evidencias/HU-10/P-HU-10-06a-respuesta-aceptada.png) | Tras responder el responsable, el perfil muestra "Aceptada" ([captura 06b](evidencias/HU-10/P-HU-10-06b-respuesta-rechazada.png): "Rechazada") | ✋ por asignar |
 | 7. Mensaje de confirmación | [P-HU-10-07](evidencias/HU-10/P-HU-10-07-confirmacion-solicitud-enviada.png) | Mensaje "¡Solicitud enviada!" | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_03/HU-10.mp4)
+Video: [HU-10.mp4 en Drive](https://drive.google.com/open?id=10JRrdCFC1VQZcIM1hQRTHJo7dpEY2yk_)
 
 ### HU-13 — Notificación de interés en mascota
 
@@ -116,7 +118,7 @@ Comando: `... node scripts/record-hu.mjs 13` · Fecha: 2026-10-28 · Duración d
 | 4. Lista con datos y leídas/no leídas | [P-HU-13-04](evidencias/HU-13/P-HU-13-04-lista-leidas-y-no-leidas.png) | Muestra adoptante, mascota, fecha y hora; 3 sin leer y 1 leída | ✋ por asignar |
 | 5. Marcar como leída actualiza el contador | [P-HU-13-05a](evidencias/HU-13/P-HU-13-05a-contador-tras-leer-una.png) | El contador baja a 1 al leer una ([marcar todo](evidencias/HU-13/P-HU-13-05b-contador-tras-leer-todo.png): sin contador, "Estás al día") | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_03/HU-13.mp4)
+Video: [HU-13.mp4 en Drive](https://drive.google.com/open?id=1TXfaPvhJoBgY3ZdJgqgP_7z5qD8N_VBa)
 
 ### HU-18 — Historial de mascotas de interés
 
@@ -132,7 +134,7 @@ Comando: `... node scripts/record-hu.mjs 18` · Fecha: 2026-10-28 · Duración d
 | 6. Mascota retirada | [P-HU-18-06](evidencias/HU-18/P-HU-18-06-perfil-retirado-no-disponible.png) | Tomasa indica "Este perfil ya no está disponible" y no es enlace | ✋ por asignar |
 | 7. Historial vacío | [P-HU-18-07](evidencias/HU-18/P-HU-18-07-historial-vacio.png) | Mensaje "Todavía no tienes historial" | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_03/HU-18.mp4)
+Video: [HU-18.mp4 en Drive](https://drive.google.com/open?id=1jf6vImmfBFys79b14p_MZmbtq1fniL7j)
 
 ### HU-20 — Visualización de compatibilidades
 
@@ -148,4 +150,4 @@ Comando: `... node scripts/record-hu.mjs 20` · Fecha: 2026-10-28 · Duración d
 | 6. Sin compatibles: mensaje y editar preferencias | [P-HU-20-06](evidencias/HU-20/P-HU-20-06-sin-compatibles-editar-preferencias.png) | Mensaje "No encontramos mascotas compatibles" y botón "Editar preferencias" (lleva al cuestionario) | ✋ por asignar |
 | 7. Sin preferencias completas | [P-HU-20-07](evidencias/HU-20/P-HU-20-07-sin-preferencias-pide-completarlas.png) | Mensaje "Completa tus preferencias", sin tarjetas; el botón lleva al cuestionario | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_03/HU-20.mp4)
+Video: [HU-20.mp4 en Drive](https://drive.google.com/open?id=1H0Sr8HsibmnwgtQ4xyeJTNFJLTqikD0Q)
