@@ -39,6 +39,17 @@ npx vite preview --port 4199 --strictPort
 BASE_URL=http://localhost:4199/ npx playwright test
 ```
 
+### Evidencias por HU (capturas y video)
+
+Los specs de `tests/evidencias/` graban un video por HU y guardan una captura por caso de prueba. No forman parte de `npm run test:e2e`: solo corren con el script.
+
+```bash
+npx vite preview --port 4199 --strictPort    # en otra terminal
+EVIDENCIAS_DIR=../../Sprint_01/7.Pruebas/evidencias VIDEOS_DIR=<carpeta fuera del repo>   BASE_URL=http://localhost:4199/ node scripts/record-hu.mjs 01 02 03
+```
+
+Deja `HU-NN.webm` (y `HU-NN.mp4` si `ffmpeg` está instalado) en `VIDEOS_DIR`, y las capturas en `EVIDENCIAS_DIR/HU-NN/`.
+
 El build genera `dist/`, que se sube tal cual a un hosting estático (las rutas con `#/` no necesitan reescritura en el servidor).
 
 ## Cuentas demo
