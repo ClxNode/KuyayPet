@@ -228,6 +228,8 @@ La verificación se automatizó con Playwright (`verify-hu03.spec.ts`, conservad
 
 ## Ejecución automatizada (complementa las pruebas manuales)
 
+Videos de todas las HU en Drive: [carpeta videos-hu](https://drive.google.com/open?id=1e3GcYnJlez_F5GLwqA6CveFjX5wRCiQV) (`Gdrive:02-Proyectos/produccion/kuyaypet/videos-hu/`).
+
 > Esta sección **no reemplaza** los planes de prueba de arriba ni cambia sus estados: cada responsable sigue validando su HU y marcando `Aprobado` o `Fallido`. Aquí solo se registra lo que observó una ejecución automática con Playwright, para que sirva de evidencia de apoyo.
 
 - **Fecha de ejecución:** 28 de octubre de 2026 (segunda corrida, con las correcciones de I-01 e I-02 integradas)
@@ -279,7 +281,7 @@ Spec: [`tests/evidencias/HU-03.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 | 4. Datos iguales a los del responsable | [captura](evidencias/HU-03/P-HU-03-04-datos-coinciden-p02.png) | p01, p02 y p03: especie, raza, edad, distrito, sexo, tamaño, descripción e historia coinciden con el store (captura de p02) | ✋ kevinesty |
 | 5. Sin información adicional | [captura](evidencias/HU-03/P-HU-03-05-sin-informacion-adicional.png) | p03 no muestra «Mi historia» ni «Cuidados especiales», ni `undefined`/`NaN`/`null` | ✋ kevinesty |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_01/HU-03.mp4)
+Video: [HU-03.mp4 en Drive](https://drive.google.com/open?id=1LfvP3r7Is-f99a51t3Y5gjA2T5zdG-qJ)
 
 ### Incidencias observadas en la ejecución automatizada
 
@@ -292,6 +294,6 @@ Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_01/HU-03.mp4)
 
 Un video por HU grabado por la misma ejecución (móvil, 390×844): `HU-01.mp4` (8 s), `HU-02.mp4` (10 s), `HU-03.mp4` (18 s, ahora con una captura por criterio). No se suben a git por su peso.
 
-- Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_01/HU-01.mp4)
-- Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_01/HU-02.mp4)
-- Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_01/HU-03.mp4)
+- Video: [HU-01.mp4 en Drive](https://drive.google.com/open?id=1xJK5g8UV8wvEA7DJPV9zvOYEX22ujtx_)
+- Video: [HU-02.mp4 en Drive](https://drive.google.com/open?id=1CWKeursKtfLnhfWbf_sEeK8czYDKw9YO)
+- Video: [HU-03.mp4 en Drive](https://drive.google.com/open?id=1LfvP3r7Is-f99a51t3Y5gjA2T5zdG-qJ)

@@ -632,6 +632,8 @@ HU-19 se considerará validada cuando sus casos se hayan ejecutado, los resultad
 
 ## Ejecución automatizada (complementa las pruebas manuales)
 
+Videos de todas las HU en Drive: [carpeta videos-hu](https://drive.google.com/open?id=1e3GcYnJlez_F5GLwqA6CveFjX5wRCiQV) (`Gdrive:02-Proyectos/produccion/kuyaypet/videos-hu/`).
+
 > Esta sección **no reemplaza** los planes de prueba de arriba (P-10 a P-24) ni cambia sus estados: cada responsable sigue validando su HU y marcando `Aprobado` o `Fallido`. Aquí solo se registra lo que observó una ejecución automática con Playwright, como evidencia de apoyo. Las capturas se nombran `P-HU-NN-<n>-<descripción>`, con `<n>` = número del criterio de aceptación del PDF de historias de usuario.
 
 - **Fecha de ejecución:** 28 de octubre de 2026
@@ -668,7 +670,7 @@ Spec: [`tests/evidencias/HU-04.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 | 9. Perfil desde resultados | [captura](evidencias/HU-04/P-HU-04-09-perfil-desde-resultados.png) | Desde la lista filtrada se abre el perfil de la mascota elegida | ✋ responsable de la tarea #41 |
 | 10. Volver sin filtros | [captura](evidencias/HU-04/P-HU-04-10-vuelta-sin-restricciones.png) | Al salir y volver a /buscar la lista está completa y sin filtros | ✋ responsable de la tarea #41 |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_02/HU-04.mp4)
+Video: [HU-04.mp4 en Drive](https://drive.google.com/open?id=1IAINNZ9lwW3DTfBVuiWuAUj-_iJUhLqp)
 
 ### HU-05 — Búsqueda de mascotas cercanas (capturas por criterio)
 
@@ -682,7 +684,7 @@ Spec: [`tests/evidencias/HU-05.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 | 4. Información y distancia | [captura](evidencias/HU-05/P-HU-05-04-informacion-y-distancia.png) | Cada tarjeta muestra foto, nombre y distancia («a N km»), todas dentro de 5 km | ✋ responsable de la tarea #42 |
 | 5. Sin cercanas | [captura](evidencias/HU-05/P-HU-05-05-sin-mascotas-cercanas.png) | San Isidro a 1 km: «No se encontraron mascotas cercanas» | ✋ responsable de la tarea #42 |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_02/HU-05.mp4)
+Video: [HU-05.mp4 en Drive](https://drive.google.com/open?id=1z6kJwMQXLgTfaewwNrzeJDjXkZxaiMsL)
 
 ### HU-11 — Registrar mascota (capturas por criterio)
 
@@ -697,7 +699,7 @@ Spec: [`tests/evidencias/HU-11.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 | 5. Campos obligatorios | [captura](evidencias/HU-11/P-HU-11-05-campos-obligatorios.png) | Sin datos, «Continuar» muestra una alerta con lo que falta | ✋ responsable de la tarea #38 |
 | 6. Disponible para adopción (comportamiento observado) | [captura](evidencias/HU-11/P-HU-11-06-en-revision-no-visible.png) | La mascota queda «En revisión» y un adoptante **no** la ve en /buscar hasta que el admin la apruebe (ADR-05); difiere del texto literal del criterio | ✋ responsable de la tarea #38 |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_02/HU-11.mp4)
+Video: [HU-11.mp4 en Drive](https://drive.google.com/open?id=1X5hKHtWa7i57dCZn2AQmbuLjYDjLJ7_Y)
 
 ### HU-12 — Editar información textual (capturas por criterio)
 
@@ -711,7 +713,7 @@ Spec: [`tests/evidencias/HU-12.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 | 4. Campo obligatorio vacío | [captura](evidencias/HU-12/P-HU-12-04-campo-obligatorio-vacio.png) | Nombre vacío: campo resaltado, «El nombre no puede estar vacío» y no se guarda | ✋ responsable de la tarea #40 |
 | 5. Perfil público actualizado | [captura](evidencias/HU-12/P-HU-12-05-perfil-publico-actualizado.png) | Tras guardar se abre el perfil público con el nombre y la descripción nuevos | ✋ responsable de la tarea #40 |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_02/HU-12.mp4)
+Video: [HU-12.mp4 en Drive](https://drive.google.com/open?id=1YofEckGlVM9WaueYJpg1RZy2jBHdcVX_)
 
 ### HU-16 — Registro visual y etiquetado (capturas por criterio)
 
@@ -727,7 +729,7 @@ Spec: [`tests/evidencias/HU-16.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 | 6. Confirmación al publicar | [captura](evidencias/HU-16/P-HU-16-06-mensaje-de-confirmacion.png) | Aviso «¡Mascota registrada!» y la mascota aparece en la lista | ✋ responsable de la tarea #39 |
 | 7. Visible para adoptantes | [captura 1](evidencias/HU-16/P-HU-16-07a-en-catalogo.png) · [captura 2](evidencias/HU-16/P-HU-16-07b-perfil-con-foto-y-etiqueta.png) | Tras la aprobación del admin, el adoptante ve la foto en /buscar y, en el perfil, la foto y la etiqueta | ✋ responsable de la tarea #39 |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_02/HU-16.mp4)
+Video: [HU-16.mp4 en Drive](https://drive.google.com/open?id=1QReoI9Af1EnyTJt9StRAZFVa3SW8EMYf)
 
 ### HU-17 — Guardado de mascotas favoritas (capturas por criterio)
 
@@ -743,7 +745,7 @@ Spec: [`tests/evidencias/HU-17.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 | 6. Persistencia | [captura](evidencias/HU-17/P-HU-17-06-favoritos-tras-relogin.png) | Tras cerrar sesión y volver a entrar se conservan las mismas mascotas | ✋ responsable de la tarea #43 |
 | 7. Estado actualizado | [captura](evidencias/HU-17/P-HU-17-07-favorito-adoptada.png) | Un favorito marcado como adoptado muestra «Adoptada 🎉» | ✋ responsable de la tarea #43 |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_02/HU-17.mp4)
+Video: [HU-17.mp4 en Drive](https://drive.google.com/open?id=1oHoT7boVjNjQ9hfIk-SFmaFrxnN3mc0G)
 
 ### HU-19 — Actualización de mascota como adoptada (capturas por criterio)
 
@@ -759,7 +761,7 @@ Spec: [`tests/evidencias/HU-19.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 | 6. Favoritos / historial | [captura](evidencias/HU-19/P-HU-19-06a-favoritos-adoptada.png) | Escenario preparado (un favorito marcado como adoptado en el store): «Adoptada 🎉» en Favoritos. El historial no se asertó: la mascota no figuraba en el historial del adoptante demo | ✋ responsable de la tarea #44 |
 | 7. Solicitud bloqueada | [captura](evidencias/HU-19/P-HU-19-07-solicitud-bloqueada.png) | El perfil dice que ya encontró un hogar, sin botones «Me gusta» ni «Coordinar» | ✋ responsable de la tarea #44 |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_02/HU-19.mp4)
+Video: [HU-19.mp4 en Drive](https://drive.google.com/open?id=172Zik0A35ssFVT-zQDYMOBR0bdzPcMD6)
 
 ### HU-21 — Cierre seguro de sesión (capturas por criterio)
 
@@ -775,4 +777,4 @@ Spec: [`tests/evidencias/HU-21.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 | 6. Inactividad | [captura](evidencias/HU-21/P-HU-21-06-cierre-por-inactividad.png) | Con reloj simulado: a 14 min sigue; a 16 min cierra y avisa «Sesión cerrada por inactividad» | ✋ por asignar |
 | 7. Error al cerrar | [captura 1](evidencias/HU-21/P-HU-21-07a-error-al-cerrar.png) · [captura 2](evidencias/HU-21/P-HU-21-07b-reintento-exitoso.png) | Con un fallo de almacenamiento inyectado: «No se pudo cerrar sesión. Intenta de nuevo.», la sesión sigue activa; el reintento cierra | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_02/HU-21.mp4)
+Video: [HU-21.mp4 en Drive](https://drive.google.com/open?id=1--3qDfrOgcItQb3HPJwBEUX3cjAFtRu_)
