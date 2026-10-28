@@ -4,6 +4,8 @@ El plan de pruebas manual del equipo va arriba de la sección automatizada.
 
 ## Ejecución automatizada
 
+Videos de todas las HU en Drive: [carpeta videos-hu](https://drive.google.com/open?id=1e3GcYnJlez_F5GLwqA6CveFjX5wRCiQV) (`Gdrive:02-Proyectos/produccion/kuyaypet/videos-hu/`).
+
 Fecha: 2026-10-28. Las capturas y videos salen de specs Playwright (`Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-NN.spec.ts`) que asertan cada criterio.
 
 ### HU-14 — Consulta de información sobre adopción
@@ -21,7 +23,7 @@ EVIDENCIAS_DIR=../../Sprint_04/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 | 3 | [P-HU-14-03-guia-desde-mascota](evidencias/HU-14/P-HU-14-03-guia-desde-mascota.png) | El enlace del perfil de la mascota abre la guía y «Volver» regresa al perfil. | ✋ por asignar |
 | 4 | [P-HU-14-04-buscador-contrato](evidencias/HU-14/P-HU-14-04-buscador-contrato.png) | Buscar «contrato» muestra «Seguimiento post-adopción» y oculta las demás categorías; «vacunas» filtra igual. | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_04/HU-14.mp4)
+Video: [HU-14.mp4 en Drive](https://drive.google.com/open?id=1FayJBwq8ulmZnEfJkE1d-7AnUHE2LpjD)
 
 ### HU-15 — Recuperación de contraseña
 
@@ -41,7 +43,7 @@ EVIDENCIAS_DIR=../../Sprint_04/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 | 4 | [P-HU-15-04b-no-coinciden](evidencias/HU-15/P-HU-15-04b-no-coinciden.png) | Confirmación distinta: error «no coinciden». | ✋ por asignar |
 | 5 | [P-HU-15-05-contrasena-actualizada](evidencias/HU-15/P-HU-15-05-contrasena-actualizada.png) | Mensaje «Contraseña actualizada», redirección a «Iniciar sesión» e ingreso con la nueva contraseña. | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_04/HU-15.mp4)
+Video: [HU-15.mp4 en Drive](https://drive.google.com/open?id=1jd6YwpPXVuIRODZgbCQHVhgmRE4nNBH4)
 
 ### HU-22 — Gestionar usuarios
 
@@ -62,7 +64,7 @@ EVIDENCIAS_DIR=../../Sprint_04/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 | 7 | [P-HU-22-07a-mensaje-edicion](evidencias/HU-22/P-HU-22-07a-mensaje-edicion.png) | Mensaje «Cambios guardados» tras editar. | ✋ por asignar |
 | 7 | [P-HU-22-07b-mensaje-desactivacion](evidencias/HU-22/P-HU-22-07b-mensaje-desactivacion.png) | Mensaje «fue desactivado» tras desactivar. | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_04/HU-22.mp4)
+Video: [HU-22.mp4 en Drive](https://drive.google.com/open?id=1RIhlsLFuK_z2x2BWHeI1aXOUWR41zn_Y)
 
 ### HU-23 — Revisar publicaciones de mascotas
 
@@ -81,7 +83,7 @@ EVIDENCIAS_DIR=../../Sprint_04/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 | 5 | [P-HU-23-05-cambios-persistidos](evidencias/HU-23/P-HU-23-05-cambios-persistidos.png) | Tras guardar y recargar, los cambios persisten y se ven en la lista. | ✋ por asignar |
 | 6 | [P-HU-23-06-mensaje-confirmacion](evidencias/HU-23/P-HU-23-06-mensaje-confirmacion.png) | Mensaje «Cambios guardados» al actualizar. | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_04/HU-23.mp4)
+Video: [HU-23.mp4 en Drive](https://drive.google.com/open?id=1SCUFOdsUiVHxRLo3bru4Iku0Z2_oOqrD)
 
 ### HU-24 — Aprobar o rechazar publicaciones
 
@@ -102,7 +104,7 @@ EVIDENCIAS_DIR=../../Sprint_04/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 | 7 | [P-HU-24-07a-mensaje-aprobada](evidencias/HU-24/P-HU-24-07a-mensaje-aprobada.png) | Mensaje de confirmación al aprobar. | ✋ por asignar |
 | 7 | [P-HU-24-07b-mensaje-rechazada](evidencias/HU-24/P-HU-24-07b-mensaje-rechazada.png) | Mensaje de confirmación al rechazar. | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_04/HU-24.mp4)
+Video: [HU-24.mp4 en Drive](https://drive.google.com/open?id=1YP7kkHNERC0KNHOCnfOQif9c6WOTo080)
 
 ### HU-25 — Desactivar cuentas de usuarios
 
@@ -122,7 +124,7 @@ EVIDENCIAS_DIR=../../Sprint_04/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 | 6 | [P-HU-25-06-mensaje-desactivado](evidencias/HU-25/P-HU-25-06-mensaje-desactivado.png) | Mensaje «fue desactivado» al terminar. | ✋ por asignar |
 | 7 | [P-HU-25-07-cuenta-ya-inactiva](evidencias/HU-25/P-HU-25-07-cuenta-ya-inactiva.png) | Una cuenta ya inactiva informa «La cuenta ya está inactiva» y no ofrece desactivar. El criterio está truncado en el PDF («…ya se encuentra»). | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_04/HU-25.mp4)
+Video: [HU-25.mp4 en Drive](https://drive.google.com/open?id=1B11QmebfOXgPh8g4X95LqsiWsow3eVqG)
 
 ### HU-26 — Gestionar información inapropiada (criterios del issue #26; el PDF no incluye HU-26)
 
@@ -139,4 +141,4 @@ EVIDENCIAS_DIR=../../Sprint_04/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 | 1 (issue) | [P-HU-26-01c-publicacion-oculta-en-buscar](evidencias/HU-26/P-HU-26-01c-publicacion-oculta-en-buscar.png) | El adoptante ya no ve la publicación oculta en /buscar; la cuenta desactivada no inicia sesión. | ✋ por asignar |
 | 2 (issue) | [P-HU-26-02-adoptante-rechazado](evidencias/HU-26/P-HU-26-02-adoptante-rechazado.png) | Un usuario sin rol admin es redirigido y no ve las acciones de retiro. | ✋ por asignar |
 
-Video: ✋ Pendiente: subir a Drive (videos-hu/Sprint_04/HU-26.mp4)
+Video: [HU-26.mp4 en Drive](https://drive.google.com/open?id=1fy1FNGqc460AXRTDZNmisBMl1oHKQ4lP)
