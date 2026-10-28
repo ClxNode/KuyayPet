@@ -20,7 +20,7 @@ export default defineConfig({
     serviceWorkers: 'block',
   },
   projects: [
-    { name: 'prototipo', testIgnore: '**/evidencias/**' },
+    { name: 'prototipo', testIgnore: /tests[\\/]evidencias[\\/]/ },
     ...(evidencias
       ? [
           {
