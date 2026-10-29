@@ -9,7 +9,7 @@ Cada integrante completa **su propio bloque** desde la web: lápiz ✏️ → es
 ## Daily Scrum — 2026-10-28
 
 ### 1. DevBrad
-- **Ayer avancé en:** Trabajé en las funcionalidades correspondientes al Sprint 2.
+- **Ayer avancé en:** Trabajé en la interfaz y funcionalidades de KuyayPet.
 - **Hoy trabajaré en:** Revisaré los avances realizados y verificaré que las funcionalidades estén integradas.
 - **Bloqueos o ayuda necesaria:** Ninguno.
 
