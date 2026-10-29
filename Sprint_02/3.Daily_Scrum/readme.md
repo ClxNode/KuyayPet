@@ -14,7 +14,7 @@ Cada integrante completa **su propio bloque** desde la web: lápiz ✏️ → es
 - **Bloqueos o ayuda necesaria:** Ninguno.
 
 ### 2. Dylan Quispe
-- **Ayer avancé en:** Avancé en las tareas asignadas para el desarrollo de KuyayPet.
+- **Ayer avancé en:** Desarrollar el Planning Poker para determinar la prioridad de las HU.
 - **Hoy trabajaré en:** Verificaré el funcionamiento de las funcionalidades implementadas y apoyaré en la integración final.
 - **Bloqueos o ayuda necesaria:** Ninguno.
 
