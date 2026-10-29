@@ -31,7 +31,7 @@ Para un día nuevo, copia el encabezado `## Daily Scrum — AAAA-MM-DD` con los 
 
 ### 5. kevinesty
 - **Ayer avancé en: Subí las evidencias correspondientes a la HU-03 y preparé mi Pull Request** 
-- **Hoy trabajaré en:Presentaré mi pull request al equipo y verifcare que las evidencias se visualicen correctamente** 
+- **Hoy trabajaré en:Presentaré mi pull Request al equipo y verifcare que las evidencias se visualicen correctamente** 
 - **Bloqueos o ayuda necesaria: Ninguno** 
 
 ### 6. Gael Milla
