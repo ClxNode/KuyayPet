@@ -25,8 +25,8 @@ La asignación de responsables y fechas se realizó mediante el [GitHub Project 
 | [#42](https://github.com/ClxNode/KuyayPet/issues/42) | HU-05 | Probar la búsqueda de mascotas por cercanía y el mensaje cuando no existen resultados. | Valtom07 | 30 de octubre de 2026 | Terminado |
 | [#43](https://github.com/ClxNode/KuyayPet/issues/43) | HU-17 | Probar la funcionalidad de agregar y quitar mascotas de favoritos. | Joseph-L-Q | 30 de octubre de 2026 | Terminado |
 | [#44](https://github.com/ClxNode/KuyayPet/issues/44) | HU-19 | Probar el cambio de estado de una mascota a adoptada y verificar que deje de aparecer como disponible. | BeyondNate y Joseph-L-Q | 30 de octubre de 2026 | Terminado |
-| [#45](https://github.com/ClxNode/KuyayPet/issues/45) | HU-11, HU-04, HU-17 | Revisar la adaptación a computadora y móvil de las funcionalidades de registro, catálogo y favoritos. | Por asignar | 30 de octubre de 2026 | Terminado |
-| [#46](https://github.com/ClxNode/KuyayPet/issues/46) | HU-11, HU-24, HU-04, HU-05, HU-03, HU-17 | Preparar y ejecutar la demostración del Sprint 2: un responsable publica una mascota y otro usuario la encuentra. | Por asignar | 30 de octubre de 2026 | Terminado |
+| [#45](https://github.com/ClxNode/KuyayPet/issues/45) | HU-11, HU-04, HU-17 | Revisar la adaptación a computadora y móvil de las funcionalidades de registro, catálogo y favoritos. | Por asignar | Pendiente | Terminado |
+| [#46](https://github.com/ClxNode/KuyayPet/issues/46) | HU-11, HU-24, HU-04, HU-05, HU-03, HU-17 | Preparar y ejecutar la demostración del Sprint 2: un responsable publica una mascota y otro usuario la encuentra. | Por asignar | Pendiente | Terminado |
 
 > **Nota:** Las tareas pendientes del Sprint 1 (HU-01, HU-02 y HU-03) continúan registradas en sus issues originales (#28–#34).
 
