@@ -29,6 +29,102 @@ El código a probar es el prototipo v0.3 en [`Codigo_Repositorio/kuyaypet-web/`]
 | P-HU-01-03 | Correo ya registrado: se informa y no se crea una cuenta duplicada | Por completar | Pendiente |
 | P-HU-01-04 | Datos válidos: se crea la cuenta y se confirma el registro | Por completar | Pendiente |
 
+
+### Procedimiento de pruebas — HU-01
+
+**Objetivo:** Verificar que el sistema de registro de KuyayPet valide correctamente los datos ingresados, impida registros incorrectos y permita crear cuentas con información válida.
+
+**Responsable:** Joseph-L-Q  
+**Historia de usuario:** HU-01 — Registro de usuario  
+**Sprint:** Sprint 1  
+**Herramientas:** Navegador web y Playwright  
+**Estado:** Pendiente de validación
+
+#### Prueba 1: Validación de campos obligatorios
+
+**Procedimiento:**
+
+1. Ingresar a la página de registro.
+2. Dejar todos los campos vacíos.
+3. Presionar el botón "Registrarse".
+4. Verificar que aparezca un mensaje de error.
+
+**Resultado esperado:** El sistema informa que todos los campos son obligatorios e impide crear la cuenta.
+
+#### Prueba 2: Validación del correo electrónico
+
+**Procedimiento:**
+
+1. Ingresar un nombre válido.
+2. Introducir un correo con formato incorrecto.
+3. Completar los demás campos.
+4. Intentar registrarse.
+
+**Resultado esperado:** El sistema muestra un mensaje indicando que el correo electrónico no tiene un formato válido.
+
+#### Prueba 3: Validación de contraseña
+
+**Procedimiento:**
+
+1. Completar los datos personales.
+2. Ingresar una contraseña de menos de ocho caracteres.
+3. Intentar registrarse.
+4. Repetir la prueba con contraseñas que no coincidan.
+
+**Resultado esperado:** El sistema rechaza las contraseñas que incumplen los requisitos.
+
+#### Prueba 4: Prevención de cuentas duplicadas
+
+**Procedimiento:**
+
+1. Ingresar un correo electrónico registrado anteriormente.
+2. Completar los demás campos.
+3. Presionar "Registrarse".
+
+**Resultado esperado:** El sistema informa que el correo ya está registrado y evita crear una cuenta duplicada.
+
+#### Prueba 5: Registro exitoso
+
+**Procedimiento:**
+
+1. Completar todos los campos con información válida.
+2. Confirmar correctamente la contraseña.
+3. Presionar "Registrarse".
+4. Verificar el mensaje de confirmación.
+
+**Resultado esperado:** El sistema crea la cuenta y permite continuar con el cuestionario inicial.
+
+### Registro de resultados
+
+| ID | Caso de prueba | Resultado esperado | Resultado observado | Estado |
+|---|---|---|---|---|
+| P-HU-01-01 | Campos obligatorios | Muestra mensaje de error | Por completar | Pendiente |
+| P-HU-01-02 | Correo inválido | Rechaza el formato incorrecto | Por completar | Pendiente |
+| P-HU-01-03 | Contraseña inválida | Rechaza contraseñas incorrectas | Por completar | Pendiente |
+| P-HU-01-04 | Correo duplicado | Impide crear cuentas duplicadas | Por completar | Pendiente |
+| P-HU-01-05 | Registro exitoso | Crea la cuenta correctamente | Por completar | Pendiente |
+
+### Evidencias
+
+Las evidencias deberán incluir capturas de pantalla que permitan comprobar los resultados de cada prueba.
+
+- **P-HU-01-01:** Mensaje de campos obligatorios.
+- **P-HU-01-02:** Mensaje de correo inválido.
+- **P-HU-01-03:** Mensaje de contraseña inválida.
+- **P-HU-01-04:** Mensaje de correo duplicado.
+- **P-HU-01-05:** Confirmación de registro exitoso.
+
+**Estado de evidencias:** Pendiente de registro.
+
+### Conclusión
+
+Los casos de prueba definidos permiten evaluar el funcionamiento del registro de usuarios de KuyayPet, considerando validaciones de entrada, prevención de duplicados y creación exitosa de cuentas.
+
+La historia de usuario HU-01 se considerará validada cuando se ejecuten las pruebas, se documenten los resultados observados y se adjunten las evidencias correspondientes.
+
+**Estado final:** Pendiente de ejecución y validación.
+
+
 ### Evidencias
 
 **Enlaces a evidencias:** Por completar
