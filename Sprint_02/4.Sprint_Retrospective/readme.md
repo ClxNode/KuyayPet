@@ -11,7 +11,7 @@
 - Se desarrollaron y actualizaron historias de usuario, permitiendo organizar el trabajo en funcionalidades específicas y facilitar el seguimiento de los avances.
 - El equipo utilizó issues y Pull Requests para gestionar los cambios realizados en el repositorio y mantener un mejor control del desarrollo.
 - Se realizaron pruebas funcionales para verificar el comportamiento de las funcionalidades implementadas y comprobar el cumplimiento de los criterios de aceptación.
-- Se generaron evidencias mediante capturas de pantalla que permiten demostrar el funcionamiento de las funcionalidades desarrolladas.
+- Se generaron evidencias mediante capturas de pantalla y videos que permiten demostrar el funcionamiento de las funcionalidades desarrolladas.
 - Se realizaron revisiones de código y se integraron cambios mediante Pull Requests, favoreciendo la colaboración entre los integrantes.
 - Se avanzó en la organización de las tareas del sprint y en el registro de las actividades realizadas por cada integrante.
 - Se mejoró la coordinación del equipo durante el desarrollo, revisión e integración de las funcionalidades.
