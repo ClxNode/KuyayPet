@@ -143,7 +143,7 @@ La historia de usuario HU-01 se considerará validada cuando se ejecuten las pru
 - **Proyecto:** KuyayPet
 - **Sprint:** Sprint 1 — Semana 9
 - **Historia de usuario:** HU-02
-- **Responsable propuesto:** DevBrad
+- **Responsable propuesto:** DevBrad y Gael
 - **Fecha planificada:** 16 de octubre de 2026
 - **Estado:** Completado
 
