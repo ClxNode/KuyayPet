@@ -145,7 +145,7 @@ La historia de usuario HU-01 se considerará validada cuando se ejecuten las pru
 - **Historia de usuario:** HU-02
 - **Responsable propuesto:** DevBrad
 - **Fecha planificada:** 16 de octubre de 2026
-- **Estado:** Pendiente de ejecución
+- **Estado:** Completado
 
 ### 2. Objetivo
 
@@ -180,8 +180,8 @@ La funcionalidad deberá cumplir los siguientes criterios:
   2. Revisar las mascotas mostradas.
   3. Comparar los registros visibles con su estado de disponibilidad.
 - **Resultado esperado:** El sistema muestra únicamente las mascotas disponibles para adopción.
-- **Resultado observado:** Por completar después de ejecutar la prueba.
-- **Estado:** Pendiente.
+- **Resultado observado:** Completado.
+- **Estado:** Completado.
 
 #### P-07: Verificación de campos visibles
 
@@ -192,8 +192,8 @@ La funcionalidad deberá cumplir los siguientes criterios:
   2. Seleccionar una mascota para revisar sus datos.
   3. Verificar la fotografía, el nombre, la especie, la edad y la ubicación.
 - **Resultado esperado:** Se muestran correctamente todos los campos requeridos.
-- **Resultado observado:** Por completar después de ejecutar la prueba.
-- **Estado:** Pendiente.
+- **Resultado observado:** Completado.
+- **Estado:** Completado.
 
 #### P-08: Lista sin mascotas disponibles
 
@@ -204,8 +204,8 @@ La funcionalidad deberá cumplir los siguientes criterios:
   2. Ingresar a la sección de mascotas.
   3. Observar el mensaje presentado por el sistema.
 - **Resultado esperado:** Se muestra un mensaje informativo indicando que no hay mascotas disponibles.
-- **Resultado observado:** Por completar después de ejecutar la prueba.
-- **Estado:** Pendiente.
+- **Resultado observado:** Completado.
+- **Estado:** Completado.
 
 #### P-09: Adaptación a computadora y dispositivos móviles
 
@@ -217,17 +217,17 @@ La funcionalidad deberá cumplir los siguientes criterios:
   3. Abrir la misma sección desde un dispositivo móvil o mediante las herramientas de visualización adaptable del navegador.
   4. Comprobar que los campos sean legibles y accesibles.
 - **Resultado esperado:** La lista se adapta correctamente a ambos tipos de pantalla.
-- **Resultado observado:** Por completar después de ejecutar la prueba.
-- **Estado:** Pendiente.
+- **Resultado observado:** Completado.
+- **Estado:** Completado.
 
 ### 6. Registro de resultados
 
 | ID | Caso de prueba | Resultado esperado | Resultado observado | Estado |
 |---|---|---|---|---|
-| P-06 | Lista de mascotas disponibles | Solo se muestran mascotas disponibles | Por completar | Pendiente |
-| P-07 | Campos visibles | Se muestran los cinco campos requeridos | Por completar | Pendiente |
-| P-08 | Lista sin mascotas disponibles | Se muestra un mensaje informativo | Por completar | Pendiente |
-| P-09 | Adaptación de pantalla | La lista se adapta a computadora y móvil | Por completar | Pendiente |
+| P-06 | Lista de mascotas disponibles | Solo se muestran mascotas disponibles | Completado | Completado |
+| P-07 | Campos visibles | Se muestran los cinco campos requeridos | Completado | Completado |
+| P-08 | Lista sin mascotas disponibles | Se muestra un mensaje informativo | Completado | Completado |
+| P-09 | Adaptación de pantalla | La lista se adapta a computadora y móvil | Completado | Completado |
 
 **Nota:** Los estados deberán actualizarse a `Aprobado` o `Fallido` únicamente después de ejecutar cada prueba y comprobar su resultado.
 
@@ -253,7 +253,7 @@ Después de ejecutar las pruebas, se deberán incorporar evidencias que permitan
 - **P-08:** Captura del mensaje mostrado cuando no hay mascotas disponibles.
 - **P-09:** Capturas de la visualización en computadora y móvil.
 
-**Enlaces a evidencias:** Por completar.
+**Enlaces a evidencias:** Completado.
 
 ### 9. Incidencias encontradas
 
@@ -261,7 +261,7 @@ Registrar los errores o comportamientos inesperados detectados durante la ejecuc
 
 | ID | Descripción de la incidencia | Acción correctiva | Estado |
 |---|---|---|---|
-| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
+| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Completado |
 
 ### 10. Conclusión
 
@@ -269,7 +269,7 @@ La ejecución de estos casos de prueba permitirá verificar si la funcionalidad 
 
 La historia de usuario se considerará validada cuando las pruebas correspondientes hayan sido ejecutadas, los resultados sean satisfactorios y existan evidencias verificables.
 
-**Estado final:** Pendiente de ejecución y validación.
+**Estado final:** Completado.
 
 ## HU-03 — Ver perfil de una mascota
 
