@@ -7,7 +7,7 @@ Cada integrante completa **su propio bloque** desde la web: lápiz ✏️ → es
 
 Para un día nuevo, copia el encabezado `## Daily Scrum — AAAA-MM-DD` con los siete bloques y escribe la fecha.
 
-## Daily Scrum — AAAA-MM-DD
+## Daily Scrum — 2026-10-28
 
 ### 1. DevBrad
 - **Ayer avancé en:** Trabajé en las funcionalidades correspondientes al Sprint 2.
