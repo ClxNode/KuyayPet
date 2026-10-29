@@ -355,15 +355,20 @@ BASE_URL=http://localhost:4201/ node scripts/record-hu.mjs 01 02 03   # terminal
 | P-HU-01-02 | Contraseña de 3 caracteres | Alerta que exige al menos 8 caracteres | [P-HU-01-02b](evidencias/HU-01/P-HU-01-02b-contrasena-corta.png) |
 | P-HU-01-03 | Correo ya registrado (`adoptante@kuyaypet.pe`) | Alerta "ya está registrado"; al final de la prueba sigue habiendo **una sola** cuenta con ese correo | [P-HU-01-03](evidencias/HU-01/P-HU-01-03-correo-duplicado.png) |
 | P-HU-01-04 | Datos válidos (Ana Prueba, `ana.prueba@correo.com`) | Mensaje "¡Cuenta creada con éxito!" y paso al cuestionario; la cuenta queda guardada en el navegador con la sesión iniciada | [P-HU-01-04](evidencias/HU-01/P-HU-01-04-cuenta-creada.png) |
+### HU-02 — Evidencias de pruebas por caso (plan de pruebas DevBrad)
 
-### HU-02 — capturas por caso (plan de DevBrad)
+La siguiente tabla presenta las evidencias de validación de la HU-02, correspondiente a la visualización de mascotas disponibles en la página `/buscar`. Las pruebas verifican la consistencia de los datos, la visualización de los campos principales, el comportamiento ante la ausencia de mascotas disponibles y la adaptación de la interfaz a diferentes tamaños de pantalla.
 
-| Caso | Qué hizo la prueba | Resultado observado | Captura |
+| Caso de prueba | Descripción de la validación | Resultado obtenido | Evidencia |
 |---|---|---|---|
-| P-06 | Comparar las tarjetas de `/buscar` con los datos guardados | 34 tarjetas = las 34 mascotas con estado "disponible" y publicación aprobada; las 6 restantes no aparecen (2 adoptadas, 1 retirada, 2 en revisión y 1 rechazada) | [P-06](evidencias/HU-02/P-06-lista-disponibles.png) |
-| P-07 | Revisar la primera tarjeta contra sus datos | Muestra foto, nombre, especie · raza, edad y distrito, y coinciden con lo registrado | [P-07](evidencias/HU-02/P-07-campos-visibles.png) |
-| P-08 | Escenario preparado: todas las mascotas marcadas como adoptadas | No aparece ninguna tarjeta y el título dice «No hay mascotas disponibles por ahora» (I-01 resuelta) | [P-08](evidencias/HU-02/P-08-sin-mascotas-disponibles.png) |
-| P-09 | Lista en 390×844 y en 1280×800 | En móvil, grilla de 2 columnas legible. En computadora la lista usa el ancho completo en 4 columnas, con la barra de navegación inferior (I-02 resuelta) | [móvil](evidencias/HU-02/P-09-movil-390x844.png) · [computadora](evidencias/HU-02/P-09-computadora-1280x800.png) |
+| **P-06** | Verificar que las tarjetas de la página `/buscar` correspondan a las mascotas registradas con estado «disponible» y publicación aprobada. | Se muestran **34 tarjetas**, correspondientes a las 34 mascotas que cumplen ambos criterios. Las 6 restantes no se muestran: 2 están adoptadas, 1 fue retirada, 2 están en revisión y 1 fue rechazada. | [Captura P-06](evidencias/HU-02/P-06-lista-disponibles.png) |
+| **P-07** | Comprobar que la primera tarjeta muestre correctamente los datos principales de la mascota y que estos coincidan con el registro almacenado. | La tarjeta presenta la fotografía, el nombre, la especie, la raza, la edad y el distrito. Los campos visualizados coinciden con los datos registrados. | [Captura P-07](evidencias/HU-02/P-07-campos-visibles.png) |
+| **P-08** | Validar el comportamiento de la página cuando todas las mascotas tienen el estado «adoptada». | No se muestran tarjetas y aparece el mensaje «No hay mascotas disponibles por ahora». Se verifica el estado vacío de la interfaz y se considera resuelta la incidencia I-01. | [Captura P-08](evidencias/HU-02/P-08-sin-mascotas-disponibles.png) |
+| **P-09** | Evaluar la adaptación de la lista de mascotas a las resoluciones de 390 × 844 píxeles (móvil) y 1280 × 800 píxeles (computadora). | En móvil, las tarjetas se distribuyen en una cuadrícula de dos columnas y mantienen una presentación legible. En computadora, la lista aprovecha el ancho disponible mediante cuatro columnas y conserva la barra de navegación inferior. Se considera resuelta la incidencia I-02. | [Captura móvil](evidencias/HU-02/P-09-movil-390x844.png) · [Captura de computadora](evidencias/HU-02/P-09-computadora-1280x800.png) |
+
+**Resultado general de las pruebas**
+
+Los casos P-06, P-07, P-08 y P-09 documentan la validación del filtrado de mascotas disponibles, la correspondencia de los datos mostrados con los registros almacenados, el tratamiento de listas vacías y la adaptación de la interfaz a dispositivos móviles y computadoras. Las evidencias adjuntas respaldan los resultados observados durante la ejecución de las pruebas.
 
 ### HU-03 — Ver perfil de una mascota (capturas por criterio)
 
