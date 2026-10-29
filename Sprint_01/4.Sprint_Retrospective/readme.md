@@ -9,10 +9,11 @@
 
 - **Priorización de funcionalidades:** definimos como prioritarias las historias de usuario HU-01 (registro de usuario), HU-02 (visualización de mascotas disponibles) y HU-03 (perfil de una mascota), estableciendo una base para el desarrollo inicial de KuyayPet.
 - **Definición de criterios de aceptación:** identificamos las condiciones que debía cumplir cada historia de usuario para orientar el desarrollo y facilitar su posterior validación.
-- **Organización del equipo:** planteamos una distribución de responsabilidades para coordinar las actividades y reducir la duplicación de esfuerzos.
+- **Organización del equipo:** distribuimos responsabilidades y tareas para coordinar las actividades, reducir la duplicación de esfuerzos y facilitar el seguimiento del avance.
 - **Identificación de dependencias:** reconocimos la relación entre la visualización de mascotas y sus perfiles individuales, lo que permitió considerar el orden de implementación.
-- **Gestión del código fuente:** establecimos el uso de Git y GitHub como herramientas para centralizar el código y facilitar el trabajo colaborativo.
-- **Preparación de pruebas:** identificamos la necesidad de disponer de datos de prueba para verificar la visualización de las mascotas y la información de sus perfiles.
+- **Gestión del código fuente:** establecimos el uso de Git y GitHub como herramientas para centralizar el código, registrar los cambios y facilitar el trabajo colaborativo.
+- **Desarrollo e integración de funcionalidades:** se realizaron cambios en el repositorio relacionados con las historias de usuario planificadas, permitiendo avanzar en la construcción de las funcionalidades iniciales.
+- **Preparación de pruebas:** identificamos la necesidad de disponer de datos y evidencias de prueba para verificar la visualización de las mascotas y la información de sus perfiles.
 
 ## 4.2. ¿Qué dificultades encontramos?
 
@@ -21,7 +22,8 @@
 - **Estimación del trabajo:** identificamos la importancia de evaluar con mayor precisión el esfuerzo requerido para completar las historias dentro del tiempo establecido.
 - **Coordinación de responsabilidades:** reconocimos la necesidad de delimitar las tareas de cada integrante y establecer mecanismos de seguimiento.
 - **Planificación de pruebas:** necesitamos definir con mayor claridad cómo comprobar el cumplimiento de los criterios de aceptación de cada funcionalidad.
-- **Seguimiento del avance:** identificamos la importancia de mantener actualizado el estado de las tareas para distinguir entre actividades pendientes, en desarrollo y completadas.
+- **Seguimiento de los cambios:** identificamos la importancia de registrar adecuadamente los commits, revisar los Pull Requests y mantener un historial organizado de las modificaciones realizadas.
+- **Integración del trabajo:** fue necesario coordinar la incorporación de los cambios realizados por los integrantes para evitar conflictos y mantener la estabilidad del repositorio.
 
 ## 4.3. ¿Qué aprendimos?
 
@@ -32,6 +34,7 @@
 - **Calidad del producto:** las pruebas deben considerarse parte del desarrollo y no únicamente una actividad al finalizar el sprint.
 - **Transparencia del avance:** mantener actualizado el tablero permite conocer el estado real del trabajo e identificar oportunamente los bloqueos.
 - **Gestión del tiempo:** la planificación debe considerar no solo la implementación, sino también las pruebas, la integración y la documentación.
+- **Trazabilidad de los cambios:** los commits y Pull Requests permiten identificar las modificaciones realizadas y relacionarlas con las historias de usuario correspondientes.
 
 ## 4.4. Plan de mejora para el siguiente sprint
 
@@ -46,16 +49,21 @@ A partir de los aspectos identificados, establecimos las siguientes acciones de 
 | Definir las pruebas correspondientes a cada criterio de aceptación. | Responsables de las historias | Cada funcionalidad terminada cuenta con pruebas verificables. |
 | Comunicar oportunamente los bloqueos. | Todo el equipo | Los bloqueos identificados quedan registrados y se les da seguimiento. |
 | Coordinar la integración de los cambios en GitHub. | Integrantes responsables del desarrollo | Los cambios se revisan e integran antes de considerar terminada una tarea. |
+| Registrar los cambios mediante commits descriptivos. | Todo el equipo | Los commits permiten identificar el propósito de cada modificación. |
 | Revisar el cumplimiento de los objetivos del sprint. | Todo el equipo | Se registra el estado final de cada historia planificada. |
 
 ## 4.5. Acuerdos del equipo
 
 Como resultado de la retrospectiva, acordamos reforzar la coordinación entre los integrantes, mejorar el seguimiento de las tareas y comunicar oportunamente cualquier dificultad que pueda afectar el cumplimiento de los objetivos del sprint.
 
-Asimismo, nos comprometemos a mantener actualizado el repositorio, definir las pruebas antes de cerrar cada historia de usuario y verificar que las funcionalidades cumplan sus criterios de aceptación. Estas medidas se aplicarán durante el siguiente sprint y se revisarán al finalizarlo para determinar si contribuyeron a mejorar nuestro proceso de trabajo.
+Asimismo, nos comprometemos a mantener actualizado el repositorio, registrar los cambios mediante commits descriptivos, definir las pruebas antes de cerrar cada historia de usuario y verificar que las funcionalidades cumplan sus criterios de aceptación.
+
+Estas medidas se aplicarán durante el siguiente sprint y se revisarán al finalizarlo para determinar si contribuyeron a mejorar nuestro proceso de trabajo.
 
 ## 4.6. Conclusión
 
-La retrospectiva del Sprint 1 nos permitió identificar oportunidades de mejora en la planificación, la coordinación del equipo, la gestión del código fuente y la validación de las funcionalidades. A partir de estas observaciones, definimos acciones orientadas a mejorar la organización del trabajo y la transparencia del avance.
+La retrospectiva del Sprint 1 nos permitió identificar oportunidades de mejora en la planificación, la coordinación del equipo, la gestión del código fuente y la validación de las funcionalidades.
+
+A partir de estas observaciones, definimos acciones orientadas a mejorar la organización del trabajo, la trazabilidad de los cambios y la transparencia del avance.
 
 Para el siguiente sprint, nuestro objetivo será aplicar los acuerdos establecidos, realizar un seguimiento continuo de las tareas y fortalecer las prácticas de desarrollo colaborativo, contribuyendo al avance ordenado y a la calidad del producto KuyayPet.
