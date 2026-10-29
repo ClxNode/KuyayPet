@@ -1,11 +1,10 @@
 # 3. Scrum diario — Daily Scrum · Sprint 2
 
 **Proyecto:** KuyayPet  
-**Sprint:** Sprint 2 (cierra el 20 de noviembre de 2026)
+**Sprint:** Sprint 2 (cierra el 28 de noviembre de 2026)
 
 Cada integrante completa **su propio bloque** desde la web: lápiz ✏️ → escribir → **Commit changes** directo a `main` con el mensaje `daily(<tu-usuario>): AAAA-MM-DD`. El historial de commits de este archivo es la bitácora del equipo (ver [CONTRIBUTING.md](../../CONTRIBUTING.md)).
 
-Para un día nuevo, copia el encabezado `## Daily Scrum — AAAA-MM-DD` con los siete bloques y escribe la fecha.
 
 ## Daily Scrum — 2026-10-28
 
