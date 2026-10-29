@@ -2,7 +2,7 @@
 
 > **Propuesta — se valida en la planning del video.** Este documento lo preparó IchiSieben (con Claude Code) el 28-oct a partir del prototipo y del catálogo. Las HU, la priorización y las tareas son una propuesta: el equipo las confirma, cambia o descarta en la Sprint Planning (escena 5 del guion) y escribe ahí los puntos acordados.
 
-**Sprint:** Sprint 2 · **Cierre:** 20 de noviembre de 2026 (milestone [Sprint 2](https://github.com/ClxNode/KuyayPet/milestone/2))
+**Sprint:** Sprint 2 · **Cierre:** 29 de noviembre de 2026 (milestone [Sprint 2](https://github.com/ClxNode/KuyayPet/milestone/2))
 **Participantes:** DevBrad, Dylan Quispe, IchiSieben, Joseph-L-Q, kevinesty, Gael Milla y Juan Vidal.
 
 ## Objetivo propuesto
