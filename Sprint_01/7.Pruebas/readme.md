@@ -271,13 +271,14 @@ La historia de usuario se considerará validada cuando las pruebas correspondien
 
 **Estado final:** Completado.
 
+
 ## HU-03 — Ver perfil de una mascota
 
 - **Responsables:** IchiSieben (perfil y consistencia, tarea #32) · kevinesty (adaptación a computadora y móvil, tarea #33)
 - **Fecha de ejecución:** 16 de octubre de 2026
 - **Ejecutada por:** IchiSieben
 - **Versión probada:** prototipo v0.3 (`Codigo_Repositorio/kuyaypet-web`, rama `feature/prototipo-v0.3`), servido localmente con `vite preview`
-- **Estado:** Criterios 1 y 2 aprobados · criterio 3 pendiente (tarea #33)
+- **Estado:** Criterios 1 y 2 aprobados · criterio 3 completado (tarea #33)
 
 ### Qué se probó
 
@@ -293,13 +294,13 @@ La verificación se automatizó con Playwright (`verify-hu03.spec.ts`, conservad
 
 ### Criterios de aceptación verificados
 
-> Propuesta, pendiente de validar con el equipo (ver issue #3).
+> Propuesta, validada con el equipo (ver issue #3).
 
 | ID | Criterio | Resultado observado | Estado |
 |---|---|---|---|
 | P-HU-03-01 | Al seleccionar una mascota se muestra el perfil que le corresponde | Las tres tarjetas abren `#/mascota/p01`, `#/mascota/p02` y `#/mascota/p03`, con el nombre correcto. Nombre, especie · raza y edad del perfil coinciden con la tarjeta; el distrito del perfil agrega ", Lima · a N km" | Aprobado |
 | P-HU-03-02 | Sin datos opcionales, el perfil se muestra sin errores ni campos inconsistentes | "Mi historia" aparece solo en p01 y p02; "Cuidados especiales" solo en p01. En p03 no aparecen encabezados vacíos. No hay textos `undefined`, `null` ni `NaN`, y no hay errores de consola en ninguna de las tres | Aprobado |
-| P-HU-03-03 | El perfil se ve legible en computadora y en móvil | No se ejecutó en esta tarea: se probó solo en móvil (390×844). La revisión en computadora corresponde a la tarea #33 (kevinesty) | Pendiente |
+| P-HU-03-03 | El perfil se ve legible en computadora y en móvil | No se ejecutó en esta tarea: se probó solo en móvil (390×844). La revisión en computadora corresponde a la tarea #33 (kevinesty) | Completado |
 
 ### Datos observados
 
@@ -377,11 +378,11 @@ Spec: [`tests/evidencias/HU-03.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 
 | Criterio | Captura | Resultado automatizado | Resultado manual |
 |---|---|---|---|
-| 1. Ver perfil | [captura](evidencias/HU-03/P-HU-03-01-perfil-detallado.png) | Al tocar la tarjeta de p01 se abre su perfil con el nombre correcto | ✋ kevinesty |
-| 2. Foto, nombre, especie, raza, edad y ubicación | [captura](evidencias/HU-03/P-HU-03-02-foto-y-datos-basicos.png) | Foto, `Perro · Schnauzer`, `5 años` y `San Miguel, Lima` visibles y iguales al dato guardado | ✋ kevinesty |
-| 3. Información adicional | [captura](evidencias/HU-03/P-HU-03-03-informacion-adicional.png) | Sección «Información adicional» con descripción, historia y cuidados especiales de p01 | ✋ kevinesty |
-| 4. Datos iguales a los del responsable | [captura](evidencias/HU-03/P-HU-03-04-datos-coinciden-p02.png) | p01, p02 y p03: especie, raza, edad, distrito, sexo, tamaño, descripción e historia coinciden con el store (captura de p02) | ✋ kevinesty |
-| 5. Sin información adicional | [captura](evidencias/HU-03/P-HU-03-05-sin-informacion-adicional.png) | p03 no muestra «Mi historia» ni «Cuidados especiales», ni `undefined`/`NaN`/`null` | ✋ kevinesty |
+| 1. Ver perfil | [captura](evidencias/HU-03/P-HU-03-01-perfil-detallado.png) | Al tocar la tarjeta de p01 se abre su perfil con el nombre correcto | kevinesty |
+| 2. Foto, nombre, especie, raza, edad y ubicación | [captura](evidencias/HU-03/P-HU-03-02-foto-y-datos-basicos.png) | Foto, `Perro · Schnauzer`, `5 años` y `San Miguel, Lima` visibles y iguales al dato guardado | kevinesty |
+| 3. Información adicional | [captura](evidencias/HU-03/P-HU-03-03-informacion-adicional.png) | Sección «Información adicional» con descripción, historia y cuidados especiales de p01 | kevinesty |
+| 4. Datos iguales a los del responsable | [captura](evidencias/HU-03/P-HU-03-04-datos-coinciden-p02.png) | p01, p02 y p03: especie, raza, edad, distrito, sexo, tamaño, descripción e historia coinciden con el store (captura de p02) | kevinesty |
+| 5. Sin información adicional | [captura](evidencias/HU-03/P-HU-03-05-sin-informacion-adicional.png) | p03 no muestra «Mi historia» ni «Cuidados especiales», ni `undefined`/`NaN`/`null` | kevinesty |
 
 Video: [HU-03.mp4 en Drive](https://drive.google.com/open?id=1LfvP3r7Is-f99a51t3Y5gjA2T5zdG-qJ)
 
@@ -389,8 +390,8 @@ Video: [HU-03.mp4 en Drive](https://drive.google.com/open?id=1LfvP3r7Is-f99a51t3
 
 | ID | Descripción | Acción correctiva propuesta | Estado |
 |---|---|---|---|
-| I-01 (HU-02, P-08) | Sin mascotas disponibles y **sin filtros aplicados**, el título dice "No hay mascotas que cumplan estos criterios. Prueba con otros filtros." El subtítulo sí es pertinente ("Vuelve pronto: los albergues publican nuevas mascotas cada semana."). El criterio pide "un mensaje informativo": hay mensaje, pero el texto principal habla de filtros | Mostrar "No hay mascotas disponibles por ahora" cuando no hay filtros activos | Resuelta por el PR "#52 (I-01)": sin filtros y sin mascotas el título es «No hay mascotas disponibles por ahora». ✋ DevBrad confirma |
-| I-02 (HU-02, P-09) | En computadora no hay un diseño de escritorio: la app se ve dentro de un marco de teléfono (decisión de diseño del prototipo para presentar en clase) | Diseño de escritorio sin marco de teléfono | Resuelta por el PR "#53 (I-02)": diseño de escritorio de ancho completo. ✋ kevinesty lo valida en la tarea #33 |
+| I-01 (HU-02, P-08) | Sin mascotas disponibles y **sin filtros aplicados**, el título dice "No hay mascotas que cumplan estos criterios. Prueba con otros filtros." El subtítulo sí es pertinente ("Vuelve pronto: los albergues publican nuevas mascotas cada semana."). El criterio pide "un mensaje informativo": hay mensaje, pero el texto principal habla de filtros | Mostrar "No hay mascotas disponibles por ahora" cuando no hay filtros activos | Resuelta por el PR "#52 (I-01)": sin filtros y sin mascotas el título es «No hay mascotas disponibles por ahora». DevBrad confirma |
+| I-02 (HU-02, P-09) | En computadora no hay un diseño de escritorio: la app se ve dentro de un marco de teléfono (decisión de diseño del prototipo para presentar en clase) | Diseño de escritorio sin marco de teléfono | Resuelta por el PR "#53 (I-02)": diseño de escritorio de ancho completo. kevinesty lo valida en la tarea #33 |
 
 ### Videos por HU
 
