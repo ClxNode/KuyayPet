@@ -48,3 +48,14 @@
 - **Próximas actividades:** Revisar los avances, ejecutar las pruebas funcionales, integrar los cambios y preparar la demostración del Sprint 1.
 
 > **Nota:** Los avances descritos son ejemplos de documentación. Deben ajustarse a las actividades realmente realizadas por cada integrante durante el Daily Scrum.
+
+---
+
+## Daily Scrum — 16 de octubre de 2026
+
+Cada integrante agrega aquí su propia entrada.
+
+### IchiSieben
+- **Ayer avancé en:** Abrir el PR [#35](https://github.com/ClxNode/KuyayPet/pull/35) con el prototipo v0.3 y armar la estructura de issues (HU-01 a HU-26 y tareas #27 a #34), labels y milestones del repositorio.
+- **Hoy trabajaré en:** La tarea [#32](https://github.com/ClxNode/KuyayPet/issues/32) (verificar el perfil de mascota de HU-03, sus datos opcionales y la consistencia de la información) y la configuración del GitHub Project.
+- **Bloqueos o ayuda necesaria:** Falta el rol Admin en el GitHub Project para configurar sus campos y estados.
