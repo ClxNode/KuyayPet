@@ -31,7 +31,7 @@ El código a probar es el prototipo v0.3 en [`Codigo_Repositorio/kuyaypet-web/`]
 
 ### Evidencias
 
-**Enlaces a evidencias:** Por completar.
+**Enlaces a evidencias:** Por completar
 
 ### Incidencias encontradas
 
