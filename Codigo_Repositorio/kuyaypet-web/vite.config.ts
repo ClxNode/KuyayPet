@@ -1,12 +1,17 @@
+
 import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
-  // Relative base: the same build works on Hostinger (root) and GitHub Pages (/kuyaypet/).
+  // Relative base: works on Hostinger and GitHub Pages.
   base: './',
-  resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
   plugins: [
     react(),
     VitePWA({
@@ -25,17 +30,29 @@ export default defineConfig({
         icons: [
           { src: 'pwa-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'pwa-512.png', sizes: '512x512', type: 'image/png' },
-          { src: 'pwa-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+          {
+            src: 'pwa-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable',
+          },
         ],
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,webp,woff2,json}'],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
-        // The demo manual is a separate static page, never the SPA shell; /next/ and /next2/ are preview builds
-        // with their own shell, which this root worker must not answer.
-        navigateFallbackDenylist: [/\/manual\//, /^\/next2?\//],
+
+        // Exclude manual, preview builds and Sprint 2 guide.
+        navigateFallbackDenylist: [
+          /\/manual\//,
+          /^\/next2?\//,
+          /^\/guia-sprint2\//,
+        ],
       },
     }),
   ],
-  test: { environment: 'node', include: ['src/**/*.test.ts'] },
+  test: {
+    environment: 'node',
+    include: ['src/**/*.test.ts'],
+  },
 });

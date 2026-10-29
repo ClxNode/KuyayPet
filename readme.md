@@ -125,7 +125,7 @@ Los modelos y sus archivos se incorporarán al repositorio conforme se revisen y
 | **Tipo de solución** | Plataforma web de adopción y socialización de mascotas |
 | **Enfoque de trabajo** | Historias de usuario, criterios de aceptación, prototipado y modelado UML |
 
-## 📚 Referencias
+## 📚 Referencias:
 
 [1] *Lista de historias de usuario – KuyayPet*, documento interno del proyecto de Ingeniería de Software, Universidad Peruana Cayetano Heredia, 2026.
 
