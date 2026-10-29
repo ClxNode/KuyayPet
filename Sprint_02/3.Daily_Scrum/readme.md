@@ -19,7 +19,7 @@ Cada integrante completa **su propio bloque** desde la web: lápiz ✏️ → es
 - **Bloqueos o ayuda necesaria:** Ninguno.
 
 ### 3. IchiSieben
-- **Ayer avancé en:** Trabajé en la implementación de las funcionalidades asignadas para el Sprint 2.
+- **Ayer avancé en:** Preparé la guía del Sprint 2 y organicé las instrucciones para la preparación y grabación del video.
 - **Hoy trabajaré en:** Revisaré los cambios realizados y comprobaré que cumplan con lo esperado.
 - **Bloqueos o ayuda necesaria:** Ninguno.
 
