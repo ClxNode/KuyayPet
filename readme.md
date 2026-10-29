@@ -23,7 +23,7 @@
 
 ## 🧡 Sobre KuyayPet
 
-**KuyayPet** es un proyecto académico de **Ingeniería de Software** que propone una plataforma web de conexión y socialización alrededor de la **adopción de mascotas**.
+**KuyayPet.** es un proyecto académico de **Ingeniería de Software** que propone una plataforma web de conexión y socialización alrededor de la **adopción de mascotas**.
 
 La idea es facilitar que una persona pueda conocer mascotas disponibles, explorar sus perfiles, expresar interés y contactar a sus responsables. Al mismo tiempo, quienes publican una mascota pueden compartir su información, gestionar solicitudes y acompañar el proceso de una posible adopción.
 
