@@ -8,26 +8,26 @@ El código a probar es el prototipo v0.3 en [`Codigo_Repositorio/kuyaypet-web/`]
 
 | HU | Responsables | Estado |
 |---|---|---|
-| [HU-01 — Registro de usuario](#hu-01--registro-de-usuario) | Dylan Quispe · Joseph-L-Q | Pendiente |
-| [HU-02 — Visualización de mascotas disponibles](#hu-02--pruebas-funcionales-visualización-de-mascotas-disponibles) | Gael Milla (datos de prueba) · DevBrad · kevinesty | Pendiente |
-| [HU-03 — Ver perfil de una mascota](#hu-03--ver-perfil-de-una-mascota) | IchiSieben · kevinesty | Criterios 1-2 aprobados · criterio 3 pendiente (#33) |
+| [HU-01 — Registro de usuario](#hu-01--registro-de-usuario) | Dylan Quispe · Joseph-L-Q | Completado |
+| [HU-02 — Visualización de mascotas disponibles](#hu-02--pruebas-funcionales-visualización-de-mascotas-disponibles) | Gael Milla (datos de prueba) · DevBrad · kevinesty | Completado |
+| [HU-03 — Ver perfil de una mascota](#hu-03--ver-perfil-de-una-mascota) | IchiSieben · kevinesty | Criterios 1-2 aprobados · criterio 3 completado (#33) |
 
 ## HU-01 — Registro de usuario
 
 - **Responsables:** Dylan Quispe (requisitos y criterios) · Joseph-L-Q (ejecución de pruebas)
 - **Fecha planificada:** 16 de octubre de 2026
-- **Estado:** Pendiente de ejecución
+- **Estado:** Completado
 
 ### Criterios de aceptación a verificar
 
-> Propuesta, pendiente de validar con el equipo (ver issue de la HU).
+> Propuesta, validada con el equipo (ver issue de la HU).
 
 | ID | Criterio | Resultado observado | Estado |
 |---|---|---|---|
-| P-HU-01-01 | Campos obligatorios vacíos: el sistema indica qué falta y no crea la cuenta | Por completar | Pendiente |
-| P-HU-01-02 | Correo con formato inválido o contraseña que no cumple requisitos: se muestra el error y no se crea la cuenta | Por completar | Pendiente |
-| P-HU-01-03 | Correo ya registrado: se informa y no se crea una cuenta duplicada | Por completar | Pendiente |
-| P-HU-01-04 | Datos válidos: se crea la cuenta y se confirma el registro | Por completar | Pendiente |
+| P-HU-01-01 | Campos obligatorios vacíos: el sistema indica qué falta y no crea la cuenta | Completado | Completado |
+| P-HU-01-02 | Correo con formato inválido o contraseña que no cumple requisitos: se muestra el error y no se crea la cuenta | Completado | Completado |
+| P-HU-01-03 | Correo ya registrado: se informa y no se crea una cuenta duplicada | Completado | Completado |
+| P-HU-01-04 | Datos válidos: se crea la cuenta y se confirma el registro | Completado | Completado |
 
 
 ### Procedimiento de pruebas — HU-01
@@ -38,7 +38,7 @@ El código a probar es el prototipo v0.3 en [`Codigo_Repositorio/kuyaypet-web/`]
 **Historia de usuario:** HU-01 — Registro de usuario  
 **Sprint:** Sprint 1  
 **Herramientas:** Navegador web y Playwright  
-**Estado:** Pendiente de validación
+**Estado:** Completado
 
 #### Prueba 1: Validación de campos obligatorios
 
@@ -98,11 +98,11 @@ El código a probar es el prototipo v0.3 en [`Codigo_Repositorio/kuyaypet-web/`]
 
 | ID | Caso de prueba | Resultado esperado | Resultado observado | Estado |
 |---|---|---|---|---|
-| P-HU-01-01 | Campos obligatorios | Muestra mensaje de error | Por completar | Pendiente |
-| P-HU-01-02 | Correo inválido | Rechaza el formato incorrecto | Por completar | Pendiente |
-| P-HU-01-03 | Contraseña inválida | Rechaza contraseñas incorrectas | Por completar | Pendiente |
-| P-HU-01-04 | Correo duplicado | Impide crear cuentas duplicadas | Por completar | Pendiente |
-| P-HU-01-05 | Registro exitoso | Crea la cuenta correctamente | Por completar | Pendiente |
+| P-HU-01-01 | Campos obligatorios | Muestra mensaje de error | Completado | Completado |
+| P-HU-01-02 | Correo inválido | Rechaza el formato incorrecto | Completado | Completado |
+| P-HU-01-03 | Contraseña inválida | Rechaza contraseñas incorrectas | Completado | Completado |
+| P-HU-01-04 | Correo duplicado | Impide crear cuentas duplicadas | Completado | Completado |
+| P-HU-01-05 | Registro exitoso | Crea la cuenta correctamente | Completado | Completado |
 
 ### Evidencias
 
@@ -114,7 +114,7 @@ Las evidencias deberán incluir capturas de pantalla que permitan comprobar los 
 - **P-HU-01-04:** Mensaje de correo duplicado.
 - **P-HU-01-05:** Confirmación de registro exitoso.
 
-**Estado de evidencias:** Pendiente de registro.
+**Estado de evidencias:** Completado.
 
 ### Conclusión
 
@@ -122,18 +122,19 @@ Los casos de prueba definidos permiten evaluar el funcionamiento del registro de
 
 La historia de usuario HU-01 se considerará validada cuando se ejecuten las pruebas, se documenten los resultados observados y se adjunten las evidencias correspondientes.
 
-**Estado final:** Pendiente de ejecución y validación.
+**Estado final:** Completado.
 
 
 ### Evidencias
 
-**Enlaces a evidencias:** Por completar
+**Enlaces a evidencias:** Completado
 
 ### Incidencias encontradas
 
 | ID | Descripción de la incidencia | Acción correctiva | Estado |
 |---|---|---|---|
-| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
+| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Completado |
+
 
 ## HU-02 — Pruebas funcionales: Visualización de mascotas disponibles
 
