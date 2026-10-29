@@ -35,9 +35,9 @@ Para un día nuevo, copia el encabezado `## Daily Scrum — AAAA-MM-DD` con los 
 - **Bloqueos o ayuda necesaria:** 
 
 ### 6. Gael Milla
-- **Ayer avancé en:** 
-- **Hoy trabajaré en:** 
-- **Bloqueos o ayuda necesaria:** 
+- **Ayer avancé en: la tarea 57 y 58** 
+- **Hoy trabajaré en: fusionar esas tareas** 
+- **Bloqueos o ayuda necesaria: ninguna** 
 
 ### 7. Juan Vidal
 - **Ayer avancé en:** 
