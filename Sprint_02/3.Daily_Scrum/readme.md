@@ -40,6 +40,6 @@ Para un día nuevo, copia el encabezado `## Daily Scrum — AAAA-MM-DD` con los 
 - **Bloqueos o ayuda necesaria: ninguna** 
 
 ### 7. Juan Vidal
-- **Ayer avancé en:** 
-- **Hoy trabajaré en:** 
-- **Bloqueos o ayuda necesaria:** 
+- **Ayer avancé en: Avancé con las tareas correspondientes a los PR #54, #66, #48 y #49.
+- **Hoy trabajaré en: Revisaré y aprobaré los PR pendientes, realizando el proceso de fusión en el orden establecido
+- **Bloqueos o ayuda necesaria:  Por el momento, no tengo bloqueos identificados. Verificaré que cada PR esté listo para fusionarse correctamente.
