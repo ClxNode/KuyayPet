@@ -66,3 +66,7 @@ Burndown y regla de puntos: [readme del sprint](../readme.md#6-métricas).
 ## 8.6. Próximos pasos
 
 Fusionar los PR #88 a #95, fusionar el PR de pruebas de seguridad (#99), publicar los 5 documentos de `docs/`, desplegar, marcar las casillas “Validado por”, y actualizar el velocity y el burndown al cerrar el milestone.
+
+## Videos sobre producción v1.0.0
+
+Las 26 HU grabadas contra producción el 19-nov-2026: [carpeta en Drive](https://drive.google.com/open?id=1DwZg8msfjz7JD_FwBBthTni8OjZ835dd). Tabla por HU en [docs/pruebas.md](../../docs/pruebas.md#videos-de-las-26-hu-contra-producción-v100-19-nov-2026).

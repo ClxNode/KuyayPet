@@ -120,3 +120,36 @@ Ejecución del 19-nov-2026 contra https://firebrick-cod-910257.hostingersite.com
 - Playwright: 130 pruebas; 129 pasaron a la primera. HU-12 criterio 2 falló por `net::ERR_TIMED_OUT` al cargar la página (un problema de red, no de una aserción) y pasó 5 de 5 al repetirla.
 - Antes del despliegue, sobre el mismo código en local: Vitest 22 de 22 y Playwright 130 de 130.
 - Videos de v1.0.0: enlace en la carpeta de Drive de videos-hu.
+
+### Videos de las 26 HU contra producción (v1.0.0, 19-nov-2026)
+
+Grabados con `scripts/record-hu.mjs` y `BASE_URL` de producción: 26 de 26 specs de evidencias pasan (HU-06 se repitió una vez por un timeout de clic). Carpeta: [videos-hu/v1.0.0-2026-11-19](https://drive.google.com/open?id=1DwZg8msfjz7JD_FwBBthTni8OjZ835dd).
+
+| HU | Sprint | Video |
+|---|---|---|
+| HU-01 | 1 | [HU-01.mp4](https://drive.google.com/open?id=1xjKHr5Mlw5ZQJYgQC9hNcwLueH3OR1Nb) |
+| HU-02 | 1 | [HU-02.mp4](https://drive.google.com/open?id=1sPPeCLB5rIPuae-2tbualx8nQ9uE0YIw) |
+| HU-03 | 1 | [HU-03.mp4](https://drive.google.com/open?id=1uTBLDdsk1qlJe9J4wt5GiRr-N__XaWty) |
+| HU-04 | 2 | [HU-04.mp4](https://drive.google.com/open?id=1oM-ZD-BnCb3hUZ2PgiC2f-cyirkWxSII) |
+| HU-05 | 2 | [HU-05.mp4](https://drive.google.com/open?id=1M9mGtZy2XpGot4m8WAoIRXh16_lC7z3x) |
+| HU-06 | 3 | [HU-06.mp4](https://drive.google.com/open?id=1l1vVuJ4DW2vqNqx6CH7lxrdolW7m0PdG) |
+| HU-07 | 3 | [HU-07.mp4](https://drive.google.com/open?id=1Tq09-6R0sPJ0l13nw1Bgsewjed28RXqZ) |
+| HU-08 | 3 | [HU-08.mp4](https://drive.google.com/open?id=1gugqix6aMw9e0D2qAA8nbiWNZMLnlzam) |
+| HU-09 | 3 | [HU-09.mp4](https://drive.google.com/open?id=1UrzFWtNN5BDVC9vumctO2-bjyjykSssZ) |
+| HU-10 | 3 | [HU-10.mp4](https://drive.google.com/open?id=12R619hy_97ngZy4Z95RBSFFWawujI3Ls) |
+| HU-11 | 2 | [HU-11.mp4](https://drive.google.com/open?id=168TRWXukFJ79AJR2Q-5ySAn4M6PHdxAi) |
+| HU-12 | 2 | [HU-12.mp4](https://drive.google.com/open?id=1V1yj8dgvJXtjCSWRAJVBHkHRCxMtYOGx) |
+| HU-13 | 3 | [HU-13.mp4](https://drive.google.com/open?id=16fs-cVvcdyFmBcutV2fzVw2YuoJ8Knpq) |
+| HU-14 | 3 | [HU-14.mp4](https://drive.google.com/open?id=10Sf6O6khM3uKVEpjUdUAwGi-S5jpF_HZ) |
+| HU-15 | 3 | [HU-15.mp4](https://drive.google.com/open?id=1H3gR0hYcU3ogumf7S1udZuGJvANXYho3) |
+| HU-16 | 2 | [HU-16.mp4](https://drive.google.com/open?id=1blM2NuWZnjxECLSo17RrayYYoZYGUB5Z) |
+| HU-17 | 2 | [HU-17.mp4](https://drive.google.com/open?id=1Nas3SzOrf2b_I40G0nPsO1uIiQgDZNgY) |
+| HU-18 | 3 | [HU-18.mp4](https://drive.google.com/open?id=19BpEevx7ysxJ6NrxvS2NWknloc0Es2y5) |
+| HU-19 | 2 | [HU-19.mp4](https://drive.google.com/open?id=1Y-S-eA6iQ-jYAyK9fBDAax8IJIMTGFpX) |
+| HU-20 | 3 | [HU-20.mp4](https://drive.google.com/open?id=1JrBm4O4qEbsRebl-Mh7hVfTd9rtU9C6C) |
+| HU-21 | 2 | [HU-21.mp4](https://drive.google.com/open?id=1dTQYfebQALlz3ggP-DplpowNR_w4uY0i) |
+| HU-22 | 3 | [HU-22.mp4](https://drive.google.com/open?id=1MAMeTewgsyXS9an4zTElqIStLgFm2iGF) |
+| HU-23 | 3 | [HU-23.mp4](https://drive.google.com/open?id=1TykaNO73VGxy4XezMDCaudqN374ssQye) |
+| HU-24 | 3 | [HU-24.mp4](https://drive.google.com/open?id=1K5gWa8dacyffus-Ms6orBOYCMByw43lG) |
+| HU-25 | 3 | [HU-25.mp4](https://drive.google.com/open?id=1d4BhZB6dh04OaeR4oulB53FHs9u4zViQ) |
+| HU-26 | 3 | [HU-26.mp4](https://drive.google.com/open?id=1kok3Bn_0KLma5w4BpYQr_M9u_jhXFbnL) |
