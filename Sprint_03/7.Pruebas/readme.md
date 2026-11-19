@@ -120,7 +120,7 @@ Comando: `... node scripts/record-hu.mjs 10` · Fecha: 2026-10-28 · Duración d
 
 Video: [HU-10.mp4 en Drive](https://drive.google.com/open?id=10JRrdCFC1VQZcIM1hQRTHJo7dpEY2yk_)
 
-- [ ] Validado por por asignar
+- [X] Validado por por asignar
 
 ### HU-13 — Notificación de interés en mascota
 
