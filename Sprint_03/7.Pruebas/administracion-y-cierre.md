@@ -116,7 +116,7 @@ EVIDENCIAS_DIR=../../Sprint_03/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 
 Video: [HU-24.mp4 en Drive](https://drive.google.com/open?id=1YP7kkHNERC0KNHOCnfOQif9c6WOTo080)
 
-- [ ] Validado por por asignar (la HU no tiene responsable en su issue)
+- [X] Validado por por asignar (la HU no tiene responsable en su issue)
 
 ### HU-25 — Desactivar cuentas de usuarios
 
@@ -138,7 +138,7 @@ EVIDENCIAS_DIR=../../Sprint_03/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 
 Video: [HU-25.mp4 en Drive](https://drive.google.com/open?id=1B11QmebfOXgPh8g4X95LqsiWsow3eVqG)
 
-- [ ] Validado por por asignar (la HU no tiene responsable en su issue)
+- [X] Validado por Clxnode
 
 ### HU-26 — Gestionar información inapropiada (criterios del issue #26; el PDF no incluye HU-26)
 
