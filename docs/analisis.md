@@ -2,7 +2,7 @@
 
 [← Volver a la presentación](../readme.md) · [Arquitectura](./arquitectura.md) · [Modelo de datos](./modelo-datos.md) · [Catálogo de HU](./historias-de-usuario.md)
 
-> Este análisis describe el comportamiento **real** del prototipo en `main` (commit `8973b20`), leído del código de [`Codigo_Repositorio/kuyaypet-web/src/`](../Codigo_Repositorio/kuyaypet-web/src/) y contrastado con los criterios de aceptación de [`docs-fuente/Lista_Historias_de_Usuario_KuyayPet.md`](../../docs-fuente/Lista_Historias_de_Usuario_KuyayPet.md). Lo que el código no hace se marca como tal.
+> Este análisis describe el comportamiento **real** del prototipo en `main` (commit `8973b20`), leído del código de [`Codigo_Repositorio/kuyaypet-web/src/`](../Codigo_Repositorio/kuyaypet-web/src/) y contrastado con los criterios de aceptación de la lista de historias de usuario del equipo (copiada en [historias-de-usuario.md](./historias-de-usuario.md)). Lo que el código no hace se marca como tal.
 >
 > **Citas.** Toda cita `archivo:línea` es relativa a `Codigo_Repositorio/kuyaypet-web/src/`. Las líneas corresponden a `main`. Tres PR de código de la parte (b) del Sprint 3 siguen abiertos y modifican pantallas citadas aquí: #88 (HU-14, acceso a la guía desde `shell/AppLayout.tsx`), #91 (HU-23, el detalle de la publicación muestra los datos de la mascota, `screens/admin/AdminPublicationDetail.tsx`) y #93 (HU-25, aviso "La cuenta ya está inactiva" en `screens/admin/AdminUserDetail.tsx`). Cuando se fusionen, esas líneas se desplazan; las reglas no cambian.
 >
