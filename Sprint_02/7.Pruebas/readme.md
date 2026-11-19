@@ -1,6 +1,6 @@
 # 7. Pruebas — Sprint 2
 
-> **Propuesta — se valida en la planning del video.** Plan de pruebas por HU candidata, con el mismo formato que usó DevBrad en el [Sprint 1](../../Sprint_01/7.Pruebas/readme.md#hu-02--pruebas-funcionales-visualización-de-mascotas-disponibles). Los casos se derivan de los criterios del [Product Backlog Item](../1.Product_Backlog_Item/readme.md) y siguen la numeración del Sprint 1 (P-06…P-09). Cada responsable ejecuta sus casos y recién entonces escribe el resultado observado y cambia el estado a `Aprobado` o `Fallido`.
+> Plan de pruebas por HU, con el mismo formato que usó DevBrad en el [Sprint 1](../../Sprint_01/7.Pruebas/readme.md#hu-02--pruebas-funcionales-visualización-de-mascotas-disponibles). Los casos se derivan de los criterios del [Product Backlog Item](../1.Product_Backlog_Item/readme.md) y siguen la numeración del Sprint 1 (P-06…P-09). Los resultados y estados de P-10 a P-24 salen de la **ejecución automatizada del 28-oct-2026** (sección final); no hay ejecución manual registrada. Cada HU tiene una casilla `Validado por <usuario>` (el responsable según el issue) que sigue sin marcar.
 
 El código a probar es el prototipo v0.3 en [`Codigo_Repositorio/kuyaypet-web/`](../../Codigo_Repositorio/kuyaypet-web/), desplegado en https://firebrick-cod-910257.hostingersite.com/ (abrirlo en una ventana de incógnito). Capturas: `evidencias/HU-NN/P-NN-descripcion.png`.
 
@@ -8,13 +8,13 @@ El código a probar es el prototipo v0.3 en [`Codigo_Repositorio/kuyaypet-web/`]
 
 | HU | Tarea | Casos | Responsable | Estado |
 |---|---|---|---|---|
-| [HU-11 — Registrar mascota](#hu-11--registrar-mascota) | [#38](https://github.com/ClxNode/KuyayPet/issues/38) | P-10 a P-11 | ✋ | Pendiente |
-| [HU-16 — Registro visual y etiquetado de mascotas](#hu-16--registro-visual-y-etiquetado-de-mascotas) | [#39](https://github.com/ClxNode/KuyayPet/issues/39) | P-12 a P-13 | ✋ | Pendiente |
-| [HU-12 — Editar información textual de una mascota](#hu-12--editar-información-textual-de-una-mascota) | [#40](https://github.com/ClxNode/KuyayPet/issues/40) | P-14 a P-15 | ✋ | Pendiente |
-| [HU-04 — Filtrar mascotas según preferencias](#hu-04--filtrar-mascotas-según-preferencias) | [#41](https://github.com/ClxNode/KuyayPet/issues/41) | P-16 a P-18 | ✋ | Pendiente |
-| [HU-05 — Búsqueda de mascotas cercanas](#hu-05--búsqueda-de-mascotas-cercanas) | [#42](https://github.com/ClxNode/KuyayPet/issues/42) | P-19 a P-20 | ✋ | Pendiente |
-| [HU-17 — Guardado de mascotas favoritas](#hu-17--guardado-de-mascotas-favoritas) | [#43](https://github.com/ClxNode/KuyayPet/issues/43) | P-21 a P-22 | ✋ | Pendiente |
-| [HU-19 — Actualización de mascota como adoptada](#hu-19--actualización-de-mascota-como-adoptada) | [#44](https://github.com/ClxNode/KuyayPet/issues/44) | P-23 a P-24 | ✋ | Pendiente |
+| [HU-11 — Registrar mascota](#hu-11--registrar-mascota) | [#38](https://github.com/ClxNode/KuyayPet/issues/38) | P-10 a P-11 | Dylan200-7 | Ejecutado (automatizado); validación pendiente |
+| [HU-16 — Registro visual y etiquetado de mascotas](#hu-16--registro-visual-y-etiquetado-de-mascotas) | [#39](https://github.com/ClxNode/KuyayPet/issues/39) | P-12 a P-13 | ClxNode y Dylan200-7 | Ejecutado (automatizado); validación pendiente |
+| [HU-12 — Editar información textual de una mascota](#hu-12--editar-información-textual-de-una-mascota) | [#40](https://github.com/ClxNode/KuyayPet/issues/40) | P-14 a P-15 | ClxNode y Dylan200-7 | Ejecutado (automatizado); validación pendiente |
+| [HU-04 — Filtrar mascotas según preferencias](#hu-04--filtrar-mascotas-según-preferencias) | [#41](https://github.com/ClxNode/KuyayPet/issues/41) | P-16 a P-18 | VALTOm07 | Ejecutado (automatizado); validación pendiente |
+| [HU-05 — Búsqueda de mascotas cercanas](#hu-05--búsqueda-de-mascotas-cercanas) | [#42](https://github.com/ClxNode/KuyayPet/issues/42) | P-19 a P-20 | VALTOm07 y kevinesty | Ejecutado (automatizado); validación pendiente |
+| [HU-17 — Guardado de mascotas favoritas](#hu-17--guardado-de-mascotas-favoritas) | [#43](https://github.com/ClxNode/KuyayPet/issues/43) | P-21 a P-22 | Joseph-L-Q | Ejecutado (automatizado); validación pendiente |
+| [HU-19 — Actualización de mascota como adoptada](#hu-19--actualización-de-mascota-como-adoptada) | [#44](https://github.com/ClxNode/KuyayPet/issues/44) | P-23 a P-24 | BeyondNate y Joseph-L-Q | Ejecutado (automatizado); validación pendiente |
 
 ## HU-11 — Registrar mascota
 
@@ -23,9 +23,9 @@ El código a probar es el prototipo v0.3 en [`Codigo_Repositorio/kuyaypet-web/`]
 - **Proyecto:** KuyayPet
 - **Sprint:** Sprint 2
 - **Historia de usuario:** HU-11 ([#11](https://github.com/ClxNode/KuyayPet/issues/11)) · tarea [#38](https://github.com/ClxNode/KuyayPet/issues/38)
-- **Responsable:** ✋ Pendiente (se asigna en la planning)
-- **Fecha planificada:** ✋ Pendiente
-- **Estado:** Pendiente de ejecución
+- **Responsable:** Dylan200-7 (asignados en el issue de la HU en GitHub)
+- **Fecha planificada:** 29-oct-2026 (fecha límite de la HU en el GitHub Project)
+- **Estado:** Ejecutado con pruebas automatizadas el 28-oct-2026; validación del responsable pendiente
 
 ### 2. Objetivo
 
@@ -55,8 +55,8 @@ Yo como responsable de una mascota, deseo registrar una mascota en la plataforma
   5. Completar la descripción y pulsar **Publicar mascota** → **Publicar**.
   6. Revisar el panel del responsable.
 - **Resultado esperado:** La mascota aparece en el panel del responsable con los datos ingresados.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-11, criterios 1 a 3): «Registrar» abre el formulario de 3 pasos, se completan los datos y la mascota aparece en «Mis publicaciones». Captura: [P-HU-11-03](evidencias/HU-11/P-HU-11-03-mascota-registrada.png).
+- **Estado:** Aprobado (automatizado).
 
 #### P-11: Datos obligatorios faltantes
 
@@ -68,17 +68,17 @@ Yo como responsable de una mascota, deseo registrar una mascota en la plataforma
   3. Pulsar **Continuar** sin completar los campos.
   4. Revisar el panel del responsable.
 - **Resultado esperado:** Se muestra un mensaje que indica los datos faltantes y no se crea ninguna mascota nueva.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-11, criterio 5): sin datos, «Continuar» muestra una alerta con lo que falta. Captura: [P-HU-11-05](evidencias/HU-11/P-HU-11-05-campos-obligatorios.png). La prueba verifica la alerta; no cuenta las mascotas del panel.
+- **Estado:** Aprobado parcial (automatizado).
 
 ### 6. Registro de resultados
 
 | ID | Caso de prueba | Resultado esperado | Resultado observado | Estado |
 |---|---|---|---|---|
-| P-10 | Registro con datos obligatorios completos | La mascota aparece en el panel del responsable con los datos ingresados. | ✋ | Pendiente |
-| P-11 | Datos obligatorios faltantes | Se muestra un mensaje que indica los datos faltantes y no se crea ninguna mascota nueva. | ✋ | Pendiente |
+| P-10 | Registro con datos obligatorios completos | La mascota aparece en el panel del responsable con los datos ingresados. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
+| P-11 | Datos obligatorios faltantes | Se muestra un mensaje que indica los datos faltantes y no se crea ninguna mascota nueva. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado parcial (automatizado) |
 
-**Nota:** Los estados se actualizan a `Aprobado` o `Fallido` únicamente después de ejecutar cada prueba y comprobar su resultado.
+**Nota:** Los estados salen de la ejecución automatizada del 28-oct-2026 (sección «Ejecución automatizada», al final). No hay ejecución manual registrada.
 
 ### 7. Datos de prueba
 
@@ -91,19 +91,21 @@ Guardar las capturas en `evidencias/HU-11/`:
 - **P-10:** captura del resultado de “registro con datos obligatorios completos”.
 - **P-11:** captura del resultado de “datos obligatorios faltantes”.
 
-**Enlaces a evidencias:** ✋ Pendiente.
+**Enlaces a evidencias:** Capturas en [`evidencias/HU-11/`](evidencias/HU-11/) y video [HU-11.mp4](https://drive.google.com/open?id=1X5hKHtWa7i57dCZn2AQmbuLjYDjLJ7_Y). Detalle por criterio en la sección «Ejecución automatizada».
 
 ### 9. Incidencias encontradas
 
 | ID | Descripción de la incidencia | Acción correctiva | Estado |
 |---|---|---|---|
-| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
+| — | Observación: el criterio 6 del documento del equipo («disponible para adopción») difiere del comportamiento del prototipo: la mascota queda «En revisión» hasta que un administrador la aprueba (ADR-05). | Se documentó como comportamiento observado (captura P-HU-11-06). | Registrada |
 
 ### 10. Conclusión
 
 HU-11 se considerará validada cuando sus casos se hayan ejecutado, los resultados sean satisfactorios y existan evidencias verificables.
 
-**Estado final:** Pendiente de ejecución y validación.
+**Estado final:** ejecución automatizada aprobada el 28-oct-2026 (PR [#65](https://github.com/ClxNode/KuyayPet/pull/65)); validación del responsable pendiente.
+
+- [ ] Validado por Dylan200-7
 
 ## HU-16 — Registro visual y etiquetado de mascotas
 
@@ -112,9 +114,9 @@ HU-11 se considerará validada cuando sus casos se hayan ejecutado, los resultad
 - **Proyecto:** KuyayPet
 - **Sprint:** Sprint 2
 - **Historia de usuario:** HU-16 ([#16](https://github.com/ClxNode/KuyayPet/issues/16)) · tarea [#39](https://github.com/ClxNode/KuyayPet/issues/39)
-- **Responsable:** ✋ Pendiente (se asigna en la planning)
-- **Fecha planificada:** ✋ Pendiente
-- **Estado:** Pendiente de ejecución
+- **Responsable:** ClxNode y Dylan200-7 (asignados en el issue de la HU en GitHub)
+- **Fecha planificada:** 29-oct-2026 (fecha límite de la HU en el GitHub Project)
+- **Estado:** Ejecutado con pruebas automatizadas el 28-oct-2026; validación del responsable pendiente
 
 ### 2. Objetivo
 
@@ -142,8 +144,8 @@ Yo como responsable de una mascota, deseo agregar imágenes y etiquetas a las ma
   3. Abrir el perfil de esa mascota.
   4. Abrir la edición de esa mascota y comprobar si permite agregar otra foto.
 - **Resultado esperado:** La imagen agregada se muestra en el perfil de la mascota, tanto al registrar como al editar.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-16, criterios 3 y 7, y prueba de edición de `owner.spec.ts`): la vista previa se muestra al registrar; tras la aprobación del administrador el perfil muestra la foto; al editar se agrega y se quita una foto y el perfil conserva 2 fotos. Capturas: [P-HU-16-07b](evidencias/HU-16/P-HU-16-07b-perfil-con-foto-y-etiqueta.png), [antes-editar](evidencias/HU-16/antes-editar.png), [despues-editar](evidencias/HU-16/despues-editar.png).
+- **Estado:** Aprobado (automatizado).
 
 #### P-13: Etiquetas visibles en el perfil
 
@@ -155,17 +157,17 @@ Yo como responsable de una mascota, deseo agregar imágenes y etiquetas a las ma
   3. Publicarla y abrir su perfil.
   4. Abrir la edición de esa mascota y comprobar si permite cambiar las etiquetas.
 - **Resultado esperado:** Las etiquetas elegidas aparecen en el perfil de la mascota, tanto al registrar como al editar.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-16, criterios 5 y 7, y prueba de edición): la etiqueta «Cariñoso/a» queda seleccionada y se ve en el perfil; al editar se quita «Sociable», se agrega «Juguetón/a» y el perfil la muestra. Capturas: [P-HU-16-05](evidencias/HU-16/P-HU-16-05-etiqueta-elegida.png), [despues-perfil](evidencias/HU-16/despues-perfil.png).
+- **Estado:** Aprobado (automatizado).
 
 ### 6. Registro de resultados
 
 | ID | Caso de prueba | Resultado esperado | Resultado observado | Estado |
 |---|---|---|---|---|
-| P-12 | Imagen visible en el perfil | La imagen agregada se muestra en el perfil de la mascota, tanto al registrar como al editar. | ✋ | Pendiente |
-| P-13 | Etiquetas visibles en el perfil | Las etiquetas elegidas aparecen en el perfil de la mascota, tanto al registrar como al editar. | ✋ | Pendiente |
+| P-12 | Imagen visible en el perfil | La imagen agregada se muestra en el perfil de la mascota, tanto al registrar como al editar. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
+| P-13 | Etiquetas visibles en el perfil | Las etiquetas elegidas aparecen en el perfil de la mascota, tanto al registrar como al editar. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
 
-**Nota:** Los estados se actualizan a `Aprobado` o `Fallido` únicamente después de ejecutar cada prueba y comprobar su resultado.
+**Nota:** Los estados salen de la ejecución automatizada del 28-oct-2026 (sección «Ejecución automatizada», al final). No hay ejecución manual registrada.
 
 ### 7. Datos de prueba
 
@@ -178,19 +180,21 @@ Guardar las capturas en `evidencias/HU-16/`:
 - **P-12:** captura del resultado de “imagen visible en el perfil”.
 - **P-13:** captura del resultado de “etiquetas visibles en el perfil”.
 
-**Enlaces a evidencias:** ✋ Pendiente.
+**Enlaces a evidencias:** Capturas en [`evidencias/HU-16/`](evidencias/HU-16/) y video [HU-16.mp4](https://drive.google.com/open?id=1QReoI9Af1EnyTJt9StRAZFVa3SW8EMYf). Detalle por criterio en la sección «Ejecución automatizada».
 
 ### 9. Incidencias encontradas
 
 | ID | Descripción de la incidencia | Acción correctiva | Estado |
 |---|---|---|---|
-| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
+| — | La pantalla de edición solo cambiaba textos (revisión del 28-oct). | Corregido en el PR [#48](https://github.com/ClxNode/KuyayPet/pull/48): fotos y etiquetas editables; probado en `owner.spec.ts`. | Resuelta |
 
 ### 10. Conclusión
 
 HU-16 se considerará validada cuando sus casos se hayan ejecutado, los resultados sean satisfactorios y existan evidencias verificables.
 
-**Estado final:** Pendiente de ejecución y validación.
+**Estado final:** ejecución automatizada aprobada el 28-oct-2026 (PR [#65](https://github.com/ClxNode/KuyayPet/pull/65)); validación del responsable pendiente.
+
+- [ ] Validado por ClxNode y Dylan200-7
 
 ## HU-12 — Editar información textual de una mascota
 
@@ -199,9 +203,9 @@ HU-16 se considerará validada cuando sus casos se hayan ejecutado, los resultad
 - **Proyecto:** KuyayPet
 - **Sprint:** Sprint 2
 - **Historia de usuario:** HU-12 ([#12](https://github.com/ClxNode/KuyayPet/issues/12)) · tarea [#40](https://github.com/ClxNode/KuyayPet/issues/40)
-- **Responsable:** ✋ Pendiente (se asigna en la planning)
-- **Fecha planificada:** ✋ Pendiente
-- **Estado:** Pendiente de ejecución
+- **Responsable:** ClxNode y Dylan200-7 (asignados en el issue de la HU en GitHub)
+- **Fecha planificada:** 29-oct-2026 (fecha límite de la HU en el GitHub Project)
+- **Estado:** Ejecutado con pruebas automatizadas el 28-oct-2026; validación del responsable pendiente
 
 ### 2. Objetivo
 
@@ -229,8 +233,8 @@ Yo como responsable de una mascota, deseo editar la información textual de una 
   3. Cambiar el nombre y la descripción y pulsar **Guardar cambios**.
   4. Abrir el perfil de la mascota.
 - **Resultado esperado:** El perfil muestra el nombre y la descripción nuevos.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-12, criterios 1, 2 y 5): el formulario viene prellenado, aparece «Cambios guardados con éxito» y se abre el perfil público con el nombre y la descripción nuevos. Captura: [P-HU-12-05](evidencias/HU-12/P-HU-12-05-perfil-publico-actualizado.png).
+- **Estado:** Aprobado (automatizado).
 
 #### P-15: Intento de editar una mascota ajena
 
@@ -241,17 +245,17 @@ Yo como responsable de una mascota, deseo editar la información textual de una 
   2. Escribir en la barra de direcciones la ruta de edición de una mascota de otro responsable: `#/responsable/editar/p02` (Max).
   3. Observar la pantalla.
 - **Resultado esperado:** El sistema no muestra el formulario de edición de esa mascota.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (prueba «HU-12 no permite editar una mascota que no registré», PR #49): `#/responsable/editar/p02` muestra «Mascota no encontrada», sin formulario ni botón «Guardar cambios», y los datos de la mascota no cambian. Captura: [despues-mascota-ajena-bloqueada](evidencias/HU-12/despues-mascota-ajena-bloqueada.png).
+- **Estado:** Aprobado (automatizado).
 
 ### 6. Registro de resultados
 
 | ID | Caso de prueba | Resultado esperado | Resultado observado | Estado |
 |---|---|---|---|---|
-| P-14 | Edición de una mascota propia | El perfil muestra el nombre y la descripción nuevos. | ✋ | Pendiente |
-| P-15 | Intento de editar una mascota ajena | El sistema no muestra el formulario de edición de esa mascota. | ✋ | Pendiente |
+| P-14 | Edición de una mascota propia | El perfil muestra el nombre y la descripción nuevos. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
+| P-15 | Intento de editar una mascota ajena | El sistema no muestra el formulario de edición de esa mascota. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
 
-**Nota:** Los estados se actualizan a `Aprobado` o `Fallido` únicamente después de ejecutar cada prueba y comprobar su resultado.
+**Nota:** Los estados salen de la ejecución automatizada del 28-oct-2026 (sección «Ejecución automatizada», al final). No hay ejecución manual registrada.
 
 ### 7. Datos de prueba
 
@@ -264,19 +268,21 @@ Guardar las capturas en `evidencias/HU-12/`:
 - **P-14:** captura del resultado de “edición de una mascota propia”.
 - **P-15:** captura del resultado de “intento de editar una mascota ajena”.
 
-**Enlaces a evidencias:** ✋ Pendiente.
+**Enlaces a evidencias:** Capturas en [`evidencias/HU-12/`](evidencias/HU-12/) y video [HU-12.mp4](https://drive.google.com/open?id=1YofEckGlVM9WaueYJpg1RZy2jBHdcVX_). Detalle por criterio en la sección «Ejecución automatizada».
 
 ### 9. Incidencias encontradas
 
 | ID | Descripción de la incidencia | Acción correctiva | Estado |
 |---|---|---|---|
-| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
+| — | El criterio de la mascota ajena no tenía prueba. | Prueba agregada en el PR [#49](https://github.com/ClxNode/KuyayPet/pull/49). | Resuelta |
 
 ### 10. Conclusión
 
 HU-12 se considerará validada cuando sus casos se hayan ejecutado, los resultados sean satisfactorios y existan evidencias verificables.
 
-**Estado final:** Pendiente de ejecución y validación.
+**Estado final:** ejecución automatizada aprobada el 28-oct-2026 (PR [#65](https://github.com/ClxNode/KuyayPet/pull/65)); validación del responsable pendiente.
+
+- [ ] Validado por ClxNode y Dylan200-7
 
 ## HU-04 — Filtrar mascotas según preferencias
 
@@ -285,9 +291,9 @@ HU-12 se considerará validada cuando sus casos se hayan ejecutado, los resultad
 - **Proyecto:** KuyayPet
 - **Sprint:** Sprint 2
 - **Historia de usuario:** HU-04 ([#4](https://github.com/ClxNode/KuyayPet/issues/4)) · tarea [#41](https://github.com/ClxNode/KuyayPet/issues/41)
-- **Responsable:** ✋ Pendiente (se asigna en la planning)
-- **Fecha planificada:** ✋ Pendiente
-- **Estado:** Pendiente de ejecución
+- **Responsable:** VALTOm07 (asignados en el issue de la HU en GitHub)
+- **Fecha planificada:** 29-oct-2026 (fecha límite de la HU en el GitHub Project)
+- **Estado:** Ejecutado con pruebas automatizadas el 28-oct-2026; validación del responsable pendiente
 
 ### 2. Objetivo
 
@@ -315,8 +321,8 @@ Yo como adoptante, deseo filtrar las mascotas según mis preferencias, para enco
   3. Pulsar **Filtros**, elegir una especie (por ejemplo, Gato) y **Aplicar filtros**.
   4. Revisar las tarjetas.
 - **Resultado esperado:** Todas las tarjetas cumplen el filtro y hay menos resultados que al inicio.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-04, criterios 3 a 5): con «Gato» solo se ven gatos y el número de tarjetas coincide con los gatos disponibles; con Gato + Hembra el contador dice «Filtros (2)». Captura: [P-HU-04-03](evidencias/HU-04/P-HU-04-03-aplicar-filtro-especie.png).
+- **Estado:** Aprobado (automatizado).
 
 #### P-17: Filtros sin resultados
 
@@ -326,8 +332,8 @@ Yo como adoptante, deseo filtrar las mascotas según mis preferencias, para enco
   1. Con el filtro anterior, abrir **Filtros** y poner una edad mínima muy alta (por ejemplo, 9999 meses).
   2. Pulsar **Aplicar filtros**.
 - **Resultado esperado:** Se muestra un mensaje indicando que no hay resultados.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-04, criterio 6): con edad mínima 9999 se muestra «No hay mascotas que cumplan estos criterios». Captura: [P-HU-04-06](evidencias/HU-04/P-HU-04-06-sin-coincidencias.png).
+- **Estado:** Aprobado (automatizado).
 
 #### P-18: Eliminar los filtros
 
@@ -337,18 +343,18 @@ Yo como adoptante, deseo filtrar las mascotas según mis preferencias, para enco
   1. Abrir **Filtros** y pulsar **Limpiar filtros**.
   2. Contar las mascotas.
 - **Resultado esperado:** Aparece el mismo número de mascotas que antes de filtrar.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-04, criterios 8 y 10): «Limpiar filtros» devuelve la lista completa y desaparece el contador; al volver a /buscar la lista sigue sin restricciones. Capturas: [P-HU-04-08](evidencias/HU-04/P-HU-04-08-limpiar-filtros.png), [P-HU-04-10](evidencias/HU-04/P-HU-04-10-vuelta-sin-restricciones.png).
+- **Estado:** Aprobado (automatizado).
 
 ### 6. Registro de resultados
 
 | ID | Caso de prueba | Resultado esperado | Resultado observado | Estado |
 |---|---|---|---|---|
-| P-16 | Aplicar uno o más filtros | Todas las tarjetas cumplen el filtro y hay menos resultados que al inicio. | ✋ | Pendiente |
-| P-17 | Filtros sin resultados | Se muestra un mensaje indicando que no hay resultados. | ✋ | Pendiente |
-| P-18 | Eliminar los filtros | Aparece el mismo número de mascotas que antes de filtrar. | ✋ | Pendiente |
+| P-16 | Aplicar uno o más filtros | Todas las tarjetas cumplen el filtro y hay menos resultados que al inicio. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
+| P-17 | Filtros sin resultados | Se muestra un mensaje indicando que no hay resultados. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
+| P-18 | Eliminar los filtros | Aparece el mismo número de mascotas que antes de filtrar. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
 
-**Nota:** Los estados se actualizan a `Aprobado` o `Fallido` únicamente después de ejecutar cada prueba y comprobar su resultado.
+**Nota:** Los estados salen de la ejecución automatizada del 28-oct-2026 (sección «Ejecución automatizada», al final). No hay ejecución manual registrada.
 
 ### 7. Datos de prueba
 
@@ -362,19 +368,21 @@ Guardar las capturas en `evidencias/HU-04/`:
 - **P-17:** captura del resultado de “filtros sin resultados”.
 - **P-18:** captura del resultado de “eliminar los filtros”.
 
-**Enlaces a evidencias:** ✋ Pendiente.
+**Enlaces a evidencias:** Capturas en [`evidencias/HU-04/`](evidencias/HU-04/) y video [HU-04.mp4](https://drive.google.com/open?id=1IAINNZ9lwW3DTfBVuiWuAUj-_iJUhLqp). Detalle por criterio en la sección «Ejecución automatizada».
 
 ### 9. Incidencias encontradas
 
 | ID | Descripción de la incidencia | Acción correctiva | Estado |
 |---|---|---|---|
-| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
+| — | Sin incidencias en la ejecución automatizada | — | — |
 
 ### 10. Conclusión
 
 HU-04 se considerará validada cuando sus casos se hayan ejecutado, los resultados sean satisfactorios y existan evidencias verificables.
 
-**Estado final:** Pendiente de ejecución y validación.
+**Estado final:** ejecución automatizada aprobada el 28-oct-2026 (PR [#65](https://github.com/ClxNode/KuyayPet/pull/65)); validación del responsable pendiente.
+
+- [ ] Validado por VALTOm07
 
 ## HU-05 — Búsqueda de mascotas cercanas
 
@@ -383,9 +391,9 @@ HU-04 se considerará validada cuando sus casos se hayan ejecutado, los resultad
 - **Proyecto:** KuyayPet
 - **Sprint:** Sprint 2
 - **Historia de usuario:** HU-05 ([#5](https://github.com/ClxNode/KuyayPet/issues/5)) · tarea [#42](https://github.com/ClxNode/KuyayPet/issues/42)
-- **Responsable:** ✋ Pendiente (se asigna en la planning)
-- **Fecha planificada:** ✋ Pendiente
-- **Estado:** Pendiente de ejecución
+- **Responsable:** VALTOm07 y kevinesty (asignados en el issue de la HU en GitHub)
+- **Fecha planificada:** 29-oct-2026 (fecha límite de la HU en el GitHub Project)
+- **Estado:** Ejecutado con pruebas automatizadas el 28-oct-2026; validación del responsable pendiente
 
 ### 2. Objetivo
 
@@ -413,8 +421,8 @@ Yo como adoptante, deseo buscar mascotas cercanas a mi ubicación, para encontra
   3. En “Buscar por cercanía”, elegir un distrito (por ejemplo, Miraflores) y un radio de 20 km; pulsar **Buscar**.
   4. Revisar las tarjetas y, si se desea, la vista **Mapa**.
 - **Resultado esperado:** Se muestran mascotas disponibles con su distancia, todas dentro del radio indicado.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-05, criterios 1 a 4, y `map.spec.ts`): con Miraflores y radio de 5 km se muestra «Mostrando mascotas cerca de Miraflores»; cada tarjeta trae foto, nombre y distancia, todas dentro del radio. La prueba usó 5 km, no 20 km. Captura: [P-HU-05-04](evidencias/HU-05/P-HU-05-04-informacion-y-distancia.png).
+- **Estado:** Aprobado (automatizado).
 
 #### P-20: Sin mascotas cercanas
 
@@ -424,17 +432,17 @@ Yo como adoptante, deseo buscar mascotas cercanas a mi ubicación, para encontra
   1. Elegir un distrito y bajar el radio al mínimo (1 km); pulsar **Buscar**.
   2. Si todavía aparecen mascotas, probar otro distrito hasta obtener cero resultados.
 - **Resultado esperado:** Se muestra un mensaje indicando que no hay resultados cercanos.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-05, criterio 5, PR #51): San Isidro a 1 km muestra «No se encontraron mascotas cercanas». Captura: [P-HU-05-05](evidencias/HU-05/P-HU-05-05-sin-mascotas-cercanas.png).
+- **Estado:** Aprobado (automatizado).
 
 ### 6. Registro de resultados
 
 | ID | Caso de prueba | Resultado esperado | Resultado observado | Estado |
 |---|---|---|---|---|
-| P-19 | Búsqueda de mascotas cercanas | Se muestran mascotas disponibles con su distancia, todas dentro del radio indicado. | ✋ | Pendiente |
-| P-20 | Sin mascotas cercanas | Se muestra un mensaje indicando que no hay resultados cercanos. | ✋ | Pendiente |
+| P-19 | Búsqueda de mascotas cercanas | Se muestran mascotas disponibles con su distancia, todas dentro del radio indicado. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
+| P-20 | Sin mascotas cercanas | Se muestra un mensaje indicando que no hay resultados cercanos. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
 
-**Nota:** Los estados se actualizan a `Aprobado` o `Fallido` únicamente después de ejecutar cada prueba y comprobar su resultado.
+**Nota:** Los estados salen de la ejecución automatizada del 28-oct-2026 (sección «Ejecución automatizada», al final). No hay ejecución manual registrada.
 
 ### 7. Datos de prueba
 
@@ -447,19 +455,21 @@ Guardar las capturas en `evidencias/HU-05/`:
 - **P-19:** captura del resultado de “búsqueda de mascotas cercanas”.
 - **P-20:** captura del resultado de “sin mascotas cercanas”.
 
-**Enlaces a evidencias:** ✋ Pendiente.
+**Enlaces a evidencias:** Capturas en [`evidencias/HU-05/`](evidencias/HU-05/) y video [HU-05.mp4](https://drive.google.com/open?id=1z6kJwMQXLgTfaewwNrzeJDjXkZxaiMsL). Detalle por criterio en la sección «Ejecución automatizada».
 
 ### 9. Incidencias encontradas
 
 | ID | Descripción de la incidencia | Acción correctiva | Estado |
 |---|---|---|---|
-| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
+| — | Sin incidencias en la ejecución automatizada | — | — |
 
 ### 10. Conclusión
 
 HU-05 se considerará validada cuando sus casos se hayan ejecutado, los resultados sean satisfactorios y existan evidencias verificables.
 
-**Estado final:** Pendiente de ejecución y validación.
+**Estado final:** ejecución automatizada aprobada el 28-oct-2026 (PR [#65](https://github.com/ClxNode/KuyayPet/pull/65)); validación del responsable pendiente.
+
+- [ ] Validado por VALTOm07 y kevinesty
 
 ## HU-17 — Guardado de mascotas favoritas
 
@@ -468,9 +478,9 @@ HU-05 se considerará validada cuando sus casos se hayan ejecutado, los resultad
 - **Proyecto:** KuyayPet
 - **Sprint:** Sprint 2
 - **Historia de usuario:** HU-17 ([#17](https://github.com/ClxNode/KuyayPet/issues/17)) · tarea [#43](https://github.com/ClxNode/KuyayPet/issues/43)
-- **Responsable:** ✋ Pendiente (se asigna en la planning)
-- **Fecha planificada:** ✋ Pendiente
-- **Estado:** Pendiente de ejecución
+- **Responsable:** Joseph-L-Q (asignados en el issue de la HU en GitHub)
+- **Fecha planificada:** 29-oct-2026 (fecha límite de la HU en el GitHub Project)
+- **Estado:** Ejecutado con pruebas automatizadas el 28-oct-2026; validación del responsable pendiente
 
 ### 2. Objetivo
 
@@ -498,8 +508,8 @@ Yo como adoptante, deseo guardar mascotas como favoritas, para volver a consulta
   3. Ir a **Buscar** y pulsar el corazón de una mascota que no esté en favoritos.
   4. Volver a **Favoritos**.
 - **Resultado esperado:** La mascota aparece en la lista y el total aumentó en uno.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-17, criterios 2 a 4): el corazón queda activo, aparece el aviso «está en tus favoritos» y la lista de Favoritos tiene una tarjeta más. Capturas: [P-HU-17-03](evidencias/HU-17/P-HU-17-03-confirmacion-visual.png), [P-HU-17-04](evidencias/HU-17/P-HU-17-04-lista-de-favoritos.png).
+- **Estado:** Aprobado (automatizado).
 
 #### P-22: Quitar una mascota de favoritas
 
@@ -509,17 +519,17 @@ Yo como adoptante, deseo guardar mascotas como favoritas, para volver a consulta
   1. En **Favoritos**, quitar la mascota agregada en P-21.
   2. Revisar la lista.
 - **Resultado esperado:** La mascota ya no aparece y el total vuelve al valor inicial.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-17, criterio 5): el corazón activo retira la mascota de la lista. Captura: [P-HU-17-05](evidencias/HU-17/P-HU-17-05-quitar-de-favoritos.png).
+- **Estado:** Aprobado (automatizado).
 
 ### 6. Registro de resultados
 
 | ID | Caso de prueba | Resultado esperado | Resultado observado | Estado |
 |---|---|---|---|---|
-| P-21 | Marcar una mascota como favorita | La mascota aparece en la lista y el total aumentó en uno. | ✋ | Pendiente |
-| P-22 | Quitar una mascota de favoritas | La mascota ya no aparece y el total vuelve al valor inicial. | ✋ | Pendiente |
+| P-21 | Marcar una mascota como favorita | La mascota aparece en la lista y el total aumentó en uno. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
+| P-22 | Quitar una mascota de favoritas | La mascota ya no aparece y el total vuelve al valor inicial. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
 
-**Nota:** Los estados se actualizan a `Aprobado` o `Fallido` únicamente después de ejecutar cada prueba y comprobar su resultado.
+**Nota:** Los estados salen de la ejecución automatizada del 28-oct-2026 (sección «Ejecución automatizada», al final). No hay ejecución manual registrada.
 
 ### 7. Datos de prueba
 
@@ -532,19 +542,21 @@ Guardar las capturas en `evidencias/HU-17/`:
 - **P-21:** captura del resultado de “marcar una mascota como favorita”.
 - **P-22:** captura del resultado de “quitar una mascota de favoritas”.
 
-**Enlaces a evidencias:** ✋ Pendiente.
+**Enlaces a evidencias:** Capturas en [`evidencias/HU-17/`](evidencias/HU-17/) y video [HU-17.mp4](https://drive.google.com/open?id=1oHoT7boVjNjQ9hfIk-SFmaFrxnN3mc0G). Detalle por criterio en la sección «Ejecución automatizada».
 
 ### 9. Incidencias encontradas
 
 | ID | Descripción de la incidencia | Acción correctiva | Estado |
 |---|---|---|---|
-| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
+| — | Sin incidencias en la ejecución automatizada | — | — |
 
 ### 10. Conclusión
 
 HU-17 se considerará validada cuando sus casos se hayan ejecutado, los resultados sean satisfactorios y existan evidencias verificables.
 
-**Estado final:** Pendiente de ejecución y validación.
+**Estado final:** ejecución automatizada aprobada el 28-oct-2026 (PR [#65](https://github.com/ClxNode/KuyayPet/pull/65)); validación del responsable pendiente.
+
+- [ ] Validado por Joseph-L-Q
 
 ## HU-19 — Actualización de mascota como adoptada
 
@@ -553,9 +565,9 @@ HU-17 se considerará validada cuando sus casos se hayan ejecutado, los resultad
 - **Proyecto:** KuyayPet
 - **Sprint:** Sprint 2
 - **Historia de usuario:** HU-19 ([#19](https://github.com/ClxNode/KuyayPet/issues/19)) · tarea [#44](https://github.com/ClxNode/KuyayPet/issues/44)
-- **Responsable:** ✋ Pendiente (se asigna en la planning)
-- **Fecha planificada:** ✋ Pendiente
-- **Estado:** Pendiente de ejecución
+- **Responsable:** BeyondNate y Joseph-L-Q (asignados en el issue de la HU en GitHub)
+- **Fecha planificada:** 29-oct-2026 (fecha límite de la HU en el GitHub Project)
+- **Estado:** Ejecutado con pruebas automatizadas el 28-oct-2026; validación del responsable pendiente
 
 ### 2. Objetivo
 
@@ -582,8 +594,8 @@ Yo como responsable de una mascota, deseo marcar una mascota como adoptada, para
   2. En el panel, pulsar **Marcar como adoptada** en una mascota disponible y confirmar.
   3. Anotar el nombre de la mascota.
 - **Resultado esperado:** La mascota muestra el estado adoptada en el panel del responsable.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-19, criterios 2 a 4): «Marcar como adoptada» abre el diálogo de confirmación y, al confirmar, la tarjeta muestra «Adoptada 🎉». Captura: [P-HU-19-04](evidencias/HU-19/P-HU-19-04-estado-adoptada.png).
+- **Estado:** Aprobado (automatizado).
 
 #### P-24: La mascota adoptada no aparece como disponible
 
@@ -593,17 +605,17 @@ Yo como responsable de una mascota, deseo marcar una mascota como adoptada, para
   1. Cerrar sesión e ingresar con la cuenta demo de adoptante en el **mismo navegador** (los datos del prototipo son locales).
   2. Abrir **Buscar** y buscar la mascota de P-23.
 - **Resultado esperado:** La mascota marcada como adoptada no aparece en la lista de disponibles.
-- **Resultado observado:** ✋
-- **Estado:** Pendiente.
+- **Resultado observado:** ejecución automatizada del 28-oct-2026 (HU-19, criterio 5, PR #50): un adoptante ya no ve la mascota en /buscar. Capturas: [P-HU-19-05](evidencias/HU-19/P-HU-19-05-no-aparece-como-disponible.png), [despues-catalogo-sin-p01](evidencias/HU-19/despues-catalogo-sin-p01.png).
+- **Estado:** Aprobado (automatizado).
 
 ### 6. Registro de resultados
 
 | ID | Caso de prueba | Resultado esperado | Resultado observado | Estado |
 |---|---|---|---|---|
-| P-23 | Marcar como adoptada | La mascota muestra el estado adoptada en el panel del responsable. | ✋ | Pendiente |
-| P-24 | La mascota adoptada no aparece como disponible | La mascota marcada como adoptada no aparece en la lista de disponibles. | ✋ | Pendiente |
+| P-23 | Marcar como adoptada | La mascota muestra el estado adoptada en el panel del responsable. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
+| P-24 | La mascota adoptada no aparece como disponible | La mascota marcada como adoptada no aparece en la lista de disponibles. | Ver el resultado del caso arriba y la sección «Ejecución automatizada» | Aprobado (automatizado) |
 
-**Nota:** Los estados se actualizan a `Aprobado` o `Fallido` únicamente después de ejecutar cada prueba y comprobar su resultado.
+**Nota:** Los estados salen de la ejecución automatizada del 28-oct-2026 (sección «Ejecución automatizada», al final). No hay ejecución manual registrada.
 
 ### 7. Datos de prueba
 
@@ -616,25 +628,27 @@ Guardar las capturas en `evidencias/HU-19/`:
 - **P-23:** captura del resultado de “marcar como adoptada”.
 - **P-24:** captura del resultado de “la mascota adoptada no aparece como disponible”.
 
-**Enlaces a evidencias:** ✋ Pendiente.
+**Enlaces a evidencias:** Capturas en [`evidencias/HU-19/`](evidencias/HU-19/) y video [HU-19.mp4](https://drive.google.com/open?id=172Zik0A35ssFVT-zQDYMOBR0bdzPcMD6). Detalle por criterio en la sección «Ejecución automatizada».
 
 ### 9. Incidencias encontradas
 
 | ID | Descripción de la incidencia | Acción correctiva | Estado |
 |---|---|---|---|
-| — | Sin incidencias registradas hasta ejecutar las pruebas | — | Pendiente de validación |
+| — | El criterio 6 (historial) no se aserta en la ejecución de evidencias: la mascota no figura en el historial del adoptante demo; sí se verificó en Favoritos. Existe una prueba de criterios para el historial en `tests/criterios/HU-19.spec.ts` (PR #63). | Sin acción; queda para la validación del responsable. | Registrada |
 
 ### 10. Conclusión
 
 HU-19 se considerará validada cuando sus casos se hayan ejecutado, los resultados sean satisfactorios y existan evidencias verificables.
 
-**Estado final:** Pendiente de ejecución y validación.
+**Estado final:** ejecución automatizada aprobada el 28-oct-2026 (PR [#65](https://github.com/ClxNode/KuyayPet/pull/65)); validación del responsable pendiente.
+
+- [ ] Validado por BeyondNate y Joseph-L-Q
 
 ## Ejecución automatizada (complementa las pruebas manuales)
 
 Videos de todas las HU en Drive: [carpeta videos-hu](https://drive.google.com/open?id=1e3GcYnJlez_F5GLwqA6CveFjX5wRCiQV) (`Gdrive:02-Proyectos/produccion/kuyaypet/videos-hu/`).
 
-> Esta sección **no reemplaza** los planes de prueba de arriba (P-10 a P-24) ni cambia sus estados: cada responsable sigue validando su HU y marcando `Aprobado` o `Fallido`. Aquí solo se registra lo que observó una ejecución automática con Playwright, como evidencia de apoyo. Las capturas se nombran `P-HU-NN-<n>-<descripción>`, con `<n>` = número del criterio de aceptación del PDF de historias de usuario.
+> Esta sección es la base de los estados de P-10 a P-24: los resultados son de una ejecución automática con Playwright, no de una prueba manual. La validación humana de cada HU queda en su casilla `Validado por`. Las capturas se nombran `P-HU-NN-<n>-<descripción>`, con `<n>` = número del criterio de aceptación del PDF de historias de usuario.
 
 - **Fecha de ejecución:** 28 de octubre de 2026
 - **Ejecutada por:** IchiSieben (con Claude Code), rama `sprint-2/evidencias-automatizadas` (base `sprint-2/integracion`)
@@ -659,16 +673,16 @@ Spec: [`tests/evidencias/HU-04.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 
 | Criterio | Captura | Resultado automatizado | Resultado manual |
 |---|---|---|---|
-| 1. Opciones de filtrado | [captura](evidencias/HU-04/P-HU-04-01-opciones-de-filtrado.png) | «Filtros» abre especie, raza, edad, sexo y tamaño | ✋ responsable de la tarea #41 |
-| 2. Seleccionar antes de aplicar | [captura](evidencias/HU-04/P-HU-04-02-seleccion-antes-de-aplicar.png) | Con «Gato» marcado, la lista no cambia hasta «Aplicar filtros» | ✋ responsable de la tarea #41 |
-| 3. Aplicar filtro | [captura](evidencias/HU-04/P-HU-04-03-aplicar-filtro-especie.png) | Solo gatos; el número de tarjetas es igual al de gatos disponibles del store | ✋ responsable de la tarea #41 |
-| 4. Varios filtros | [captura](evidencias/HU-04/P-HU-04-04-varios-filtros.png) | Gato + Hembra: «Filtros (2)» y solo las que cumplen ambos | ✋ responsable de la tarea #41 |
-| 5. Ver las encontradas | [captura](evidencias/HU-04/P-HU-04-05-mascotas-encontradas.png) | Tarjetas de los resultados visibles | ✋ responsable de la tarea #41 |
-| 6. Sin coincidencias | [captura](evidencias/HU-04/P-HU-04-06-sin-coincidencias.png) | Edad mínima 9999: mensaje «No hay mascotas que cumplan estos criterios» | ✋ responsable de la tarea #41 |
-| 7. Modificar criterios | [captura](evidencias/HU-04/P-HU-04-07-modificar-criterios.png) | Cambia Gato por Perro: la lista se actualiza (solo perros hembra) | ✋ responsable de la tarea #41 |
-| 8. Limpiar filtros | [captura](evidencias/HU-04/P-HU-04-08-limpiar-filtros.png) | Vuelve la lista completa y desaparece el contador de filtros | ✋ responsable de la tarea #41 |
-| 9. Perfil desde resultados | [captura](evidencias/HU-04/P-HU-04-09-perfil-desde-resultados.png) | Desde la lista filtrada se abre el perfil de la mascota elegida | ✋ responsable de la tarea #41 |
-| 10. Volver sin filtros | [captura](evidencias/HU-04/P-HU-04-10-vuelta-sin-restricciones.png) | Al salir y volver a /buscar la lista está completa y sin filtros | ✋ responsable de la tarea #41 |
+| 1. Opciones de filtrado | [captura](evidencias/HU-04/P-HU-04-01-opciones-de-filtrado.png) | «Filtros» abre especie, raza, edad, sexo y tamaño | Sin ejecución manual registrada; ver la casilla de la HU |
+| 2. Seleccionar antes de aplicar | [captura](evidencias/HU-04/P-HU-04-02-seleccion-antes-de-aplicar.png) | Con «Gato» marcado, la lista no cambia hasta «Aplicar filtros» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 3. Aplicar filtro | [captura](evidencias/HU-04/P-HU-04-03-aplicar-filtro-especie.png) | Solo gatos; el número de tarjetas es igual al de gatos disponibles del store | Sin ejecución manual registrada; ver la casilla de la HU |
+| 4. Varios filtros | [captura](evidencias/HU-04/P-HU-04-04-varios-filtros.png) | Gato + Hembra: «Filtros (2)» y solo las que cumplen ambos | Sin ejecución manual registrada; ver la casilla de la HU |
+| 5. Ver las encontradas | [captura](evidencias/HU-04/P-HU-04-05-mascotas-encontradas.png) | Tarjetas de los resultados visibles | Sin ejecución manual registrada; ver la casilla de la HU |
+| 6. Sin coincidencias | [captura](evidencias/HU-04/P-HU-04-06-sin-coincidencias.png) | Edad mínima 9999: mensaje «No hay mascotas que cumplan estos criterios» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 7. Modificar criterios | [captura](evidencias/HU-04/P-HU-04-07-modificar-criterios.png) | Cambia Gato por Perro: la lista se actualiza (solo perros hembra) | Sin ejecución manual registrada; ver la casilla de la HU |
+| 8. Limpiar filtros | [captura](evidencias/HU-04/P-HU-04-08-limpiar-filtros.png) | Vuelve la lista completa y desaparece el contador de filtros | Sin ejecución manual registrada; ver la casilla de la HU |
+| 9. Perfil desde resultados | [captura](evidencias/HU-04/P-HU-04-09-perfil-desde-resultados.png) | Desde la lista filtrada se abre el perfil de la mascota elegida | Sin ejecución manual registrada; ver la casilla de la HU |
+| 10. Volver sin filtros | [captura](evidencias/HU-04/P-HU-04-10-vuelta-sin-restricciones.png) | Al salir y volver a /buscar la lista está completa y sin filtros | Sin ejecución manual registrada; ver la casilla de la HU |
 
 Video: [HU-04.mp4 en Drive](https://drive.google.com/open?id=1IAINNZ9lwW3DTfBVuiWuAUj-_iJUhLqp)
 
@@ -678,11 +692,11 @@ Spec: [`tests/evidencias/HU-05.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 
 | Criterio | Captura | Resultado automatizado | Resultado manual |
 |---|---|---|---|
-| 1. Ubicación | [captura](evidencias/HU-05/P-HU-05-01-ubicacion-elegida.png) | Se elige el distrito Miraflores | ✋ responsable de la tarea #42 |
-| 2. Radio en km | [captura](evidencias/HU-05/P-HU-05-02-radio-en-km.png) | El control permite fijar 5 km | ✋ responsable de la tarea #42 |
-| 3. Buscar | [captura](evidencias/HU-05/P-HU-05-03-resultados-en-el-area.png) | «Mostrando mascotas cerca de Miraflores» con resultados | ✋ responsable de la tarea #42 |
-| 4. Información y distancia | [captura](evidencias/HU-05/P-HU-05-04-informacion-y-distancia.png) | Cada tarjeta muestra foto, nombre y distancia («a N km»), todas dentro de 5 km | ✋ responsable de la tarea #42 |
-| 5. Sin cercanas | [captura](evidencias/HU-05/P-HU-05-05-sin-mascotas-cercanas.png) | San Isidro a 1 km: «No se encontraron mascotas cercanas» | ✋ responsable de la tarea #42 |
+| 1. Ubicación | [captura](evidencias/HU-05/P-HU-05-01-ubicacion-elegida.png) | Se elige el distrito Miraflores | Sin ejecución manual registrada; ver la casilla de la HU |
+| 2. Radio en km | [captura](evidencias/HU-05/P-HU-05-02-radio-en-km.png) | El control permite fijar 5 km | Sin ejecución manual registrada; ver la casilla de la HU |
+| 3. Buscar | [captura](evidencias/HU-05/P-HU-05-03-resultados-en-el-area.png) | «Mostrando mascotas cerca de Miraflores» con resultados | Sin ejecución manual registrada; ver la casilla de la HU |
+| 4. Información y distancia | [captura](evidencias/HU-05/P-HU-05-04-informacion-y-distancia.png) | Cada tarjeta muestra foto, nombre y distancia («a N km»), todas dentro de 5 km | Sin ejecución manual registrada; ver la casilla de la HU |
+| 5. Sin cercanas | [captura](evidencias/HU-05/P-HU-05-05-sin-mascotas-cercanas.png) | San Isidro a 1 km: «No se encontraron mascotas cercanas» | Sin ejecución manual registrada; ver la casilla de la HU |
 
 Video: [HU-05.mp4 en Drive](https://drive.google.com/open?id=1z6kJwMQXLgTfaewwNrzeJDjXkZxaiMsL)
 
@@ -692,12 +706,12 @@ Spec: [`tests/evidencias/HU-11.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 
 | Criterio | Captura | Resultado automatizado | Resultado manual |
 |---|---|---|---|
-| 1. Formulario de registro | [captura](evidencias/HU-11/P-HU-11-01-formulario-de-registro.png) | «Registrar» abre el formulario | ✋ responsable de la tarea #38 |
-| 2. Ingresar los datos | [captura 1](evidencias/HU-11/P-HU-11-02a-datos-paso-1.png) · [captura 2](evidencias/HU-11/P-HU-11-02b-datos-paso-3.png) | El asistente de 3 pasos permite completar los datos (pasos 1 y 3) | ✋ responsable de la tarea #38 |
-| 3. Registrar | [captura](evidencias/HU-11/P-HU-11-03-mascota-registrada.png) | La mascota aparece en «Mis publicaciones» | ✋ responsable de la tarea #38 |
-| 4. Mensaje de confirmación | [captura](evidencias/HU-11/P-HU-11-04-mensaje-de-confirmacion.png) | Aviso «¡Mascota registrada!» | ✋ responsable de la tarea #38 |
-| 5. Campos obligatorios | [captura](evidencias/HU-11/P-HU-11-05-campos-obligatorios.png) | Sin datos, «Continuar» muestra una alerta con lo que falta | ✋ responsable de la tarea #38 |
-| 6. Disponible para adopción (comportamiento observado) | [captura](evidencias/HU-11/P-HU-11-06-en-revision-no-visible.png) | La mascota queda «En revisión» y un adoptante **no** la ve en /buscar hasta que el admin la apruebe (ADR-05); difiere del texto literal del criterio | ✋ responsable de la tarea #38 |
+| 1. Formulario de registro | [captura](evidencias/HU-11/P-HU-11-01-formulario-de-registro.png) | «Registrar» abre el formulario | Sin ejecución manual registrada; ver la casilla de la HU |
+| 2. Ingresar los datos | [captura 1](evidencias/HU-11/P-HU-11-02a-datos-paso-1.png) · [captura 2](evidencias/HU-11/P-HU-11-02b-datos-paso-3.png) | El asistente de 3 pasos permite completar los datos (pasos 1 y 3) | Sin ejecución manual registrada; ver la casilla de la HU |
+| 3. Registrar | [captura](evidencias/HU-11/P-HU-11-03-mascota-registrada.png) | La mascota aparece en «Mis publicaciones» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 4. Mensaje de confirmación | [captura](evidencias/HU-11/P-HU-11-04-mensaje-de-confirmacion.png) | Aviso «¡Mascota registrada!» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 5. Campos obligatorios | [captura](evidencias/HU-11/P-HU-11-05-campos-obligatorios.png) | Sin datos, «Continuar» muestra una alerta con lo que falta | Sin ejecución manual registrada; ver la casilla de la HU |
+| 6. Disponible para adopción (comportamiento observado) | [captura](evidencias/HU-11/P-HU-11-06-en-revision-no-visible.png) | La mascota queda «En revisión» y un adoptante **no** la ve en /buscar hasta que el admin la apruebe (ADR-05); difiere del texto literal del criterio | Sin ejecución manual registrada; ver la casilla de la HU |
 
 Video: [HU-11.mp4 en Drive](https://drive.google.com/open?id=1X5hKHtWa7i57dCZn2AQmbuLjYDjLJ7_Y)
 
@@ -707,11 +721,11 @@ Spec: [`tests/evidencias/HU-12.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 
 | Criterio | Captura | Resultado automatizado | Resultado manual |
 |---|---|---|---|
-| 1. Formulario prellenado | [captura](evidencias/HU-12/P-HU-12-01-formulario-prellenado.png) | «Editar información» abre el formulario con nombre, raza, descripción e historia de Porotopo | ✋ responsable de la tarea #40 |
-| 2. Guardar y confirmar | [captura](evidencias/HU-12/P-HU-12-02-cambios-guardados.png) | Aviso «Cambios guardados con éxito» | ✋ responsable de la tarea #40 |
-| 3. Cancelar | [captura](evidencias/HU-12/P-HU-12-03-cancelar-descarta-cambios.png) | Vuelve al panel sin guardar; el nombre original se conserva | ✋ responsable de la tarea #40 |
-| 4. Campo obligatorio vacío | [captura](evidencias/HU-12/P-HU-12-04-campo-obligatorio-vacio.png) | Nombre vacío: campo resaltado, «El nombre no puede estar vacío» y no se guarda | ✋ responsable de la tarea #40 |
-| 5. Perfil público actualizado | [captura](evidencias/HU-12/P-HU-12-05-perfil-publico-actualizado.png) | Tras guardar se abre el perfil público con el nombre y la descripción nuevos | ✋ responsable de la tarea #40 |
+| 1. Formulario prellenado | [captura](evidencias/HU-12/P-HU-12-01-formulario-prellenado.png) | «Editar información» abre el formulario con nombre, raza, descripción e historia de Porotopo | Sin ejecución manual registrada; ver la casilla de la HU |
+| 2. Guardar y confirmar | [captura](evidencias/HU-12/P-HU-12-02-cambios-guardados.png) | Aviso «Cambios guardados con éxito» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 3. Cancelar | [captura](evidencias/HU-12/P-HU-12-03-cancelar-descarta-cambios.png) | Vuelve al panel sin guardar; el nombre original se conserva | Sin ejecución manual registrada; ver la casilla de la HU |
+| 4. Campo obligatorio vacío | [captura](evidencias/HU-12/P-HU-12-04-campo-obligatorio-vacio.png) | Nombre vacío: campo resaltado, «El nombre no puede estar vacío» y no se guarda | Sin ejecución manual registrada; ver la casilla de la HU |
+| 5. Perfil público actualizado | [captura](evidencias/HU-12/P-HU-12-05-perfil-publico-actualizado.png) | Tras guardar se abre el perfil público con el nombre y la descripción nuevos | Sin ejecución manual registrada; ver la casilla de la HU |
 
 Video: [HU-12.mp4 en Drive](https://drive.google.com/open?id=1YofEckGlVM9WaueYJpg1RZy2jBHdcVX_)
 
@@ -721,13 +735,13 @@ Spec: [`tests/evidencias/HU-16.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 
 | Criterio | Captura | Resultado automatizado | Resultado manual |
 |---|---|---|---|
-| 1. Formulario con fotos | [captura](evidencias/HU-16/P-HU-16-01-formulario-con-fotos.png) | El paso 2 pide «Fotos (máximo 4)» | ✋ responsable de la tarea #39 |
-| 2. Campos faltantes | [captura](evidencias/HU-16/P-HU-16-02-campos-faltantes.png) | Alerta que indica qué falta | ✋ responsable de la tarea #39 |
-| 3. Vista previa | [captura](evidencias/HU-16/P-HU-16-03-vista-previa.png) | Un PNG válido muestra su vista previa | ✋ responsable de la tarea #39 |
-| 4. Formato no permitido | [captura](evidencias/HU-16/P-HU-16-04-formato-no-permitido.png) | Un `.txt` muestra «Formato no permitido» | ✋ responsable de la tarea #39 |
-| 5. Etiquetas | [captura](evidencias/HU-16/P-HU-16-05-etiqueta-elegida.png) | «Cariñoso/a» queda seleccionada (`aria-pressed`) | ✋ responsable de la tarea #39 |
-| 6. Confirmación al publicar | [captura](evidencias/HU-16/P-HU-16-06-mensaje-de-confirmacion.png) | Aviso «¡Mascota registrada!» y la mascota aparece en la lista | ✋ responsable de la tarea #39 |
-| 7. Visible para adoptantes | [captura 1](evidencias/HU-16/P-HU-16-07a-en-catalogo.png) · [captura 2](evidencias/HU-16/P-HU-16-07b-perfil-con-foto-y-etiqueta.png) | Tras la aprobación del admin, el adoptante ve la foto en /buscar y, en el perfil, la foto y la etiqueta | ✋ responsable de la tarea #39 |
+| 1. Formulario con fotos | [captura](evidencias/HU-16/P-HU-16-01-formulario-con-fotos.png) | El paso 2 pide «Fotos (máximo 4)» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 2. Campos faltantes | [captura](evidencias/HU-16/P-HU-16-02-campos-faltantes.png) | Alerta que indica qué falta | Sin ejecución manual registrada; ver la casilla de la HU |
+| 3. Vista previa | [captura](evidencias/HU-16/P-HU-16-03-vista-previa.png) | Un PNG válido muestra su vista previa | Sin ejecución manual registrada; ver la casilla de la HU |
+| 4. Formato no permitido | [captura](evidencias/HU-16/P-HU-16-04-formato-no-permitido.png) | Un `.txt` muestra «Formato no permitido» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 5. Etiquetas | [captura](evidencias/HU-16/P-HU-16-05-etiqueta-elegida.png) | «Cariñoso/a» queda seleccionada (`aria-pressed`) | Sin ejecución manual registrada; ver la casilla de la HU |
+| 6. Confirmación al publicar | [captura](evidencias/HU-16/P-HU-16-06-mensaje-de-confirmacion.png) | Aviso «¡Mascota registrada!» y la mascota aparece en la lista | Sin ejecución manual registrada; ver la casilla de la HU |
+| 7. Visible para adoptantes | [captura 1](evidencias/HU-16/P-HU-16-07a-en-catalogo.png) · [captura 2](evidencias/HU-16/P-HU-16-07b-perfil-con-foto-y-etiqueta.png) | Tras la aprobación del admin, el adoptante ve la foto en /buscar y, en el perfil, la foto y la etiqueta | Sin ejecución manual registrada; ver la casilla de la HU |
 
 Video: [HU-16.mp4 en Drive](https://drive.google.com/open?id=1QReoI9Af1EnyTJt9StRAZFVa3SW8EMYf)
 
@@ -737,13 +751,13 @@ Spec: [`tests/evidencias/HU-17.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 
 | Criterio | Captura | Resultado automatizado | Resultado manual |
 |---|---|---|---|
-| 1. Opción de favorito | [captura](evidencias/HU-17/P-HU-17-01-opcion-de-favorito.png) | Cada tarjeta disponible tiene el corazón «Agregar a favoritos» | ✋ responsable de la tarea #43 |
-| 2. Guardar | [captura](evidencias/HU-17/P-HU-17-02-corazon-guardado.png) | El corazón queda activo («Quitar … de favoritos») | ✋ responsable de la tarea #43 |
-| 3. Confirmación visual | [captura](evidencias/HU-17/P-HU-17-03-confirmacion-visual.png) | Aviso «<nombre> está en tus favoritos» y corazón relleno | ✋ responsable de la tarea #43 |
-| 4. Sección Favoritos | [captura](evidencias/HU-17/P-HU-17-04-lista-de-favoritos.png) | La lista tiene una tarjeta más, con la mascota guardada | ✋ responsable de la tarea #43 |
-| 5. Quitar | [captura](evidencias/HU-17/P-HU-17-05-quitar-de-favoritos.png) | El corazón activo la retira de la lista | ✋ responsable de la tarea #43 |
-| 6. Persistencia | [captura](evidencias/HU-17/P-HU-17-06-favoritos-tras-relogin.png) | Tras cerrar sesión y volver a entrar se conservan las mismas mascotas | ✋ responsable de la tarea #43 |
-| 7. Estado actualizado | [captura](evidencias/HU-17/P-HU-17-07-favorito-adoptada.png) | Un favorito marcado como adoptado muestra «Adoptada 🎉» | ✋ responsable de la tarea #43 |
+| 1. Opción de favorito | [captura](evidencias/HU-17/P-HU-17-01-opcion-de-favorito.png) | Cada tarjeta disponible tiene el corazón «Agregar a favoritos» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 2. Guardar | [captura](evidencias/HU-17/P-HU-17-02-corazon-guardado.png) | El corazón queda activo («Quitar … de favoritos») | Sin ejecución manual registrada; ver la casilla de la HU |
+| 3. Confirmación visual | [captura](evidencias/HU-17/P-HU-17-03-confirmacion-visual.png) | Aviso «<nombre> está en tus favoritos» y corazón relleno | Sin ejecución manual registrada; ver la casilla de la HU |
+| 4. Sección Favoritos | [captura](evidencias/HU-17/P-HU-17-04-lista-de-favoritos.png) | La lista tiene una tarjeta más, con la mascota guardada | Sin ejecución manual registrada; ver la casilla de la HU |
+| 5. Quitar | [captura](evidencias/HU-17/P-HU-17-05-quitar-de-favoritos.png) | El corazón activo la retira de la lista | Sin ejecución manual registrada; ver la casilla de la HU |
+| 6. Persistencia | [captura](evidencias/HU-17/P-HU-17-06-favoritos-tras-relogin.png) | Tras cerrar sesión y volver a entrar se conservan las mismas mascotas | Sin ejecución manual registrada; ver la casilla de la HU |
+| 7. Estado actualizado | [captura](evidencias/HU-17/P-HU-17-07-favorito-adoptada.png) | Un favorito marcado como adoptado muestra «Adoptada 🎉» | Sin ejecución manual registrada; ver la casilla de la HU |
 
 Video: [HU-17.mp4 en Drive](https://drive.google.com/open?id=1oHoT7boVjNjQ9hfIk-SFmaFrxnN3mc0G)
 
@@ -753,13 +767,13 @@ Spec: [`tests/evidencias/HU-19.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 
 | Criterio | Captura | Resultado automatizado | Resultado manual |
 |---|---|---|---|
-| 1. Mis publicaciones | [captura](evidencias/HU-19/P-HU-19-01-mis-publicaciones.png) | El panel lista las mascotas del responsable | ✋ responsable de la tarea #44 |
-| 2. Opción | [captura](evidencias/HU-19/P-HU-19-02-opcion-marcar-adoptada.png) | Las disponibles muestran «Marcar como adoptada» | ✋ responsable de la tarea #44 |
-| 3. Confirmación | [captura](evidencias/HU-19/P-HU-19-03-confirmacion.png) | Diálogo «¿Marcar como adoptada?» | ✋ responsable de la tarea #44 |
-| 4. Estado Adoptada | [captura](evidencias/HU-19/P-HU-19-04-estado-adoptada.png) | Tras confirmar la tarjeta muestra «Adoptada 🎉» | ✋ responsable de la tarea #44 |
-| 5. No aparece como disponible | [captura](evidencias/HU-19/P-HU-19-05-no-aparece-como-disponible.png) | Un adoptante ya no ve la mascota en /buscar | ✋ responsable de la tarea #44 |
-| 6. Favoritos / historial | [captura](evidencias/HU-19/P-HU-19-06a-favoritos-adoptada.png) | Escenario preparado (un favorito marcado como adoptado en el store): «Adoptada 🎉» en Favoritos. El historial no se asertó: la mascota no figuraba en el historial del adoptante demo | ✋ responsable de la tarea #44 |
-| 7. Solicitud bloqueada | [captura](evidencias/HU-19/P-HU-19-07-solicitud-bloqueada.png) | El perfil dice que ya encontró un hogar, sin botones «Me gusta» ni «Coordinar» | ✋ responsable de la tarea #44 |
+| 1. Mis publicaciones | [captura](evidencias/HU-19/P-HU-19-01-mis-publicaciones.png) | El panel lista las mascotas del responsable | Sin ejecución manual registrada; ver la casilla de la HU |
+| 2. Opción | [captura](evidencias/HU-19/P-HU-19-02-opcion-marcar-adoptada.png) | Las disponibles muestran «Marcar como adoptada» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 3. Confirmación | [captura](evidencias/HU-19/P-HU-19-03-confirmacion.png) | Diálogo «¿Marcar como adoptada?» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 4. Estado Adoptada | [captura](evidencias/HU-19/P-HU-19-04-estado-adoptada.png) | Tras confirmar la tarjeta muestra «Adoptada 🎉» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 5. No aparece como disponible | [captura](evidencias/HU-19/P-HU-19-05-no-aparece-como-disponible.png) | Un adoptante ya no ve la mascota en /buscar | Sin ejecución manual registrada; ver la casilla de la HU |
+| 6. Favoritos / historial | [captura](evidencias/HU-19/P-HU-19-06a-favoritos-adoptada.png) | Escenario preparado (un favorito marcado como adoptado en el store): «Adoptada 🎉» en Favoritos. El historial no se asertó: la mascota no figuraba en el historial del adoptante demo | Sin ejecución manual registrada; ver la casilla de la HU |
+| 7. Solicitud bloqueada | [captura](evidencias/HU-19/P-HU-19-07-solicitud-bloqueada.png) | El perfil dice que ya encontró un hogar, sin botones «Me gusta» ni «Coordinar» | Sin ejecución manual registrada; ver la casilla de la HU |
 
 Video: [HU-19.mp4 en Drive](https://drive.google.com/open?id=172Zik0A35ssFVT-zQDYMOBR0bdzPcMD6)
 
@@ -769,12 +783,14 @@ Spec: [`tests/evidencias/HU-21.spec.ts`](../../Codigo_Repositorio/kuyaypet-web/t
 
 | Criterio | Captura | Resultado automatizado | Resultado manual |
 |---|---|---|---|
-| 1. Opción Cerrar sesión | [captura](evidencias/HU-21/P-HU-21-01-opcion-cerrar-sesion.png) | Visible en Perfil | ✋ por asignar |
-| 2. Confirmar y cerrar | [captura](evidencias/HU-21/P-HU-21-02-confirmacion.png) | Diálogo de confirmación; al confirmar termina la sesión | ✋ por asignar |
-| 3. Redirección | [captura](evidencias/HU-21/P-HU-21-03-redireccion-al-inicio-de-sesion.png) | Lleva a la pantalla de inicio de sesión | ✋ por asignar |
-| 4. Página privada | [captura](evidencias/HU-21/P-HU-21-04-pagina-privada-pide-credenciales.png) | `#/favoritos` redirige a inicio de sesión | ✋ por asignar |
-| 5. Sin datos residuales | [captura](evidencias/HU-21/P-HU-21-05-sin-sesion-residual.png) | `sessionUserId` nulo en el almacenamiento, también tras recargar. Nota: el resto del store sigue en localStorage (ver auditoría) | ✋ por asignar |
-| 6. Inactividad | [captura](evidencias/HU-21/P-HU-21-06-cierre-por-inactividad.png) | Con reloj simulado: a 14 min sigue; a 16 min cierra y avisa «Sesión cerrada por inactividad» | ✋ por asignar |
-| 7. Error al cerrar | [captura 1](evidencias/HU-21/P-HU-21-07a-error-al-cerrar.png) · [captura 2](evidencias/HU-21/P-HU-21-07b-reintento-exitoso.png) | Con un fallo de almacenamiento inyectado: «No se pudo cerrar sesión. Intenta de nuevo.», la sesión sigue activa; el reintento cierra | ✋ por asignar |
+| 1. Opción Cerrar sesión | [captura](evidencias/HU-21/P-HU-21-01-opcion-cerrar-sesion.png) | Visible en Perfil | Sin ejecución manual registrada; ver la casilla de la HU |
+| 2. Confirmar y cerrar | [captura](evidencias/HU-21/P-HU-21-02-confirmacion.png) | Diálogo de confirmación; al confirmar termina la sesión | Sin ejecución manual registrada; ver la casilla de la HU |
+| 3. Redirección | [captura](evidencias/HU-21/P-HU-21-03-redireccion-al-inicio-de-sesion.png) | Lleva a la pantalla de inicio de sesión | Sin ejecución manual registrada; ver la casilla de la HU |
+| 4. Página privada | [captura](evidencias/HU-21/P-HU-21-04-pagina-privada-pide-credenciales.png) | `#/favoritos` redirige a inicio de sesión | Sin ejecución manual registrada; ver la casilla de la HU |
+| 5. Sin datos residuales | [captura](evidencias/HU-21/P-HU-21-05-sin-sesion-residual.png) | `sessionUserId` nulo en el almacenamiento, también tras recargar. Nota: el resto del store sigue en localStorage (ver auditoría) | Sin ejecución manual registrada; ver la casilla de la HU |
+| 6. Inactividad | [captura](evidencias/HU-21/P-HU-21-06-cierre-por-inactividad.png) | Con reloj simulado: a 14 min sigue; a 16 min cierra y avisa «Sesión cerrada por inactividad» | Sin ejecución manual registrada; ver la casilla de la HU |
+| 7. Error al cerrar | [captura 1](evidencias/HU-21/P-HU-21-07a-error-al-cerrar.png) · [captura 2](evidencias/HU-21/P-HU-21-07b-reintento-exitoso.png) | Con un fallo de almacenamiento inyectado: «No se pudo cerrar sesión. Intenta de nuevo.», la sesión sigue activa; el reintento cierra | Sin ejecución manual registrada; ver la casilla de la HU |
 
 Video: [HU-21.mp4 en Drive](https://drive.google.com/open?id=1--3qDfrOgcItQb3HPJwBEUX3cjAFtRu_)
+
+- [ ] Validado por ClxNode (HU-21, responsable según el issue [#21](https://github.com/ClxNode/KuyayPet/issues/21))

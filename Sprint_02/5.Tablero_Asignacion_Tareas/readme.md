@@ -71,3 +71,43 @@ Para mantener una adecuada organización durante el Sprint 2, el equipo acuerda:
 El tablero de asignación de tareas permitió organizar el trabajo del Sprint 2, identificar las responsabilidades de cada integrante y realizar un seguimiento del avance de las historias de usuario.
 
 Su actualización contribuye a mejorar la coordinación del equipo, facilitar la integración de los cambios y verificar el cumplimiento de los objetivos establecidos para el sprint.
+
+---
+
+## 5.7. Verificación contra GitHub (reconstruida)
+
+> Reconstruido a partir del historial de GitHub el 2026-11-19; el equipo puede corregirlo.
+
+Las tablas 5.2 y 5.3 son del equipo y no se modificaron. Esta sección compara lo que dicen con lo que GitHub tiene hoy (issues del milestone «Sprint 2» y GitHub Project, lectura sin cambios).
+
+### Tareas del milestone Sprint 2
+
+| Issue | HU | Responsable en GitHub (issue) | Estado del issue | Estado en el Project | Responsable en el tablero del equipo (5.2) |
+|---|---|---|---|---|---|
+| [#37](https://github.com/ClxNode/KuyayPet/issues/37) | Sprint 2 | sin asignar | Abierto | No está en el Project | IchiSieben |
+| [#38](https://github.com/ClxNode/KuyayPet/issues/38) | HU-11 | sin asignar | Abierto | Pendiente (sin campo Sprint) | Dylan200-7 |
+| [#39](https://github.com/ClxNode/KuyayPet/issues/39) | HU-16 | sin asignar | Abierto | Pendiente (sin campo Sprint) | ClxNode y Dylan200-7 |
+| [#40](https://github.com/ClxNode/KuyayPet/issues/40) | HU-12 | sin asignar | Abierto | Pendiente (sin campo Sprint) | ClxNode y Dylan200-7 |
+| [#41](https://github.com/ClxNode/KuyayPet/issues/41) | HU-04 | sin asignar | Abierto | Pendiente (sin campo Sprint) | Valtom07 |
+| [#42](https://github.com/ClxNode/KuyayPet/issues/42) | HU-05 | sin asignar | Abierto | Pendiente (sin campo Sprint) | Valtom07 |
+| [#43](https://github.com/ClxNode/KuyayPet/issues/43) | HU-17 | sin asignar | Abierto | Pendiente (sin campo Sprint) | Joseph-L-Q |
+| [#44](https://github.com/ClxNode/KuyayPet/issues/44) | HU-19 | sin asignar | Abierto | Pendiente (sin campo Sprint) | BeyondNate y Joseph-L-Q |
+| [#45](https://github.com/ClxNode/KuyayPet/issues/45) | HU-11, 04, 17 | sin asignar | Cerrado el 12-nov-2026 15:08 (hora de Lima) | Terminado, Sprint 2 | Por asignar |
+| [#46](https://github.com/ClxNode/KuyayPet/issues/46) | HU-11, 24, 04, 05, 03, 17 | sin asignar | Cerrado el 12-nov-2026 15:08 (hora de Lima) | Terminado, Sprint 2 | Por asignar |
+
+Diferencias: el tablero del equipo marca las 10 tareas como Terminado y con responsable; en GitHub #37 a #44 siguen abiertas, sin responsable y (salvo #37) en «Pendiente». Los responsables del tablero coinciden con los asignados en el issue de la HU correspondiente (tabla siguiente), no con las tareas. #37 no figura en el Project.
+
+### Historias de usuario del Sprint 2
+
+| HU | Issue | Responsable en GitHub | Cierre del issue (hora de Lima) | Estado en el Project |
+|---|---|---|---|---|
+| HU-04 | [#4](https://github.com/ClxNode/KuyayPet/issues/4) | VALTOm07 | 29-oct-2026 11:51 | Terminado, Sprint 2, límite 29-oct |
+| HU-05 | [#5](https://github.com/ClxNode/KuyayPet/issues/5) | VALTOm07, kevinesty | 29-oct-2026 11:51 | Terminado, Sprint 2, límite 29-oct |
+| HU-11 | [#11](https://github.com/ClxNode/KuyayPet/issues/11) | Dylan200-7 | 29-oct-2026 11:51 | Terminado, Sprint 2, límite 29-oct |
+| HU-12 | [#12](https://github.com/ClxNode/KuyayPet/issues/12) | ClxNode, Dylan200-7 | 29-oct-2026 11:52 | Terminado, Sprint 2, límite 29-oct |
+| HU-16 | [#16](https://github.com/ClxNode/KuyayPet/issues/16) | ClxNode, Dylan200-7 | 29-oct-2026 11:52 | Terminado, Sprint 2, límite 29-oct |
+| HU-17 | [#17](https://github.com/ClxNode/KuyayPet/issues/17) | Joseph-L-Q | 29-oct-2026 11:52 | Terminado, Sprint 2, límite 29-oct |
+| HU-19 | [#19](https://github.com/ClxNode/KuyayPet/issues/19) | BeyondNate, Joseph-L-Q | 29-oct-2026 11:52 | Terminado, Sprint 2, límite 29-oct |
+| HU-21 | [#21](https://github.com/ClxNode/KuyayPet/issues/21) | ClxNode | 29-oct-2026 11:51 | Terminado, Sprint 2, límite 29-oct |
+
+HU-13 ([#13](https://github.com/ClxNode/KuyayPet/issues/13), IchiSieben) también figura con Sprint = «Sprint 2» en el Project, pero se entregó en el Sprint 3 (PR #73).
