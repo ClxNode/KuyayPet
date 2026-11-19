@@ -18,9 +18,9 @@ KuyayPet es un prototipo web de adopción de mascotas (adoptante, responsable y 
 | Sprint 1 | HU-01, 02, 03 | Terminadas y fusionadas (issues cerrados el 28-oct) |
 | Sprint 2 | HU-04, 05, 11, 12, 16, 17, 19, 21 | Terminadas y fusionadas (issues cerrados el 29-oct) |
 | Sprint 3 (a) adopción | HU-06, 07, 08, 09, 10, 13, 18, 20 | Terminadas y fusionadas (PR #68–#76, 12-nov) |
-| Sprint 3 (b) administración y cierre | HU-14, 15, 22, 23, 24, 25, 26 | Código y pruebas en los PR abiertos [#88](https://github.com/ClxNode/KuyayPet/pull/88)–[#94](https://github.com/ClxNode/KuyayPet/pull/94); capturas en [#95](https://github.com/ClxNode/KuyayPet/pull/95). Sin fusionar al 19-nov |
+| Sprint 3 (b) administración y cierre | HU-14, 15, 22, 23, 24, 25, 26 | Terminadas y fusionadas el 19-nov: código y pruebas en [#88](https://github.com/ClxNode/KuyayPet/pull/88)–[#94](https://github.com/ClxNode/KuyayPet/pull/94) (16:26Z a 16:41Z); capturas en [#95](https://github.com/ClxNode/KuyayPet/pull/95) (16:47Z) |
 
-**Total: 26 HU. 19 terminadas y fusionadas; 7 de la parte (b) en PR abiertos.** Los issues de las 7 HU de la parte (b) figuran cerrados desde el 12-nov, pero se cuentan como terminadas solo cuando su PR se fusiona (definición de [Sprint 3](../Sprint_03/readme.md#6-métricas)). La casilla "Validado por" del responsable de cada HU sigue pendiente en las 15 HU del Sprint 3.
+**Total: 26 HU, 26 terminadas y fusionadas.** Los issues de las 7 HU de la parte (b) figuran cerrados desde el 12-nov; se cuentan como terminadas desde la fusión de su PR el 19-nov (definición de [Sprint 3](../Sprint_03/readme.md#6-métricas)). La casilla "Validado por" del responsable de cada HU sigue pendiente en las 15 HU del Sprint 3.
 
 Las ramas `sprint-4/*` conservan ese nombre por historia (renombrarlas cerraría sus PR); el curso tiene 3 sprints.
 
@@ -39,8 +39,8 @@ Pruebas ([detalle y comandos](./pruebas.md)):
 
 - **Funcionales:** un spec de criterios y uno de evidencias por HU (captura por criterio y video por HU).
 - **Integración entre roles:** `smoke`, `split` (pantalla dividida adoptante–responsable), `tour`, `adopter`, `owner` y `admin`.
-- **Seguridad:** 13 pruebas (SEG-01 a SEG-13) en el PR [#99](https://github.com/ClxNode/KuyayPet/pull/99); 13 de 13 pasan. El PR incluye dos arreglos: cierre de sesión de una cuenta desactivada y chats directos solo para sus miembros.
-- **Ejecución completa del 19-nov** (`main` más #88–#95 y #99): 22 de 22 en Vitest y 130 pruebas de Playwright (129 en la primera corrida; una se colgó por el entorno y pasó al repetirla). Resultados finales en [pruebas](./pruebas.md#5-resultados).
+- **Seguridad:** 13 pruebas (SEG-01 a SEG-13) en el PR [#99](https://github.com/ClxNode/KuyayPet/pull/99), fusionado el 19-nov; 13 de 13 pasan. El PR incluye dos arreglos: cierre de sesión de una cuenta desactivada y chats directos solo para sus miembros.
+- **Ejecución completa del 19-nov** (`main` con los PR #88–#95 y #99, fusionados el 19-nov): 22 de 22 en Vitest y 130 pruebas de Playwright (129 en la primera corrida; una se colgó por el entorno y pasó al repetirla). Resultados finales en [pruebas](./pruebas.md#5-resultados).
 
 ## 4. Velocity por sprint
 
@@ -50,8 +50,8 @@ El equipo no registró puntos. Los valores son una **propuesta** (`kuyaypet-tool
 |---|---|---|---|
 | Sprint 1 | HU-01, 02, 03 (5 + 5 + 3) | 13 | 13 |
 | Sprint 2 | HU-04, 05, 11, 12, 16, 17, 19, 21 (8 + 5 + 5 + 3 + 5 + 5 + 5 + 5) | 41 | 41 |
-| Sprint 3 | (a) 8 HU: 42 · (b) 7 HU: 28 | 70 | **42 al 19-nov** (parte a); 70 si se fusionan #88–#94 |
-| **Total** | 26 HU | **124** | 96 al 19-nov |
+| Sprint 3 | (a) 8 HU: 42 · (b) 7 HU: 28 | 70 | **70** (42 parte a al 12-nov + 28 parte b al 19-nov) |
+| **Total** | 26 HU | **124** | 124 |
 
 Burndown del Sprint 3 con fechas reales de cierre: [Sprint 3, sección 6](../Sprint_03/readme.md#6-métricas).
 
@@ -100,7 +100,7 @@ Las limitaciones vienen del hecho de no tener servidor ([análisis, sección 6](
 
 - **Versión:** `IchiSieben/kuyaypet@v1.0.0` (tag sobre el commit `26ea3b7`; el `package.json` dice 1.0.0 desde `d5ccad0`, mismo bundle). Bundle principal `assets/index-BXqdrcgB.js`.
 - **Desde:** 19-nov-2026.
-- **Contenido:** el `main` del grupo (Sprints 1 a 3, parte a) **más** lo de los PR #88–#95 y #99, que en `ClxNode/KuyayPet` siguen abiertos sin fusionar. Producción va por delante del `main` del grupo hasta que el equipo los fusione.
+- **Contenido:** el `main` del grupo (Sprints 1 a 3, parte a) **más** lo de los PR #88–#95 y #99, que el equipo fusionó en `ClxNode/KuyayPet` el 19-nov entre las 16:26Z y las 16:48Z. `src/` y `tests/` del `main` del grupo son idénticos a `IchiSieben/kuyaypet@v1.0.0` (verificado con `diff`).
 - **Versión anterior:** `v0.3.1-sprint2` (bundle `index-DQQidj1w.js`). Se guardó copia de su `index.html`, `sw.js` y `manifest.webmanifest`; revertir es volver a subir esos 3 archivos y purgar la CDN (los assets de la versión anterior siguen en el servidor).
 - **Procedimiento usado:** `npm run build`; subida parcial archivo por archivo por TUS con la API pública de Hostinger (credenciales de subida temporales generadas con un token de API guardado en variable de entorno, nunca en el repositorio); 235 archivos, con `manifest.webmanifest`, `sw.js` e `index.html` al final. `/next/`, `/next2/` y `/guia-sprint2/` no se tocan; `/manual/` se actualiza con el build. Purga de la CDN por la API después de subir `sw.js`.
 - **Verificación:** los 235 archivos se comprobaron contra el servidor. 7 imágenes se sirven con otro tamaño por la optimización del servidor y `robots.txt` lo reescribe Hostinger en el dominio temporal.

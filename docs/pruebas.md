@@ -4,7 +4,7 @@
 
 Plan y resultados de las pruebas del prototipo (Sprint 3, parte b). Las pruebas son automatizadas con **Vitest** (unitarias) y **Playwright** (extremo a extremo, Chromium, viewport móvil 390×844 salvo donde se indica). No hay backend: todas corren contra el build servido con `vite preview` y los datos viven en `localStorage`. Las pruebas por HU de los Sprints 1 a 3 están además documentadas en `Sprint_0N/7.Pruebas`.
 
-**Estado de los PR al 19-nov-2026.** Los specs de criterios de HU-14, 15 y 22–26 están en los PR abiertos [#88](https://github.com/ClxNode/KuyayPet/pull/88)–[#94](https://github.com/ClxNode/KuyayPet/pull/94); sus capturas, en [#95](https://github.com/ClxNode/KuyayPet/pull/95); las pruebas de seguridad, en [#99](https://github.com/ClxNode/KuyayPet/pull/99). Ninguno está fusionado a esta fecha. Los enlaces a archivos que solo existen en esos PR resolverán cuando se fusionen.
+**Estado de los PR al 19-nov-2026.** Los specs de criterios de HU-14, 15 y 22–26 llegaron con los PR [#88](https://github.com/ClxNode/KuyayPet/pull/88)–[#94](https://github.com/ClxNode/KuyayPet/pull/94); sus capturas, con [#95](https://github.com/ClxNode/KuyayPet/pull/95); las pruebas de seguridad, con [#99](https://github.com/ClxNode/KuyayPet/pull/99). Los nueve se fusionaron el 19-nov entre las 16:26Z y las 16:48Z, y todos esos archivos están en `main`.
 
 ## 1. Pruebas funcionales (por historia de usuario)
 
@@ -12,8 +12,8 @@ Cada criterio de aceptación de las 26 HU (166 criterios: 164 del documento del 
 
 | Tipo | Carpeta (en `Codigo_Repositorio/kuyaypet-web/`) | Qué verifica | Cobertura |
 |---|---|---|---|
-| Criterios | `tests/criterios/HU-NN.spec.ts` | Un test por criterio que no tenía prueba o cuyo comportamiento se corrigió. Afirma el estado de la interfaz y de los datos persistidos. | HU-02 a HU-21 (18 archivos, en `main`; HU-01 la cubre `smoke.spec.ts`). HU-14, 15 y 22–26 están en los PR abiertos #88–#94. |
-| Evidencias | `tests/evidencias/HU-NN.spec.ts` | Recorre los criterios de una HU, toma **una captura por criterio** (`P-HU-NN-0M-*.png`) y graba **un video por HU**. | HU-01 a HU-21 en `main` (sin HU-14 ni HU-15). HU-14, 15 y 22–26 en los PR #88–#94; sus capturas, en el PR #95. |
+| Criterios | `tests/criterios/HU-NN.spec.ts` | Un test por criterio que no tenía prueba o cuyo comportamiento se corrigió. Afirma el estado de la interfaz y de los datos persistidos. | HU-02 a HU-26 (25 archivos, en `main`; HU-01 la cubre `smoke.spec.ts`). Los de HU-14, 15 y 22–26 entraron con los PR #88–#94. |
+| Evidencias | `tests/evidencias/HU-NN.spec.ts` | Recorre los criterios de una HU, toma **una captura por criterio** (`P-HU-NN-0M-*.png`) y graba **un video por HU**. | HU-01 a HU-26 en `main` (los de HU-14, 15 y 22–26, con sus capturas, entraron con el PR #95). |
 
 Las capturas se guardan en `Sprint_0N/7.Pruebas/evidencias/HU-NN/` ([Sprint 1](../Sprint_01/7.Pruebas/readme.md), [Sprint 2](../Sprint_02/7.Pruebas/readme.md), [Sprint 3](../Sprint_03/7.Pruebas/readme.md)). Los videos están en Drive (enlaces en cada `7.Pruebas`).
 
@@ -36,7 +36,7 @@ Prueban que lo que hace un rol llega al siguiente. Son los specs de la raíz de 
 
 ## 3. Pruebas de seguridad
 
-Las pruebas viven en `tests/seguridad/control-acceso.spec.ts` y `tests/seguridad/validacion-entradas.spec.ts`, en el PR [#99](https://github.com/ClxNode/KuyayPet/pull/99) (rama `sprint-4/pruebas-seguridad`; el nombre de la rama es histórico: el curso tiene 3 sprints). **Resultado: 13 de 13 pasan (19-nov-2026).**
+Las pruebas viven en `tests/seguridad/control-acceso.spec.ts` y `tests/seguridad/validacion-entradas.spec.ts`, en el PR [#99](https://github.com/ClxNode/KuyayPet/pull/99), fusionado el 19-nov (rama `sprint-4/pruebas-seguridad`; el nombre de la rama es histórico: el curso tiene 3 sprints). **Resultado: 13 de 13 pasan (19-nov-2026).**
 
 Alcance: lo que se puede comprobar **desde la interfaz**. Sin servidor, el control de acceso vive en el cliente (`RequireAuth` y `canAccess` en `src/services/auth.ts`); estas pruebas verifican que ese control se cumple al navegar y operar como lo haría un usuario. No son pruebas de intrusión.
 
@@ -108,7 +108,7 @@ BASE_URL=http://localhost:4199/ node scripts/record-hu.mjs 06 07 08
 
 ## 5. Resultados
 
-Datos de la ejecución completa del 19-nov-2026 sobre `main` más los PR #88–#95 y #99, integrados en una copia local de prueba:
+Datos de la ejecución completa del 19-nov-2026 sobre `main` con los PR #88–#95 y #99 (fusionados el 19-nov), integrados en una copia local de prueba:
 
 - Vitest: 22 de 22.
 - Playwright: 130 pruebas. En la primera corrida pasaron 129; HU-04 criterio 9 quedó colgada una vez durante 9,9 minutos por el entorno y pasó 3 de 3 al repetirla.

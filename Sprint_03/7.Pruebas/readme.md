@@ -176,17 +176,17 @@ Video: [HU-20.mp4 en Drive](https://drive.google.com/open?id=1H0Sr8HsibmnwgtQ4xy
 
 ## Parte (b): administración y cierre
 
-Las evidencias de la parte (b) llegan con el PR [#95](https://github.com/ClxNode/KuyayPet/pull/95) (abierto al 19-nov, sin fusionar): capturas en `evidencias/HU-NN/` de esta carpeta, el specs `tests/evidencias/HU-NN.spec.ts` y el documento `administracion-y-cierre.md`, con el comando, la fecha y el resultado observado por criterio. Hasta que ese PR se fusione, **este documento no registra resultados de la parte (b)**.
+Las evidencias de la parte (b) llegaron con el PR [#95](https://github.com/ClxNode/KuyayPet/pull/95), fusionado el 19-nov a las 16:47:57Z (aprobado y fusionado por ClxNode): capturas en `evidencias/HU-NN/` de esta carpeta, los specs `tests/evidencias/HU-NN.spec.ts` y el documento `administracion-y-cierre.md`, con el comando, la fecha y el resultado observado por criterio. Los PR de criterios (#88–#94) se fusionaron entre las 16:26Z y las 16:41Z; el detalle de autores, revisores y fusionadores está en [6.Repositorio_Codigo](../6.Repositorio_Codigo/readme.md).
 
 | HU | Historia | PR de criterios | Evidencia | Video en Drive |
 |---|---|---|---|---|
-| HU-14 | Consulta de información sobre adopción | [#88](https://github.com/ClxNode/KuyayPet/pull/88) | `evidencias/HU-14/` (en [#95](https://github.com/ClxNode/KuyayPet/pull/95)) | [HU-14.mp4](https://drive.google.com/open?id=1FayJBwq8ulmZnEfJkE1d-7AnUHE2LpjD) |
-| HU-15 | Recuperación de contraseña | [#89](https://github.com/ClxNode/KuyayPet/pull/89) | `evidencias/HU-15/` (en [#95](https://github.com/ClxNode/KuyayPet/pull/95)) | [HU-15.mp4](https://drive.google.com/open?id=1jd6YwpPXVuIRODZgbCQHVhgmRE4nNBH4) |
-| HU-22 | Gestionar usuarios | [#90](https://github.com/ClxNode/KuyayPet/pull/90) | `evidencias/HU-22/` (en [#95](https://github.com/ClxNode/KuyayPet/pull/95)) | [HU-22.mp4](https://drive.google.com/open?id=1RIhlsLFuK_z2x2BWHeI1aXOUWR41zn_Y) |
-| HU-23 | Revisar publicaciones de mascotas | [#91](https://github.com/ClxNode/KuyayPet/pull/91) | `evidencias/HU-23/` (en [#95](https://github.com/ClxNode/KuyayPet/pull/95)) | [HU-23.mp4](https://drive.google.com/open?id=1SCUFOdsUiVHxRLo3bru4Iku0Z2_oOqrD) |
-| HU-24 | Aprobar o rechazar publicaciones de mascotas | [#92](https://github.com/ClxNode/KuyayPet/pull/92) | `evidencias/HU-24/` (en [#95](https://github.com/ClxNode/KuyayPet/pull/95)) | [HU-24.mp4](https://drive.google.com/open?id=1YP7kkHNERC0KNHOCnfOQif9c6WOTo080) |
-| HU-25 | Desactivar cuentas de usuarios | [#93](https://github.com/ClxNode/KuyayPet/pull/93) | `evidencias/HU-25/` (en [#95](https://github.com/ClxNode/KuyayPet/pull/95)) | [HU-25.mp4](https://drive.google.com/open?id=1B11QmebfOXgPh8g4X95LqsiWsow3eVqG) |
-| HU-26 | Gestionar información inapropiada en la plataforma | [#94](https://github.com/ClxNode/KuyayPet/pull/94) | `evidencias/HU-26/` (en [#95](https://github.com/ClxNode/KuyayPet/pull/95)) | [HU-26.mp4](https://drive.google.com/open?id=1fy1FNGqc460AXRTDZNmisBMl1oHKQ4lP) |
+| HU-14 | Consulta de información sobre adopción | [#88](https://github.com/ClxNode/KuyayPet/pull/88) | [`evidencias/HU-14/`](evidencias/HU-14/) | [HU-14.mp4](https://drive.google.com/open?id=1FayJBwq8ulmZnEfJkE1d-7AnUHE2LpjD) |
+| HU-15 | Recuperación de contraseña | [#89](https://github.com/ClxNode/KuyayPet/pull/89) | [`evidencias/HU-15/`](evidencias/HU-15/) | [HU-15.mp4](https://drive.google.com/open?id=1jd6YwpPXVuIRODZgbCQHVhgmRE4nNBH4) |
+| HU-22 | Gestionar usuarios | [#90](https://github.com/ClxNode/KuyayPet/pull/90) | [`evidencias/HU-22/`](evidencias/HU-22/) | [HU-22.mp4](https://drive.google.com/open?id=1RIhlsLFuK_z2x2BWHeI1aXOUWR41zn_Y) |
+| HU-23 | Revisar publicaciones de mascotas | [#91](https://github.com/ClxNode/KuyayPet/pull/91) | [`evidencias/HU-23/`](evidencias/HU-23/) | [HU-23.mp4](https://drive.google.com/open?id=1SCUFOdsUiVHxRLo3bru4Iku0Z2_oOqrD) |
+| HU-24 | Aprobar o rechazar publicaciones de mascotas | [#92](https://github.com/ClxNode/KuyayPet/pull/92) | [`evidencias/HU-24/`](evidencias/HU-24/) | [HU-24.mp4](https://drive.google.com/open?id=1YP7kkHNERC0KNHOCnfOQif9c6WOTo080) |
+| HU-25 | Desactivar cuentas de usuarios | [#93](https://github.com/ClxNode/KuyayPet/pull/93) | [`evidencias/HU-25/`](evidencias/HU-25/) | [HU-25.mp4](https://drive.google.com/open?id=1B11QmebfOXgPh8g4X95LqsiWsow3eVqG) |
+| HU-26 | Gestionar información inapropiada en la plataforma | [#94](https://github.com/ClxNode/KuyayPet/pull/94) | [`evidencias/HU-26/`](evidencias/HU-26/) | [HU-26.mp4](https://drive.google.com/open?id=1fy1FNGqc460AXRTDZNmisBMl1oHKQ4lP) |
 
 Casillas de validación de la parte (b), una por HU (el responsable es el asignado del issue; ninguna de estas 7 HU tiene asignado):
 
@@ -200,4 +200,4 @@ Casillas de validación de la parte (b), una por HU (el responsable es el asigna
 
 ### Pruebas de seguridad
 
-Pruebas `tests/seguridad` SEG-01 a SEG-13 (13 pruebas): PR [#99](https://github.com/ClxNode/KuyayPet/pull/99) (rama `sprint-4/pruebas-seguridad`, nombre histórico), abierto al 19-nov y sin fusionar; plan y resultados en [`docs/pruebas.md`](../../docs/pruebas.md#3-pruebas-de-seguridad).
+Pruebas `tests/seguridad` SEG-01 a SEG-13 (13 pruebas): PR [#99](https://github.com/ClxNode/KuyayPet/pull/99) (rama `sprint-4/pruebas-seguridad`, nombre histórico), fusionado el 19-nov a las 16:48:34Z (aprobado y fusionado por BeyondNate); plan y resultados en [`docs/pruebas.md`](../../docs/pruebas.md#3-pruebas-de-seguridad).

@@ -8,7 +8,7 @@
 
 Este manual explica, por rol, cómo realizar las tareas principales. Las capturas son las evidencias de las pruebas automatizadas (`Sprint_0N/7.Pruebas/evidencias/HU-NN/`), tomadas en pantalla de celular (390×844).
 
-> **Capturas de la parte (b) del Sprint 3** (HU-14, 15, 22 a 26): están en `Sprint_03/7.Pruebas/evidencias/` y llegan con el PR [#95](https://github.com/ClxNode/KuyayPet/pull/95), que sigue abierto al 19-nov. Los enlaces a esas imágenes se ven rotos hasta que se fusione.
+> **Capturas de la parte (b) del Sprint 3** (HU-14, 15, 22 a 26): están en `Sprint_03/7.Pruebas/evidencias/` y llegaron con el PR [#95](https://github.com/ClxNode/KuyayPet/pull/95), fusionado el 19-nov.
 
 ## 0. Antes de empezar
 
@@ -168,7 +168,7 @@ En **Mis mascotas**, pulsa **Marcar como adoptada** y confirma. La mascota pasa 
 
 ## 4. Administrador
 
-Barra inferior: **Panel**, **Avisos**, **Perfil**. El panel tiene secciones de usuarios, publicaciones y reportes. Estas funciones corresponden a la parte (b) del Sprint 3 (PR abiertos #88–#94 al 19-nov).
+Barra inferior: **Panel**, **Avisos**, **Perfil**. El panel tiene secciones de usuarios, publicaciones y reportes. Estas funciones corresponden a la parte (b) del Sprint 3 (PR #88–#94, fusionados el 19-nov).
 
 ### 4.1. Gestionar usuarios (HU-22) y desactivar cuentas (HU-25)
 

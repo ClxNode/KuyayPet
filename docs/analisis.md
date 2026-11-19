@@ -4,7 +4,7 @@
 
 > Este análisis describe el comportamiento **real** del prototipo en `main` (commit `8973b20`), leído del código de [`Codigo_Repositorio/kuyaypet-web/src/`](../Codigo_Repositorio/kuyaypet-web/src/) y contrastado con los criterios de aceptación de la lista de historias de usuario del equipo (copiada en [historias-de-usuario.md](./historias-de-usuario.md)). Lo que el código no hace se marca como tal.
 >
-> **Citas.** Toda cita `archivo:línea` es relativa a `Codigo_Repositorio/kuyaypet-web/src/`. Las líneas corresponden a `main`. Tres PR de código de la parte (b) del Sprint 3 siguen abiertos y modifican pantallas citadas aquí: #88 (HU-14, acceso a la guía desde `shell/AppLayout.tsx`), #91 (HU-23, el detalle de la publicación muestra los datos de la mascota, `screens/admin/AdminPublicationDetail.tsx`) y #93 (HU-25, aviso "La cuenta ya está inactiva" en `screens/admin/AdminUserDetail.tsx`). Cuando se fusionen, esas líneas se desplazan; las reglas no cambian.
+> **Citas.** Toda cita `archivo:línea` es relativa a `Codigo_Repositorio/kuyaypet-web/src/`. Las líneas se tomaron de `main` antes de fusionar tres PR de código de la parte (b) del Sprint 3, que el equipo fusionó el 19-nov y que modifican pantallas citadas aquí: #88 (HU-14, acceso a la guía desde `shell/AppLayout.tsx`), #91 (HU-23, el detalle de la publicación muestra los datos de la mascota, `screens/admin/AdminPublicationDetail.tsx`) y #93 (HU-25, aviso "La cuenta ya está inactiva" en `screens/admin/AdminUserDetail.tsx`). Tras esa fusión, las líneas de esas pantallas pueden haberse desplazado; las reglas no cambian.
 >
 > **Criterios de HU-26.** El PDF fuente no incluye la sección HU-26; sus dos criterios salen del issue #26 (ver `kuyaypet-tools/AUDITORIA_CRITERIOS.md`, línea 7).
 
@@ -143,7 +143,7 @@ Columna **Nivel**: R = ruta, S = servicio, UI = solo interfaz. "Derivada del có
 | RN-39 | Al editar un usuario: nombre obligatorio, correo con formato válido y no usado por otra cuenta; el rol es de solo lectura. | HU-22, criterios 3 y 4 | `services/users.ts:16-26`; `AdminUserDetail.tsx:95` | S/UI |
 | RN-40 | Desactivar y reactivar una cuenta pide confirmación y deja el estado `Inactiva` o `Activo`. | HU-25, criterios 3 y 4 | `AdminUserDetail.tsx:47-59`; `moderation.ts:37-39` | UI/S |
 | RN-41 | El administrador no puede desactivar su propia cuenta desde el detalle de usuario. | Derivada del código | `AdminUserDetail.tsx:38,48` | UI |
-| RN-42 | Avisar que la cuenta ya está inactiva al intentar desactivarla. En `main` el botón pasa a "Reactivar" y no hay aviso; el aviso llega con el PR #93 (abierto). | HU-25, criterio 7 | `AdminUserDetail.tsx:111-113` (`main`); PR #93 | UI |
+| RN-42 | Avisar que la cuenta ya está inactiva al intentar desactivarla. Antes del PR #93 el botón pasaba a "Reactivar" sin aviso; el aviso entró con el PR #93 (fusionado el 19-nov). | HU-25, criterio 7 | `AdminUserDetail.tsx:108-111`; PR #93 | UI |
 | RN-43 | Cualquier usuario con sesión puede reportar una mascota; el reporte nace `abierto` y se notifica a **un** administrador (el primero de la lista). | HU-26 (issue #26) | `moderation.ts:54-60` (notificación en 57-58); `PetProfile.tsx:87,129-134` | S/UI |
 | RN-44 | Ocultar la publicación reportada la deja `rechazada` y `retirada` con la resolución como motivo, y cierra el reporte como `resuelto`. | HU-26, criterio 1 (issue) | `moderation.ts:67-70` | S |
 | RN-45 | Desactivar la cuenta desde un reporte reutiliza la regla de HU-25 y cierra el reporte; descartar lo cierra sin acción. | HU-26, criterio 1 (issue) | `moderation.ts:72-80` | S |
