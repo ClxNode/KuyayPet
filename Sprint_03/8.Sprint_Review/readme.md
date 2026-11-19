@@ -36,7 +36,7 @@ Las pantallas de las 8 HU ya estaban en `main` desde el 16-oct (prototipo v0.3);
 
 ## 8.3. Aplicación
 
-- **Producción:** https://firebrick-cod-910257.hostingersite.com/ — versión `v0.3.1-sprint2`. **No incluye** los cambios de este sprint (las fusiones del 12-nov son posteriores): ni #70, #72 ni #74.
+- **Producción:** https://firebrick-cod-910257.hostingersite.com/ — en la fecha de la revisión (12-nov) estaba `v0.3.1-sprint2`, que **no incluía** los cambios de este sprint (ni #70, #72 ni #74). Desde el 19-nov-2026 está `v1.0.0`, que sí los incluye.
 - **Código:** [`Codigo_Repositorio/`](../../Codigo_Repositorio/readme.md) y [6.Repositorio_Codigo](../6.Repositorio_Codigo/readme.md).
 
 ## 8.4. Estado del sprint contra el objetivo

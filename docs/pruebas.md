@@ -113,4 +113,10 @@ Datos de la ejecución completa del 19-nov-2026 sobre `main` más los PR #88–#
 - Vitest: 22 de 22.
 - Playwright: 130 pruebas. En la primera corrida pasaron 129; HU-04 criterio 9 quedó colgada una vez durante 9,9 minutos por el entorno y pasó 3 de 3 al repetirla.
 
-<!-- RESULTADOS_SUITE -->
+### Resultados contra producción (v1.0.0)
+
+Ejecución del 19-nov-2026 contra https://firebrick-cod-910257.hostingersite.com/ (`v1.0.0`):
+
+- Playwright: 130 pruebas; 129 pasaron a la primera. HU-12 criterio 2 falló por `net::ERR_TIMED_OUT` al cargar la página (un problema de red, no de una aserción) y pasó 5 de 5 al repetirla.
+- Antes del despliegue, sobre el mismo código en local: Vitest 22 de 22 y Playwright 130 de 130.
+- Videos de v1.0.0: enlace en la carpeta de Drive de videos-hu.

@@ -86,7 +86,7 @@ Tres niveles: funcionales por criterio de cada HU, de integración entre roles y
 
 ## 5. Despliegue
 
-La aplicación es un sitio **estático** (`dist/`) con rutas relativas, publicado en Hostinger en https://firebrick-cod-910257.hostingersite.com/ y espejado en GitHub Pages. La versión desplegada al 19-nov-2026 es `v0.3.1-sprint2`. Procedimiento, cuidados con el service worker y la CDN y cómo revertir: [despliegue](./despliegue.md).
+La aplicación es un sitio **estático** (`dist/`) con rutas relativas, publicado en Hostinger en https://firebrick-cod-910257.hostingersite.com/ y espejado en GitHub Pages. La versión desplegada al 19-nov-2026 es `v1.0.0`. Procedimiento, cuidados con el service worker y la CDN y cómo revertir: [despliegue](./despliegue.md).
 
 ## 6. Mantenimiento y límites conocidos
 

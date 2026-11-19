@@ -10,7 +10,7 @@ Datos de `prs.json` y de la API de GitHub al 19-nov-2026. Las horas están en UT
 
 - **Parte (a):** los 9 PR de la parte (a) ([#68](https://github.com/ClxNode/KuyayPet/pull/68)–[#76](https://github.com/ClxNode/KuyayPet/pull/76)) están fusionados en `main`; `main` termina en el commit `8973b20` (12-nov 17:10Z).
 - **Parte (b):** los PR [#88](https://github.com/ClxNode/KuyayPet/pull/88)–[#95](https://github.com/ClxNode/KuyayPet/pull/95) están abiertos contra `main` desde el 19-nov y sin revisiones; no hay cambios de la parte (b) en `main`.
-- **Prototipo publicado:** https://firebrick-cod-910257.hostingersite.com/ — versión `v0.3.1-sprint2`, anterior a las fusiones del 12-nov.
+- **Prototipo publicado:** https://firebrick-cod-910257.hostingersite.com/ — versión `v1.0.0`, desplegada el 19-nov-2026 (hasta esa fecha estuvo `v0.3.1-sprint2`, anterior a las fusiones del 12-nov).
 
 ## Qué implementa cada HU y qué tocó el sprint
 

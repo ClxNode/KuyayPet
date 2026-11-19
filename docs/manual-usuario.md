@@ -4,7 +4,7 @@
 
 - **Aplicación:** https://firebrick-cod-910257.hostingersite.com/
 - **Manual dentro de la aplicación:** https://firebrick-cod-910257.hostingersite.com/manual/
-- **Versión desplegada al 19-nov-2026:** `v0.3.1-sprint2`. Incluye lo de los Sprints 1 y 2; **no incluye** los arreglos del Sprint 3. Ver [despliegue](./despliegue.md).
+- **Versión desplegada al 19-nov-2026:** `v1.0.0`. Incluye los Sprints 1 a 3. Ver [despliegue](./despliegue.md).
 
 Este manual explica, por rol, cómo realizar las tareas principales. Las capturas son las evidencias de las pruebas automatizadas (`Sprint_0N/7.Pruebas/evidencias/HU-NN/`), tomadas en pantalla de celular (390×844).
 

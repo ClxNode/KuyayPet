@@ -8,7 +8,7 @@
 
 KuyayPet es un prototipo web de adopción de mascotas (adoptante, responsable y administrador) construido en tres sprints para el curso de Ingeniería de Software (UPCH, 2026-2). Es una aplicación React sin servidor: los datos viven en el navegador. Quedan documentados 26 historias de usuario, su análisis, arquitectura y modelo de datos, el plan y los resultados de pruebas, el manual de usuario y el procedimiento de despliegue.
 
-- **Aplicación:** https://firebrick-cod-910257.hostingersite.com/ (versión `v0.3.1-sprint2`; no incluye los arreglos del Sprint 3).
+- **Aplicación:** https://firebrick-cod-910257.hostingersite.com/ (versión `v1.0.0`, desplegada el 19-nov-2026; ver [despliegue](./despliegue.md)).
 - **Código:** [`Codigo_Repositorio/`](../Codigo_Repositorio/readme.md).
 
 ## 2. Historias de usuario
@@ -98,4 +98,11 @@ Las limitaciones vienen del hecho de no tener servidor ([análisis, sección 6](
 
 ## 7. Estado final de producción
 
-<!-- ESTADO_PRODUCCION -->
+- **Versión:** `IchiSieben/kuyaypet@v1.0.0` (tag sobre el commit `26ea3b7`; el `package.json` dice 1.0.0 desde `d5ccad0`, mismo bundle). Bundle principal `assets/index-BXqdrcgB.js`.
+- **Desde:** 19-nov-2026.
+- **Contenido:** el `main` del grupo (Sprints 1 a 3, parte a) **más** lo de los PR #88–#95 y #99, que en `ClxNode/KuyayPet` siguen abiertos sin fusionar. Producción va por delante del `main` del grupo hasta que el equipo los fusione.
+- **Versión anterior:** `v0.3.1-sprint2` (bundle `index-DQQidj1w.js`). Se guardó copia de su `index.html`, `sw.js` y `manifest.webmanifest`; revertir es volver a subir esos 3 archivos y purgar la CDN (los assets de la versión anterior siguen en el servidor).
+- **Procedimiento usado:** `npm run build`; subida parcial archivo por archivo por TUS con la API pública de Hostinger (credenciales de subida temporales generadas con un token de API guardado en variable de entorno, nunca en el repositorio); 235 archivos, con `manifest.webmanifest`, `sw.js` e `index.html` al final. `/next/`, `/next2/` y `/guia-sprint2/` no se tocan; `/manual/` se actualiza con el build. Purga de la CDN por la API después de subir `sw.js`.
+- **Verificación:** los 235 archivos se comprobaron contra el servidor. 7 imágenes se sirven con otro tamaño por la optimización del servidor y `robots.txt` lo reescribe Hostinger en el dominio temporal.
+- **Incidente:** durante unos minutos el bundle principal respondió 404 por una subida de prueba fallida; se volvió a subir y se verificó.
+- **Suite contra producción:** ver [pruebas](./pruebas.md#resultados-contra-producción-v100).
