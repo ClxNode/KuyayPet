@@ -45,7 +45,7 @@ Comando: `... node scripts/record-hu.mjs 06` · Fecha: 2026-10-28 · Duración d
 
 Video: [HU-06.mp4 en Drive](https://drive.google.com/open?id=1WqRmsS3Emf5mn9CCLKnQX2xfXYw7Qy4A)
 
-- [ ] Validado por ClxNode
+- [X] Validado por ClxNode
 
 ### HU-07 — Recibir un Match por compatibilidad
 
