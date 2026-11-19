@@ -218,4 +218,4 @@ erDiagram
 - `USER.password` está en texto plano solo porque es una demo local; una BD real guardaría un hash.
 - `MatchResult` y `Reason` del código son resultados calculados por el motor, no datos persistidos: por eso no aparecen como entidades.
 
-> ✋ Pendiente: que el equipo valide este modelo como "modelo ER" del Sprint 1 o pida cambios.
+- [ ] Validado por el equipo (este modelo es el "modelo ER" del Sprint 1; pedir cambios si hace falta).
