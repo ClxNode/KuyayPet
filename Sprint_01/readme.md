@@ -2,7 +2,7 @@
 
 [← Volver a la presentación](../readme.md) · [Sprint 2 →](../Sprint_02/readme.md)
 
-> Índice del Sprint 1. Enlaza los documentos que escribió el equipo; no los reemplaza. Donde falta un dato real se marca `✋ Pendiente` para completarlo en la reunión de cierre.
+> Índice del Sprint 1. Enlaza los documentos que escribió el equipo; no los reemplaza. Los datos que el equipo no registró se indican como tales; las puntuaciones son una propuesta.
 
 ## Índice del Sprint 1
 
@@ -21,7 +21,7 @@
 | Sprint Planning (15-oct) | [2.Sprint_Planning](./2.Sprint_Planning/readme.md) |
 | Daily Scrum (15 y 16-oct) | [3.Daily_Scrum](./3.Daily_Scrum/readme.md) · [enlace a Drive del equipo](./7.Pruebas/DailyScrum.md) *(archivo agregado en `main`)* |
 | Sprint Retrospective | [4.Sprint_Retrospective](./4.Sprint_Retrospective/readme.md) |
-| Sprint Review | ✋ Pendiente: se realiza en el video de cierre (escena 1 del guion) |
+| Sprint Review | [8.Sprint_Review](./8.Sprint_Review/readme.md) |
 
 ### Documentos de Ingeniería de Software
 
@@ -79,13 +79,29 @@ El equipo priorizó con la prioridad del catálogo (Alta / Media / Baja). La equ
 
 | Sprint | Puntos comprometidos | Puntos terminados | Velocity |
 |---|---|---|---|
-| Sprint 1 | ✋ Pendiente (propuesta: 13) | ✋ Pendiente | ✋ Pendiente |
+| Sprint 1 | 13 (propuesta) | 13 (propuesta) | 13 |
 
-> ✋ Pendiente: al cerrar el sprint, sumar los puntos acordados de las HU que el equipo mueva a *Terminado* en la escena 1 del video.
+> Puntos propuestos (HU-01 = 5, HU-02 = 5, HU-03 = 3): el equipo no registró puntos acordados. «Terminado» = issue cerrado en GitHub: #1, #2 y #3 se cerraron el 28-oct-2026 a las 16:37 (hora de Lima). Las pruebas de `7.Pruebas` figuran como Completado.
 
 ### Burndown
 
-> ✋ Pendiente: el equipo no registró puntos restantes por día durante el sprint, así que no se puede reconstruir un burndown sin inventarlo. A partir del Sprint 2 se puede llevar desde el Project (campo de puntos por HU).
+El equipo no registró puntos restantes por día durante el sprint, así que no hay burndown diario. Con las fechas reales de cierre de los issues (puntos propuestos):
+
+| Fecha (hora de Lima) | Puntos restantes | Hecho registrado |
+|---|---|---|
+| 16-oct | 13 | Issues #1 a #3 y tareas #27 a #34 creados; la tarea #32 se cerró a las 14:25 |
+| 28-oct 16:37 | 0 | Cierre de los issues #1, #2 y #3 |
+| 30-oct (vencimiento del milestone) | 0 | — |
+
+```mermaid
+xychart-beta
+    title "Burndown Sprint 1 (puntos propuestos)"
+    x-axis ["16-oct", "28-oct", "30-oct"]
+    y-axis "Puntos restantes" 0 --> 15
+    line [13, 0, 0]
+```
+
+La gráfica tiene un solo descenso porque los tres issues se cerraron juntos; no muestra el avance entre ambas fechas.
 
 ## 6. Riesgos identificados
 
@@ -105,7 +121,7 @@ Del [documento de retrospectiva](./4.Sprint_Retrospective/readme.md), marcado po
 - **Fue difícil:** accesos a GitHub, dependencia HU-02 → HU-03, estimar el tiempo disponible.
 - **Acción de mejora:** confirmar accesos al inicio del sprint y revisar a diario tareas y bloqueos (responsable propuesto: Juan Vidal).
 
-> ✋ Pendiente: validar la retrospectiva con las observaciones reales del equipo.
+La retrospectiva la escribió el equipo el 16-oct-2026; no se registró otra validación posterior.
 
 ## 8. Definition of Done
 
@@ -117,10 +133,10 @@ Del [Sprint Planning](./2.Sprint_Planning/readme.md#definition-of-done-propuesta
 |---|---|
 | Capturas HU-03 (tarea #32) | [7.Pruebas/evidencias/](./7.Pruebas/evidencias/) |
 | Capturas HU-01 y HU-02 (ejecución automatizada) | [7.Pruebas/evidencias/HU-01](./7.Pruebas/evidencias/HU-01/) · [HU-02](./7.Pruebas/evidencias/HU-02/) |
-| Videos por HU (HU-01, 02, 03) | ✋ Pendiente: subir a Drive y pegar enlace |
+| Videos por HU | [HU-01](https://drive.google.com/open?id=1xJK5g8UV8wvEA7DJPV9zvOYEX22ujtx_) · [HU-02](https://drive.google.com/open?id=1CWKeursKtfLnhfWbf_sEeK8czYDKw9YO) · [HU-03](https://drive.google.com/open?id=1LfvP3r7Is-f99a51t3Y5gjA2T5zdG-qJ) |
 | Prototipo desplegado | https://firebrick-cod-910257.hostingersite.com/ |
-| Video de cierre del sprint | ✋ Pendiente: enlace al video del equipo |
+| Video de cierre del sprint | No hay enlace registrado en el repositorio |
 
 ## 10. Carryover al Sprint 2
 
-> ✋ Pendiente: se decide en la escena 1 del video. Toda HU que no tenga su validación completa en `7.Pruebas` pasa al Sprint 2 y se anota aquí con el motivo.
+No hay un registro formal de carryover. Las tres HU quedaron en el Sprint 1 (issues #1, #2 y #3 cerrados el 28-oct); su validación y evidencia se completaron en el periodo del Sprint 2: PR #52, #53, #55 y #56 (28-oct), commits del equipo en `7.Pruebas` el 29-oct y PR #67 (12-nov). En `7.Pruebas`, HU-01, HU-02 y HU-03 figuran como Completado. Las tareas #27, #28, #30 y #33 se cerraron el 29-oct a las 00:27 (hora de Lima); #29, el 28-oct a las 23:17; #31 y #34, el 28-oct a las 16:37 y 16:38; #32, el 16-oct.
