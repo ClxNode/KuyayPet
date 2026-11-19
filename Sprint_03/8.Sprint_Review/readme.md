@@ -59,7 +59,7 @@ Burndown y regla de puntos: [readme del sprint](../readme.md#6-métricas).
 
 | Observación | Qué se hizo | Pendiente |
 |---|---|---|
-| Historias incompletas o cortas | Las 15 HU del sprint tienen en [1.Product_Backlog_Item](../1.Product_Backlog_Item/readme.md) enunciado, todos sus criterios 93 criterios en total, rol, prioridad, puntos propuestos, ruta del prototipo y dependencias. Las issues de GitHub siguen con 2 o 3 criterios | Actualizar las issues |
+| Historias incompletas o cortas | Las 15 HU del sprint tienen en [1.Product_Backlog_Item](../1.Product_Backlog_Item/readme.md) enunciado, todos sus criterios (93 en total), rol, prioridad, puntos propuestos, ruta del prototipo y dependencias. Las issues de GitHub siguen con 2 o 3 criterios | Actualizar las issues |
 | Análisis faltantes | Dependencias verificadas contra el código y riesgos en [2.Sprint_Planning](../2.Sprint_Planning/readme.md) | Documentación técnica, pruebas y cierre (parte b) |
 | Secciones sin llenar | Los 8 `.md` de `Sprint_03` y `8.Sprint_Review` tienen contenido; las partes que el equipo no escribió están marcadas como reconstruidas | Ampliar la retrospectiva y esta revisión al cierre |
 
