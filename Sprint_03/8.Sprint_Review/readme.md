@@ -31,7 +31,7 @@ Las pantallas de las 8 HU ya estaban en `main` desde el 16-oct (prototipo v0.3);
 |---|---|
 | HU-14, 15, 22, 23, 24, 25, 26: tests de criterios y 3 cambios de código (pestaña “Guía”, datos de la mascota en el detalle de la publicación, aviso de cuenta ya inactiva) | PR [#88](https://github.com/ClxNode/KuyayPet/pull/88)–[#94](https://github.com/ClxNode/KuyayPet/pull/94), abiertos |
 | Evidencias de la parte (b) | PR [#95](https://github.com/ClxNode/KuyayPet/pull/95), abierto |
-| Pruebas de seguridad (SEG-01 a SEG-13) | PR por abrir |
+| Pruebas de seguridad (SEG-01 a SEG-13) | PR [#99](https://github.com/ClxNode/KuyayPet/pull/99), abierto |
 | Manual de usuario, documentación técnica, despliegue, cierre del proyecto | En redacción: [manual](../../docs/manual-usuario.md) · [técnica](../../docs/documentacion-tecnica.md) · [despliegue](../../docs/despliegue.md) · [pruebas](../../docs/pruebas.md) · [cierre](../../docs/cierre-proyecto.md) |
 
 ## 8.3. Aplicación
@@ -65,4 +65,4 @@ Burndown y regla de puntos: [readme del sprint](../readme.md#6-métricas).
 
 ## 8.6. Próximos pasos
 
-Fusionar los PR #88 a #95, abrir y fusionar el PR de pruebas de seguridad, publicar los 5 documentos de `docs/`, desplegar, marcar las casillas “Validado por”, y actualizar el velocity y el burndown al cerrar el milestone.
+Fusionar los PR #88 a #95, fusionar el PR de pruebas de seguridad (#99), publicar los 5 documentos de `docs/`, desplegar, marcar las casillas “Validado por”, y actualizar el velocity y el burndown al cerrar el milestone.

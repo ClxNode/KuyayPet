@@ -40,7 +40,7 @@
 | Llenar cada sección de `Sprint_03` mientras se trabaja, no al cierre; revisar que no queden archivos vacíos antes de la exposición | por asignar | Antes del 27-nov |
 | Fusionar los PR antes del día de la exposición | por asignar | Próximas entregas |
 | Corregir la etiqueta de sprint de HU-13 | por asignar | Antes del 27-nov |
-| Completar la parte (b): PR #88–#95, pruebas de seguridad, manual, documentación técnica, despliegue y cierre; y ampliar esta retrospectiva | por asignar | Antes del 27-nov |
+| Completar la parte (b): PR #88–#95 y #99 (pruebas de seguridad), manual, documentación técnica, despliegue y cierre; y ampliar esta retrospectiva | por asignar | Antes del 27-nov |
 
 ## 4.4. Pendiente al 19-nov
 

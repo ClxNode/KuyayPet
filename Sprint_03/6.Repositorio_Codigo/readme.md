@@ -73,7 +73,7 @@ Las ramas de la parte (b) se llaman `sprint-4/…` por historia: el curso tiene 
 | [#94](https://github.com/ClxNode/KuyayPet/pull/94) | `sprint-4/HU-26-criterios` | HU-26 | Tests c1–c2 (ocultar publicación, desactivar cuenta, rechazo a no administrador) | Abierto | ninguna | 6 (+77 −0) |
 | [#95](https://github.com/ClxNode/KuyayPet/pull/95) | `sprint-4/evidencias-automatizadas` | HU-14, 15, 22–26 | Specs de evidencias, capturas y `7.Pruebas/administracion-y-cierre.md`. Depende de los 7 PR anteriores y se fusiona al final | Abierto | ninguna (revisor sugerido en la descripción: Dylan200-7) | 93 (+1166 −2), incluye los commits de los anteriores |
 
-Pendientes sin PR al 19-nov: pruebas de seguridad (`tests/seguridad`, SEG-01 a SEG-13), [manual de usuario](../../docs/manual-usuario.md) · [documentación técnica](../../docs/documentacion-tecnica.md) · [despliegue](../../docs/despliegue.md) · [pruebas](../../docs/pruebas.md) · [cierre del proyecto](../../docs/cierre-proyecto.md).
+Pruebas de seguridad (`tests/seguridad`, SEG-01 a SEG-13): PR [#99](https://github.com/ClxNode/KuyayPet/pull/99), abierto al 19-nov. Pendientes sin PR al 19-nov: [manual de usuario](../../docs/manual-usuario.md) · [documentación técnica](../../docs/documentacion-tecnica.md) · [despliegue](../../docs/despliegue.md) · [pruebas](../../docs/pruebas.md) · [cierre del proyecto](../../docs/cierre-proyecto.md).
 
 ## Pruebas
 

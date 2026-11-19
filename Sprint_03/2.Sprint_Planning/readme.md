@@ -43,7 +43,7 @@ Las horas están en UTC (hora de Lima = UTC−5).
 | (b) HU-24 — Aprobar o rechazar publicaciones de mascotas | [#24](https://github.com/ClxNode/KuyayPet/issues/24) | Alta | **Must** | Prioridad Alta; sin aprobación una mascota registrada (HU-11) no se muestra a los adoptantes (`isAvailable` exige `approval: 'aprobada'`). | 5 |
 | (b) HU-25 — Desactivar cuentas de usuarios | [#25](https://github.com/ClxNode/KuyayPet/issues/25) | Media | **Should** | Prioridad Media; rúbrica de administración. La reutiliza HU-26. | 5 |
 | (b) HU-26 — Gestionar información inapropiada en la plataforma | [#26](https://github.com/ClxNode/KuyayPet/issues/26) | Media | **Should** | Prioridad Media; moderación de la rúbrica de cierre. | 3 |
-| Pruebas de seguridad (`tests/seguridad`, SEG-01 a SEG-13) | PR por abrir | — | **Must** | La rúbrica de cierre pide pruebas funcionales, de integración y de seguridad | — |
+| Pruebas de seguridad (`tests/seguridad`, SEG-01 a SEG-13) | PR [#99](https://github.com/ClxNode/KuyayPet/pull/99) (abierto) | — | **Must** | La rúbrica de cierre pide pruebas funcionales, de integración y de seguridad | — |
 | Manual de usuario, documentación técnica, despliegue, cierre del proyecto | — | — | **Must** | Entregables de cierre de la rúbrica: [manual de usuario](../../docs/manual-usuario.md) · [documentación técnica](../../docs/documentacion-tecnica.md) · [despliegue](../../docs/despliegue.md) · [pruebas](../../docs/pruebas.md) · [cierre del proyecto](../../docs/cierre-proyecto.md) | — |
 | Resto del backlog | — | — | **Won't** | No queda backlog fuera de las 26 HU: 3 en el Sprint 1, 8 en el Sprint 2 y 15 en este sprint | — |
 
@@ -113,7 +113,7 @@ Para la parte (b) no se crearon tareas; el trabajo se sigue en los PR #88–#95,
 | Issues cerrados antes de que su PR se fusione | #13 se cerró el 29-oct y su PR #73 se fusionó el 12-nov; los 7 issues de la parte (b) se cerraron el 12-nov con los PR #88–#94 abiertos el 19-nov | Se explica en el burndown |
 | PR sin revisión efectiva | #74, #75 y #76 sin revisión; #72 y #73 solo con comentario | Ver [6.Repositorio_Codigo](../6.Repositorio_Codigo/readme.md) |
 | Producción desactualizada | La versión publicada es `v0.3.1-sprint2`, anterior a las fusiones del 12-nov | Pendiente (despliegue, parte b) |
-| Plazo de la parte (b) | 8 días entre el 19-nov y el cierre del milestone; faltan además PR de seguridad y de los 5 documentos | En curso |
+| Plazo de la parte (b) | 8 días entre el 19-nov y el cierre del milestone; falta además fusionar el PR de seguridad ([#99](https://github.com/ClxNode/KuyayPet/pull/99)) y publicar los 5 documentos | En curso |
 | Carpeta `Sprint_03` vacía | Siete de sus ocho `.md` estaban vacíos al fusionarse los PR del 12-nov | Resuelto con este cierre |
 
 ## Definition of Done

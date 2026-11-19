@@ -200,4 +200,4 @@ Casillas de validación de la parte (b), una por HU (el responsable es el asigna
 
 ### Pruebas de seguridad
 
-Pruebas `tests/seguridad` SEG-01 a SEG-13 (13 pruebas): su PR aún no se abre al 19-nov; resultados y plan en [`docs/pruebas.md`](../../docs/pruebas.md) cuando se publique.
+Pruebas `tests/seguridad` SEG-01 a SEG-13 (13 pruebas): PR [#99](https://github.com/ClxNode/KuyayPet/pull/99) (rama `sprint-4/pruebas-seguridad`, nombre histórico), abierto al 19-nov y sin fusionar; plan y resultados en [`docs/pruebas.md`](../../docs/pruebas.md#3-pruebas-de-seguridad).
