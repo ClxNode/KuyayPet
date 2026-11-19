@@ -15,19 +15,26 @@ Corresponde a lo que la rúbrica pide para el Sprint 2 (registro y edición de m
 
 | HU | Issue | Prioridad del catálogo | MoSCoW propuesto | Justificación | Puntos |
 |---|---|---|---|---|---|
-| HU-11 — Registrar mascota | [#11](https://github.com/ClxNode/KuyayPet/issues/11) | Media | **Must** | Sin publicación no hay catálogo ni demo ("un responsable publica") | ✋ |
-| HU-16 — Registro visual y etiquetado | [#16](https://github.com/ClxNode/KuyayPet/issues/16) | Media | **Must** | La rúbrica pide "catálogo con fotos"; las fotos se cargan en el mismo formulario de HU-11 | ✋ |
-| HU-12 — Editar información textual | [#12](https://github.com/ClxNode/KuyayPet/issues/12) | Alta | **Must** | La rúbrica pide "registro y edición"; prioridad Alta en el catálogo | ✋ |
-| HU-04 — Filtrar mascotas | [#4](https://github.com/ClxNode/KuyayPet/issues/4) | Alta | **Must** | "Búsqueda y filtros" de la rúbrica; es como el adoptante "encuentra" la mascota en la demo | ✋ |
-| HU-05 — Búsqueda de mascotas cercanas | [#5](https://github.com/ClxNode/KuyayPet/issues/5) | Media | **Should** | La rúbrica pide "ubicación"; la demo se puede hacer solo con filtros si no alcanza | ✋ |
-| HU-17 — Guardado de favoritas | [#17](https://github.com/ClxNode/KuyayPet/issues/17) | Media | **Should** | La rúbrica pide "favoritos"; no bloquea el flujo publicar → encontrar | ✋ |
-| HU-19 — Marcar como adoptada | [#19](https://github.com/ClxNode/KuyayPet/issues/19) | Media | **Could** | Cierra el ciclo de vida de la publicación, pero la rúbrica no la pide en este sprint | ✋ |
-| Carryover HU-01, HU-02, HU-03 | [#1](https://github.com/ClxNode/KuyayPet/issues/1), [#2](https://github.com/ClxNode/KuyayPet/issues/2), [#3](https://github.com/ClxNode/KuyayPet/issues/3) | Alta | **Must** (si pasan al Sprint 2) | Eran el compromiso del Sprint 1 y ya están implementadas: lo que falta es la validación de sus responsables. Se confirma en la escena 1 | ✋ (los del Sprint 1, si el equipo los acordó) |
-| Resto del backlog (HU-06…HU-10, HU-13…HU-15, HU-18, HU-20…HU-26) | — | — | **Won't (este sprint)** | Corresponden a los Sprints 3 y 4 de la rúbrica | — |
+| HU-11 — Registrar mascota | [#11](https://github.com/ClxNode/KuyayPet/issues/11) | Media | **Must** | Sin publicación no hay catálogo ni demo ("un responsable publica") | 5 (propuesta) |
+| HU-16 — Registro visual y etiquetado | [#16](https://github.com/ClxNode/KuyayPet/issues/16) | Media | **Must** | La rúbrica pide "catálogo con fotos"; las fotos se cargan en el mismo formulario de HU-11 | 5 (propuesta) |
+| HU-12 — Editar información textual | [#12](https://github.com/ClxNode/KuyayPet/issues/12) | Alta | **Must** | La rúbrica pide "registro y edición"; prioridad Alta en el catálogo | 3 (propuesta) |
+| HU-04 — Filtrar mascotas | [#4](https://github.com/ClxNode/KuyayPet/issues/4) | Alta | **Must** | "Búsqueda y filtros" de la rúbrica; es como el adoptante "encuentra" la mascota en la demo | 8 (propuesta) |
+| HU-05 — Búsqueda de mascotas cercanas | [#5](https://github.com/ClxNode/KuyayPet/issues/5) | Media | **Should** | La rúbrica pide "ubicación"; la demo se puede hacer solo con filtros si no alcanza | 5 (propuesta) |
+| HU-17 — Guardado de favoritas | [#17](https://github.com/ClxNode/KuyayPet/issues/17) | Media | **Should** | La rúbrica pide "favoritos"; no bloquea el flujo publicar → encontrar | 5 (propuesta) |
+| HU-19 — Marcar como adoptada | [#19](https://github.com/ClxNode/KuyayPet/issues/19) | Media | **Could** | Cierra el ciclo de vida de la publicación, pero la rúbrica no la pide en este sprint | 5 (propuesta) |
+| HU-21 — Cierre seguro de sesión | [#21](https://github.com/ClxNode/KuyayPet/issues/21) | Alta | No clasificada | No figuraba en la planning propuesta; el issue lleva la etiqueta `sprint-2` y su PR [#64](https://github.com/ClxNode/KuyayPet/pull/64) se abrió el 28-oct | 5 (propuesta) |
+| Carryover HU-01, HU-02, HU-03 | [#1](https://github.com/ClxNode/KuyayPet/issues/1), [#2](https://github.com/ClxNode/KuyayPet/issues/2), [#3](https://github.com/ClxNode/KuyayPet/issues/3) | Alta | **Must** (si pasan al Sprint 2) | Eran el compromiso del Sprint 1 y ya están implementadas: lo que falta es la validación de sus responsables. Se confirma en la escena 1 | 13 (propuesta del Sprint 1: 5 + 5 + 3); no cuentan en la velocity del Sprint 2 |
+| Resto del backlog (HU-06…HU-10, HU-13…HU-15, HU-18, HU-20…HU-26) | — | — | **Won't (este sprint)** | Corresponden al Sprint 3 de la rúbrica (partes a y b) | — |
 
-> ✋ Pendiente: Planning Poker de las HU elegidas y escribir aquí los puntos acordados.
+> **Puntos.** El equipo no registró puntos. Los de la tabla son una propuesta única para todo el proyecto: Fibonacci según el número de criterios del documento del equipo (≤4: 2 · 5: 3 · 6–7: 5 · ≥8: 8, un escalón más por complejidad técnica extra; HU-05 lleva el escalón por mapa y cálculo de distancia). El Daily del 28-oct menciona un Planning Poker, pero no dejó los puntos acordados. Total de las 7 HU planificadas: 36; con HU-21: 41.
+
+> **Capacidad.** No registrada por el equipo (ni en horas ni en puntos). Equipo de 7 integrantes. El inicio del sprint tampoco está registrado: el primer rastro en GitHub es del 28-oct-2026 (tareas #37 a #46 asignadas al milestone a las 10:43, hora de Lima) y el milestone vence el 20-nov-2026.
+
+> **Fecha de cierre.** El milestone de GitHub y la Retrospective dicen 20-nov-2026. La línea «Cierre: 29 de noviembre» de arriba y la del Daily (28-nov) las escribió el equipo y no coinciden con el milestone.
 
 ## Estado real en el prototipo y qué falta para *Terminado*
+
+> Estado al 28-oct, antes de la ejecución automatizada y de los PR #48 a #66. El estado actual está en [7.Pruebas](../7.Pruebas/readme.md).
 
 "Implementada" significa que existe la pantalla y una prueba automática que la recorre (según [`src/data/huStatus.ts`](../../Codigo_Repositorio/kuyaypet-web/src/data/huStatus.ts) y la [tabla de trazabilidad](../../Codigo_Repositorio/readme.md#trazabilidad-de-las-26-hu)). **No** significa terminada.
 
@@ -46,7 +53,7 @@ Corresponde a lo que la rúbrica pide para el Sprint 2 (registro y edición de m
 
 ## Tareas propuestas
 
-Creadas como issues `tipo:tarea` + `sprint-2`, sin responsable. Detalle en el [tablero](../5.Tablero_Asignacion_Tareas/readme.md).
+Creadas como issues `tipo:tarea` + `sprint-2`, sin responsable. Estado en GitHub al 19-nov-2026: #45 y #46 cerradas (12-nov, 15:08 hora de Lima); #37 a #44 siguen abiertas y sin responsable, aunque el [tablero del equipo](../5.Tablero_Asignacion_Tareas/readme.md) las marca Terminado y con responsable. Detalle en el [tablero](../5.Tablero_Asignacion_Tareas/readme.md).
 
 | Issue | Tarea | HU |
 |---|---|---|
@@ -61,23 +68,23 @@ Creadas como issues `tipo:tarea` + `sprint-2`, sin responsable. Detalle en el [t
 | [#45](https://github.com/ClxNode/KuyayPet/issues/45) | Revisar adaptación a computadora y móvil de registro, catálogo y favoritos | HU-11 / HU-04 / HU-17 |
 | [#46](https://github.com/ClxNode/KuyayPet/issues/46) | Preparar la demo del Sprint 2: un responsable publica y otro usuario la encuentra | HU-11, HU-24, HU-04, HU-05, HU-03, HU-17 |
 
-Las HU candidatas **siguen en el backlog** hasta que el equipo las confirme; el comando para moverlas está preparado en `kuyaypet-scrum-tools/mover_hu_sprint2.sh`.
+Las HU quedaron con la etiqueta `sprint-2` y en el GitHub Project con Sprint = «Sprint 2» (HU-04, 05, 11, 12, 13, 16, 17, 19 y 21); ninguna tiene milestone. HU-13 llevó la etiqueta `sprint-2`, pero se probó y entregó en el Sprint 3 (PR #73).
 
 ## Alcance y dependencias
 
-- **HU-11 → HU-24.** En el prototipo, una mascota recién publicada queda "En revisión" y solo aparece a los adoptantes cuando un admin la aprueba (HU-24, decisión ADR-05 del prototipo). La demo necesita ese paso aunque HU-24 sea del Sprint 4.
+- **HU-11 → HU-24.** En el prototipo, una mascota recién publicada queda "En revisión" y solo aparece a los adoptantes cuando un admin la aprueba (HU-24, decisión ADR-05 del prototipo). La demo necesita ese paso aunque HU-24 se entregue en la parte b del Sprint 3 («Adopción y cierre del producto»).
 - **HU-16 depende de HU-11 y HU-12** (las fotos se cargan al registrar o editar).
 - **HU-04 y HU-05 dependen de HU-02** (actúan sobre la misma lista).
 - **Limitación del prototipo:** los datos viven en el navegador ([ADR-K01](../../docs/arquitectura.md#adr-k01--sin-backend-en-el-mvp)). "Un responsable publica y otro usuario la encuentra" funciona en el mismo navegador (cambiando de cuenta o con la pantalla dividida), no entre dos celulares.
 
 ## Riesgos
 
-| Riesgo | Opciones | Decisión |
+| Riesgo | Opciones | Resultado |
 |---|---|---|
-| **La rúbrica tiene 4 sprints y el repositorio tiene 3 milestones** (Sprint 3 vence el 27-nov, una semana después del Sprint 2) | **A.** Crear un milestone "Sprint 4" y repartir: Sprint 3 = solicitudes, Match, chat, notificaciones, historial; Sprint 4 = admin, moderación, recuperar contraseña, pruebas de integración, despliegue y manual. Más fiel a la rúbrica, pero exige fijar una fecha nueva. **B.** Fusionar Sprint 3 y 4 en el milestone "Sprint 3" (27-nov). No agrega fechas, pero junta dos bloques grandes de la rúbrica en una semana | ✋ Pendiente: se dice en voz alta en la escena 5 |
-| Validación manual pendiente de las HU del Sprint 1 | Terminar el carryover en la primera semana, antes de abrir HU nuevas | ✋ |
-| Pocas personas usan Git en consola | Documentos por la web ([CONTRIBUTING.md](../../CONTRIBUTING.md)); ramas y PR solo para evidencias y código | ✋ |
-| El código del prototipo aún no está en `main` | Fusionar el PR [#35](https://github.com/ClxNode/KuyayPet/pull/35) en la escena 2 | ✋ |
+| **El curso tiene 3 sprints y el trabajo restante es grande** (Sprint 3 vence el 27-nov, una semana después del Sprint 2) | Concentrar en el Sprint 3 los bloques pendientes: solicitudes, Match, chat, notificaciones, historial (parte a) y administración, moderación, recuperación de contraseña, pruebas, despliegue y manual (parte b, «Adopción y cierre del producto») | HU-14, 15 y 22 a 26 pasan al Sprint 3, parte b. |
+| Validación manual pendiente de las HU del Sprint 1 | Terminar el carryover en la primera semana, antes de abrir HU nuevas | Parcialmente resuelto: issues #1 a #3 cerrados el 28-oct; PR #52, #53, #55, #56 (28-oct) y #67 (12-nov); commits del equipo en `Sprint_01/7.Pruebas` el 29-oct. |
+| Pocas personas usan Git en consola | Documentos por la web ([CONTRIBUTING.md](../../CONTRIBUTING.md)); ramas y PR solo para evidencias y código | Se cumplió en parte: el 29-oct seis integrantes distintos de IchiSieben hicieron commits en `main` sobre documentos; los PR de código y tests los abrió IchiSieben. |
+| El código del prototipo aún no está en `main` | Fusionar el PR [#35](https://github.com/ClxNode/KuyayPet/pull/35) en la escena 2 | Resuelto: #35 fusionado por ClxNode el 28-oct-2026 a las 23:11 (hora de Lima). |
 
 ## Definition of Done
 

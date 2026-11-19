@@ -88,4 +88,4 @@ flowchart LR
 
 La elección concreta de tecnología de API y de base de datos queda para cuando el equipo la priorice en el Product Backlog.
 
-> ✋ Pendiente: que el equipo revise y apruebe esta ADR (o la reemplace) en una Sprint Review.
+- [ ] Validado por el equipo (revisar y aprobar esta ADR, o reemplazarla, en la Sprint Review).
