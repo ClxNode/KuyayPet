@@ -10,7 +10,7 @@ KuyayPet es un sitio estático: el build (`dist/`) se sube a un hosting sin ejec
 |---|---|
 | URL | https://firebrick-cod-910257.hostingersite.com/ |
 | Versión desplegada al 19-nov-2026 | `v1.0.0` (`IchiSieben/kuyaypet@v1.0.0`) |
-| Qué incluye | El `main` del grupo (Sprints 1 a 3, parte a) más los PR #88–#95 y #99, aún abiertos sin fusionar en `ClxNode/KuyayPet`; producción va por delante del `main` del grupo hasta que el equipo los fusione |
+| Qué incluye | El `main` del grupo (Sprints 1 a 3, partes a y b), que incluye los PR #88–#95 y #99 fusionados el 19-nov; `src/` y `tests/` del `main` del grupo son idénticos a `v1.0.0` (verificado con `diff`) |
 | Versión anterior | `v0.3.1-sprint2` (Sprints 1 y 2) |
 | Espejo | https://ichisieben.github.io/kuyaypet/ (GitHub Pages, se publica con cada push a `main` del repositorio espejo) |
 | Manual dentro de la app | https://firebrick-cod-910257.hostingersite.com/manual/ |
@@ -63,7 +63,7 @@ Se usa la API de hosting de Hostinger (conector MCP) para generar una URL de sub
 
 - **Versión:** `IchiSieben/kuyaypet@v1.0.0` (tag sobre el commit `26ea3b7`; el `package.json` dice 1.0.0 desde `d5ccad0`, mismo bundle). Bundle principal `assets/index-BXqdrcgB.js`.
 - **Desde:** 19-nov-2026.
-- **Contenido:** el `main` del grupo (Sprints 1 a 3, parte a) **más** lo de los PR #88–#95 y #99, que en `ClxNode/KuyayPet` siguen abiertos sin fusionar. Producción va por delante del `main` del grupo hasta que el equipo los fusione.
+- **Contenido:** el `main` del grupo (Sprints 1 a 3) **incluyendo** lo de los PR #88–#95 y #99, que el equipo fusionó en `ClxNode/KuyayPet` el 19-nov (16:26Z a 16:48Z). `src/` y `tests/` del `main` del grupo son idénticos a `IchiSieben/kuyaypet@v1.0.0` (verificado con `diff`), por lo que producción ya no va por delante del `main` del grupo.
 - **Versión anterior:** `v0.3.1-sprint2` (bundle `index-DQQidj1w.js`). Se guardó copia de su `index.html`, `sw.js` y `manifest.webmanifest`; revertir es volver a subir esos 3 archivos y purgar la CDN (los assets de la versión anterior siguen en el servidor).
 - **Procedimiento usado:** `npm run build`; subida parcial archivo por archivo por TUS con la API pública de Hostinger (credenciales de subida temporales generadas con un token de API guardado en variable de entorno, nunca en el repositorio); 235 archivos, con `manifest.webmanifest`, `sw.js` e `index.html` al final. `/next/`, `/next2/` y `/guia-sprint2/` no se tocan; `/manual/` se actualiza con el build. Purga de la CDN por la API después de subir `sw.js`.
 - **Verificación:** los 235 archivos se comprobaron contra el servidor. 7 imágenes se sirven con otro tamaño por la optimización del servidor y `robots.txt` lo reescribe Hostinger en el dominio temporal.

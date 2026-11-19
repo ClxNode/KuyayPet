@@ -16,7 +16,7 @@ Entre el 29-oct 17:05Z (último commit del cierre del Sprint 2) y el 12-nov 16:1
 | 2026-10-30 a 2026-11-11 | ninguna |
 | 2026-11-12 | IchiSieben, ClxNode, kevinesty, VALTOm07, Joseph-L-Q |
 | 2026-11-13 a 2026-11-18 | ninguna |
-| 2026-11-19 | IchiSieben |
+| 2026-11-19 | IchiSieben, BeyondNate, Dylan200-7, kevinesty, VALTOm07, ClxNode |
 
 ## Daily Scrum — 2026-10-28
 
@@ -130,22 +130,27 @@ Entre el 29-oct 17:05Z (último commit del cierre del Sprint 2) y el 12-nov 16:1
 ### 1. IchiSieben
 - **Actividad registrada:**
   - Abrió los PR #88 (15:33:40Z) a #95 (15:34:40Z) de la parte (b).
+  - Abrió los PR #96, #97 y #98 (16:05–16:06Z, documentación de los sprints) y los fusionó (16:07Z); abrió #99 (pruebas de seguridad, 16:10:59Z) y #100 (documentos de cierre, 16:58:32Z) y fusionó #100 (16:58:56Z).
 - **Bloqueos:** ninguno registrado.
 
 ### 2. VALTOm07
-- **Actividad registrada:** sin actividad registrada en GitHub.
+- **Actividad registrada:**
+  - Revisó (APPROVED) el PR #92 (16:39:58Z) y lo fusionó (16:40:06Z).
 - **Bloqueos:** ninguno registrado.
 
 ### 3. kevinesty
-- **Actividad registrada:** sin actividad registrada en GitHub.
+- **Actividad registrada:**
+  - Revisó (APPROVED) el PR #91 (16:38:12Z) y lo fusionó (16:38:29Z).
 - **Bloqueos:** ninguno registrado.
 
 ### 4. BeyondNate
-- **Actividad registrada:** sin actividad registrada en GitHub.
+- **Actividad registrada:**
+  - Revisó (APPROVED) y fusionó los PR #88 (16:26:04Z / 16:26:16Z), #90 (16:37:41Z / 16:37:58Z), #94 (16:41:12Z / 16:41:21Z) y #99 (16:48:22Z / 16:48:34Z).
 - **Bloqueos:** ninguno registrado.
 
 ### 5. ClxNode
-- **Actividad registrada:** sin actividad registrada en GitHub.
+- **Actividad registrada:**
+  - Revisó (APPROVED) y fusionó los PR #93 (16:40:38Z / 16:40:46Z) y #95 (16:47:47Z / 16:47:57Z).
 - **Bloqueos:** ninguno registrado.
 
 ### 6. Joseph-L-Q
@@ -153,9 +158,10 @@ Entre el 29-oct 17:05Z (último commit del cierre del Sprint 2) y el 12-nov 16:1
 - **Bloqueos:** ninguno registrado.
 
 ### 7. Dylan200-7
-- **Actividad registrada:** sin actividad registrada en GitHub.
+- **Actividad registrada:**
+  - Fusionó el PR #89 (16:33:56Z). Sin revisiones registradas en ese PR.
 - **Bloqueos:** ninguno registrado.
 
 ## Parte (b) al 19-nov
 
-Los PR #88 a #95 están abiertos y sin revisiones. No hay actividad registrada de las otras cuentas sobre la parte (b) en los datos de GitHub; el avance en `docs/` y `tests/seguridad` aparecerá al abrirse sus PR.
+El 19-nov se fusionaron los PR #88 a #95 y #99 (16:26–16:48Z): ocho con una revisión APPROVED de la misma cuenta que los fusionó y uno (#89) sin revisión. El detalle por PR está en [6.Repositorio_Codigo](../6.Repositorio_Codigo/readme.md).

@@ -2,7 +2,7 @@
 
 Historias del Sprint 3 (parte (a) adopción y parte (b) administración y cierre). El enunciado y los criterios de aceptación están copiados **sin cambios** de la *Lista de Historias de Usuario KuyayPet* del equipo; el rol y la prioridad vienen de las etiquetas de cada issue. Los puntos y el MoSCoW son una **propuesta** (el equipo no los registró). Las issues de GitHub traen menos criterios que el documento del equipo (2 o 3 frente a 4–9); aquí van todos.
 
-**Sprint 3** · **HU:** 15 · **Criterios:** 93 · **Puntos propuestos:** 70 (42 + 28) · **Estado:** parte (a) cerrada en GitHub con validación pendiente; parte (b) en curso al 19-nov
+**Sprint 3** · **HU:** 15 · **Criterios:** 93 · **Puntos propuestos:** 70 (42 + 28) · **Estado:** parte (a) cerrada en GitHub con validación pendiente; parte (b) con PR fusionados el 19-nov
 
 ## Objetivo del Sprint 3
 
@@ -274,7 +274,7 @@ Como adoptante, quiero visualizar mis matches, para revisar las mascotas con las
 
 **Issue:** [#14](https://github.com/ClxNode/KuyayPet/issues/14) · **Rol:** Usuario común · **Prioridad del catálogo:** Baja · **MoSCoW propuesto:** Could · **Puntos (propuesta):** 2 · **Responsable:** por asignar
 
-**Estado:** issue cerrado el 12-nov 23:55:36Z por ClxNode; PR [#88](https://github.com/ClxNode/KuyayPet/pull/88) **abierto, sin fusionar al 19-nov**.
+**Estado:** issue cerrado el 12-nov 23:55:36Z por ClxNode; PR [#88](https://github.com/ClxNode/KuyayPet/pull/88) fusionado el 19-nov 16:26:16Z por BeyondNate.
 
 Como usuario común, quiero consultar información sobre adopción en una sola plataforma, para evitar realizar búsquedas manuales en diferentes medios y conocer los requisitos del proceso.
 
@@ -298,7 +298,7 @@ Como usuario común, quiero consultar información sobre adopción en una sola p
 
 **Issue:** [#15](https://github.com/ClxNode/KuyayPet/issues/15) · **Rol:** Usuario común · **Prioridad del catálogo:** Media · **MoSCoW propuesto:** Must · **Puntos (propuesta):** 3 · **Responsable:** por asignar
 
-**Estado:** issue cerrado el 12-nov 23:55:39Z por ClxNode; PR [#89](https://github.com/ClxNode/KuyayPet/pull/89) **abierto, sin fusionar al 19-nov**.
+**Estado:** issue cerrado el 12-nov 23:55:39Z por ClxNode; PR [#89](https://github.com/ClxNode/KuyayPet/pull/89) fusionado el 19-nov 16:33:56Z por Dylan200-7.
 
 Como usuario común, quiero recuperar mi contraseña, para volver a acceder a mi cuenta en caso de olvido o pérdida de credenciales.
 
@@ -324,7 +324,7 @@ Como usuario común, quiero recuperar mi contraseña, para volver a acceder a mi
 
 **Issue:** [#22](https://github.com/ClxNode/KuyayPet/issues/22) · **Rol:** Administrador · **Prioridad del catálogo:** Alta · **MoSCoW propuesto:** Must · **Puntos (propuesta):** 5 · **Responsable:** por asignar
 
-**Estado:** issue cerrado el 12-nov 23:55:41Z por ClxNode; PR [#90](https://github.com/ClxNode/KuyayPet/pull/90) **abierto, sin fusionar al 19-nov**.
+**Estado:** issue cerrado el 12-nov 23:55:41Z por ClxNode; PR [#90](https://github.com/ClxNode/KuyayPet/pull/90) fusionado el 19-nov 16:37:58Z por BeyondNate.
 
 Como administrador de la plataforma, quiero gestionar las cuentas de los usuarios registrados, para mantener un control adecuado de los usuarios de KuyayPet.
 
@@ -354,7 +354,7 @@ Como administrador de la plataforma, quiero gestionar las cuentas de los usuario
 
 **Issue:** [#23](https://github.com/ClxNode/KuyayPet/issues/23) · **Rol:** Administrador · **Prioridad del catálogo:** Alta · **MoSCoW propuesto:** Must · **Puntos (propuesta):** 5 · **Responsable:** por asignar
 
-**Estado:** issue cerrado el 12-nov 23:55:41Z por ClxNode; PR [#91](https://github.com/ClxNode/KuyayPet/pull/91) **abierto, sin fusionar al 19-nov**.
+**Estado:** issue cerrado el 12-nov 23:55:41Z por ClxNode; PR [#91](https://github.com/ClxNode/KuyayPet/pull/91) fusionado el 19-nov 16:38:29Z por kevinesty.
 
 Como administrador de la plataforma, quiero revisar las publicaciones de mascotas, para mantener información adecuada y actualizada en KuyayPet.
 
@@ -382,7 +382,7 @@ Como administrador de la plataforma, quiero revisar las publicaciones de mascota
 
 **Issue:** [#24](https://github.com/ClxNode/KuyayPet/issues/24) · **Rol:** Administrador · **Prioridad del catálogo:** Alta · **MoSCoW propuesto:** Must · **Puntos (propuesta):** 5 · **Responsable:** por asignar
 
-**Estado:** issue cerrado el 12-nov 23:55:42Z por ClxNode; PR [#92](https://github.com/ClxNode/KuyayPet/pull/92) **abierto, sin fusionar al 19-nov**.
+**Estado:** issue cerrado el 12-nov 23:55:42Z por ClxNode; PR [#92](https://github.com/ClxNode/KuyayPet/pull/92) fusionado el 19-nov 16:40:06Z por VALTOm07.
 
 Como administrador de la plataforma, quiero aprobar o rechazar publicaciones de mascotas, para controlar las publicaciones que se muestran disponibles para adopción.
 
@@ -412,7 +412,7 @@ Como administrador de la plataforma, quiero aprobar o rechazar publicaciones de 
 
 **Issue:** [#25](https://github.com/ClxNode/KuyayPet/issues/25) · **Rol:** Administrador · **Prioridad del catálogo:** Media · **MoSCoW propuesto:** Should · **Puntos (propuesta):** 5 · **Responsable:** por asignar
 
-**Estado:** issue cerrado el 12-nov 23:55:43Z por ClxNode; PR [#93](https://github.com/ClxNode/KuyayPet/pull/93) **abierto, sin fusionar al 19-nov**.
+**Estado:** issue cerrado el 12-nov 23:55:43Z por ClxNode; PR [#93](https://github.com/ClxNode/KuyayPet/pull/93) fusionado el 19-nov 16:40:46Z por ClxNode.
 
 Como administrador de la plataforma, quiero desactivar cuentas de usuarios que incumplan las condiciones de uso, para mantener un entorno seguro en KuyayPet.
 
@@ -444,7 +444,7 @@ Nota: en el texto extraído del PDF del equipo, el criterio 7 termina en “ya s
 
 **Issue:** [#26](https://github.com/ClxNode/KuyayPet/issues/26) · **Rol:** Administrador · **Prioridad del catálogo:** Media · **MoSCoW propuesto:** Should · **Puntos (propuesta):** 3 · **Responsable:** por asignar
 
-**Estado:** issue cerrado el 12-nov 23:55:44Z por ClxNode; PR [#94](https://github.com/ClxNode/KuyayPet/pull/94) **abierto, sin fusionar al 19-nov**.
+**Estado:** issue cerrado el 12-nov 23:55:44Z por ClxNode; PR [#94](https://github.com/ClxNode/KuyayPet/pull/94) fusionado el 19-nov 16:41:21Z por BeyondNate.
 
 Como administrador, quiero gestionar la información inapropiada publicada en la plataforma, para mantener un entorno seguro y confiable.
 

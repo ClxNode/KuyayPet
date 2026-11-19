@@ -4,12 +4,12 @@
 
 > Reconstruido a partir del historial de GitHub el 2026-11-19; el equipo puede corregirlo.
 
-Datos de `prs.json` y de la API de GitHub al 19-nov-2026. Las horas están en UTC (hora de Lima = UTC−5). El autor de los 18 PR de este sprint (#68–#76 y #88–#95) es IchiSieben.
+Datos de `prs.json` y de la API de GitHub al 19-nov-2026. Las horas están en UTC (hora de Lima = UTC−5). El autor de los 18 PR de este sprint (#68–#76, #88–#95 y #99) es IchiSieben.
 
 ## Estado del incremento
 
 - **Parte (a):** los 9 PR de la parte (a) ([#68](https://github.com/ClxNode/KuyayPet/pull/68)–[#76](https://github.com/ClxNode/KuyayPet/pull/76)) están fusionados en `main`; `main` termina en el commit `8973b20` (12-nov 17:10Z).
-- **Parte (b):** los PR [#88](https://github.com/ClxNode/KuyayPet/pull/88)–[#95](https://github.com/ClxNode/KuyayPet/pull/95) están abiertos contra `main` desde el 19-nov y sin revisiones; no hay cambios de la parte (b) en `main`.
+- **Parte (b):** los PR [#88](https://github.com/ClxNode/KuyayPet/pull/88)–[#95](https://github.com/ClxNode/KuyayPet/pull/95) y [#99](https://github.com/ClxNode/KuyayPet/pull/99) se abrieron contra `main` el 19-nov (#99 a las 16:10Z) y se fusionaron ese día entre las 16:26Z y las 16:48Z; los documentos de cierre entraron con [#100](https://github.com/ClxNode/KuyayPet/pull/100) (16:58Z). `src/` y `tests/` de `main` son idénticos a los de producción `v1.0.0`.
 - **Prototipo publicado:** https://firebrick-cod-910257.hostingersite.com/ — versión `v1.0.0`, desplegada el 19-nov-2026 (hasta esa fecha estuvo `v0.3.1-sprint2`, anterior a las fusiones del 12-nov).
 
 ## Qué implementa cada HU y qué tocó el sprint
@@ -26,13 +26,13 @@ Las pantallas y servicios de las HU de la parte (a) ya existían en `main` desde
 | HU-13 | `screens/Notifications.tsx`, `services/notifications.ts`, `screens/AdopterProfileView.tsx` | `tests/criterios/HU-13.spec.ts` |
 | HU-18 | `screens/History.tsx`, `services/match.ts` | **Código:** `screens/History.tsx` (+18 −6); `tests/criterios/HU-18.spec.ts` |
 | HU-20 | `screens/Matches.tsx`, `screens/Onboarding.tsx` | `tests/criterios/HU-20.spec.ts` |
-| HU-14 | `screens/Guide.tsx` | PR #88 (abierto): **código:** `shell/AppLayout.tsx` (pestaña “Guía”); `tests/criterios/HU-14.spec.ts` |
-| HU-15 | `screens/auth/Recover.tsx`, `services/auth.ts` | PR #89 (abierto): `tests/criterios/HU-15.spec.ts` |
-| HU-22 | `screens/admin/AdminUsers.tsx` | PR #90 (abierto): `tests/criterios/HU-22.spec.ts` |
-| HU-23 | `screens/admin/AdminPublications.tsx`, `AdminPublicationDetail.tsx`, `services/moderation.ts` | PR #91 (abierto): **código:** `AdminPublicationDetail.tsx`; `tests/criterios/HU-23.spec.ts` |
-| HU-24 | `screens/admin/AdminPublications.tsx`, `services/moderation.ts` | PR #92 (abierto): `tests/criterios/HU-24.spec.ts` |
-| HU-25 | `screens/admin/AdminUserDetail.tsx`, `services/moderation.ts` | PR #93 (abierto): **código:** `AdminUserDetail.tsx` (aviso de cuenta ya inactiva); `tests/criterios/HU-25.spec.ts` |
-| HU-26 | `screens/admin/AdminReports.tsx`, `AdminReportDetail.tsx`, `services/moderation.ts` | PR #94 (abierto): `tests/criterios/HU-26.spec.ts` |
+| HU-14 | `screens/Guide.tsx` | PR #88: **código:** `shell/AppLayout.tsx` (pestaña “Guía”); `tests/criterios/HU-14.spec.ts` |
+| HU-15 | `screens/auth/Recover.tsx`, `services/auth.ts` | PR #89: `tests/criterios/HU-15.spec.ts` |
+| HU-22 | `screens/admin/AdminUsers.tsx` | PR #90: `tests/criterios/HU-22.spec.ts` |
+| HU-23 | `screens/admin/AdminPublications.tsx`, `AdminPublicationDetail.tsx`, `services/moderation.ts` | PR #91: **código:** `AdminPublicationDetail.tsx`; `tests/criterios/HU-23.spec.ts` |
+| HU-24 | `screens/admin/AdminPublications.tsx`, `services/moderation.ts` | PR #92: `tests/criterios/HU-24.spec.ts` |
+| HU-25 | `screens/admin/AdminUserDetail.tsx`, `services/moderation.ts` | PR #93: **código:** `AdminUserDetail.tsx` (aviso de cuenta ya inactiva); `tests/criterios/HU-25.spec.ts` |
+| HU-26 | `screens/admin/AdminReports.tsx`, `AdminReportDetail.tsx`, `services/moderation.ts` | PR #94: `tests/criterios/HU-26.spec.ts` |
 
 Rutas: [`src/App.tsx`](../../Codigo_Repositorio/kuyaypet-web/src/App.tsx) y [`src/data/huStatus.ts`](../../Codigo_Repositorio/kuyaypet-web/src/data/huStatus.ts).
 
@@ -62,18 +62,24 @@ Notas verificadas con git:
 
 Las ramas de la parte (b) se llaman `sprint-4/…` por historia: el curso tiene 3 sprints y renombrarlas cerraría los PR. Todas pertenecen al Sprint 3 y al milestone Sprint 3.
 
-| PR | Rama | HU | Contenido | Estado | Revisiones | Archivos (+/−) |
-|---|---|---|---|---|---|---|
-| [#88](https://github.com/ClxNode/KuyayPet/pull/88) | `sprint-4/HU-14-criterios` | HU-14 | Pestaña “Guía” en la barra principal y tests c1, c2, c4 | Abierto | ninguna | 9 (+65 −2) |
-| [#89](https://github.com/ClxNode/KuyayPet/pull/89) | `sprint-4/HU-15-criterios` | HU-15 | Tests c3, c4, c5 de recuperación de contraseña | Abierto | ninguna | 4 (+57 −0) |
-| [#90](https://github.com/ClxNode/KuyayPet/pull/90) | `sprint-4/HU-22-criterios` | HU-22 | Tests c4 y c7 de gestionar usuarios | Abierto | ninguna | 3 (+49 −0) |
-| [#91](https://github.com/ClxNode/KuyayPet/pull/91) | `sprint-4/HU-23-criterios` | HU-23 | Datos de la mascota en el detalle de la publicación y tests | Abierto | ninguna | 5 (+73 −0) |
-| [#92](https://github.com/ClxNode/KuyayPet/pull/92) | `sprint-4/HU-24-criterios` | HU-24 | Tests c2–c7 (aprobar y rechazar) | Abierto | ninguna | 8 (+101 −0) |
-| [#93](https://github.com/ClxNode/KuyayPet/pull/93) | `sprint-4/HU-25-criterios` | HU-25 | Aviso “La cuenta ya está inactiva” y tests c5–c7 | Abierto | ninguna | 6 (+69 −0) |
-| [#94](https://github.com/ClxNode/KuyayPet/pull/94) | `sprint-4/HU-26-criterios` | HU-26 | Tests c1–c2 (ocultar publicación, desactivar cuenta, rechazo a no administrador) | Abierto | ninguna | 6 (+77 −0) |
-| [#95](https://github.com/ClxNode/KuyayPet/pull/95) | `sprint-4/evidencias-automatizadas` | HU-14, 15, 22–26 | Specs de evidencias, capturas y `7.Pruebas/administracion-y-cierre.md`. Depende de los 7 PR anteriores y se fusiona al final | Abierto | ninguna (revisor sugerido en la descripción: Dylan200-7) | 93 (+1166 −2), incluye los commits de los anteriores |
+| PR | Rama | HU | Contenido | Autor | Revisión | Fusionado por | Fecha de fusión | Archivos (+/−) |
+|---|---|---|---|---|---|---|---|---|
+| [#88](https://github.com/ClxNode/KuyayPet/pull/88) | `sprint-4/HU-14-criterios` | HU-14 | Pestaña “Guía” en la barra principal y tests c1, c2, c4 | IchiSieben | BeyondNate: APPROVED (16:26:04Z) | BeyondNate | 19-nov 16:26:16Z | 9 (+65 −2) |
+| [#89](https://github.com/ClxNode/KuyayPet/pull/89) | `sprint-4/HU-15-criterios` | HU-15 | Tests c3, c4, c5 de recuperación de contraseña | IchiSieben | sin revisiones | Dylan200-7 | 19-nov 16:33:56Z | 4 (+57 −0) |
+| [#90](https://github.com/ClxNode/KuyayPet/pull/90) | `sprint-4/HU-22-criterios` | HU-22 | Tests c4 y c7 de gestionar usuarios | IchiSieben | BeyondNate: APPROVED (16:37:41Z) | BeyondNate | 19-nov 16:37:58Z | 3 (+49 −0) |
+| [#91](https://github.com/ClxNode/KuyayPet/pull/91) | `sprint-4/HU-23-criterios` | HU-23 | Datos de la mascota en el detalle de la publicación y tests | IchiSieben | kevinesty: APPROVED (16:38:12Z) | kevinesty | 19-nov 16:38:29Z | 5 (+73 −0) |
+| [#92](https://github.com/ClxNode/KuyayPet/pull/92) | `sprint-4/HU-24-criterios` | HU-24 | Tests c2–c7 (aprobar y rechazar) | IchiSieben | VALTOm07: APPROVED (16:39:58Z) | VALTOm07 | 19-nov 16:40:06Z | 8 (+101 −0) |
+| [#93](https://github.com/ClxNode/KuyayPet/pull/93) | `sprint-4/HU-25-criterios` | HU-25 | Aviso “La cuenta ya está inactiva” y tests c5–c7 | IchiSieben | ClxNode: APPROVED (16:40:38Z) | ClxNode | 19-nov 16:40:46Z | 6 (+69 −0) |
+| [#94](https://github.com/ClxNode/KuyayPet/pull/94) | `sprint-4/HU-26-criterios` | HU-26 | Tests c1–c2 (ocultar publicación, desactivar cuenta, rechazo a no administrador) | IchiSieben | BeyondNate: APPROVED (16:41:12Z) | BeyondNate | 19-nov 16:41:21Z | 6 (+77 −0) |
+| [#95](https://github.com/ClxNode/KuyayPet/pull/95) | `sprint-4/evidencias-automatizadas` | HU-14, 15, 22–26 | Specs de evidencias, capturas y `7.Pruebas/administracion-y-cierre.md`; incluye los commits de los 7 PR anteriores | IchiSieben | ClxNode: APPROVED (16:47:47Z) | ClxNode | 19-nov 16:47:57Z | 93 (+1166 −2) |
+| [#99](https://github.com/ClxNode/KuyayPet/pull/99) | `sprint-4/pruebas-seguridad` | — | Pruebas de seguridad SEG-01 a SEG-13 y dos arreglos de control de acceso | IchiSieben | BeyondNate: APPROVED (16:48:22Z) | BeyondNate | 19-nov 16:48:34Z | 4 (+241 −2) |
 
-Pruebas de seguridad (`tests/seguridad`, SEG-01 a SEG-13): PR [#99](https://github.com/ClxNode/KuyayPet/pull/99), abierto al 19-nov. Pendientes sin PR al 19-nov: [manual de usuario](../../docs/manual-usuario.md) · [documentación técnica](../../docs/documentacion-tecnica.md) · [despliegue](../../docs/despliegue.md) · [pruebas](../../docs/pruebas.md) · [cierre del proyecto](../../docs/cierre-proyecto.md).
+Notas de la parte (b), con datos de `prs.json`:
+
+- Los 9 PR se fusionaron el 19-nov entre las 16:26:16Z y las 16:48:34Z, con 5 fusionadores distintos: BeyondNate (#88, #90, #94, #99), ClxNode (#93, #95), Dylan200-7 (#89), kevinesty (#91) y VALTOm07 (#92).
+- Ocho de los 9 PR tienen una revisión APPROVED, y en cada uno la cuenta que aprobó es la que fusionó. El PR #89 no tiene revisión registrada. Los revisores sugeridos en las descripciones de los PR no siempre coinciden con quien revisó; aquí figura quien lo hizo en GitHub.
+- El PR #95 (93 archivos) depende de los 7 PR de código y se fusionó después de ellos (16:47:57Z); el PR #99 se fusionó a las 16:48:34Z.
+- Además se fusionaron el 19-nov los PR de documentación [#96](https://github.com/ClxNode/KuyayPet/pull/96), [#97](https://github.com/ClxNode/KuyayPet/pull/97), [#98](https://github.com/ClxNode/KuyayPet/pull/98) y [#100](https://github.com/ClxNode/KuyayPet/pull/100) (autor y fusionador IchiSieben, sin revisión). El #100 contiene [manual de usuario](../../docs/manual-usuario.md), [documentación técnica](../../docs/documentacion-tecnica.md), [despliegue](../../docs/despliegue.md), [pruebas](../../docs/pruebas.md) y [cierre del proyecto](../../docs/cierre-proyecto.md).
 
 ## Pruebas
 

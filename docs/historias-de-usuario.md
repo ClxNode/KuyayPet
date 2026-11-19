@@ -12,7 +12,7 @@ Este documento reúne las **26 historias de usuario** del proyecto con todos sus
 - **MoSCoW:** regla aplicada una sola vez a todo el proyecto — Alta → Must, Media → Should, Baja → Could. Es una equivalencia, no una decisión nueva del equipo.
 - **Puntos propuestos:** el equipo no registró puntos. Son una *propuesta* de `kuyaypet-tools/datos/puntos.json`. Regla: Propuesta (no registrada por el equipo): Fibonacci por número de criterios del documento del equipo — ≤4: 2 · 5: 3 · 6–7: 5 · ≥8: 8 — y un escalón más cuando hay complejidad técnica extra. HU-26 cuenta los 2 criterios de su issue (no está en el PDF). Sprint 1 coincide con los 13 puntos propuestos en Sprint_01.
 - **Sprint:** el sprint en que la HU se probó y entregó (HU-13 llevaba la etiqueta `sprint-2` en GitHub, pero se entregó en el Sprint 3: PR #73).
-- **Estado:** *Terminada* = tiene PR fusionados y el issue cerrado. *En revisión (PR abierto)* = los PR de código de HU-14, 15 y 22–26 (#88–#94) y las evidencias (#95) están abiertos y sin fusionar.
+- **Estado:** *Terminada* = tiene PR fusionados (según `datos/prs.json`) y el issue cerrado. Los PR de código de HU-14, 15 y 22–26 (#88–#94) y las evidencias (#95) se fusionaron el 2026-11-19.
 - **Tests:** los specs de `tests/criterios/` y `tests/evidencias/` de HU-14, 15 y 22–26 (Sprint 3, parte b) existen solo en las ramas remotas indicadas; no están en `main`.
 
 ## Índice
@@ -32,19 +32,19 @@ Este documento reúne las **26 historias de usuario** del proyecto con todos sus
 | [HU-11](#hu-11) | Registrar mascota | Responsable de mascota | Media | Should | 5 | 2 | Terminada |
 | [HU-12](#hu-12) | Editar información textual de una mascota | Responsable de mascota | Alta | Must | 3 | 2 | Terminada |
 | [HU-13](#hu-13) | Notificación de interés en mascota | Responsable de mascota | Media | Should | 3 | 3 | Terminada |
-| [HU-14](#hu-14) | Consulta de información sobre adopción | Usuario común | Baja | Could | 2 | 3 | En revisión (PR abierto) |
-| [HU-15](#hu-15) | Recuperación de contraseña | Usuario común | Media | Should | 3 | 3 | En revisión (PR abierto) |
+| [HU-14](#hu-14) | Consulta de información sobre adopción | Usuario común | Baja | Could | 2 | 3 | Terminada |
+| [HU-15](#hu-15) | Recuperación de contraseña | Usuario común | Media | Should | 3 | 3 | Terminada |
 | [HU-16](#hu-16) | Registro visual y etiquetado de mascotas | Responsable de mascota | Media | Should | 5 | 2 | Terminada |
 | [HU-17](#hu-17) | Guardado de mascotas favoritas | Adoptante | Media | Should | 5 | 2 | Terminada |
 | [HU-18](#hu-18) | Historial de mascotas de interés | Adoptante | Baja | Could | 5 | 3 | Terminada |
 | [HU-19](#hu-19) | Actualización de mascota como adoptada | Responsable de mascota | Media | Should | 5 | 2 | Terminada |
 | [HU-20](#hu-20) | Visualización de compatibilidades / Matches | Adoptante | Media | Should | 5 | 3 | Terminada |
 | [HU-21](#hu-21) | Cierre seguro de sesión | Usuario común | Alta | Must | 5 | 2 | Terminada |
-| [HU-22](#hu-22) | Gestionar usuarios | Administrador | Alta | Must | 5 | 3 | En revisión (PR abierto) |
-| [HU-23](#hu-23) | Revisar publicaciones de mascotas | Administrador | Alta | Must | 5 | 3 | En revisión (PR abierto) |
-| [HU-24](#hu-24) | Aprobar o rechazar publicaciones de mascotas | Administrador | Alta | Must | 5 | 3 | En revisión (PR abierto) |
-| [HU-25](#hu-25) | Desactivar cuentas de usuarios | Administrador | Media | Should | 5 | 3 | En revisión (PR abierto) |
-| [HU-26](#hu-26) | Gestionar información inapropiada en la plataforma | Administrador | Media | Should | 3 | 3 | En revisión (PR abierto) |
+| [HU-22](#hu-22) | Gestionar usuarios | Administrador | Alta | Must | 5 | 3 | Terminada |
+| [HU-23](#hu-23) | Revisar publicaciones de mascotas | Administrador | Alta | Must | 5 | 3 | Terminada |
+| [HU-24](#hu-24) | Aprobar o rechazar publicaciones de mascotas | Administrador | Alta | Must | 5 | 3 | Terminada |
+| [HU-25](#hu-25) | Desactivar cuentas de usuarios | Administrador | Media | Should | 5 | 3 | Terminada |
+| [HU-26](#hu-26) | Gestionar información inapropiada en la plataforma | Administrador | Media | Should | 3 | 3 | Terminada |
 
 - Sprint 1: 13 puntos propuestos
 - Sprint 2: 41 puntos propuestos
@@ -513,10 +513,10 @@ Este documento reúne las **26 historias de usuario** del proyecto con todos sus
 | Sprint | 3 |
 | Ruta en la app | `/guia` (según `src/App.tsx`) |
 | Issue | [#14](https://github.com/ClxNode/KuyayPet/issues/14) (cerrado) |
-| Tests | `tests/criterios/HU-14.spec.ts` (solo en rama remota)<br>`tests/evidencias/HU-14.spec.ts` (solo en rama remota)<br>[`tests/adopter.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/adopter.spec.ts) |
-| Evidencias | `Sprint_03/7.Pruebas/evidencias/HU-14/` (en el PR #95, abierto) |
-| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#88](https://github.com/ClxNode/KuyayPet/pull/88) (abierto) (HU-14: criterios 1, 2 y 4 de la guía de adopción (tests + acceso desde la barra principal))<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) (abierto) |
-| Estado | En revisión (PR abierto) |
+| Tests | [`tests/criterios/HU-14.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/criterios/HU-14.spec.ts)<br>[`tests/evidencias/HU-14.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-14.spec.ts)<br>[`tests/adopter.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/adopter.spec.ts) |
+| Evidencias | [`Sprint_03/7.Pruebas/evidencias/HU-14/`](../Sprint_03/7.Pruebas/evidencias/HU-14/) |
+| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#88](https://github.com/ClxNode/KuyayPet/pull/88) (HU-14: criterios 1, 2 y 4 de la guía de adopción (tests + acceso desde la barra principal))<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) |
+| Estado | Terminada |
 
 <a id="hu-15"></a>
 
@@ -545,10 +545,10 @@ Este documento reúne las **26 historias de usuario** del proyecto con todos sus
 | Sprint | 3 |
 | Ruta en la app | `/recuperar` (según `src/App.tsx`) |
 | Issue | [#15](https://github.com/ClxNode/KuyayPet/issues/15) (cerrado) |
-| Tests | `tests/criterios/HU-15.spec.ts` (solo en rama remota)<br>`tests/evidencias/HU-15.spec.ts` (solo en rama remota)<br>[`tests/adopter.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/adopter.spec.ts) |
-| Evidencias | `Sprint_03/7.Pruebas/evidencias/HU-15/` (en el PR #95, abierto) |
-| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#89](https://github.com/ClxNode/KuyayPet/pull/89) (abierto) (HU-15: tests de criterios 3, 4 y 5 de recuperación de contraseña)<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) (abierto) |
-| Estado | En revisión (PR abierto) |
+| Tests | [`tests/criterios/HU-15.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/criterios/HU-15.spec.ts)<br>[`tests/evidencias/HU-15.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-15.spec.ts)<br>[`tests/adopter.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/adopter.spec.ts) |
+| Evidencias | [`Sprint_03/7.Pruebas/evidencias/HU-15/`](../Sprint_03/7.Pruebas/evidencias/HU-15/) |
+| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#89](https://github.com/ClxNode/KuyayPet/pull/89) (HU-15: tests de criterios 3, 4 y 5 de recuperación de contraseña)<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) |
+| Estado | Terminada |
 
 <a id="hu-16"></a>
 
@@ -783,10 +783,10 @@ Este documento reúne las **26 historias de usuario** del proyecto con todos sus
 | Sprint | 3 |
 | Ruta en la app | `/admin/usuarios`, `/admin/usuarios/:id` (según `src/App.tsx`) |
 | Issue | [#22](https://github.com/ClxNode/KuyayPet/issues/22) (cerrado) |
-| Tests | `tests/criterios/HU-22.spec.ts` (solo en rama remota)<br>`tests/evidencias/HU-22.spec.ts` (solo en rama remota)<br>[`tests/admin.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/admin.spec.ts) |
-| Evidencias | `Sprint_03/7.Pruebas/evidencias/HU-22/` (en el PR #95, abierto) |
-| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#90](https://github.com/ClxNode/KuyayPet/pull/90) (abierto) (HU-22: tests de criterios 4 y 7 de gestionar usuarios)<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) (abierto) |
-| Estado | En revisión (PR abierto) |
+| Tests | [`tests/criterios/HU-22.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/criterios/HU-22.spec.ts)<br>[`tests/evidencias/HU-22.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-22.spec.ts)<br>[`tests/admin.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/admin.spec.ts) |
+| Evidencias | [`Sprint_03/7.Pruebas/evidencias/HU-22/`](../Sprint_03/7.Pruebas/evidencias/HU-22/) |
+| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#90](https://github.com/ClxNode/KuyayPet/pull/90) (HU-22: tests de criterios 4 y 7 de gestionar usuarios)<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) |
+| Estado | Terminada |
 
 <a id="hu-23"></a>
 
@@ -816,10 +816,10 @@ Este documento reúne las **26 historias de usuario** del proyecto con todos sus
 | Sprint | 3 |
 | Ruta en la app | `/admin/publicaciones`, `/admin/publicaciones/:id` (según `src/App.tsx`) |
 | Issue | [#23](https://github.com/ClxNode/KuyayPet/issues/23) (cerrado) |
-| Tests | `tests/criterios/HU-23.spec.ts` (solo en rama remota)<br>`tests/evidencias/HU-23.spec.ts` (solo en rama remota)<br>[`tests/admin.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/admin.spec.ts) |
-| Evidencias | `Sprint_03/7.Pruebas/evidencias/HU-23/` (en el PR #95, abierto) |
-| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#91](https://github.com/ClxNode/KuyayPet/pull/91) (abierto) (HU-23: el detalle de la publicación muestra los datos de la mascota (c3) y test de persistencia (c5))<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) (abierto) |
-| Estado | En revisión (PR abierto) |
+| Tests | [`tests/criterios/HU-23.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/criterios/HU-23.spec.ts)<br>[`tests/evidencias/HU-23.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-23.spec.ts)<br>[`tests/admin.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/admin.spec.ts) |
+| Evidencias | [`Sprint_03/7.Pruebas/evidencias/HU-23/`](../Sprint_03/7.Pruebas/evidencias/HU-23/) |
+| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#91](https://github.com/ClxNode/KuyayPet/pull/91) (HU-23: el detalle de la publicación muestra los datos de la mascota (c3) y test de persistencia (c5))<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) |
+| Estado | Terminada |
 
 <a id="hu-24"></a>
 
@@ -850,10 +850,10 @@ Este documento reúne las **26 historias de usuario** del proyecto con todos sus
 | Sprint | 3 |
 | Ruta en la app | `/admin/publicaciones/:id` (según `src/App.tsx`) |
 | Issue | [#24](https://github.com/ClxNode/KuyayPet/issues/24) (cerrado) |
-| Tests | `tests/criterios/HU-24.spec.ts` (solo en rama remota)<br>`tests/evidencias/HU-24.spec.ts` (solo en rama remota)<br>[`tests/smoke.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/smoke.spec.ts) |
-| Evidencias | `Sprint_03/7.Pruebas/evidencias/HU-24/` (en el PR #95, abierto) |
-| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#92](https://github.com/ClxNode/KuyayPet/pull/92) (abierto) (HU-24: tests de los criterios c2–c7 (aprobar o rechazar publicaciones))<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) (abierto) |
-| Estado | En revisión (PR abierto) |
+| Tests | [`tests/criterios/HU-24.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/criterios/HU-24.spec.ts)<br>[`tests/evidencias/HU-24.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-24.spec.ts)<br>[`tests/smoke.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/smoke.spec.ts) |
+| Evidencias | [`Sprint_03/7.Pruebas/evidencias/HU-24/`](../Sprint_03/7.Pruebas/evidencias/HU-24/) |
+| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#92](https://github.com/ClxNode/KuyayPet/pull/92) (HU-24: tests de los criterios c2–c7 (aprobar o rechazar publicaciones))<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) |
+| Estado | Terminada |
 
 <a id="hu-25"></a>
 
@@ -886,10 +886,10 @@ Este documento reúne las **26 historias de usuario** del proyecto con todos sus
 | Sprint | 3 |
 | Ruta en la app | `/admin/usuarios/:id` (según `src/App.tsx`) |
 | Issue | [#25](https://github.com/ClxNode/KuyayPet/issues/25) (cerrado) |
-| Tests | `tests/criterios/HU-25.spec.ts` (solo en rama remota)<br>`tests/evidencias/HU-25.spec.ts` (solo en rama remota)<br>[`tests/admin.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/admin.spec.ts) |
-| Evidencias | `Sprint_03/7.Pruebas/evidencias/HU-25/` (en el PR #95, abierto) |
-| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#93](https://github.com/ClxNode/KuyayPet/pull/93) (abierto) (HU-25: aviso "La cuenta ya está inactiva" y tests de c5–c7)<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) (abierto) |
-| Estado | En revisión (PR abierto) |
+| Tests | [`tests/criterios/HU-25.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/criterios/HU-25.spec.ts)<br>[`tests/evidencias/HU-25.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-25.spec.ts)<br>[`tests/admin.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/admin.spec.ts) |
+| Evidencias | [`Sprint_03/7.Pruebas/evidencias/HU-25/`](../Sprint_03/7.Pruebas/evidencias/HU-25/) |
+| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#93](https://github.com/ClxNode/KuyayPet/pull/93) (HU-25: aviso "La cuenta ya está inactiva" y tests de c5–c7)<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) |
+| Estado | Terminada |
 
 <a id="hu-26"></a>
 
@@ -917,10 +917,10 @@ Este documento reúne las **26 historias de usuario** del proyecto con todos sus
 | Sprint | 3 |
 | Ruta en la app | `/admin/reportes`, `/admin/reportes/:id` (según `src/App.tsx`) |
 | Issue | [#26](https://github.com/ClxNode/KuyayPet/issues/26) (cerrado) |
-| Tests | `tests/criterios/HU-26.spec.ts` (solo en rama remota)<br>`tests/evidencias/HU-26.spec.ts` (solo en rama remota)<br>[`tests/admin.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/admin.spec.ts) |
-| Evidencias | `Sprint_03/7.Pruebas/evidencias/HU-26/` (en el PR #95, abierto) |
-| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#94](https://github.com/ClxNode/KuyayPet/pull/94) (abierto) (HU-26: tests de los criterios c1–c2 (gestionar información inapropiada))<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) (abierto) |
-| Estado | En revisión (PR abierto) |
+| Tests | [`tests/criterios/HU-26.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/criterios/HU-26.spec.ts)<br>[`tests/evidencias/HU-26.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/evidencias/HU-26.spec.ts)<br>[`tests/admin.spec.ts`](../Codigo_Repositorio/kuyaypet-web/tests/admin.spec.ts) |
+| Evidencias | [`Sprint_03/7.Pruebas/evidencias/HU-26/`](../Sprint_03/7.Pruebas/evidencias/HU-26/) |
+| PR | [#35](https://github.com/ClxNode/KuyayPet/pull/35) (Prototipo v0.3, implementación de referencia de las 26 HU)<br>[#94](https://github.com/ClxNode/KuyayPet/pull/94) (HU-26: tests de los criterios c1–c2 (gestionar información inapropiada))<br>Evidencias: [#95](https://github.com/ClxNode/KuyayPet/pull/95) |
+| Estado | Terminada |
 
 ## 📚 Referencia
 

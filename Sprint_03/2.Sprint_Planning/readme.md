@@ -16,7 +16,9 @@
 | 12-nov-2026 | Exposición: se presenta la **parte (a)** (adopción). La parte (b) queda pendiente | encargo de cierre |
 | 12-nov-2026 16:48–17:10Z | Se fusionan los PR de la parte (a) | `prs.json` |
 | 19-nov-2026 15:33–15:34Z | Se abren los PR [#88](https://github.com/ClxNode/KuyayPet/pull/88)–[#95](https://github.com/ClxNode/KuyayPet/pull/95) de la parte (b) | GitHub |
-| Hasta el 27-nov-2026 | La parte (b) se completa antes de que cierre el milestone | milestone |
+| 19-nov-2026 16:26–16:48Z | Se fusionan los PR #88–#95 y #99 de la parte (b) (detalle en [6.Repositorio_Codigo](../6.Repositorio_Codigo/readme.md)) | `prs.json` |
+| 19-nov-2026 16:58Z | Se fusiona el PR [#100](https://github.com/ClxNode/KuyayPet/pull/100) con los documentos de cierre | `prs.json` |
+| 27-nov-2026 | Vence el milestone | milestone |
 
 Las horas están en UTC (hora de Lima = UTC−5).
 
@@ -43,7 +45,7 @@ Las horas están en UTC (hora de Lima = UTC−5).
 | (b) HU-24 — Aprobar o rechazar publicaciones de mascotas | [#24](https://github.com/ClxNode/KuyayPet/issues/24) | Alta | **Must** | Prioridad Alta; sin aprobación una mascota registrada (HU-11) no se muestra a los adoptantes (`isAvailable` exige `approval: 'aprobada'`). | 5 |
 | (b) HU-25 — Desactivar cuentas de usuarios | [#25](https://github.com/ClxNode/KuyayPet/issues/25) | Media | **Should** | Prioridad Media; rúbrica de administración. La reutiliza HU-26. | 5 |
 | (b) HU-26 — Gestionar información inapropiada en la plataforma | [#26](https://github.com/ClxNode/KuyayPet/issues/26) | Media | **Should** | Prioridad Media; moderación de la rúbrica de cierre. | 3 |
-| Pruebas de seguridad (`tests/seguridad`, SEG-01 a SEG-13) | PR [#99](https://github.com/ClxNode/KuyayPet/pull/99) (abierto) | — | **Must** | La rúbrica de cierre pide pruebas funcionales, de integración y de seguridad | — |
+| Pruebas de seguridad (`tests/seguridad`, SEG-01 a SEG-13) | PR [#99](https://github.com/ClxNode/KuyayPet/pull/99) (fusionado el 19-nov) | — | **Must** | La rúbrica de cierre pide pruebas funcionales, de integración y de seguridad | — |
 | Manual de usuario, documentación técnica, despliegue, cierre del proyecto | — | — | **Must** | Entregables de cierre de la rúbrica: [manual de usuario](../../docs/manual-usuario.md) · [documentación técnica](../../docs/documentacion-tecnica.md) · [despliegue](../../docs/despliegue.md) · [pruebas](../../docs/pruebas.md) · [cierre del proyecto](../../docs/cierre-proyecto.md) | — |
 | Resto del backlog | — | — | **Won't** | No queda backlog fuera de las 26 HU: 3 en el Sprint 1, 8 en el Sprint 2 y 15 en este sprint | — |
 
@@ -100,7 +102,7 @@ Creadas el 12-nov-2026 16:19Z por IchiSieben como issues `tipo:tarea` + `sprint-
 | [#86](https://github.com/ClxNode/KuyayPet/issues/86) | Revisar adaptación a computadora y móvil de solicitudes, chat y notificaciones | HU-10, HU-08, HU-13 |
 | [#87](https://github.com/ClxNode/KuyayPet/issues/87) | Preparar la demo del Sprint 3: solicitar adopción, el responsable acepta o rechaza, Match/chat e historial | HU-10, HU-07, HU-08, HU-13, HU-18 |
 
-Para la parte (b) no se crearon tareas; el trabajo se sigue en los PR #88–#95, y en las secciones de `docs/` y en `tests/seguridad` cuando se abran sus PR.
+Para la parte (b) no se crearon tareas; el trabajo se siguió en los PR #88–#95, #99 y #100.
 
 ## Riesgos
 
@@ -110,10 +112,10 @@ Para la parte (b) no se crearon tareas; el trabajo se sigue en los PR #88–#95,
 | Validación manual pendiente | Las casillas “Validado por” de [7.Pruebas](../7.Pruebas/readme.md) están sin marcar | Pendiente |
 | Chat y respuestas simulados | HU-08 criterios 4 y 7 son respuestas de plantilla; HU-09 criterio 2 solo en pantalla dividida | Documentado en 7.Pruebas |
 | Criterios con brecha | HU-07 criterio 5 (foto y nombre, no especie, edad ni ubicación); HU-13 criterio 1 (sin correo) | Decisión pendiente: implementar o ajustar el criterio |
-| Issues cerrados antes de que su PR se fusione | #13 se cerró el 29-oct y su PR #73 se fusionó el 12-nov; los 7 issues de la parte (b) se cerraron el 12-nov con los PR #88–#94 abiertos el 19-nov | Se explica en el burndown |
+| Issues cerrados antes de que su PR se fusione | #13 se cerró el 29-oct y su PR #73 se fusionó el 12-nov; los 7 issues de la parte (b) se cerraron el 12-nov y sus PR #88–#94 se abrieron el 19-nov y se fusionaron ese mismo día | Se explica en el burndown |
 | PR sin revisión efectiva | #74, #75 y #76 sin revisión; #72 y #73 solo con comentario | Ver [6.Repositorio_Codigo](../6.Repositorio_Codigo/readme.md) |
 | Producción desactualizada | La versión publicada era `v0.3.1-sprint2`, anterior a las fusiones del 12-nov | Resuelto el 19-nov-2026: producción pasó a `v1.0.0` |
-| Plazo de la parte (b) | 8 días entre el 19-nov y el cierre del milestone; falta además fusionar el PR de seguridad ([#99](https://github.com/ClxNode/KuyayPet/pull/99)) y publicar los 5 documentos | En curso |
+| Plazo de la parte (b) | Quedaban 8 días entre el 19-nov y el cierre del milestone (27-nov) | Resuelto el 19-nov-2026: los PR #88–#95, #99 y #100 están fusionados |
 | Carpeta `Sprint_03` vacía | Siete de sus ocho `.md` estaban vacíos al fusionarse los PR del 12-nov | Resuelto con este cierre |
 
 ## Definition of Done

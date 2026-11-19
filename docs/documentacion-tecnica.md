@@ -52,7 +52,7 @@ kuyaypet-web/
 │   ├── services/     reglas de negocio y store (único acceso a los datos)
 │   ├── shell/        AppLayout · RequireAuth · SplitStage · Tour · PresenterPanel · DeviceFrame
 │   └── types/        modelo de dominio compartido
-├── tests/            specs de Playwright: raíz (integración) · criterios/ · evidencias/ (· seguridad/ en el PR #99)
+├── tests/            specs de Playwright: raíz (integración) · criterios/ · evidencias/ (· seguridad/, PR #99)
 ├── scripts/          seed.ts · fetch-images.ts · manual.mjs · record-hu.mjs
 ├── public/           favicon, íconos PWA, imágenes, manual/ (manual empaquetado en la app)
 ├── data/             team.json (pantalla "Equipo KuyayPet")

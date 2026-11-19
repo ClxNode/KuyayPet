@@ -29,7 +29,7 @@ La idea es facilitar que una persona pueda conocer mascotas disponibles, explora
 
 El proyecto incluye una dinámica de **Like / Dislike y Match** para apoyar la interacción, junto con herramientas de búsqueda, comunicación y administración de la plataforma.
 
-> **Estado del proyecto (19-nov-2026):** el alcance funcional está documentado mediante historias de usuario y existe un **prototipo funcional** sin servidor (los datos viven en el navegador; el chat y el correo de recuperación son simulados). Las 26 historias están implementadas en el prototipo; 19 están terminadas y fusionadas y 7 (parte b del Sprint 3) están en pull requests abiertos. Ver [Sprints y estado del proyecto](#-sprints-y-estado-del-proyecto) y [cierre del proyecto](./docs/cierre-proyecto.md).
+> **Estado del proyecto (19-nov-2026):** el alcance funcional está documentado mediante historias de usuario y existe un **prototipo funcional** sin servidor (los datos viven en el navegador; el chat y el correo de recuperación son simulados). Las 26 historias están implementadas en el prototipo; las 26 están terminadas y fusionadas (los PR de la parte b del Sprint 3 se fusionaron el 19-nov). Ver [Sprints y estado del proyecto](#-sprints-y-estado-del-proyecto) y [cierre del proyecto](./docs/cierre-proyecto.md).
 
 **Aplicación:** https://firebrick-cod-910257.hostingersite.com/ · versión desplegada `v1.0.0` desde el 19-nov-2026 (ver [despliegue](./docs/despliegue.md)) · [manual de usuario](./docs/manual-usuario.md) · manual dentro de la app: https://firebrick-cod-910257.hostingersite.com/manual/
 
@@ -124,7 +124,7 @@ El curso se desarrolló en **3 sprints** con Scrum. Cada carpeta `Sprint_0N` tie
 |:--|:--|:--|:--|:--|
 | Sprint 1 | Registrarse, ver mascotas y su perfil | HU-01, 02, 03 | Terminado y fusionado | [Sprint_01](./Sprint_01/readme.md) |
 | Sprint 2 | Catálogo: registro y edición de mascotas, filtros, cercanía y favoritos | HU-04, 05, 11, 12, 16, 17, 19, 21 | Terminado y fusionado | [Sprint_02](./Sprint_02/readme.md) |
-| Sprint 3 | Adopción y cierre del producto | (a) HU-06, 07, 08, 09, 10, 13, 18, 20 · (b) HU-14, 15, 22–26 | (a) terminada y fusionada; (b) en PR abiertos (#88–#95, #99), cierre del milestone el 27-nov | [Sprint_03](./Sprint_03/readme.md) |
+| Sprint 3 | Adopción y cierre del producto | (a) HU-06, 07, 08, 09, 10, 13, 18, 20 · (b) HU-14, 15, 22–26 | (a) terminada y fusionada el 12-nov; (b) PR #88–#95 y #99 fusionados el 19-nov; el milestone vence el 27-nov | [Sprint_03](./Sprint_03/readme.md) |
 
 Documentos de ingeniería (carpeta [`docs/`](./docs/)): [historias de usuario](./docs/historias-de-usuario.md) · [análisis](./docs/analisis.md) · [arquitectura](./docs/arquitectura.md) · [modelo de datos](./docs/modelo-datos.md) · [matriz de trazabilidad](./docs/matriz-trazabilidad.md) · [pruebas](./docs/pruebas.md) · [manual de usuario](./docs/manual-usuario.md) · [documentación técnica](./docs/documentacion-tecnica.md) · [despliegue](./docs/despliegue.md) · [cierre del proyecto](./docs/cierre-proyecto.md).
 

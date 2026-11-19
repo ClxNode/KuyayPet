@@ -4,7 +4,7 @@
 
 **Proyecto:** KuyayPet
 **Sprint:** Sprint 3 — Adopción y cierre del producto
-**Estado:** parte (a) terminada en GitHub; parte (b) en curso al 19-nov
+**Estado:** partes (a) y (b) terminadas; los PR de la parte (b) se fusionaron el 19-nov
 **Repositorio:** [KuyayPet — GitHub](https://github.com/ClxNode/KuyayPet) · [GitHub Project](https://github.com/users/ClxNode/projects/3)
 
 Datos al 19-nov-2026 (volcado de issues y eventos de GitHub). Las horas están en UTC (hora de Lima = UTC−5). No hay fecha límite individual: todas las tareas dependen del milestone [Sprint 3](https://github.com/ClxNode/KuyayPet/milestone/3) (27-nov-2026).
@@ -43,13 +43,13 @@ Todas creadas por IchiSieben el 12-nov-2026 entre 16:19:18Z y 16:19:57Z, con eti
 | HU-13 | [#13](https://github.com/ClxNode/KuyayPet/issues/13) | a | 3 | IchiSieben (asignación el 29-oct 16:55:52Z, después del cierre) | Terminado | 29-oct 16:52:00Z | ClxNode | [#73](https://github.com/ClxNode/KuyayPet/pull/73) |
 | HU-18 | [#18](https://github.com/ClxNode/KuyayPet/issues/18) | a | 5 | por asignar | Terminado | 12-nov 23:55:39Z | ClxNode | [#74](https://github.com/ClxNode/KuyayPet/pull/74) |
 | HU-20 | [#20](https://github.com/ClxNode/KuyayPet/issues/20) | a | 5 | por asignar | Terminado | 12-nov 23:55:40Z | ClxNode | [#75](https://github.com/ClxNode/KuyayPet/pull/75) |
-| HU-14 | [#14](https://github.com/ClxNode/KuyayPet/issues/14) | b | 2 | por asignar | Issue cerrado; PR abierto (en curso) | 12-nov 23:55:36Z | ClxNode | [#88](https://github.com/ClxNode/KuyayPet/pull/88) |
-| HU-15 | [#15](https://github.com/ClxNode/KuyayPet/issues/15) | b | 3 | por asignar | Issue cerrado; PR abierto (en curso) | 12-nov 23:55:39Z | ClxNode | [#89](https://github.com/ClxNode/KuyayPet/pull/89) |
-| HU-22 | [#22](https://github.com/ClxNode/KuyayPet/issues/22) | b | 5 | por asignar | Issue cerrado; PR abierto (en curso) | 12-nov 23:55:41Z | ClxNode | [#90](https://github.com/ClxNode/KuyayPet/pull/90) |
-| HU-23 | [#23](https://github.com/ClxNode/KuyayPet/issues/23) | b | 5 | por asignar | Issue cerrado; PR abierto (en curso) | 12-nov 23:55:41Z | ClxNode | [#91](https://github.com/ClxNode/KuyayPet/pull/91) |
-| HU-24 | [#24](https://github.com/ClxNode/KuyayPet/issues/24) | b | 5 | por asignar | Issue cerrado; PR abierto (en curso) | 12-nov 23:55:42Z | ClxNode | [#92](https://github.com/ClxNode/KuyayPet/pull/92) |
-| HU-25 | [#25](https://github.com/ClxNode/KuyayPet/issues/25) | b | 5 | por asignar | Issue cerrado; PR abierto (en curso) | 12-nov 23:55:43Z | ClxNode | [#93](https://github.com/ClxNode/KuyayPet/pull/93) |
-| HU-26 | [#26](https://github.com/ClxNode/KuyayPet/issues/26) | b | 3 | por asignar | Issue cerrado; PR abierto (en curso) | 12-nov 23:55:44Z | ClxNode | [#94](https://github.com/ClxNode/KuyayPet/pull/94) |
+| HU-14 | [#14](https://github.com/ClxNode/KuyayPet/issues/14) | b | 2 | por asignar | Terminado (PR fusionado 19-nov 16:26:16Z) | 12-nov 23:55:36Z | ClxNode | [#88](https://github.com/ClxNode/KuyayPet/pull/88) |
+| HU-15 | [#15](https://github.com/ClxNode/KuyayPet/issues/15) | b | 3 | por asignar | Terminado (PR fusionado 19-nov 16:33:56Z) | 12-nov 23:55:39Z | ClxNode | [#89](https://github.com/ClxNode/KuyayPet/pull/89) |
+| HU-22 | [#22](https://github.com/ClxNode/KuyayPet/issues/22) | b | 5 | por asignar | Terminado (PR fusionado 19-nov 16:37:58Z) | 12-nov 23:55:41Z | ClxNode | [#90](https://github.com/ClxNode/KuyayPet/pull/90) |
+| HU-23 | [#23](https://github.com/ClxNode/KuyayPet/issues/23) | b | 5 | por asignar | Terminado (PR fusionado 19-nov 16:38:29Z) | 12-nov 23:55:41Z | ClxNode | [#91](https://github.com/ClxNode/KuyayPet/pull/91) |
+| HU-24 | [#24](https://github.com/ClxNode/KuyayPet/issues/24) | b | 5 | por asignar | Terminado (PR fusionado 19-nov 16:40:06Z) | 12-nov 23:55:42Z | ClxNode | [#92](https://github.com/ClxNode/KuyayPet/pull/92) |
+| HU-25 | [#25](https://github.com/ClxNode/KuyayPet/issues/25) | b | 5 | por asignar | Terminado (PR fusionado 19-nov 16:40:46Z) | 12-nov 23:55:43Z | ClxNode | [#93](https://github.com/ClxNode/KuyayPet/pull/93) |
+| HU-26 | [#26](https://github.com/ClxNode/KuyayPet/issues/26) | b | 3 | por asignar | Terminado (PR fusionado 19-nov 16:41:21Z) | 12-nov 23:55:44Z | ClxNode | [#94](https://github.com/ClxNode/KuyayPet/pull/94) |
 
 Observaciones tomadas de los datos:
 
@@ -59,7 +59,7 @@ Observaciones tomadas de los datos:
 
 ## 5.4. Parte (b)
 
-Los 7 issues de HU de la parte (b) figuran en el milestone Sprint 3 y están cerrados desde el 12-nov, pero sus PR ([#88](https://github.com/ClxNode/KuyayPet/pull/88) a [#94](https://github.com/ClxNode/KuyayPet/pull/94)) y el PR de evidencias [#95](https://github.com/ClxNode/KuyayPet/pull/95) se abrieron el 19-nov y siguen abiertos. No hay tareas `tipo:tarea` para esta parte. Quedan en seguimiento fuera del tablero: pruebas de seguridad, manual de usuario, documentación técnica, despliegue y cierre del proyecto ([manual de usuario](../../docs/manual-usuario.md) · [documentación técnica](../../docs/documentacion-tecnica.md) · [despliegue](../../docs/despliegue.md) · [pruebas](../../docs/pruebas.md) · [cierre del proyecto](../../docs/cierre-proyecto.md)).
+Los 7 issues de HU de la parte (b) figuran en el milestone Sprint 3 y están cerrados desde el 12-nov, pero sus PR ([#88](https://github.com/ClxNode/KuyayPet/pull/88) a [#94](https://github.com/ClxNode/KuyayPet/pull/94)) y el PR de evidencias [#95](https://github.com/ClxNode/KuyayPet/pull/95) se abrieron el 19-nov y se fusionaron ese día (16:26Z a 16:47Z). No hay tareas `tipo:tarea` para esta parte. Quedan en seguimiento fuera del tablero: pruebas de seguridad, manual de usuario, documentación técnica, despliegue y cierre del proyecto ([manual de usuario](../../docs/manual-usuario.md) · [documentación técnica](../../docs/documentacion-tecnica.md) · [despliegue](../../docs/despliegue.md) · [pruebas](../../docs/pruebas.md) · [cierre del proyecto](../../docs/cierre-proyecto.md)).
 
 ## 5.5. Seguimiento del avance
 
