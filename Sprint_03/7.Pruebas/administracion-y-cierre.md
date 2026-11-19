@@ -93,7 +93,7 @@ EVIDENCIAS_DIR=../../Sprint_03/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 
 Video: [HU-23.mp4 en Drive](https://drive.google.com/open?id=1SCUFOdsUiVHxRLo3bru4Iku0Z2_oOqrD)
 
-- [ ] Validado por por asignar (la HU no tiene responsable en su issue)
+- [X] Validado por kevinesty 
 
 ### HU-24 — Aprobar o rechazar publicaciones
 
