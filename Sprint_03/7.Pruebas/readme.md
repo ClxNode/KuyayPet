@@ -64,7 +64,7 @@ Comando: `... node scripts/record-hu.mjs 07` · Fecha: 2026-10-28 · Duración d
 
 Video: [HU-07.mp4 en Drive](https://drive.google.com/open?id=1712oyfej3erbcjYo1k3kwqtDNjybcoaE)
 
-- [ ] Validado por ClxNode
+- [X] Validado por ClxNode
 
 ### HU-08 — Comunicarse con el responsable
 
