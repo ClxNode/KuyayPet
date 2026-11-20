@@ -27,7 +27,7 @@ EVIDENCIAS_DIR=../../Sprint_03/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 
 Video: [HU-14.mp4 en Drive](https://drive.google.com/open?id=1FayJBwq8ulmZnEfJkE1d-7AnUHE2LpjD)
 
-- [ ] Validado por por asignar (la HU no tiene responsable en su issue)
+- [X] Validado por DevBrad
 
 ### HU-15 — Recuperación de contraseña
 
@@ -49,7 +49,7 @@ EVIDENCIAS_DIR=../../Sprint_03/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 
 Video: [HU-15.mp4 en Drive](https://drive.google.com/open?id=1jd6YwpPXVuIRODZgbCQHVhgmRE4nNBH4)
 
-- [ ] Validado por por asignar (la HU no tiene responsable en su issue)
+- [X] Validado por Dylan
 
 ### HU-22 — Gestionar usuarios
 
@@ -72,7 +72,7 @@ EVIDENCIAS_DIR=../../Sprint_03/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 
 Video: [HU-22.mp4 en Drive](https://drive.google.com/open?id=1RIhlsLFuK_z2x2BWHeI1aXOUWR41zn_Y)
 
-- [ ] Validado por por asignar (la HU no tiene responsable en su issue)
+- [X] Validado por Joseph
 
 ### HU-23 — Revisar publicaciones de mascotas
 
@@ -116,7 +116,7 @@ EVIDENCIAS_DIR=../../Sprint_03/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 
 Video: [HU-24.mp4 en Drive](https://drive.google.com/open?id=1YP7kkHNERC0KNHOCnfOQif9c6WOTo080)
 
-- [X] Validado por por asignar (la HU no tiene responsable en su issue)
+- [X] Validado por Gael
 
 ### HU-25 — Desactivar cuentas de usuarios
 
@@ -157,4 +157,4 @@ EVIDENCIAS_DIR=../../Sprint_03/7.Pruebas/evidencias VIDEOS_DIR=<carpeta-videos>/
 
 Video: [HU-26.mp4 en Drive](https://drive.google.com/open?id=1fy1FNGqc460AXRTDZNmisBMl1oHKQ4lP)
 
-- [ ] Validado por por asignar (la HU no tiene responsable en su issue)
+- [X] Validado por DevBrad
