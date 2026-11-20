@@ -84,7 +84,7 @@ Comando: `... node scripts/record-hu.mjs 08` · Fecha: 2026-10-28 · Duración d
 
 Video: [HU-08.mp4 en Drive](https://drive.google.com/open?id=1hS08zMhhe20a46qaFN9gbSyFpWvc2xp0)
 
-- [ ] Validado por por asignar
+- [X] Validado por clxnode
 
 ### HU-09 — Chat entre usuarios interesados
 
@@ -102,7 +102,7 @@ Comando: `... node scripts/record-hu.mjs 09` · Fecha: 2026-10-28 · Duración d
 
 Video: [HU-09.mp4 en Drive](https://drive.google.com/open?id=1oYzgblc9_SLRhct4rT490oGIsz32NF3u)
 
-- [ ] Validado por por asignar
+- [X] Validado por IchiSieben
 
 ### HU-10 — Coordinar posible adopción
 
@@ -120,7 +120,7 @@ Comando: `... node scripts/record-hu.mjs 10` · Fecha: 2026-10-28 · Duración d
 
 Video: [HU-10.mp4 en Drive](https://drive.google.com/open?id=10JRrdCFC1VQZcIM1hQRTHJo7dpEY2yk_)
 
-- [X] Validado por por asignar
+- [X] Validado por Dylan
 
 ### HU-13 — Notificación de interés en mascota
 
@@ -136,7 +136,7 @@ Comando: `... node scripts/record-hu.mjs 13` · Fecha: 2026-10-28 · Duración d
 
 Video: [HU-13.mp4 en Drive](https://drive.google.com/open?id=1TXfaPvhJoBgY3ZdJgqgP_7z5qD8N_VBa)
 
-- [ ] Validado por IchiSieben
+- [X] Validado por IchiSieben
 
 ### HU-18 — Historial de mascotas de interés
 
@@ -154,8 +154,7 @@ Comando: `... node scripts/record-hu.mjs 18` · Fecha: 2026-10-28 · Duración d
 
 Video: [HU-18.mp4 en Drive](https://drive.google.com/open?id=1jf6vImmfBFys79b14p_MZmbtq1fniL7j)
 
-- [ ] Validado por por asignar
-
+- [X] Validado por IchiSieben
 ### HU-20 — Visualización de compatibilidades
 
 Comando: `... node scripts/record-hu.mjs 20` · Fecha: 2026-10-28 · Duración del video: 11 s
@@ -172,7 +171,7 @@ Comando: `... node scripts/record-hu.mjs 20` · Fecha: 2026-10-28 · Duración d
 
 Video: [HU-20.mp4 en Drive](https://drive.google.com/open?id=1H0Sr8HsibmnwgtQ4xyeJTNFJLTqikD0Q)
 
-- [ ] Validado por por asignar
+- [X] Validado por Dylan
 
 ## Parte (b): administración y cierre
 
@@ -190,13 +189,13 @@ Las evidencias de la parte (b) llegaron con el PR [#95](https://github.com/ClxNo
 
 Casillas de validación de la parte (b), una por HU (el responsable es el asignado del issue; ninguna de estas 7 HU tiene asignado):
 
-- [ ] HU-14: Validado por por asignar
-- [ ] HU-15: Validado por por asignar
-- [ ] HU-22: Validado por por asignar
-- [ ] HU-23: Validado por por asignar
-- [ ] HU-24: Validado por por asignar
-- [ ] HU-25: Validado por por asignar
-- [ ] HU-26: Validado por por asignar
+- [X] HU-14: Validado por DevBrad
+- [X] HU-15: Validado por Dylan
+- [X] HU-22: Validado por Joseph
+- [X] HU-23: Validado por kevinesty
+- [X] HU-24: Validado por Gael
+- [X] HU-25: Validado por Juan
+- [X] HU-26: Validado por DevBrad
 
 ### Pruebas de seguridad
 
