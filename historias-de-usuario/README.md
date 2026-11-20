@@ -5,7 +5,6 @@
 Aquí se publicará el código de cada historia de usuario, **cuando esté desarrollado y probado**. Por ahora, este directorio funciona como punto de entrada y no contiene implementaciones.
 
 ## Convención propuesta
-
 ```text
 historias-de-usuario/
 ├── HU-01/
