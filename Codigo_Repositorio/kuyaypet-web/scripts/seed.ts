@@ -567,11 +567,12 @@ let threadId = 1;
 let msgId = 1;
 
 const DEMO_MESSAGES_TEMPLATES = [
-  ['Hola, vi que aceptaste mi interés. ¿Podemos coordinar una visita?', 'owner'],
-  ['¡Hola! Claro que sí, ¿qué día te acomoda?', 'adopter'],
-  ['¿Este sábado en la tarde estaría bien?', 'owner'],
-  ['Perfecto, ahí estaré. ¿Me confirmas la dirección?', 'adopter'],
-  ['Te la envío por aquí apenas coordinemos la hora exacta.', 'owner'],
+  // The adopter opens (the owner accepted their interest); the owner answers. Each line is said by its sender.
+  ['Hola, vi que aceptaste mi interés. ¿Podemos coordinar una visita?', 'adopter'],
+  ['¡Hola! Claro que sí, ¿qué día te acomoda?', 'owner'],
+  ['¿Este sábado en la tarde estaría bien?', 'adopter'],
+  ['Perfecto, el sábado en la tarde me acomoda. Te paso la dirección por aquí.', 'owner'],
+  ['¡Genial! Ahí estaré, gracias.', 'adopter'],
 ];
 
 demoMatchPets.forEach((p) => {
