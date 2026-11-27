@@ -41,7 +41,7 @@
 | Código de la aplicación (`Codigo_Repositorio/kuyaypet-web/src/`) | v1.0.1 (`7dd75a4`) | v1.1.0 (`c24ba18`) | Rediseño v0.5 integrado. Completos: UX-01, 02, 03, 05, 07, 09, 11, 12, 15, 16, 18 y 19. Parciales: UX-08, 10, 13, 17 y 20. Ya resueltos por v0.5: UX-04, 21, 22, 23 y 29 |
 | `tailwind.config.js` e `index.css` | Sin tokens `cocoa-600` ni `coral-700` | v1.1.0 | Tokens de texto con contraste AA; la paleta no cambia |
 | `src/services/match.ts` | Sin operaciones inversas | v1.1.0 | `undoSwipe` y `undoRejectInterest` |
-| `tests/ux/SC-2026-004.spec.ts` y `undo.test.ts` | No existían | v1.1.0 | 4 pruebas Playwright nuevas (134 en total) y 6 de Vitest nuevas (51 en total). No se modificó ni debilitó ningún test existente |
+| `tests/ux/SC-2026-004.spec.ts` y `undo.test.ts` | No existían | v1.1.0 | 4 pruebas Playwright nuevas (134 en total) en v1.1.0 y 1 más en v1.1.1 para la barra inferior (135 en total) y 6 de Vitest nuevas (51 en total). No se modificó ni debilitó ningún test existente |
 | Inventario de selectores | Anterior al merge | `535ead1` | Regenerado desde los tests de `main` |
 | Product Backlog, cronograma de sprints, Sprint Backlog, ADR | — | — | No se registró actualización por este cambio. No verificado en este expediente. |
 
