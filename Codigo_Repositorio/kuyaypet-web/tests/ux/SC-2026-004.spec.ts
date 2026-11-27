@@ -118,3 +118,20 @@ test('UX-03: «Me gusta» sin Match se deshace con el botón secundario y retira
     expect(after.notifications.length).toBe(before.notifications.length);
   }
 });
+
+test('UX-01: con 6 pestañas, ninguna etiqueta de la barra inferior queda recortada (también dentro del marco de escritorio)', async ({ page }) => {
+  await page.getByRole('button', { name: /Adoptante/ }).first().click();
+  await expect(page.locator('[data-tour="deck"] article').first()).toBeVisible();
+  for (const vp of [{ width: 390, height: 844 }, { width: 360, height: 740 }, { width: 1440, height: 900 }]) {
+    await page.setViewportSize(vp);
+    await page.waitForTimeout(300);
+    const clipped = await page.evaluate(() => {
+      const nav = document.querySelector('nav[aria-label="Navegación principal"]')!;
+      const box = (nav.closest('[data-testid="device-frame"]') ?? nav).getBoundingClientRect();
+      return Array.from(nav.querySelectorAll('a'))
+        .filter((a) => { const r = a.getBoundingClientRect(); return r.left < box.left - 0.5 || r.right > box.right + 0.5 || a.scrollWidth > a.clientWidth + 1; })
+        .map((a) => a.textContent?.trim());
+    });
+    expect(clipped, `viewport ${vp.width}×${vp.height}`).toEqual([]);
+  }
+});

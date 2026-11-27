@@ -76,22 +76,22 @@ export function AppLayout() {
           <Outlet />
         </RouteFade>
       </main>
-      <nav className="glass relative z-10 shrink-0 px-2 pb-safe-b pt-1.5" aria-label="Navegación principal">
+      <nav className="glass relative z-10 shrink-0 px-1 pb-safe-b pt-1.5" aria-label="Navegación principal">
         <ul className="flex justify-around [.unframed_&]:mx-auto [.unframed_&]:max-w-xl">
           {tabs.map(({ to, label, icon: Icon, tour }) => (
-            <li key={to}>
+            <li key={to} className="min-w-0 flex-1">
               <NavLink
                 to={to}
                 data-tour={tour}
                 className={({ isActive }) =>
-                  `group flex min-w-14 flex-col items-center gap-0.5 whitespace-nowrap rounded-2xl px-1 py-1 text-xs font-bold ${
+                  `group flex w-full min-w-0 flex-col items-center gap-0.5 whitespace-nowrap rounded-2xl px-0.5 py-1 text-xs font-bold tracking-tight ${
                     isActive ? 'text-terra-600' : 'text-cocoa-600 hover:text-cocoa-900'
                   }`
                 }
               >
                 {({ isActive }) => (
                   <>
-                    <span className="relative flex h-8 w-14 items-center justify-center">
+                    <span className="relative flex h-8 w-12 items-center justify-center">
                       {isActive && (
                         <motion.span
                           layoutId="tab-pill"
