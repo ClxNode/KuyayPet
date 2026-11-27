@@ -1,5 +1,19 @@
 # Gestión de cambios de KuyayPet
 
+## Resumen en simple
+
+- **Cambio 1 — Cerrar una conversación ([SC-2026-003](SC-2026-003/README.md)).** Quien quiere adoptar ahora puede finalizar el chat con el responsable de la mascota: la conversación queda guardada para leerla, pero ya no se pueden enviar mensajes.
+- **Cambio 2 — Interfaz más clara ([SC-2026-004](SC-2026-004/README.md)).** Botones con texto para aceptar o rechazar un interés, opción de deshacer un descarte y mensajes de error junto a cada campo, entre otras mejoras.
+
+| Cambio | Pedido | Analizado | Hecho | Comprobado | Decisión del Comité |
+|---|---|---|---|---|---|
+| 1 · Cerrar una conversación | ✔ | ✔ | ✔ | ✔ | Pendiente |
+| 2 · Interfaz más clara | ✔ | ✔ | ✔ | ✔ | Pendiente |
+
+Los dos están en la app publicada. El Cambio 2 se publicó antes de tener la decisión del Comité; se registra como una desviación del procedimiento y se pide regularizarlo. Las firmas de los formatos siguen pendientes.
+
+Presentación para exponerlos: https://firebrick-cod-910257.hostingersite.com/cambios/ (detalle técnico en https://firebrick-cod-910257.hostingersite.com/cambios/detalle/).
+
 Esta carpeta reúne los expedientes de solicitudes de cambio (SC) del proyecto, tramitados según el procedimiento **PRO-GC-001 – Gestión de Cambios del proyecto KuyayPet**.
 
 El PDF `PRO-GC-001_Gestion_de_Cambios_KuyayPet.pdf` (v1.0, 20/11/2026) es el entregable del equipo. Define el flujo de 9 actividades, los roles, la matriz de niveles de impacto, el quórum del Comité y los cuatro formatos. No se copia aquí; esta carpeta aplica sus formatos con los mismos campos y secciones.
