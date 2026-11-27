@@ -1,10 +1,10 @@
 import { animate, AnimatePresence, motion, useMotionValue, useTransform, type PanInfo } from 'framer-motion';
 import { Heart, Info, MapPin, RotateCcw, Star, X } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { rankDeck, formatKm, type DeckEntry } from '@/lib/match';
 import { useCurrentUser } from '@/services/auth';
-import { recordSwipe, seenPetIds } from '@/services/match';
+import { recordSwipe, seenPetIds, undoSwipe, type SwipeReceipt } from '@/services/match';
 import { ageLabel, usePets } from '@/services/pets';
 import { toast, useUi } from '@/services/ui';
 import { Button, EmptyState, ScoreBadge } from '@/components/ui';
@@ -31,6 +31,10 @@ export function Discover() {
     [user?.id, user?.profile, round, pinned],
   );
   const [index, setIndex] = useState(0);
+  // Swipes made in this visit, newest last. Each carries what it created so the service can revert it (UX-03).
+  const [history, setHistory] = useState<{ receipt: SwipeReceipt; name: string }[]>([]);
+  const historyRef = useRef(history);
+  historyRef.current = history;
 
   if (!user) return null;
   if (!user.profile)
@@ -49,22 +53,39 @@ export function Discover() {
   const next = deck[index + 1];
   const nextNext = deck[index + 2];
 
+  const undo = (item?: { receipt: SwipeReceipt; name: string }) => {
+    const target = item ?? historyRef.current.at(-1);
+    if (!target) return;
+    const result = undoSwipe(target.receipt);
+    setHistory((h) => h.filter((x) => x.receipt.interactionId !== target.receipt.interactionId));
+    if (result.ok) {
+      setIndex((i) => Math.max(0, i - 1));
+      toast({ title: `${target.name} vuelve a tu baraja`, emoji: '↩️', placement: 'top', duration: 2500 });
+    } else if (result.reason === 'match') {
+      toast({ title: 'Ya no se puede deshacer', body: `${target.name} ya hizo Match contigo: el responsable aceptó tu interés.`, emoji: '💞', placement: 'top' });
+    }
+  };
+
   const onSwipe = (entry: DeckEntry, kind: InteractionKind) => {
-    recordSwipe(user, entry.pet.id, kind);
-    if (kind === 'like') toast({ title: `Te gusta ${entry.pet.name}`, body: 'Avisamos a su responsable. Si acepta, ¡es Match!', emoji: '💗' });
-    if (kind === 'superlike') toast({ title: `¡Súper Kuyay para ${entry.pet.name}!`, body: 'Tu interés llega destacado al responsable.', emoji: '⭐' });
-    if (kind === 'dislike') toast({ title: 'Siguiente', body: `No te mostraremos a ${entry.pet.name} de nuevo.`, emoji: '👋' });
+    const receipt = recordSwipe(user, entry.pet.id, kind);
+    const item = receipt && { receipt, name: entry.pet.name };
+    if (item) setHistory((h) => [...h, item]);
+    const action = item && { label: 'Deshacer', onClick: () => undo(item) };
+    const base = { placement: 'top' as const, duration: 5000, action };
+    if (kind === 'like') toast({ title: `Te gusta ${entry.pet.name}`, body: 'Avisamos a su responsable. Si acepta, ¡es Match!', emoji: '💗', ...base });
+    if (kind === 'superlike') toast({ title: `¡Súper Kuyay para ${entry.pet.name}!`, body: 'Tu interés llega destacado al responsable.', emoji: '⭐', ...base });
+    if (kind === 'dislike') toast({ title: 'Siguiente', body: `No te mostraremos a ${entry.pet.name} de nuevo.`, emoji: '👋', ...base });
     setIndex((i) => i + 1);
   };
 
   return (
     <div className="flex h-full flex-col px-4 pb-3" data-hu="HU-06">
-      <div className="mb-2 flex items-end justify-between">
+      <div className="mb-2.5 flex items-end justify-between gap-3">
         <div>
           <h1 className="text-2xl font-extrabold">Descubre</h1>
           <p className="text-sm text-cocoa-500">Ordenadas por compatibilidad contigo</p>
         </div>
-        <span className="font-hand text-xl text-terra">¡Encuentra tu mejor compañero!</span>
+        <span className="max-w-[9.5rem] text-right font-hand text-xl leading-tight text-terra">¡Encuentra tu mejor compañero!</span>
       </div>
 
       <div className="relative min-h-0 flex-1" data-tour="deck">
@@ -89,6 +110,7 @@ export function Discover() {
                   icon={<RotateCcw size={18} />}
                   onClick={() => {
                     setIndex(0);
+                    setHistory([]);
                     setRound((r) => r + 1);
                   }}
                 >
@@ -100,17 +122,24 @@ export function Discover() {
         )}
       </div>
 
-      {current && (
-        <div className="mt-3 flex items-center justify-center gap-5">
-          <RoundButton label="No me gusta" onClick={() => swipeProgrammatic('dislike')} className="h-16 w-16 bg-white text-cocoa-500">
-            <X size={30} strokeWidth={3} />
+      {(current || history.length > 0) && (
+        <div className="mt-3.5 flex items-center justify-center gap-5">
+          <RoundButton label="Deshacer" onClick={() => undo()} disabled={history.length === 0} className="h-11 w-11 bg-white text-cocoa-700 ring-1 ring-cocoa/[.06] disabled:opacity-40">
+            <RotateCcw size={20} strokeWidth={2.4} />
           </RoundButton>
-          <RoundButton label="Súper Kuyay" onClick={() => swipeProgrammatic('superlike')} className="h-12 w-12 bg-white text-honey">
-            <Star size={22} fill="currentColor" />
-          </RoundButton>
-          <RoundButton label="Me gusta" tour="like-btn" onClick={() => swipeProgrammatic('like')} className="h-16 w-16 bg-coral text-white">
-            <Heart size={30} fill="currentColor" />
-          </RoundButton>
+          {current && (
+            <>
+            <RoundButton label="No me gusta" onClick={() => swipeProgrammatic('dislike')} className="h-16 w-16 bg-white text-cocoa-500 ring-1 ring-cocoa/[.06] hover:text-cocoa">
+              <X size={30} strokeWidth={3} />
+            </RoundButton>
+            <RoundButton label="Súper Kuyay" onClick={() => swipeProgrammatic('superlike')} className="h-12 w-12 bg-white text-honey ring-1 ring-cocoa/[.06]">
+              <Star size={22} fill="currentColor" />
+            </RoundButton>
+            <RoundButton label="Me gusta" tour="like-btn" onClick={() => swipeProgrammatic('like')} className="h-16 w-16 bg-coral text-white ring-4 ring-coral/15 hover:bg-coral-600">
+              <Heart size={30} fill="currentColor" />
+            </RoundButton>
+            </>
+          )}
         </div>
       )}
     </div>
@@ -123,20 +152,22 @@ function swipeProgrammatic(kind: InteractionKind) {
   topCardSwipe?.(kind);
 }
 
-function RoundButton({ label, onClick, className, children, tour }: { label: string; onClick: () => void; className: string; children: React.ReactNode; tour?: string }) {
+function RoundButton({ label, onClick, className, children, tour, disabled }: { label: string; onClick: () => void; className: string; children: React.ReactNode; tour?: string; disabled?: boolean }) {
   return (
     <div className="flex flex-col items-center gap-1">
       <motion.button
         whileTap={{ scale: 0.88 }}
         whileHover={{ scale: 1.06 }}
+        transition={{ type: 'spring', stiffness: 500, damping: 28 }}
         onClick={onClick}
         aria-label={label}
+        disabled={disabled}
         data-tour={tour}
-        className={`flex items-center justify-center rounded-full shadow-card ${className}`}
+        className={`flex items-center justify-center rounded-full shadow-raised transition-colors ${className}`}
       >
         {children}
       </motion.button>
-      <span className="text-[11px] font-bold text-cocoa-500">{label}</span>
+      <span className="text-xs font-bold text-cocoa-500">{label}</span>
     </div>
   );
 }
@@ -155,8 +186,8 @@ function SwipeCard({ entry, onSwipe, behind }: { entry: DeckEntry; onSwipe?: (k:
     const target = kind === 'like' ? { x: 520, y: 40 } : kind === 'dislike' ? { x: -520, y: 40 } : { x: 0, y: -800 };
     const pattern = kind === 'like' ? [30] : kind === 'dislike' ? [15] : [20, 40, 20];
     navigator.vibrate?.(pattern);
-    animate(x, target.x, { duration: 0.35 });
-    animate(y, target.y, { duration: 0.35 }).then(() => onSwipe?.(kind));
+    animate(x, target.x, { duration: 0.38, ease: [0.4, 0, 1, 1] });
+    animate(y, target.y, { duration: 0.38, ease: [0.4, 0, 1, 1] }).then(() => onSwipe?.(kind));
   };
 
   if (!behind) topCardSwipe = fly;
@@ -173,10 +204,11 @@ function SwipeCard({ entry, onSwipe, behind }: { entry: DeckEntry; onSwipe?: (k:
 
   return (
     <motion.article
-      className="absolute inset-0 touch-none select-none overflow-hidden rounded-4xl bg-cocoa shadow-card"
+      className={`absolute inset-0 touch-none select-none overflow-hidden rounded-4xl bg-cocoa ring-1 ring-white/50 ${behind ? 'shadow-soft' : 'shadow-float'}`}
       style={behind ? { zIndex: behind === 1 ? 2 : 1 } : { x, y, rotate, zIndex: 3 }}
-      initial={behind ? { scale: behind === 1 ? 0.95 : 0.9, y: behind === 1 ? 10 : 20 } : { scale: 0.96, opacity: 0.6 }}
-      animate={behind ? { scale: behind === 1 ? 0.95 : 0.9, y: behind === 1 ? 10 : 20 } : { scale: 1, opacity: 1 }}
+      initial={behind ? { scale: behind === 1 ? 0.95 : 0.9, y: behind === 1 ? 12 : 24, opacity: behind === 1 ? 0.9 : 0.6 } : { scale: 0.96, opacity: 0.6 }}
+      animate={behind ? { scale: behind === 1 ? 0.95 : 0.9, y: behind === 1 ? 12 : 24, opacity: behind === 1 ? 0.9 : 0.6 } : { scale: 1, opacity: 1 }}
+      transition={{ type: 'spring', stiffness: 320, damping: 30 }}
       drag={!behind}
       data-tour={behind ? undefined : 'top-card'}
       dragMomentum={false}
@@ -189,7 +221,7 @@ function SwipeCard({ entry, onSwipe, behind }: { entry: DeckEntry; onSwipe?: (k:
         <>
           <div className="absolute inset-x-3 top-3 flex gap-1.5">
             {pet.photos.map((_, i) => (
-              <span key={i} className={`h-1 flex-1 rounded-full ${i === photo ? 'bg-white' : 'bg-white/40'}`} />
+              <span key={i} className={`h-[3px] flex-1 rounded-full shadow-sm transition-colors duration-slow ${i === photo ? 'bg-white' : 'bg-white/35'}`} />
             ))}
           </div>
           {!behind && (
@@ -206,42 +238,42 @@ function SwipeCard({ entry, onSwipe, behind }: { entry: DeckEntry; onSwipe?: (k:
 
       {!behind && (
         <>
-          <motion.span style={{ opacity: likeOpacity }} className="absolute left-5 top-16 -rotate-12 rounded-2xl border-4 border-sage bg-white/80 px-3 py-1 font-display text-3xl font-extrabold text-sage">
+          <motion.span style={{ opacity: likeOpacity }} className="absolute left-5 top-16 -rotate-12 rounded-2xl border-4 border-sage bg-white/85 px-3 py-1 font-display text-3xl font-extrabold text-sage shadow-raised backdrop-blur-sm">
             ME GUSTA
           </motion.span>
-          <motion.span style={{ opacity: nopeOpacity }} className="absolute right-5 top-16 rotate-12 rounded-2xl border-4 border-coral bg-white/80 px-3 py-1 font-display text-3xl font-extrabold text-coral">
+          <motion.span style={{ opacity: nopeOpacity }} className="absolute right-5 top-16 rotate-12 rounded-2xl border-4 border-coral bg-white/85 px-3 py-1 font-display text-3xl font-extrabold text-coral shadow-raised backdrop-blur-sm">
             NO
           </motion.span>
-          <motion.span style={{ opacity: superOpacity }} className="absolute inset-x-0 top-1/3 mx-auto w-fit rounded-2xl border-4 border-honey bg-white/80 px-3 py-1 font-display text-3xl font-extrabold text-honey">
+          <motion.span style={{ opacity: superOpacity }} className="absolute inset-x-0 top-1/3 mx-auto w-fit rounded-2xl border-4 border-honey bg-white/85 px-3 py-1 font-display text-3xl font-extrabold text-honey shadow-raised backdrop-blur-sm">
             ⭐ SÚPER KUYAY
           </motion.span>
         </>
       )}
 
-      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/55 to-transparent p-4 pt-20 text-white">
+      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-cocoa-900/90 via-cocoa-900/55 to-transparent p-4 pt-24 text-white">
         <div className="flex items-end justify-between gap-2">
-          <div>
-            <h2 className="text-3xl font-extrabold drop-shadow">
-              {pet.name} <span className="text-2xl font-semibold opacity-90">{ageLabel(pet.ageMonths)}</span>
+          <div className="min-w-0">
+            <h2 className="text-3xl font-extrabold leading-none drop-shadow-sm">
+              {pet.name} <span className="text-2xl font-semibold opacity-85">{ageLabel(pet.ageMonths)}</span>
             </h2>
-            <p className="flex items-center gap-1 text-sm opacity-95">
+            <p className="mt-1.5 flex items-center gap-1 text-sm font-medium opacity-90">
               <MapPin size={14} /> {pet.district} · {formatKm(match.distanceKm)} · {pet.breed}
             </p>
           </div>
           {!behind && (
-            <Link to={`/mascota/${pet.id}`} aria-label={`Ver perfil de ${pet.name}`} className="rounded-full bg-white/20 p-2.5 backdrop-blur hover:bg-white/30">
+            <Link to={`/mascota/${pet.id}`} aria-label={`Ver perfil de ${pet.name}`} className="pressable shrink-0 rounded-full bg-white/15 p-2.5 ring-1 ring-white/30 backdrop-blur hover:bg-white/30">
               <Info size={20} />
             </Link>
           )}
         </div>
-        <ul className="mt-2 space-y-1" data-tour={behind ? undefined : 'reasons'}>
+        <ul className="mt-2.5 space-y-1" data-tour={behind ? undefined : 'reasons'}>
           {match.reasons.slice(0, 3).map((r) => (
-            <li key={r.factor} className="rounded-xl bg-white/15 px-2.5 py-1 text-[13px] font-semibold backdrop-blur-sm">
+            <li key={r.factor} className="rounded-xl bg-white/[.14] px-2.5 py-1 text-[13px] font-semibold ring-1 ring-inset ring-white/15 backdrop-blur-sm">
               {r.text}
             </li>
           ))}
           {match.warnings.slice(0, 1).map((w) => (
-            <li key={w.factor + w.text} className="rounded-xl bg-honey/80 px-2.5 py-1 text-[13px] font-semibold text-cocoa">
+            <li key={w.factor + w.text} className="rounded-xl bg-honey/85 px-2.5 py-1 text-[13px] font-semibold text-cocoa ring-1 ring-inset ring-white/30">
               {w.text}
             </li>
           ))}

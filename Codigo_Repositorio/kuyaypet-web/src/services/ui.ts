@@ -8,7 +8,15 @@ export interface Toast {
   emoji?: string;
   tone?: 'info' | 'success' | 'error';
   onClick?: () => void;
+  /** Non-blocking secondary action, e.g. «Deshacer» (UX-02, UX-03). Dismisses the toast when pressed. */
+  action?: { label: string; onClick: () => void };
+  /** ms before it closes by itself. Default 3800; errors 8000 (UX-09). Paused while hovered or focused. */
+  duration?: number;
+  /** `bottom` (default) sits above the tab bar, in thumb reach; `top` sits under the header, for screens whose bottom is the main control row. */
+  placement?: 'bottom' | 'top';
 }
+
+export const toastDuration = (t: Pick<Toast, 'duration' | 'tone'>) => t.duration ?? (t.tone === 'error' ? 8000 : 3800);
 
 export interface ConfirmOptions {
   title: string;
@@ -49,7 +57,6 @@ export const useUi = create<UiState>()((set, get) => ({
   pushToast: (t) => {
     const id = ++toastId;
     set((s) => ({ toasts: [...s.toasts.slice(-2), { ...t, id }] }));
-    setTimeout(() => get().dismissToast(id), 3800);
   },
   dismissToast: (id) => set((s) => ({ toasts: s.toasts.filter((t) => t.id !== id) })),
   closeConfirm: (ok) => {

@@ -25,7 +25,7 @@ export function Credits() {
               <div className="min-w-0 flex-1">
                 <p className="font-display text-lg font-bold leading-tight">{m.nombre}</p>
                 <p className="text-sm text-cocoa-500">{m.rol}</p>
-                <p className="mt-0.5 text-xs text-cocoa-300">{m.hus.length ? `HU: ${m.hus.join(', ')}` : 'HU por asignar'}</p>
+                <p className="mt-0.5 text-xs text-cocoa-600">{m.hus.length ? `HU: ${m.hus.join(', ')}` : 'HU por asignar'}</p>
               </div>
               <div className="flex gap-1">
                 {m.github && (
@@ -44,7 +44,7 @@ export function Credits() {
         ))}
       </ul>
       <p className="mt-6 text-center font-hand text-2xl text-terra">Adopta · Conecta · Transforma ♥</p>
-      <p className="mt-2 text-center text-xs text-cocoa-300">
+      <p className="mt-2 text-center text-xs text-cocoa-600">
         Prototipo académico. Fotos de mascotas: Dog CEO y The Cat API; retratos: randomuser.me. Personas y albergues son ficticios.
       </p>
     </div>

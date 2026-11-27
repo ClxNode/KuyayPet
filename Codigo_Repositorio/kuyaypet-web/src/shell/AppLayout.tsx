@@ -1,9 +1,12 @@
 import { Bell, BookOpen, Heart, LayoutDashboard, MessageCircle, Search, Sparkles, User as UserIcon, PawPrint, type LucideIcon } from 'lucide-react';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 
 import { useCurrentUser } from '@/services/auth';
 import { useUnreadCount } from '@/services/notifications';
 import { LogoMark } from '@/components/brand/Logo';
+import { RouteFade } from '@/shell/RouteFade';
 import type { Role } from '@/types';
 
 type Tab = { to: string; label: string; icon: LucideIcon; tour?: string };
@@ -36,35 +39,44 @@ const ROLE_LABEL: Record<Role, string> = { adopter: 'Adoptante', owner: 'Respons
 export function AppLayout() {
   const user = useCurrentUser();
   const unread = useUnreadCount(user?.id);
+  const { pathname } = useLocation();
+  const main = useRef<HTMLElement>(null);
+  // The scroller outlives the screens inside it: a new tab starts at the top, not where the last one was.
+  useEffect(() => {
+    if (main.current) main.current.scrollTop = 0;
+  }, [pathname]);
   if (!user) return null;
   const tabs = TABS[user.role];
   return (
     <div className="flex h-full flex-col">
-      <header className="flex shrink-0 items-center justify-between px-4 [.unframed_&]:mx-auto [.unframed_&]:w-full [.unframed_&]:max-w-6xl [.unframed_&]:px-6 pb-2 pt-[max(env(safe-area-inset-top),14px)]">
-        <Link to={tabs[0].to} className="w-28" aria-label="Inicio KuyayPet">
+      <header className="flex shrink-0 items-center justify-between px-4 [.unframed_&]:mx-auto [.unframed_&]:w-full [.unframed_&]:max-w-6xl [.unframed_&]:px-6 pb-2 pt-safe-t">
+        <Link to={tabs[0].to} className="w-28 rounded-xl" aria-label="Inicio KuyayPet">
           <LogoMark className="w-full" />
         </Link>
         <div className="flex items-center gap-2">
-          <span className="rounded-full bg-cream-200 px-2.5 py-1 text-xs font-bold text-cocoa-700">{ROLE_LABEL[user.role]}</span>
+          <span className="rounded-full bg-white/70 px-2.5 py-1 text-xs font-bold text-cocoa-700 shadow-hairline">{ROLE_LABEL[user.role]}</span>
           <Link
             to="/notificaciones"
             data-tour="bell"
             aria-label={`Notificaciones${unread ? `, ${unread} sin leer` : ''}`}
-            className="relative rounded-full bg-white p-2.5 shadow-soft"
+            className="pressable relative rounded-full bg-white p-3 shadow-soft hover:shadow-raised"
           >
             <Bell size={20} />
             {unread > 0 && (
-              <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-coral px-1 text-[11px] font-extrabold text-white">
+              <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-coral !bg-coral-600 px-1 text-2xs font-extrabold text-white ring-2 ring-cream">
                 {unread > 9 ? '9+' : unread}
               </span>
             )}
           </Link>
         </div>
       </header>
-      <main className="scroll-area relative flex-1">
-        <Outlet />
+      <main ref={main} className="scroll-area relative flex-1">
+        {/* Admin sub-tabs share one fade so AdminShell (and its tab strip) is not remounted. */}
+        <RouteFade key={pathname.startsWith('/admin') ? '/admin' : pathname}>
+          <Outlet />
+        </RouteFade>
       </main>
-      <nav className="shrink-0 border-t border-cream-300 bg-white/95 px-2 pb-[max(env(safe-area-inset-bottom),8px)] pt-1.5 backdrop-blur" aria-label="Navegación principal">
+      <nav className="glass relative z-10 shrink-0 px-2 pb-safe-b pt-1.5" aria-label="Navegación principal">
         <ul className="flex justify-around [.unframed_&]:mx-auto [.unframed_&]:max-w-xl">
           {tabs.map(({ to, label, icon: Icon, tour }) => (
             <li key={to}>
@@ -72,15 +84,22 @@ export function AppLayout() {
                 to={to}
                 data-tour={tour}
                 className={({ isActive }) =>
-                  `flex w-14 flex-col items-center gap-0.5 rounded-2xl py-1.5 text-[11px] font-bold transition ${
-                    isActive ? 'text-terra' : 'text-cocoa-300 hover:text-cocoa-500'
+                  `group flex min-w-14 flex-col items-center gap-0.5 whitespace-nowrap rounded-2xl px-1 py-1 text-xs font-bold ${
+                    isActive ? 'text-terra-600' : 'text-cocoa-600 hover:text-cocoa-900'
                   }`
                 }
               >
                 {({ isActive }) => (
                   <>
-                    <span className={`rounded-full px-3 py-1 transition ${isActive ? 'bg-terra-100' : ''}`}>
-                      <Icon size={22} strokeWidth={isActive ? 2.5 : 2} />
+                    <span className="relative flex h-8 w-14 items-center justify-center">
+                      {isActive && (
+                        <motion.span
+                          layoutId="tab-pill"
+                          className="absolute inset-0 rounded-full bg-terra-100"
+                          transition={{ type: 'spring', stiffness: 420, damping: 32 }}
+                        />
+                      )}
+                      <Icon size={22} strokeWidth={isActive ? 2.5 : 2} className="relative transition-transform duration-base ease-out group-active:scale-90" />
                     </span>
                     {label}
                   </>

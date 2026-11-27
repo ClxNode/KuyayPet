@@ -59,10 +59,13 @@ async function clickAndConfirm(tour: string) {
   useUi.getState().closeConfirm(true);
 }
 
+/** HU-xx codes are project jargon (UX-05): only shown where the presenter panel is (desktop/projector). */
+const PRESENTER_VIEW = typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches;
+
 export const TOUR: Step[] = [
   {
     title: '¡Bienvenidos a KuyayPet! 🐾',
-    body: 'Un “Tinder para adoptar”: desliza, haz Match por compatibilidad y coordina la adopción. Aquí se crea la cuenta (HU-01) o se entra con cuentas demo.',
+    body: 'Desliza, haz Match por compatibilidad y coordina la adopción. Aquí se crea la cuenta o se entra con cuentas demo.',
     hu: 'HU-01',
     role: null,
     route: '/',
@@ -448,10 +451,10 @@ export function TourOverlay() {
         >
           <div className="flex items-start justify-between gap-2">
             <div>
-              <span className="text-[11px] font-extrabold uppercase tracking-wide text-cocoa-300">
+              <span className="text-[11px] font-extrabold uppercase tracking-wide text-cocoa-600">
                 Paso {step + 1} de {TOUR.length}
               </span>
-              {current.hu && <span className="ml-2 rounded-full bg-terra-100 px-2 py-0.5 text-[11px] font-extrabold text-terra-600">{current.hu}</span>}
+              {current.hu && PRESENTER_VIEW && <span className="ml-2 rounded-full bg-terra-100 px-2 py-0.5 text-[11px] font-extrabold text-terra-600">{current.hu}</span>}
               <h2 className="mt-0.5 text-lg font-extrabold leading-tight">{current.title}</h2>
             </div>
             <div className="flex shrink-0">

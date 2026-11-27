@@ -51,6 +51,14 @@ export function ageLabel(months: number): string {
   return `${y} ${y === 1 ? 'año' : 'años'}`;
 }
 
+/** Months as years + months, for form helper text (UX-10): 67 -> «5 años y 7 meses». */
+export function ageExact(months: number): string {
+  const m = Math.max(0, Math.round(months || 0));
+  if (m < 12) return ageLabel(m);
+  const rest = m % 12;
+  return rest ? `${ageLabel(m)} y ${rest} ${rest === 1 ? 'mes' : 'meses'}` : ageLabel(m);
+}
+
 export const SIZE_LABEL = { S: 'Pequeño', M: 'Mediano', L: 'Grande' } as const;
 export const SPECIES_LABEL = { perro: 'Perro', gato: 'Gato' } as const;
 export const SEX_LABEL = { macho: 'Macho', hembra: 'Hembra' } as const;
