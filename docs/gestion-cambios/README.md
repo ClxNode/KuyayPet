@@ -10,6 +10,7 @@ El PDF `PRO-GC-001_Gestion_de_Cambios_KuyayPet.pdf` (v1.0, 20/11/2026) es el ent
 |---|---|
 | [registro-solicitudes.md](registro-solicitudes.md) | Registro de solicitudes de cambio (PRO-GC-001, 5.1). |
 | [SC-2026-003/](SC-2026-003/README.md) | Expediente de «Finalizar conversación en el chat (HU-08)». |
+| [SC-2026-004/](SC-2026-004/README.md) | Expediente de «Mejora de experiencia de usuario» (auditoría UX, rediseño v0.5 + v1.0, en producción v1.1.1). |
 
 ## Cómo se organiza un expediente
 
