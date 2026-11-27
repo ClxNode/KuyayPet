@@ -9,7 +9,7 @@ KuyayPet es un sitio estático: el build (`dist/`) se sube a un hosting sin ejec
 | Dato | Valor |
 |---|---|
 | URL | https://firebrick-cod-910257.hostingersite.com/ |
-| Versión desplegada al 19-nov-2026 | `v1.0.0` (`IchiSieben/kuyaypet@v1.0.0`) |
+| Versión desplegada al 27-nov-2026 | `v1.1.0` (`IchiSieben/kuyaypet@v1.1.0`); antes `v1.0.1` (26-nov) y `v1.0.0` (19-nov) |
 | Qué incluye | El `main` del grupo (Sprints 1 a 3, partes a y b), que incluye los PR #88–#95 y #99 fusionados el 19-nov; `src/` y `tests/` del `main` del grupo son idénticos a `v1.0.0` (verificado con `diff`) |
 | Versión anterior | `v0.3.1-sprint2` (Sprints 1 y 2) |
 | Espejo | https://ichisieben.github.io/kuyaypet/ (GitHub Pages, se publica con cada push a `main` del repositorio espejo) |
@@ -23,7 +23,9 @@ La raíz del sitio sirve la aplicación. Además hay carpetas que **no deben bor
 
 | Ruta | Contenido |
 |---|---|
-| `/` | Aplicación (`v1.0.0`) |
+| `/` | Aplicación (`v1.1.0`) |
+| `/v2/` | Vista previa de SC-2026-004 (misma versión, base `/v2/`) |
+| `/cambios/` | Presentación de gestión de cambios (SC-2026-003 y SC-2026-004) |
 | `/next/` | Vista previa de la versión de interfaz v0.4 |
 | `/next2/` | Vista previa de la versión de interfaz v0.5 |
 | `/manual/` | Manual empaquetado en la aplicación |
@@ -60,6 +62,9 @@ Se usa la API de hosting de Hostinger (conector MCP) para generar una URL de sub
 - Con `HashRouter` y base relativa (`base: './'`) el mismo build funciona en la raíz del hosting y en GitHub Pages.
 
 ## 6. Estado final de producción
+
+**Actualización 27-nov-2026.** Producción pasó a `v1.1.0` (`IchiSieben/kuyaypet@v1.1.0`, commit `c24ba18`, bundle `assets/index-icf3icMo.js`): incluye el arreglo del chat del PR #102 (desplegado el 26-nov como `v1.0.1`) y la solicitud de cambio SC-2026-004 del PR #104 (rediseño v0.5 + correcciones de la auditoría UX). **#102 y #104 siguen abiertos en este repositorio**: hasta que se fusionen, producción va por delante del `main` del grupo. Suite contra producción el 27-nov: 134/134 (130 + 4 de `tests/ux/`). Vista previa previa a la promoción: https://firebrick-cod-910257.hostingersite.com/v2/ (134/134). Presentación de gestión de cambios: https://firebrick-cod-910257.hostingersite.com/cambios/. **Revertir:** a `v1.0.1` con `python deploy_tus.py ../revert-v1.0.1 --only index.html sw.js` (purga la CDN; los assets viejos siguen en el servidor); a `v1.0.0` igual con `../revert-v1.0.0`. SC-2026-004 se promovió sin decisión del Comité: es una desviación declarada en su expediente (`docs/gestion-cambios/SC-2026-004/`).
+
 
 - **Versión:** `IchiSieben/kuyaypet@v1.0.0` (tag sobre el commit `26ea3b7`; el `package.json` dice 1.0.0 desde `d5ccad0`, mismo bundle). Bundle principal `assets/index-BXqdrcgB.js`.
 - **Desde:** 19-nov-2026.

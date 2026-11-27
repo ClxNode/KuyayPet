@@ -31,7 +31,7 @@ El proyecto incluye una dinámica de **Like / Dislike y Match** para apoyar la i
 
 > **Estado del proyecto (19-nov-2026):** el alcance funcional está documentado mediante historias de usuario y existe un **prototipo funcional** sin servidor (los datos viven en el navegador; el chat y el correo de recuperación son simulados). Las 26 historias están implementadas en el prototipo; las 26 están terminadas y fusionadas (los PR de la parte b del Sprint 3 se fusionaron el 19-nov). Ver [Sprints y estado del proyecto](#-sprints-y-estado-del-proyecto) y [cierre del proyecto](./docs/cierre-proyecto.md).
 
-**Aplicación:** https://firebrick-cod-910257.hostingersite.com/ · versión desplegada `v1.0.0` desde el 19-nov-2026 (ver [despliegue](./docs/despliegue.md)) · [manual de usuario](./docs/manual-usuario.md) · manual dentro de la app: https://firebrick-cod-910257.hostingersite.com/manual/
+**Aplicación:** https://firebrick-cod-910257.hostingersite.com/ · versión desplegada `v1.1.0` desde el 27-nov-2026 (ver [despliegue](./docs/despliegue.md)) · [gestión de cambios](./docs/gestion-cambios/) (SC-2026-003, SC-2026-004) · [manual de usuario](./docs/manual-usuario.md) · manual dentro de la app: https://firebrick-cod-910257.hostingersite.com/manual/
 
 ## ✨ Funcionalidades propuestas
 

@@ -8,7 +8,7 @@
 
 KuyayPet es un prototipo web de adopción de mascotas (adoptante, responsable y administrador) construido en tres sprints para el curso de Ingeniería de Software (UPCH, 2026-2). Es una aplicación React sin servidor: los datos viven en el navegador. Quedan documentados 26 historias de usuario, su análisis, arquitectura y modelo de datos, el plan y los resultados de pruebas, el manual de usuario y el procedimiento de despliegue.
 
-- **Aplicación:** https://firebrick-cod-910257.hostingersite.com/ (versión `v1.0.0`, desplegada el 19-nov-2026; ver [despliegue](./despliegue.md)).
+- **Aplicación:** https://firebrick-cod-910257.hostingersite.com/ (versión `v1.1.0`, desplegada el 27-nov-2026; antes `v1.0.0` del 19-nov; ver [despliegue](./despliegue.md)).
 - **Código:** [`Codigo_Repositorio/`](../Codigo_Repositorio/readme.md).
 
 ## 2. Historias de usuario
@@ -97,6 +97,9 @@ Las limitaciones vienen del hecho de no tener servidor ([análisis, sección 6](
 | Baja | Resolver HU-11 criterio 6 | Único criterio que no cumple |
 
 ## 7. Estado final de producción
+
+**Actualización 27-nov-2026.** Producción pasó a `v1.1.0` (`IchiSieben/kuyaypet@v1.1.0`, commit `c24ba18`, bundle `assets/index-icf3icMo.js`): incluye el arreglo del chat del PR #102 (desplegado el 26-nov como `v1.0.1`) y la solicitud de cambio SC-2026-004 del PR #104 (rediseño v0.5 + correcciones de la auditoría UX). **#102 y #104 siguen abiertos en este repositorio**: hasta que se fusionen, producción va por delante del `main` del grupo. Suite contra producción el 27-nov: 134/134 (130 + 4 de `tests/ux/`). Vista previa previa a la promoción: https://firebrick-cod-910257.hostingersite.com/v2/ (134/134). Presentación de gestión de cambios: https://firebrick-cod-910257.hostingersite.com/cambios/. **Revertir:** a `v1.0.1` con `python deploy_tus.py ../revert-v1.0.1 --only index.html sw.js` (purga la CDN; los assets viejos siguen en el servidor); a `v1.0.0` igual con `../revert-v1.0.0`. SC-2026-004 se promovió sin decisión del Comité: es una desviación declarada en su expediente (`docs/gestion-cambios/SC-2026-004/`).
+
 
 - **Versión:** `IchiSieben/kuyaypet@v1.0.0` (tag sobre el commit `26ea3b7`; el `package.json` dice 1.0.0 desde `d5ccad0`, mismo bundle). Bundle principal `assets/index-BXqdrcgB.js`.
 - **Desde:** 19-nov-2026.
