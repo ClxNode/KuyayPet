@@ -13,7 +13,7 @@ Duración objetivo: 2:00. Lectura en voz alta, ritmo normal. Todo lo que se dice
 | Presentación | https://firebrick-cod-910257.hostingersite.com/cambios/ (se publica esta noche) |
 | Video antes/después | https://drive.google.com/open?id=18Ntw9svQuHgiRIzolP-RiwCyiPZbBYA4 |
 
-Comprobado en producción: {{PROD_CHECK}}
+Comprobado en producción: 2026-11-26 23:35 (Lima), Playwright contra https://firebrick-cod-910257.hostingersite.com/ (v1.0.1): HU-08 6/6 + smoke 3/3; flujo manual automatizado: semilla con el adoptante abriendo el chat, respuesta de despedida a «ya no podré adoptar», «Finalizar conversación» → envío deshabilitado y 5 mensajes conservados
 
 ## Bloques
 
