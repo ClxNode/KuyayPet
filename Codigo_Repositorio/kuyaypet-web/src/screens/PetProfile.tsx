@@ -3,7 +3,7 @@ import { ArrowLeft, BookOpen, CalendarCheck, Check, ChevronLeft, ChevronRight, F
 import { useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { Avatar, Button, Card, Chip, EmptyState, ScoreBadge, Sheet } from '@/components/ui';
-import { FavoriteButton, StatusBadge } from '@/components/PetCard';
+import { FavoriteButton, petHeroId, StatusBadge } from '@/components/PetCard';
 import { formatKm } from '@/lib/match';
 import { WEIGHTS } from '@/lib/match/weights';
 import { useCurrentUser } from '@/services/auth';
@@ -38,12 +38,12 @@ function BreakdownBar({ factor, value }: { factor: MatchFactor; value: number })
           {Math.round(value)}/{max}
         </span>
       </div>
-      <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-cream-300">
+      <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-cocoa/[.08]">
         <motion.div
           className={`h-full rounded-full ${tone}`}
           initial={{ width: 0 }}
           animate={{ width: `${pct}%` }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         />
       </div>
     </div>
@@ -58,6 +58,9 @@ export function PetProfile() {
   const owner = useUser(pet?.ownerId);
   const user = useCurrentUser();
   const navigate = useNavigate();
+  // The photo glides from the card to the profile only inside the phone frame; on the full-width desktop layout
+  // (HU-02) the profile is laid out directly, so no shared-element animation scales the photo mid-flight.
+  const heroLayoutId = window.matchMedia('(min-width: 1024px)').matches ? undefined : petHeroId(pet?.id ?? '');
   const match = useMatch(user?.profile, pet);
   const [photo, setPhoto] = useState(0);
   const [reporting, setReporting] = useState(false);
@@ -117,17 +120,18 @@ export function PetProfile() {
       <div className="scroll-area flex-1 pb-4">
        <div className="[.unframed_&]:mx-auto [.unframed_&]:grid [.unframed_&]:max-w-5xl [.unframed_&]:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] [.unframed_&]:items-start [.unframed_&]:gap-8 [.unframed_&]:p-6">
         {/* carousel */}
-        <div className="relative aspect-[4/3.6] bg-cocoa [.unframed_&]:sticky [.unframed_&]:top-0 [.unframed_&]:overflow-hidden [.unframed_&]:rounded-3xl">
+        <motion.div layoutId={heroLayoutId} className="relative aspect-[4/3.6] bg-cocoa [.unframed_&]:sticky [.unframed_&]:top-0 [.unframed_&]:overflow-hidden [.unframed_&]:rounded-3xl">
           <AnimatePresence mode="wait">
-            <motion.img key={photo} src={photos[photo]} alt={`Foto ${photo + 1} de ${pet.name}`} className="h-full w-full object-cover" initial={{ opacity: 0.4 }} animate={{ opacity: 1 }} exit={{ opacity: 0.4 }} />
+            <motion.img key={photo} src={photos[photo]} alt={`Foto ${photo + 1} de ${pet.name}`} className="h-full w-full object-cover" initial={{ opacity: 0.4, scale: 1.02 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0.4 }} transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }} />
           </AnimatePresence>
-          <div className="absolute inset-x-0 top-0 flex items-center justify-between p-3">
-            <button onClick={() => navigate(-1)} aria-label="Volver" className="rounded-full bg-white/90 p-2 shadow-soft">
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-cocoa-900/40 to-transparent" aria-hidden="true" />
+          <div className="absolute inset-x-0 top-0 flex items-center justify-between p-3 pt-safe-t">
+            <button onClick={() => navigate(-1)} aria-label="Volver" className="pressable rounded-full bg-white/90 p-2 shadow-raised backdrop-blur">
               <ArrowLeft size={20} />
             </button>
             <div className="flex items-center gap-2">
               {user && (
-                <button onClick={() => setReporting(true)} aria-label="Reportar esta publicación" className="rounded-full bg-white/90 p-2 shadow-soft">
+                <button onClick={() => setReporting(true)} aria-label="Reportar esta publicación" className="pressable rounded-full bg-white/90 p-2 shadow-raised backdrop-blur">
                   <Flag size={18} className="text-coral-600" />
                 </button>
               )}
@@ -136,26 +140,32 @@ export function PetProfile() {
           </div>
           {photos.length > 1 && (
             <>
-              <button aria-label="Foto anterior" onClick={() => setPhoto((p) => (p - 1 + photos.length) % photos.length)} className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/70 p-1.5">
+              <button aria-label="Foto anterior" onClick={() => setPhoto((p) => (p - 1 + photos.length) % photos.length)} className="pressable absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/75 p-1.5 shadow-soft backdrop-blur hover:bg-white">
                 <ChevronLeft size={20} />
               </button>
-              <button aria-label="Foto siguiente" onClick={() => setPhoto((p) => (p + 1) % photos.length)} className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/70 p-1.5">
+              <button aria-label="Foto siguiente" onClick={() => setPhoto((p) => (p + 1) % photos.length)} className="pressable absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/75 p-1.5 shadow-soft backdrop-blur hover:bg-white">
                 <ChevronRight size={20} />
               </button>
-              <div className="absolute inset-x-0 bottom-3 flex justify-center gap-1.5">
+              <div className="absolute inset-x-0 bottom-9 flex justify-center gap-1.5">
                 {photos.map((_, i) => (
-                  <button key={i} aria-label={`Ver foto ${i + 1}`} onClick={() => setPhoto(i)} className={`h-2 rounded-full transition-all ${i === photo ? 'w-6 bg-white' : 'w-2 bg-white/60'}`} />
+                  <button key={i} aria-label={`Ver foto ${i + 1}`} onClick={() => setPhoto(i)} className={`h-1.5 rounded-full shadow-sm transition-all duration-slow ease-out ${i === photo ? 'w-6 bg-white' : 'w-1.5 bg-white/60'}`} />
                 ))}
               </div>
             </>
           )}
-        </div>
+        </motion.div>
 
-        <div className="relative -mt-6 space-y-4 rounded-t-4xl bg-cream px-5 pt-5 [.unframed_&]:mt-0 [.unframed_&]:px-0 [.unframed_&]:pt-0">
+        {/* The sheet rises a little after the photo lands, so the eye follows the photo first. */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.32, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
+          className="relative -mt-7 space-y-4 rounded-t-5xl bg-cream px-5 pt-5 [.unframed_&]:mt-0 [.unframed_&]:rounded-none [.unframed_&]:px-0 [.unframed_&]:pt-0 [.unframed_&]:shadow-none shadow-[0_-12px_30px_-16px_rgba(46,26,18,.45)]"
+        >
           <div className="flex items-start justify-between gap-2">
             <div>
-              <h1 className="text-4xl font-extrabold">{pet.name}</h1>
-              <p className="text-cocoa-500">
+              <h1 className="text-4xl font-extrabold leading-none">{pet.name}</h1>
+              <p className="mt-1.5 text-cocoa-500">
                 {SPECIES_LABEL[pet.species]} · {pet.breed}
               </p>
               <p className="mt-1 flex items-center gap-1 text-sm text-cocoa-700">
@@ -174,9 +184,9 @@ export function PetProfile() {
               ['Sexo', SEX_LABEL[pet.sex]],
               ['Tamaño', SIZE_LABEL[pet.size]],
             ].map(([k, v]) => (
-              <div key={k} className="rounded-2xl bg-white py-2 shadow-soft">
-                <p className="text-xs font-bold text-cocoa-300">{k}</p>
-                <p className="font-display font-bold">{v}</p>
+              <div key={k} className="surface-2 rounded-2xl py-2.5">
+                <p className="text-xs font-bold text-cocoa-500">{k}</p>
+                <p className="font-display text-lg font-bold leading-tight">{v}</p>
               </div>
             ))}
           </div>
@@ -192,7 +202,7 @@ export function PetProfile() {
           )}
 
           {match && available && (
-            <Card className="border-2 border-sage-100 p-4" >
+            <Card className="p-4 ring-1 ring-sage/15">
               <h2 className="flex items-center gap-2 text-lg font-bold" data-hu="HU-20">
                 💞 ¿Por qué hacemos match?
               </h2>
@@ -208,12 +218,12 @@ export function PetProfile() {
                   </li>
                 ))}
                 {match.warnings.map((w) => (
-                  <li key={w.factor + w.text} className="rounded-xl bg-honey-100 px-2 py-1 text-sm">
+                  <li key={w.factor + w.text} className="rounded-xl bg-honey-100/80 px-2.5 py-1.5 text-sm ring-1 ring-honey/20">
                     {w.text}
                   </li>
                 ))}
               </ul>
-              <p className="mt-2 text-xs text-cocoa-300">Calculado con tus respuestas del cuestionario · pesos heurísticos</p>
+              <p className="mt-2 text-xs text-cocoa-500">Calculado con tus respuestas del cuestionario · pesos heurísticos</p>
             </Card>
           )}
 
@@ -252,7 +262,7 @@ export function PetProfile() {
             <Card className="flex items-center gap-3 p-4">
               <Avatar src={owner.avatar} name={owner.name} size={48} />
               <div className="flex-1">
-                <p className="text-xs font-bold text-cocoa-300">{owner.kind === 'albergue' ? 'Albergue responsable' : 'Responsable'}</p>
+                <p className="text-xs font-bold text-cocoa-500">{owner.kind === 'albergue' ? 'Albergue responsable' : 'Responsable'}</p>
                 <p className="font-bold">{owner.name}</p>
                 {owner.district && <p className="text-xs text-cocoa-500">{owner.district}</p>}
               </div>
@@ -279,21 +289,21 @@ export function PetProfile() {
           {isAdopter && (
             <button
               onClick={joinPetChat}
-              className="flex w-full items-center justify-center gap-2 rounded-2xl bg-cream-200 py-3 text-sm font-bold text-cocoa-700 hover:bg-cream-300"
+              className="pressable flex w-full items-center justify-center gap-2 rounded-2xl bg-white/70 py-3 text-sm font-bold text-cocoa-700 shadow-hairline hover:bg-white"
               data-hu="HU-09"
             >
               <MessageCircle size={16} /> Unirme al chat de la mascota
             </button>
           )}
-        </div>
+        </motion.div>
        </div>
       </div>
 
       {isAdopter && (
-        <div className="shrink-0 border-t border-cream-300 bg-white/95 p-3">
+        <div className="glass relative z-10 shrink-0 p-3 pb-safe-b">
          <div className="mx-auto w-full max-w-5xl space-y-2 [.unframed_&]:max-w-md">
           {!available ? (
-            <p className="rounded-2xl bg-cream-200 p-3 text-center text-sm font-semibold">
+            <p className="rounded-2xl bg-cocoa/[.06] p-3 text-center text-sm font-semibold">
               {pet.status === 'adoptada' ? `🎉 ${pet.name} ya encontró un hogar. No se aceptan nuevas solicitudes.` : 'Este perfil ya no está disponible para adopción.'}
             </p>
           ) : (

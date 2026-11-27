@@ -2,42 +2,42 @@
   {
     "id": "msg-0001",
     "threadId": "t-001",
-    "senderId": "u-owner-05",
+    "senderId": "u-adopter-demo",
     "text": "Hola, vi que aceptaste mi interés. ¿Podemos coordinar una visita?",
     "createdAt": "2026-09-17T17:00:00.000Z"
   },
   {
     "id": "msg-0002",
     "threadId": "t-001",
-    "senderId": "u-adopter-demo",
+    "senderId": "u-owner-05",
     "text": "¡Hola! Claro que sí, ¿qué día te acomoda?",
     "createdAt": "2026-09-18T18:00:00.000Z"
   },
   {
     "id": "msg-0003",
     "threadId": "t-001",
-    "senderId": "u-owner-05",
+    "senderId": "u-adopter-demo",
     "text": "¿Este sábado en la tarde estaría bien?",
     "createdAt": "2026-09-19T19:00:00.000Z"
   },
   {
     "id": "msg-0004",
     "threadId": "t-002",
-    "senderId": "u-owner-05",
+    "senderId": "u-adopter-demo",
     "text": "Hola, vi que aceptaste mi interés. ¿Podemos coordinar una visita?",
     "createdAt": "2026-09-17T17:00:00.000Z"
   },
   {
     "id": "msg-0005",
     "threadId": "t-002",
-    "senderId": "u-adopter-demo",
+    "senderId": "u-owner-05",
     "text": "¡Hola! Claro que sí, ¿qué día te acomoda?",
     "createdAt": "2026-09-18T18:00:00.000Z"
   },
   {
     "id": "msg-0006",
     "threadId": "t-002",
-    "senderId": "u-owner-05",
+    "senderId": "u-adopter-demo",
     "text": "¿Este sábado en la tarde estaría bien?",
     "createdAt": "2026-09-19T19:00:00.000Z"
   },

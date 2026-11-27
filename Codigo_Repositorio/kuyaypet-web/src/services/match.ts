@@ -7,14 +7,49 @@ import { notify } from './notifications';
 import { ensureDirectThread, postMessage } from './chat';
 import { useUi } from './ui';
 
-export function recordSwipe(adopter: User, petId: string, kind: InteractionKind) {
+/** What a swipe created, so it can be reverted exactly (UX-03). `interestId` is set only if this swipe created the Interest. */
+export interface SwipeReceipt {
+  interactionId: string;
+  petId: string;
+  kind: InteractionKind;
+  interestId?: string;
+}
+
+export function recordSwipe(adopter: User, petId: string, kind: InteractionKind): SwipeReceipt | undefined {
   const pet = db.get().pets.find((p) => p.id === petId);
   if (!pet) return;
+  const interactionId = uid('i');
   db.set((s) => ({
-    interactions: [...s.interactions, { id: uid('i'), adopterId: adopter.id, petId, kind, createdAt: nowIso() }],
+    interactions: [...s.interactions, { id: interactionId, adopterId: adopter.id, petId, kind, createdAt: nowIso() }],
   }));
-  if (kind === 'dislike') return;
-  expressInterest(adopter, petId, kind === 'superlike');
+  const receipt: SwipeReceipt = { interactionId, petId, kind };
+  if (kind === 'dislike') return receipt;
+  const existed = db.get().interests.some((i) => i.adopterId === adopter.id && i.petId === petId);
+  const interest = expressInterest(adopter, petId, kind === 'superlike');
+  if (interest && !existed) receipt.interestId = interest.id;
+  return receipt;
+}
+
+export type UndoSwipeResult = { ok: true } | { ok: false; reason: 'match' | 'missing' };
+
+/**
+ * Inverse of recordSwipe (UX-03). A discard, or a like the owner has not accepted, is fully reverted: the
+ * interaction, the Interest this swipe created and the owner's "interés" notification disappear.
+ * A like that already produced a Match is NOT undone (the chat, notifications and Match exist): it returns `reason: 'match'`.
+ */
+export function undoSwipe(receipt: SwipeReceipt): UndoSwipeResult {
+  const s = db.get();
+  if (!s.interactions.some((i) => i.id === receipt.interactionId)) return { ok: false, reason: 'missing' };
+  const interest = receipt.interestId ? s.interests.find((i) => i.id === receipt.interestId) : undefined;
+  if (interest?.status === 'aceptado') return { ok: false, reason: 'match' };
+  db.set((st) => ({
+    interactions: st.interactions.filter((i) => i.id !== receipt.interactionId),
+    interests: interest ? st.interests.filter((i) => i.id !== interest.id) : st.interests,
+    notifications: interest
+      ? st.notifications.filter((n) => !(n.kind === 'interes' && n.userId === interest.ownerId && n.actorId === interest.adopterId && n.petId === interest.petId))
+      : st.notifications,
+  }));
+  return { ok: true };
 }
 
 export function expressInterest(adopter: User, petId: string, isSuper = false): Interest | undefined {
@@ -93,6 +128,20 @@ export function answerInterest(interestId: string, accept: boolean): Match | und
   );
   if (db.get().sessionUserId === interest.adopterId) useUi.setState({ celebrationMatchId: match.id });
   return match;
+}
+
+/** Inverse of `answerInterest(id, false)` (UX-02): a rejection can be taken back; an acceptance cannot (it created a Match). */
+export function undoRejectInterest(interestId: string): boolean {
+  const interest = db.get().interests.find((i) => i.id === interestId);
+  if (!interest || interest.status !== 'rechazado') return false;
+  db.set((st) => ({
+    interests: st.interests.map((i) => {
+      if (i.id !== interestId) return i;
+      const { answeredAt: _omit, ...rest } = i;
+      return { ...rest, status: 'pendiente' as const };
+    }),
+  }));
+  return true;
 }
 
 export function useMatchesFor(adopterId: string | undefined): Match[] {

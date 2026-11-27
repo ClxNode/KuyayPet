@@ -1,8 +1,9 @@
-// Chat + Mensajería (UML). Owner replies are SIMULATED with keyword templates and a typing delay.
+// Chat + Mensajería (UML). Owner replies are SIMULATED (keyword rules in chatReplies.ts) with a typing delay.
 import type { ChatMessage, ChatThread } from '@/types';
 import { db, nowIso, uid, useDb } from './store';
 import { useUi } from './ui';
 import { notify } from './notifications';
+import { replyFor } from './chatReplies';
 
 export function useThreadsFor(userId: string | undefined): ChatThread[] {
   const threads = useDb((s) => s.threads);
@@ -76,22 +77,6 @@ export function sendMessage(threadId: string, senderId: string, text: string) {
   scheduleOwnerReply(threadId, other, clean);
 }
 
-function replyFor(text: string, petName: string): string {
-  const t = text.toLowerCase();
-  if (/(visita|conocer|coordinar|cu[aá]ndo|fecha|hora)/.test(t))
-    return `¡Claro! Puedes usar el botón “Coordinar adopción” y proponer fecha y hora. Los sábados en la mañana me acomodan muy bien para que conozcas a ${petName} 🐾`;
-  if (/(vacuna|esteriliz|castra|desparasit|salud|veterinari)/.test(t))
-    return `${petName} tiene sus vacunas al día y está desparasitad@. Te puedo enviar la cartilla de vacunación por aquí 📋`;
-  if (/(edad|años|meses|tamaño|grande|peque)/.test(t))
-    return `Tiene la edad y tamaño que ves en su perfil; es muy fácil de manejar en casa. ¿Tú vives en casa o departamento?`;
-  if (/(niñ|hijo|gato|perro|otra mascota)/.test(t))
-    return `Se lleva bastante bien con otros, pero siempre recomendamos una presentación tranquila y progresiva 😊`;
-  if (/(hola|buen|buenas|hey)/.test(t))
-    return `¡Hola! Qué bueno que te interese ${petName} 😊 ¿Qué te gustaría saber?`;
-  if (/(gracias|genial|perfecto|excelente)/.test(t)) return `¡Gracias a ti! Adoptar cambia dos vidas: la suya y la tuya 💛`;
-  return `¡Gracias por escribir! ${petName} es un amor. Cuéntame un poco de tu hogar y tu rutina para ver si es un buen match 🏡`;
-}
-
 export function scheduleOwnerReply(threadId: string, ownerId: string, lastText: string) {
   const thread = db.get().threads.find((t) => t.id === threadId);
   const pet = db.get().pets.find((p) => p.id === thread?.petId);
@@ -100,7 +85,7 @@ export function scheduleOwnerReply(threadId: string, ownerId: string, lastText: 
   setTimeout(() => {
     useUi.setState((s) => ({ typing: { ...s.typing, [threadId]: false } }));
     if (db.get().threads.find((t) => t.id === threadId)?.closedAt) return;
-    const reply = replyFor(lastText, pet?.name ?? 'la mascota').replace('desparasitad@', pet?.sex === 'macho' ? 'desparasitado' : 'desparasitada');
+    const reply = replyFor(lastText, pet);
     postMessage(threadId, ownerId, reply);
     const adopterId = thread?.memberIds.find((id) => id !== ownerId);
     const owner = db.get().users.find((u) => u.id === ownerId);

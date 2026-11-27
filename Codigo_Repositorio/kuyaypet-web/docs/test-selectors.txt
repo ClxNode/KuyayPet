@@ -1,0 +1,399 @@
+# Selectors the e2e suite depends on. Regenerated from main's tests/*.ts after the v0.5-ui merge (SC-2026-004).
+# Do not rename, remove or change these accessible names / attributes. Lines marked NOT FOUND need a manual check (dynamic text, template literals).
+# NOT FOUND entries were reviewed by hand: user-typed test values, runtime-composed strings or the dynamic data-tour-step attribute; each static fragment exists in src/.
+attr [data-hu="HU-01"]
+attr [data-hu="HU-02"]
+attr [data-hu="HU-03"]
+attr [data-hu="HU-04"]
+attr [data-hu="HU-05"]
+attr [data-hu="HU-07"]
+attr [data-hu="HU-08"]
+attr [data-hu="HU-09"]
+attr [data-hu="HU-10"]
+attr [data-hu="HU-11"]
+attr [data-hu="HU-12"]
+attr [data-hu="HU-13"]
+attr [data-hu="HU-14"]
+attr [data-hu="HU-15"]
+attr [data-hu="HU-17"]
+attr [data-hu="HU-18"]
+attr [data-hu="HU-20"]
+attr [data-hu="HU-22"]
+attr [data-hu="HU-23"]
+attr [data-hu="HU-24"]
+attr [data-hu="HU-25"]
+attr [data-hu="HU-26"]
+attr [data-split-stage]
+attr [data-tour-next]
+attr [data-tour-overlay]
+attr [data-tour-phase="ready"]
+attr [data-tour-popover]
+attr [data-tour-spot]
+attr [data-tour-step="${n}"]   <-- NOT FOUND IN src
+attr [data-tour="admin-pending"]
+attr [data-tour="bell"]
+attr [data-tour="chat-coordinate"]
+attr [data-tour="chat-messages"]
+attr [data-tour="coordinate-status"]
+attr [data-tour="deck"]
+attr [data-tour="like-btn"]
+attr [data-tour="match-chat"]
+attr [data-tour="match-overlay"]
+attr [data-tour="mutual-matches"]
+attr [data-tour="onboarding"]
+attr [data-tour="owner-accept-interest"]
+attr [data-tour="owner-interests"]
+attr [data-tour="owner-requests"]
+attr [data-tour="top-card"]
+getByLabel('Buscar en la guía')
+getByLabel('Buscar usuario por nombre o correo')
+getByLabel('Confirmar contraseña')
+getByLabel('Correo electrónico')
+getByLabel('Código de 6 dígitos')
+getByLabel('Edad mínima en meses')
+getByLabel('Mensaje')
+getByLabel('Motivo del rechazo')
+getByLabel('No leída')
+getByLabel('Nombre completo')
+getByLabel('Nota de resolución')
+getByLabel('Nueva contraseña')
+getByLabel('O elige tu distrito')
+getByLabel('Panel de presentador')
+getByRole('alert')
+getByRole('alertdialog')
+getByRole('button', { name: "Registrarse" })
+getByRole('button', { name: 'Abrir panel de presentador' })
+getByRole('button', { name: 'Aceptar y hacer Match' })
+getByRole('button', { name: 'Aceptar' })
+getByRole('button', { name: 'Admin', exact: true })
+getByRole('button', { name: 'Aplicar filtros' })
+getByRole('button', { name: 'Aprobar' })
+getByRole('button', { name: 'Buscar', exact: true })
+getByRole('button', { name: 'Cambiar contraseña' })
+getByRole('button', { name: 'Cancelar' })
+getByRole('button', { name: 'Cariñoso/a' })
+getByRole('button', { name: 'Cerrar sesión' })
+getByRole('button', { name: 'Chatear' })
+getByRole('button', { name: 'Completar preferencias' })
+getByRole('button', { name: 'Confirmar descarte' })
+getByRole('button', { name: 'Contenido inapropiado' })
+getByRole('button', { name: 'Continuar al chat' })
+getByRole('button', { name: 'Continuar' })
+getByRole('button', { name: 'Coordinar' })
+getByRole('button', { name: 'Crear cuenta' })
+getByRole('button', { name: 'Desactivar usuario' })
+getByRole('button', { name: 'Desactivar' })
+getByRole('button', { name: 'Descartar reporte' })
+getByRole('button', { name: 'Editar preferencias' })
+getByRole('button', { name: 'Entrar' })
+getByRole('button', { name: 'Enviar enlace de recuperación' })
+getByRole('button', { name: 'Enviar solicitud' })
+getByRole('button', { name: 'Enviar' })
+getByRole('button', { name: 'Filtros', exact: true })
+getByRole('button', { name: 'Finalizar conversación' })
+getByRole('button', { name: 'Finalizar', exact: true })
+getByRole('button', { name: 'Foto siguiente' })
+getByRole('button', { name: 'Guardar cambios' })
+getByRole('button', { name: 'Hembra' })
+getByRole('button', { name: 'Juguetón/a', exact: true })
+getByRole('button', { name: 'Limpiar filtros' })
+getByRole('button', { name: 'Limpiar ubicación' })
+getByRole('button', { name: 'Mapa' })
+getByRole('button', { name: 'Marcar como adoptada' })
+getByRole('button', { name: 'Marcar todo como leído' })
+getByRole('button', { name: 'Me gusta', exact: true })
+getByRole('button', { name: 'No me gusta' })
+getByRole('button', { name: 'No me gusta', exact: true })
+getByRole('button', { name: 'Ocultar panel' })
+getByRole('button', { name: 'Ocultar publicación' })
+getByRole('button', { name: 'Ocultar' })
+getByRole('button', { name: 'Publicar mascota' })
+getByRole('button', { name: 'Publicar' })
+getByRole('button', { name: 'Quitar foto' })
+getByRole('button', { name: 'Reactivar usuario' })
+getByRole('button', { name: 'Reactivar' })
+getByRole('button', { name: 'Rechazar publicación' })
+getByRole('button', { name: 'Rechazar' })
+getByRole('button', { name: 'Registrarse' })
+getByRole('button', { name: 'Responsable', exact: true })
+getByRole('button', { name: 'Seguir descubriendo' })
+getByRole('button', { name: 'Sociable', exact: true })
+getByRole('button', { name: 'Unirme al chat de la mascota' })
+getByRole('button', { name: 'Volver' })
+getByRole('button', { name: '✓ Vacunada' })
+getByRole('button', { name: '🐱 Gato' })
+getByRole('button', { name: '🐶 Perro' })
+getByRole('button', { name: /Adoptante/ })
+getByRole('button', { name: /Lucas/ })
+getByRole('button', { name: /Luna/ })
+getByRole('button', { name: /Marcar|Confirmar|Sí|Adoptada/ })
+getByRole('button', { name: /Marco legal en Perú/ })
+getByRole('button', { name: /Me gusta/ })
+getByRole('button', { name: /Preguntas frecuentes/ })
+getByRole('button', { name: /Preparar tu hogar/ })
+getByRole('button', { name: /Reiniciar demo/ })
+getByRole('button', { name: /Requisitos para adoptar/ })
+getByRole('button', { name: /Responsable/ })
+getByRole('button', { name: /Seguimiento post-adopción/ })
+getByRole('button', { name: /Tour/ })
+getByRole('button', { name: /Usar código/ })
+getByRole('button', { name: /Vacunas y salud/ })
+getByRole('button', { name: /Ver foto/ })
+getByRole('button', { name: /Ver mis mascotas compatibles/ })
+getByRole('button', { name: /^Desactivar cuenta de / })
+getByRole('button', { name: /^Filtros \(/ })
+getByRole('button', { name: /^Filtros \(1\)/ })
+getByRole('button', { name: /^Filtros \(2\)/ })
+getByRole('button', { name: /^Filtros/ })
+getByRole('button', { name: new RegExp(name) })
+getByRole('button', { name: new RegExp(role) })
+getByRole('dialog', { name: 'Bandeja de correo simulada' })
+getByRole('heading')
+getByRole('heading', { level: 1 })
+getByRole('heading', { name: 'Coordinar adopción' })
+getByRole('heading', { name: 'Guía de adopción responsable' })
+getByRole('heading', { name: 'Max' })
+getByRole('heading', { name: 'Michi' })
+getByRole('heading', { name: 'Otto' })
+getByRole('heading', { name: 'Porotopo Editado', exact: true })
+getByRole('heading', { name: 'Porotopo', exact: true })
+getByRole('heading', { name: 'Salem' })
+getByRole('heading', { name: 'Toby' })
+getByRole('heading', { name: 'Visible', exact: true })
+getByRole('heading', { name: /Información adicional/ })
+getByRole('heading', { name: /Mis Matches/ })
+getByRole('heading', { name: PAYLOAD, exact: true })
+getByRole('img', { name: 'Foto 1 de Firulais de Prueba' })
+getByRole('img', { name: 'Foto 1 de Visible' })
+getByRole('img', { name: 'Foto 2 de Porotopo' })
+getByRole('img', { name: 'Foto de Porotopo' })
+getByRole('img', { name: 'Foto de Registrada' })
+getByRole('img', { name: 'Foto de Revisada' })
+getByRole('img', { name: 'Foto de Visible' })
+getByRole('link')
+getByRole('link', { name: 'Editar información' })
+getByRole('link', { name: 'Guía' })
+getByRole('link', { name: 'Michi Rechazada' })
+getByRole('link', { name: 'Registrar' })
+getByRole('link', { name: '¿Olvidaste tu contraseña?' })
+getByRole('link', { name: /Etiquetada/ })
+getByRole('link', { name: /Favoritos/ })
+getByRole('link', { name: /Firulais de Prueba/ })
+getByRole('link', { name: /Guía de adopción responsable/ })
+getByRole('link', { name: /Historial de interés/ })
+getByRole('link', { name: /Otto · Patricia Salazar/ })
+getByRole('link', { name: /Patricia Salazar/ })
+getByRole('link', { name: /Porotopo/ })
+getByRole('main')
+getByRole('navigation', { name: 'Navegación principal' })
+getByRole('status')
+getByTestId('device-frame')
+getByTestId('edit-photo')
+getByText('1 sin leer')   <-- NOT FOUND IN src
+getByText('2 sin leer')   <-- NOT FOUND IN src
+getByText('Aceptada', { exact: true })
+getByText('Adoptada 🎉')
+getByText('Adoptada', { exact: true })
+getByText('Aprobada', { exact: true })
+getByText('Asegura ventanas')
+getByText('Asegura ventanas, balcones y rejas')
+getByText('Cariñoso/a', { exact: true })
+getByText('Completa tus preferencias')
+getByText('Confirmada')   <-- NOT FOUND IN src
+getByText('Conversación no encontrada')
+getByText('Cuidados especiales')
+getByText('Descartado', { exact: true })
+getByText('Descripción nueva para el criterio cinco.')   <-- NOT FOUND IN src
+getByText('Descubre')
+getByText('En revisión')
+getByText('Especie')
+getByText('Estado de la cuenta')
+getByText('Estás al día')
+getByText('Firulais de Prueba')   <-- NOT FOUND IN src
+getByText('Fotos (máximo 4)')   <-- NOT FOUND IN src
+getByText('Fotos no corresponden a la mascota')
+getByText('Gabriela Ríos', { exact: true })
+getByText('Grupo de Porotopo', { exact: true })   <-- NOT FOUND IN src
+getByText('Hola a todos, me interesa esta mascota')   <-- NOT FOUND IN src
+getByText('Inactiva')
+getByText('Juguetón/a', { exact: true })
+getByText('Luna', { exact: true })
+getByText('Mascota no encontrada')
+getByText('Mi historia')
+getByText('Mis publicaciones')
+getByText('Mostrando mascotas cerca de Miraflores')   <-- NOT FOUND IN src
+getByText('No Debe Guardarse')   <-- NOT FOUND IN src
+getByText('No encontramos mascotas compatibles')
+getByText('No hay mascotas disponibles por ahora')
+getByText('No se encontraron mascotas cercanas')
+getByText('No se pudo cerrar sesión. Intenta de nuevo.')
+getByText('Otto', { exact: true })
+getByText('Patricia Salazar')
+getByText('Pendiente', { exact: true })
+getByText('Porotopo Editado')   <-- NOT FOUND IN src
+getByText('Porotopo')
+getByText('Rechazada', { exact: true })
+getByText('Registrada')   <-- NOT FOUND IN src
+getByText('Resuelto', { exact: true })
+getByText('Revisada')   <-- NOT FOUND IN src
+getByText('Rosa Quispe', { exact: true })
+getByText('Sebastián Rojas', { exact: true })
+getByText('Ser mayor de edad')
+getByText('Sesión cerrada por inactividad')
+getByText('Sexo')
+getByText('Siguiente', { exact: true })
+getByText('Sociable', { exact: true })
+getByText('Tamaño')
+getByText('Todavía no hay mensajes. ¡Rompe el hielo!')
+getByText('Todavía no tienes historial')
+getByText('Valeria Persistida')   <-- NOT FOUND IN src
+getByText('Valeria Torres')
+getByText('Valeria Torres', { exact: true })
+getByText('Visible')   <-- NOT FOUND IN src
+getByText('vi la publicación de Porotopo')
+getByText('¡Cuenta creada con éxito!')
+getByText('¡Es un Match con Luna!')   <-- NOT FOUND IN src
+getByText('¡Es un Match!')
+getByText('¡Solicitud enviada!')
+getByText('¿La adopción tiene costo?')
+getByText(/Coordinar adopción/)
+getByText(/Mostrando mascotas cerca de Los Olivos/)   <-- NOT FOUND IN src
+getByText(/Mostrando mascotas cerca de/)
+getByText(/No encontramos resultados/)
+getByText(/No hay mascotas que cumplan estos criterios/)
+getByText(/Raza Editada/)   <-- NOT FOUND IN src
+getByText(/Todavía no hay mensajes/)
+getByText(/Vacunas y salud/)
+getByText(/Vuelve pronto/)
+getByText(/\d+%/)
+getByText(/^Grupo de /)   <-- NOT FOUND IN src
+getByText(/ya encontró un hogar\. No se aceptan nuevas solicitudes\./)
+getByText(/¡Es un Match!/)
+getByText(`${name} está en tus favoritos`)   <-- NOT FOUND IN src
+getByText(`No te mostraremos a ${n1} de nuevo.`)   <-- NOT FOUND IN src
+getByText(`No te mostraremos a ${n2} de nuevo.`)   <-- NOT FOUND IN src
+getByText(`No te mostraremos a ${name} de nuevo.`)   <-- NOT FOUND IN src
+getByText(`Te gusta ${n1}`)   <-- NOT FOUND IN src
+getByText(`Te gusta ${n2}`)   <-- NOT FOUND IN src
+getByText(`Te gusta ${n3}`)   <-- NOT FOUND IN src
+locator('#about')
+locator('#age')
+locator('#breed')
+locator('#browse-district option')
+locator('#browse-district')
+locator('#browse-radius')
+locator('#confirm')
+locator('#date')
+locator('#district')
+locator('#email')
+locator('#name')
+locator('#password')
+locator('#story')
+locator('#time')
+locator('.leaflet-container')   [css/structural (not name-checked)]
+locator('.leaflet-marker-icon')   [css/structural (not name-checked)]
+locator('[aria-live="polite"]')   [css/structural (not name-checked)]
+locator('[data-hu="HU-01"]')
+locator('[data-hu="HU-02"] a[href^="#/mascota/"]')
+locator('[data-hu="HU-02"] button[aria-label^="Agregar"]')
+locator('[data-hu="HU-02"]')
+locator('[data-hu="HU-03"] h1')
+locator('[data-hu="HU-03"]')
+locator('[data-hu="HU-04"]')
+locator('[data-hu="HU-05"]')
+locator('[data-hu="HU-08"]')
+locator('[data-hu="HU-09"]')
+locator('[data-hu="HU-10"]')
+locator('[data-hu="HU-11"]')
+locator('[data-hu="HU-12"]')
+locator('[data-hu="HU-13"] ul li button', { hasText: 'Nuevo interés' })
+locator('[data-hu="HU-13"] ul li')
+locator('[data-hu="HU-13"]')
+locator('[data-hu="HU-14"]')
+locator('[data-hu="HU-15"]')
+locator('[data-hu="HU-17"] a[href^="#/mascota/"]')
+locator('[data-hu="HU-17"] button[aria-label^="Quitar"]')
+locator('[data-hu="HU-17"] h3')
+locator('[data-hu="HU-17"] h3', { hasText: name })
+locator('[data-hu="HU-17"]')
+locator('[data-hu="HU-18"] li')
+locator('[data-hu="HU-18"]')
+locator('[data-hu="HU-20"] section:not([data-hu="HU-07"]) a[href^="#/mascota/"]')
+locator('[data-hu="HU-20"]')
+locator('[data-hu="HU-22"]')
+locator('[data-hu="HU-23"] h1, [data-hu="HU-23"] h2')
+locator('[data-hu="HU-23"]')
+locator('[data-hu="HU-24"] li', { hasText: name })
+locator('[data-hu="HU-25"]')
+locator('[data-hu="HU-26"]')
+locator('[data-split-stage]')
+locator('[data-tour-next]')
+locator('[data-tour-overlay]')
+locator('[data-tour-popover]')
+locator('[data-tour-spot]')
+locator('[data-tour="admin-pending"]')
+locator('[data-tour="bell"] span.bg-coral')
+locator('[data-tour="bell"]')
+locator('[data-tour="chat-coordinate"]')
+locator('[data-tour="chat-messages"] > div')
+locator('[data-tour="chat-messages"] img[src="x"]')
+locator('[data-tour="chat-messages"] p.whitespace-pre-wrap')
+locator('[data-tour="chat-messages"]')
+locator('[data-tour="coordinate-status"]')
+locator('[data-tour="deck"] article')
+locator('[data-tour="deck"]')
+locator('[data-tour="like-btn"]')
+locator('[data-tour="match-chat"]')
+locator('[data-tour="match-overlay"]')
+locator('[data-tour="mutual-matches"]')
+locator('[data-tour="onboarding"]')
+locator('[data-tour="owner-accept-interest"]')
+locator('[data-tour="owner-interests"]')
+locator('[data-tour="owner-requests"]')
+locator('[data-tour="top-card"]')
+locator('[role="alert"]')   [css/structural (not name-checked)]
+locator('a')   [css/structural (not name-checked)]
+locator('a[href="#/mascota/p01"]')   [css/structural (not name-checked)]
+locator('a[href^="#/admin/publicaciones/"]')   [css/structural (not name-checked)]
+locator('a[href^="#/admin/reportes/"]')   [css/structural (not name-checked)]
+locator('a[href^="#/admin/usuarios/"]')   [css/structural (not name-checked)]
+locator('a[href^="#/mascota/"]')   [css/structural (not name-checked)]
+locator('b')   [css/structural (not name-checked)]
+locator('button')   [css/structural (not name-checked)]
+locator('button[aria-label^="Agregar"]')   [css/structural (not name-checked)]
+locator('div.overflow-hidden.rounded-3xl', { has: mark })   [css/structural (not name-checked)]
+locator('div.overflow-hidden.rounded-3xl', { hasText: name })   [css/structural (not name-checked)]
+locator('div.overflow-hidden:has(> a[href="#/mascota/p01"])')   [css/structural (not name-checked)]
+locator('h1')   [css/structural (not name-checked)]
+locator('h2[data-hu="HU-20"]')   [css/structural (not name-checked)]
+locator('h3')   [css/structural (not name-checked)]
+locator('header a[href$="/mascota/p13"] img[src*="p13"]')   [css/structural (not name-checked)]
+locator('header')   [css/structural (not name-checked)]
+locator('img')   [css/structural (not name-checked)]
+locator('img[alt=""]')   [css/structural (not name-checked)]
+locator('img[alt^="Foto 1 de"]')   [css/structural (not name-checked)]
+locator('img[src="x"]')   [css/structural (not name-checked)]
+locator('input[type="file"]')   [css/structural (not name-checked)]
+locator('label:has-text("Distrito") input')   [css/structural (not name-checked)]
+locator('label:has-text("Nombre") input')   [css/structural (not name-checked)]
+locator('label:has-text("Raza") input')   [css/structural (not name-checked)]
+locator('label:has-text("Sobre mí") textarea')   [css/structural (not name-checked)]
+locator('li')   [css/structural (not name-checked)]
+locator('li', { hasText: 'Revisada' })   [css/structural (not name-checked)]
+locator('li', { hasText: 'Visible' })   [css/structural (not name-checked)]
+locator('span.font-bold')   [css/structural (not name-checked)]
+locator('text=/\\d+\\/\\d+/')   [css/structural (not name-checked)]
+locator('ul li button', { hasText: /interesad/i })   [css/structural (not name-checked)]
+locator('ul li')   [css/structural (not name-checked)]
+locator('xpath=..')   [css/structural (not name-checked)]
+locator(`${cards} b`)   [css/structural (not name-checked)]
+locator(`[data-hu="HU-02"] a[href="#/mascota/${id}"]`)
+locator(`[data-hu="HU-17"] a[href="${firstHref}"]`)
+locator(`[data-hu="HU-17"] a[href="${href}"]`)
+locator(`[data-hu="HU-17"] button[aria-label="Quitar a ${name} de favoritos"]`)
+locator(`[data-hu="HU-20"] a[href="${href}"]`)
+locator(`[data-tour-overlay][data-tour-step="${n}"][data-tour-phase="ready"]`)
+locator(`a[href="#/mascota/p01"]`)   [css/structural (not name-checked)]
+locator(`a[href="${href}"]`)   [css/structural (not name-checked)]
+locator(`button[aria-label="Quitar a ${name} de favoritos"]`)   [css/structural (not name-checked)]
+locator(`dt:text-is("${label}") + dd`)   [css/structural (not name-checked)]
