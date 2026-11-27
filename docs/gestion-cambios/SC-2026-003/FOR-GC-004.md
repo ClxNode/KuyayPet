@@ -86,7 +86,8 @@ Resultado técnico: conforme por ejecución. Conformidad administrativa: pendien
 | 12/11/2026 | Revisar código | VALTOm07 | Revisión aprobada a las 16:54 UTC. Es revisión de código, no decisión del Comité. |
 | 12/11/2026 | Integrar rama en `main` | VALTOm07 | Merge a las 17:00 UTC (merge commit `74f23ed`; padre anterior `0e3e33f`) |
 | 12/11/2026 | Cerrar el Issue #8 | GitHub | Issue #8 cerrado a las 20:11 UTC |
-| 19/11/2026 | Desplegar a producción | No consta quién (v1.0.0) | Producción https://firebrick-cod-910257.hostingersite.com/ ; tag v1.0.0 en IchiSieben/kuyaypet |
+| 19/11/2026 | Desplegar a producción | IchiSieben (v1.0.0, despliegue parcial) | Producción https://firebrick-cod-910257.hostingersite.com/ ; tag v1.0.0 en IchiSieben/kuyaypet |
+| 26/11/2026 | Desplegar arreglo relacionado (#102, sin SC) | IchiSieben (v1.0.1, despliegue parcial, 40 archivos verificados por hash) | HU-08 6/6 y smoke 3/3 contra producción; «Finalizar conversación» comprobado |
 | 20/11/2026 | Documentar en el procedimiento | PRO-GC-001 v1.0 | SC-2026-003 se documenta con elementos pendientes: sin análisis firmado, decisión ni cierre |
 | 26/11/2026 | Verificar implementación (por ejecución) | Registro de ejecución local | Vitest 45/45; Playwright 130/130; evidencia antes/después; expediente armado; PR #102 abierto por el defecto relacionado |
 | Pendiente | Decidir sobre el cambio | Comité de Control de Cambios | Pendiente de decisión del Comité |
